@@ -1,0 +1,16 @@
+[Unit]
+Description=Job-hunt NiceGUI dashboard (ui.app)
+PartOf=graphical-session.target
+After=graphical-session.target jobhunt-automation-chrome.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h/git/application_hunting
+Environment=JOBHUNT_HOME=%h/git/application_hunting/jobhunt-data
+Environment=PATH=/usr/local/bin:/usr/bin:/bin:%h/git/application_hunting/.venv/bin
+ExecStart=%h/git/application_hunting/.venv/bin/python -m ui.app
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=graphical-session.target

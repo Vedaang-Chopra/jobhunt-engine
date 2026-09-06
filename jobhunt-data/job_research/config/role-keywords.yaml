@@ -1,0 +1,415 @@
+# Role Keywords Configuration
+# Keywords for each role family to classify job postings
+# Used for: LinkedIn/Indeed searches, JD classification, resume variant selection
+#
+# REALIGNED 2026-08-22 to preferences.md v2 priority order:
+#   P1 agentic-ai  P2 ml-training-arch  P3 ml-engineering  P4 research-engineer  P5 evaluation-inference
+# post-training remains a valid stretch family (see its notes).
+
+role_families:
+
+  agentic-ai:
+    name: "Agentic AI / Applied AI Research"
+    priority: 1
+    resume_template: "base_agentic_ai.tex"
+    primary_keywords:
+      - "agentic"
+      - "multi-agent"
+      - "langgraph"
+      - "langchain"
+      - "tool use"
+      - "function calling"
+      - "autonomous agents"
+      - "workflow orchestration"
+      - "agent framework"
+      - "agentic rag"
+      - "agentic workflow"
+      - "planning agent"
+      - "reasoning agent"
+      - "llm agent"
+      - "ai agent"
+    secondary_keywords:
+      - "structured generation"
+      - "pydantic"
+      - "reflection"
+      - "critique"
+      - "supervisor-worker"
+      - "trace-to-graph"
+      - "workflow reuse"
+      - "compositional generalization"
+    exclude_keywords:
+      - "rlhf"
+      - "rlaif"
+      - "dpo"
+      - "sft"
+      - "lora"
+      - "qlora"
+      - "reward model"
+      - "post-training"
+      - "fine-tuning"
+    target_companies:
+      - "Cohere"
+      - "Databricks"
+      - "Scale AI"
+      - "Salesforce Research"
+      - "Together AI"
+      - "Fireworks AI"
+      - "Anyscale"
+      - "Weights & Biases"
+      - "xAI"
+      - "AI2"
+      - "Reka"
+      - "Character.AI"
+      - "Runway"
+      - "Sierra AI"
+      - "Cognition"
+      - "Adept"
+    seniority: ["Senior", "Staff", "Principal", "Research Engineer", "Research Scientist"]
+    locations: ["United States", "Canada"]
+    visa_sponsorship_required: true
+
+  evaluation-inference:
+    name: "LLM Evaluation / Inference Research"
+    priority: 5
+    resume_template: "base_eval_inference.tex"
+    primary_keywords:
+      - "evaluation"
+      - "benchmarking"
+      - "vllm"
+      - "inference optimization"
+      - "tensorrt"
+      - "triton"
+      - "distributed serving"
+      - "slo"
+      - "sla"
+      - "latency optimization"
+      - "throughput optimization"
+      - "model serving"
+      - "llm serving"
+      - "model evaluation"
+      - "benchmark"
+      - "human-eval"
+      - "swe-bench"
+      - "mbpp"
+      - "geometric verification"
+      - "execution grounded"
+      - "functional correctness"
+    secondary_keywords:
+      - "matryoshka"
+      - "embedding compression"
+      - "edge deployment"
+      - "onnx"
+      - "onnx runtime"
+      - "quantization"
+      - "distributed training"
+      - "ddp"
+      - "mixed precision"
+      - "h100"
+      - "a100"
+      - "cross-modal retrieval"
+      - "perceiver"
+    exclude_keywords:
+      - "rlhf"
+      - "rlaif"
+      - "dpo"
+      - "sft"
+      - "lora"
+      - "reward model"
+      - "post-training"
+    target_companies:
+      - "Anthropic"
+      - "OpenAI"
+      - "Together AI"
+      - "Fireworks AI"
+      - "NVIDIA"
+      - "Anyscale"
+      - "Google"
+      - "Meta"
+      - "Cohere"
+      - "Databricks"
+      - "Scale AI"
+      - "Weights & Biases"
+    seniority: ["Senior", "Staff", "Principal", "Research Engineer", "Research Scientist"]
+    locations: ["United States", "Canada"]
+    visa_sponsorship_required: true
+
+  ml-training-arch:
+    name: "MLE — Model Training & Architectures"
+    priority: 2
+    resume_template: "base_applied_ml.tex"
+    primary_keywords:
+      - "distributed training"
+      - "pre-training"
+      - "pretraining"
+      - "large-scale training"
+      - "training pipeline"
+      - "model architecture"
+      - "transformer architecture"
+      - "mixed precision"
+      - "ddp"
+      - "fsdp"
+      - "h100"
+      - "a100"
+      - "gpu cluster"
+      - "training infrastructure"
+      - "multimodal model"
+      - "pytorch"
+    secondary_keywords:
+      - "matryoshka"
+      - "embedding learning"
+      - "cross-modal"
+      - "perceiver"
+      - "model parallelism"
+      - "data parallelism"
+      - "training at scale"
+      - "rl training"
+      - "ppo"
+      - "curriculum learning"
+    exclude_keywords: []
+    target_companies:
+      - "NVIDIA"
+      - "Together AI"
+      - "Anyscale"
+      - "Databricks"
+      - "Google"
+      - "Meta"
+      - "Amazon"
+      - "Mistral AI"
+      - "xAI"
+      - "Cohere"
+    seniority: ["Mid-level", "Senior", "ML Engineer", "Research Engineer"]
+    locations: ["United States", "Canada"]
+    visa_sponsorship_required: true
+    notes: >
+      P2 family (2026-08-22): candidate's verified training evidence is CERBERUS
+      (DDP, mixed precision, H100/A100), ARTEMIS (trained router), RL Soccer (PPO/DQN,
+      academic), Fortinet (60+ classifiers). Pure RLHF/DPO/SFT algorithm-implementation
+      JDs belong to post-training (stretch), NOT here. Training systems/infra/architecture
+      JDs belong HERE.
+
+  ml-engineering:
+    name: "ML Engineering / Applied Scientist (Production)"
+    priority: 3
+    resume_template: "base_applied_ml.tex"
+    primary_keywords:
+      - "ml infrastructure"
+      - "feature platform"
+      - "training pipeline"
+      - "model serving"
+      - "kubernetes"
+      - "mlops"
+      - "model registry"
+      - "feature store"
+      - "ml platform"
+      - "pipeline orchestration"
+      - "airflow"
+      - "kubeflow"
+      - "mlflow"
+      - "model deployment"
+      - "a/b testing"
+      - "experimentation platform"
+      - "data pipeline"
+      - "distributed training"
+      - "ddp"
+      - "mixed precision"
+      - "h100"
+      - "a100"
+    secondary_keywords:
+      - "onnx"
+      - "tensorrt"
+      - "vllm"
+      - "inference"
+      - "serving"
+      - "monitoring"
+      - "drift detection"
+      - "automated retraining"
+      - "ci/cd"
+      - "gitops"
+    exclude_keywords: []
+    target_companies:
+      - "Google"
+      - "Amazon"
+      - "Microsoft"
+      - "Meta"
+      - "Salesforce"
+      - "ServiceNow"
+      - "Snowflake"
+      - "Palantir"
+      - "Databricks"
+      - "NVIDIA"
+      - "Anyscale"
+      - "Weights & Biases"
+      - "Cisco"
+    seniority: ["Senior", "Staff", "Principal", "ML Engineer", "Applied Scientist"]
+    locations: ["United States", "Canada", "India"]
+    visa_sponsorship_required: true
+
+  applied-ai:
+    name: "Applied AI / Applied Scientist"
+    priority: 3
+    resume_template: "base_applied_ml.tex"
+    primary_keywords:
+      - "production ml"
+      - "applied scientist"
+      - "applied ml"
+      - "end-to-end"
+      - "model deployment"
+      - "a/b testing"
+      - "feature store"
+      - "ml platform"
+      - "business impact"
+      - "product ml"
+      - "recommendation"
+      - "ranking"
+      - "personalization"
+      - "forecasting"
+      - "anomaly detection"
+      - "fraud detection"
+      - "computer vision"
+      - "nlp"
+      - "time series"
+    secondary_keywords:
+      - "mlops"
+      - "model serving"
+      - "pipeline"
+      - "automation"
+      - "scale"
+      - "h100"
+      - "a100"
+      - "distributed training"
+    exclude_keywords: []
+    target_companies:
+      - "Google"
+      - "Amazon"
+      - "Microsoft"
+      - "Meta"
+      - "Salesforce"
+      - "ServiceNow"
+      - "Snowflake"
+      - "Palantir"
+      - "NVIDIA"
+      - "Databricks"
+      - "Cohere"
+      - "Cisco"
+      - "Siemens"
+      - "Autodesk"
+      - "Ansys"
+    seniority: ["Senior", "Staff", "Principal", "Applied Scientist", "ML Engineer"]
+    locations: ["United States", "Canada", "India"]
+    visa_sponsorship_required: true
+
+  research-engineer:
+    name: "Research Engineer / Scientist (Frontier)"
+    priority: 4
+    resume_template: "base_agent_reasoning.tex"
+    primary_keywords:
+      - "research engineer"
+      - "research scientist"
+      - "reasoning"
+      - "planning"
+      - "swe-bench"
+      - "coding agent"
+      - "reflection"
+      - "supervisor-worker"
+      - "workflow reuse"
+      - "compositional generalization"
+      - "long-horizon"
+      - "task decomposition"
+      - "llm-as-judge"
+      - "structured generation"
+      - "pydantic"
+      - "agent evaluation"
+      - "agent benchmark"
+      - "multi-agent"
+      - "agentic"
+    secondary_keywords:
+      - "langgraph"
+      - "langchain"
+      - "tool use"
+      - "function calling"
+      - "verification"
+      - "geometric verification"
+      - "execution grounded"
+      - "inference-time search"
+      - "trace-to-graph"
+    exclude_keywords:
+      - "rlhf"
+      - "rlaif"
+      - "dpo"
+      - "sft"
+      - "lora"
+      - "reward model"
+      - "post-training"
+      - "fine-tuning"
+    target_companies:
+      - "OpenAI"
+      - "Anthropic"
+      - "Sierra AI"
+      - "Cognition"
+      - "Adept"
+      - "AI2"
+      - "DeepMind"
+      - "xAI"
+      - "NVIDIA"
+      - "Google"
+      - "Meta"
+    seniority: ["Research Engineer", "Research Scientist", "Senior Research Engineer", "Staff Research Engineer"]
+    locations: ["United States", "Canada"]
+    visa_sponsorship_required: true
+
+  post-training:
+    name: "Post-Training / RL / Model-Improvement Research Engineer"
+    priority: 6
+    resume_template: "base_agent_reasoning.tex"
+    primary_keywords:
+      - "rlhf"
+      - "rlaif"
+      - "dpo"
+      - "sft"
+      - "lora"
+      - "qlora"
+      - "reward model"
+      - "post-training"
+      - "fine-tuning"
+      - "ppo"
+      - "grpo"
+      - "reinforcement learning"
+      - "reward modeling"
+      - "preference learning"
+      - "alignment"
+      - "constitutional ai"
+    secondary_keywords:
+      - "synthetic data"
+      - "data engine"
+      - "human feedback"
+      - "model improvement"
+      - "evaluation"
+    exclude_keywords: []
+    target_companies:
+      - "Anthropic"
+      - "OpenAI"
+      - "Cohere"
+      - "Together AI"
+      - "Scale AI"
+      - "xAI"
+      - "Databricks"
+    seniority: ["Research Engineer", "Senior", "Staff"]
+    locations: ["United States"]
+    visa_sponsorship_required: true
+    notes: >
+      CORRECTED POLICY (2026-08-22): Post-training is a VALID TARGET FAMILY — never
+      auto-excluded. Deep-specialization requirements lower attainability; roles accepting
+      transferable ML/research/systems experience raise it. Candidate's stronger agentic/
+      applied-AI evidence affects RANKING, not eligibility. Resumes must still obey
+      PROFILE_RULES factuality rules (no unverified RLHF/DPO/SFT/LoRA claims).
+
+# Classification rules for JD parsing
+classification_rules:
+  # Minimum keyword matches to assign primary role family
+  min_primary_matches: 2
+  # If multiple families match, use secondary keywords as tiebreaker
+  use_secondary_tiebreaker: true
+  # If post-training keywords appear, flag as "post-training" but don't assign as primary
+  flag_post_training: true
+  # Default to applied-ai if no strong match
+  default_family: "applied-ai"

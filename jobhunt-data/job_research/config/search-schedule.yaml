@@ -1,0 +1,229 @@
+# Search Schedule Configuration
+# Cron schedules for automated job hunting
+
+cron_jobs:
+
+  # career-ops multi-ATS sweep (Greenhouse/Ashby/Lever/Workday/SmartRecruiters)
+  - name: "career-ops-scan"
+    schedule: "0 8 * * 1,4"  # 8 AM Mon & Thu
+    description: "Zero-token portal scan of ~32 tracked companies; import new postings into jobs.csv"
+    command: "python3 scripts/career_ops_sweep.py"
+
+  # Daily scans (weekdays only)
+  - name: "daily-t1-job-scan"
+    schedule: "0 9 * * 1-5"  # 9 AM Mon-Fri
+    description: "Scan T1 company career pages + LinkedIn for new postings"
+    tier: "T1"
+    companies: "all_t1"
+    role_families: "all"
+    skills: ["linkedin-job-scraper", "career-automation", "web-search", "notion", "docx", "humanizer", "grounded-citations"]
+    prompt_template: |
+      Search T1 company career pages and LinkedIn for new postings from last 24 hours.
+      For each new posting:
+      1. Extract full JD text
+      2. Classify into role family (agentic-ai, evaluation-inference, ml-engineering, applied-ai, research-engineer)
+      3. Score fit (1-5) against positioning templates
+      4. Save to job-hunt/companies/[COMPANY]/jobs.csv and job-hunt/roles/[ROLE]/job-postings.csv
+      5. Update _company-registry.md and _role-registry.md
+      6. If fit >= 4, add to immediate application queue in pipeline/applications.csv
+      7. Trigger LinkedIn people search for that company (referral strategy)
+
+  - name: "daily-t2-job-scan"
+    schedule: "0 10 * * 1-5"  # 10 AM Mon-Fri
+    description: "Scan T2 company career pages for new postings"
+    tier: "T2"
+    companies: "all_t2"
+    role_families: "all"
+    skills: ["linkedin-job-scraper", "career-automation", "web-search", "notion", "docx", "humanizer", "grounded-citations"]
+    prompt_template: |
+      Scan T2 company career pages for new postings from last 24 hours.
+      Same process as T1 but only for fit >= 4 roles.
+      Prioritize roles matching agentic-ai and evaluation-inference families.
+
+  # Weekly scans
+  - name: "weekly-role-scan"
+    schedule: "0 9 * * 1"  # 9 AM Monday
+    description: "Role-family searches on LinkedIn/Indeed across all companies"
+    tier: "all"
+    companies: "all"
+    role_families: "all"
+    skills: ["linkedin-job-scraper", "indeed", "web-search", "notion", "grounded-citations"]
+    prompt_template: |
+      For each role family (agentic-ai, evaluation-inference, ml-engineering, applied-ai, research-engineer):
+      1. LinkedIn search: keywords from role-keywords.yaml + location=United States
+      2. Indeed search: same keywords + H1B filter
+      3. Extract new postings not in our database
+      4. Classify, score, save to role directories and company directories
+      5. Update registries
+      6. Identify new companies to add to target list
+
+  - name: "weekly-referral-search"
+    schedule: "0 10 * * 1"  # 10 AM Monday
+    description: "For companies with active applications, refresh connections and find new contacts"
+    tier: "all"
+    companies: "active_applications_only"
+    role_families: "all"
+    skills: ["linkedin-referral-strategy", "playwright", "web-search", "notion", "kynver-career"]
+    prompt_template: |
+      For each company in pipeline/applications.csv with status in [Applied, Phone Screen, Onsite, Offer]:
+      1. Run full LinkedIn referral strategy (7-step workflow)
+      2. Update job-hunt/companies/[COMPANY]/connections.csv and connections.md
+      3. Draft outreach messages for P0 (direct message) and P1/P2 (connection requests)
+      4. Update outreach-log.md with sent messages and responses
+      5. Use kynver-career career_outreach_draft for message generation
+      6. Track connection_sent, response_received in CSV
+
+  - name: "weekly-pipeline-review"
+    schedule: "0 9 * * 1"  # 9 AM Monday (same as role scan)
+    description: "Review applications, draft follow-ups, prep interviews"
+    tier: "all"
+    companies: "all"
+    role_families: "all"
+    skills: ["notion", "email-inbox-triage", "weekly-review-planning", "grounded-citations", "web-search"]
+    prompt_template: |
+      Weekly job hunt review:
+      1. Query Notion Job Tracker for all active applications (not Accepted/Rejected/Withdrawn)
+      2. Identify applications with no activity > 7 days - draft follow-up emails
+      3. Identify upcoming interviews this week - create prep docs with company research and STAR answers
+      4. Check for expiring deadlines (referrals, take-homes)
+      5. Update priority rankings based on new info
+      6. Generate summary report: applications sent, response rate, interview conversion, time in each stage
+      7. Update pipeline/applications.csv and Notion
+
+  - name: "weekly-docs-refresh"
+    schedule: "0 11 * * 1"  # 11 AM Monday
+    description: "Update resume variants and cover letter templates"
+    tier: "all"
+    companies: "all"
+    role_families: "all"
+    skills: ["docx", "filesystem", "notion", "humanizer"]
+    prompt_template: |
+      Weekly document refresh:
+      1. Review master resume - update with any new metrics/achievements from last week
+      2. Update master cover letter template with recent achievements
+      3. Regenerate 4 role-specific resume variants if master changed
+      4. Save all versions to filesystem (job-hunt/docs/resumes/)
+      5. Update Notion with current resume version for each active application
+
+  # Daily monitoring
+  - name: "linkedin-hiring-post-monitor"
+    schedule: "0 2,8,14,20 * * *"  # every 6h, 4x daily
+    description: "Scan LinkedIn feed + general hiring posts for new leads from target companies"
+    tier: "all"
+    companies: "all_t1_rotating"
+    role_families: "all"
+    skills: ["linkedin-hiring-post-monitor"]
+    prompt_template: |
+      Run the linkedin-hiring-post-monitor skill end to end.
+      Phase 1: Playwright MCP feed pass (logged-in session, read-only, ~50 posts).
+      Phase 2: site:linkedin.com/posts web search beyond the feed (rotating T1 coverage).
+      Every post must pass the FIT GATE (real hiring signal + role-family match +
+      seniority/eligibility + geography) before being saved. Dedupe globally against
+      tracking/hiring_posts/hiring_posts.csv. Append new rows, mirror per company,
+      log the run to tracking/search_runs/search_runs.csv,
+      and deliver a digest of only new high-priority-first posts with a coverage report.
+
+  - name: "company-news-monitor"
+    schedule: "0 8 * * *"  # 8 AM daily
+    description: "Monitor target companies for material news"
+    tier: "all"
+    companies: "all_tracked"
+    role_families: "none"
+    skills: ["competitor-news-monitor", "notion", "grounded-citations", "web-search"]
+    prompt_template: |
+      Monitor target companies for material news:
+      1. Get list of companies from _company-registry.md (all with status != ignored)
+      2. For each company, search news from last 24h (funding, layoffs, product launches, earnings, leadership changes, acquisitions)
+      3. If material news found, update job-hunt/companies/[COMPANY]/company-intel.md with summary and link
+      4. If negative news (layoffs, hiring freeze), flag application priority as 'Backburner' in pipeline
+      5. If positive news (funding, growth, new AI initiative), consider boosting priority
+      6. Save news to search-logs/company-news-YYYYMMDD.json
+
+  # Monthly
+  - name: "monthly-docs-refresh"
+    schedule: "0 9 1 * *"  # 9 AM 1st of month
+    description: "Monthly master document refresh"
+    tier: "all"
+    companies: "all"
+    role_families: "all"
+    skills: ["docx", "filesystem", "notion", "humanizer"]
+    prompt_template: |
+      Monthly document refresh:
+      1. Review master resume - update with new projects, metrics, skills from last month
+      2. Update master cover letter template with recent achievements
+      3. Generate 4 role-specific resume variants (Agentic AI, Agent Reasoning, Applied ML, Eval/Inference)
+      4. Save all versions to filesystem (job-hunt/docs/resumes/)
+      5. Update Notion with current resume version for each active application
+      6. Archive previous month's versions
+
+  - name: "monthly-strategy-review"
+    schedule: "0 10 1 * *"  # 10 AM 1st of month
+    description: "Monthly strategy review - tier adjustments, new companies, role priorities"
+    tier: "all"
+    companies: "all"
+    role_families: "all"
+    skills: ["web-search", "grounded-citations", "sequential-thinking", "notion"]
+    prompt_template: |
+      Monthly strategy review:
+      1. Review application metrics: total apps, response rate by tier, interview conversion, offer rate
+      2. Analyze which role families getting most traction
+      3. Review company tier assignments - promote/demote based on response data
+      4. Identify new companies to add (VC portfolio, conference sponsors, news mentions)
+      5. Update target-companies.yaml with new entries
+      6. Update role-keywords.yaml if new terminology emerging
+      7. Update application-sequence.md with revised timing
+      8. Document learnings in strategy/monthly-review-YYYY-MM.md
+
+# On-demand / triggered jobs
+  - name: "interview-prep-generator"
+    schedule: "on_demand"
+    description: "Generate interview prep for specific company+role"
+    tier: "all"
+    companies: "specific"
+    role_families: "specific"
+    skills: ["web-search", "grounded-citations", "obsidian", "arxiv", "sequential-thinking"]
+    prompt_template: |
+      Input: company=X role=Y
+      1. Search for X interview process, common questions for Y role
+      2. Research X's tech stack, architecture, culture, recent papers/blogs
+      3. Generate interview prep doc in job-hunt/pipeline/interview-prep/X-Y-YYYYMMDD.md with:
+         - Company overview & strategic positioning
+         - Tech deep-dive (papers, blogs, open source)
+         - Behavioral questions (STAR) tailored to your background
+         - Technical questions (system design, ML, coding)
+         - Role-specific: Agentic AI / Eval-Inference / MLE / Applied AI scenarios
+         - Questions to ask interviewer
+      4. Save to pipeline/interview-prep/
+
+  - name: "company-deep-dive"
+    schedule: "on_demand"
+    description: "Full company research: jobs + people + intel + news"
+    tier: "all"
+    companies: "specific"
+    role_families: "all"
+    skills: ["linkedin-referral-strategy", "linkedin-job-scraper", "career-automation", "web-search", "notion", "grounded-citations", "playwright"]
+    prompt_template: |
+      Input: company=X
+      1. Run full 7-step LinkedIn referral strategy for X
+      2. Run job search on X career page + LinkedIn + Indeed
+      3. Classify all roles, score fit, save to company dir and role dirs
+      4. Update company-intel.md with fresh data
+      5. Update _company-registry.md and _role-registry.md
+      6. Research company news, tech stack, culture, interview process
+      7. Generate company brief in job-hunt/companies/X/company-brief.md
+      8. If fit >= 4 roles found, add to application queue
+
+# Rate limiting & safety
+rate_limits:
+  linkedin_requests_per_hour: 30
+  indeed_requests_per_hour: 60
+  career_page_requests_per_hour: 20
+  delay_between_requests_seconds: 5
+  max_pages_per_search: 10
+  max_profiles_per_company: 200
+
+# Retry policy
+retry:
+  max_attempts: 3
+  base_delay_seconds: 10
+  exponential_backoff: true

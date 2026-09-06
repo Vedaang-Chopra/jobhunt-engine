@@ -1,0 +1,56 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+resume_custom/venv/
+# Local environment files and archived copies may contain credentials.
+.env
+.env.*
+**/env_old
+**/env_example_old
+# Rebuildable LaTeX intermediates.
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+# Runtime outputs are not source material.
+execution_results/*
+# ...except review CSVs consumed by the daily queue workflow.
+!execution_results/reviews/
+# Productization: data-root separation & secrets hygiene.
+config.yaml
+config.local.yaml
+*.key
+*.pem
+credentials*.json
+token*.json
+job_research/data/
+execution_results/simplify_leveldb_snapshot/
+# Hard guarantee: personal data NEVER enters the repo, even if JOBHUNT_HOME
+# is unset and legacy repo-local defaults kick in.
+profile_info/
+tracking/
+applications/
+linkedin/
+messaging/
+resume_custom/
+job_research/
+# BUT non-personal engine config must ship with the repo (tests + sweeps need
+# role-keywords, scoring-config, ontology inputs). These live under the default
+# data root for convenience; they are user-global preferences, not personal data.
+!jobhunt-data/job_research/
+!jobhunt-data/job_research/config/
+!jobhunt-data/job_research/config/*.yaml
+# Everything else under the local job_research tree (company intel, scraped
+# data, search memory, platform dumps) is machine-local data — stays untracked.
+jobhunt-data/job_research/*/
+!jobhunt-data/job_research/config/
+# Large historical archives are kept locally, not in git.
+archive/home_scatter_20260824/
+archive/root_scatter_20260826/
+archive/plans_20260826/
+.playwright-mcp/
+jobhunt-data/runs/
+archive/stale_repo_data_20260824/

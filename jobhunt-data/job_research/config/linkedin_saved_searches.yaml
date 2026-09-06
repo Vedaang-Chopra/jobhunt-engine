@@ -1,0 +1,115 @@
+# LinkedIn Saved-Search Registry (L1)
+# Generated 2026-08-23 from role-keywords.yaml role families x location prefs,
+# plus C2 company-filtered searches for target-companies.yaml entries WITHOUT
+# an ATS endpoint in ../career-ops/portals.yml coverage.
+#
+# URL params:
+#   f_TPR=r604800 -> posted within last 7 days (freshness)
+#   f_E=2%2C3     -> experience levels Associate + Mid-Senior
+#   geoId         -> LinkedIn geography id
+#   f_WT=2        -> Workplace type: Remote
+#
+# NOTE: geoIds below are standard public LinkedIn geography ids; verify on first
+# live run and patch here if LinkedIn redirects to an empty geo.
+
+defaults:
+  freshness_param: "f_TPR=r604800"
+  experience_param: "f_E=2%2C3"
+  max_searches_per_run: 8
+  scroll_pause_seconds: 2.0
+  max_scrolls_per_search: 12
+
+geos:
+  us_remote:
+    label: "United States (Remote)"
+    params: ["geoId=103644278", "f_WT=2"]
+  atlanta:
+    label: "Atlanta, GA"
+    params: ["geoId=106693596"]
+
+# ---------------------------------------------------------------------------
+# Base searches: role-family keyword x location
+# ---------------------------------------------------------------------------
+base_searches:
+
+  - id: li_agentic_ai_us_remote
+    family: agentic-ai
+    tier: base
+    keywords: "(\"AI Agent Engineer\" OR \"Agentic AI\" OR \"LLM Agent\")"
+    geos: [us_remote]
+
+  - id: li_agentic_ai_atlanta
+    family: agentic-ai
+    tier: base
+    keywords: "(\"AI Agent Engineer\" OR \"Agentic AI\" OR \"LLM Agent\")"
+    geos: [atlanta]
+
+  - id: li_ml_engineering_us_remote
+    family: ml-engineering
+    tier: base
+    keywords: "(\"Machine Learning Engineer\" AND (PyTorch OR LLM OR inference))"
+    geos: [us_remote]
+
+  - id: li_research_engineer_us_remote
+    family: research-engineer
+    tier: base
+    keywords: "(\"Research Engineer\" AND (LLM OR \"large language model\" OR RL))"
+    geos: [us_remote]
+
+  - id: li_eval_inference_us_remote
+    family: evaluation-inference
+    tier: base
+    keywords: "(\"LLM evaluation\" OR \"inference optimization\" OR vLLM)"
+    geos: [us_remote]
+
+  - id: li_post_training_us_remote
+    family: post-training
+    tier: base
+    keywords: "(\"post-training\" OR RLHF OR \"reward modeling\")"
+    geos: [us_remote]
+
+  - id: li_ml_training_arch_us_remote
+    family: ml-training-arch
+    tier: base
+    keywords: "(\"distributed training\" OR \"training infrastructure\" OR \"GPU kernels\")"
+    geos: [us_remote]
+
+  - id: li_applied_ml_atlanta
+    family: ml-engineering
+    tier: base
+    keywords: "(\"Machine Learning Engineer\")"
+    geos: [atlanta]
+
+# ---------------------------------------------------------------------------
+# C2 searches: company-filtered (company filter param generated at URL-build
+# time via linkedin_portal_sweep.build_search_url); these companies have NO
+# ATS endpoint covered by career-ops portals.yml as of 2026-08-23.
+# ---------------------------------------------------------------------------
+c2_companies_uncovered_by_ats:
+  - Fortinet
+  - SentinelOne
+  - Snowflake
+  - Weights & Biases
+  - NVIDIA (Applied/Research)
+  - Google (Applied/Research)
+  - Meta (Applied/FAIR)
+  - Microsoft (Research/Applied)
+  - Amazon (Applied Science)
+  - AI2 (Allen Institute)
+  - Adept
+  - Apple (ML Research)
+  - Siemens
+  - Autodesk
+  - Ansys
+  - Dassault Systemes
+  - PTC
+  - Hexagon
+  - Cadence
+  - Synopsys
+  - NVIDIA (Omniverse/Simulation)
+  - Covariant
+  - Cisco
+
+# One search per uncovered company is generated at registry-load time by
+# linkedin_portal_sweep.build_registry(): generic AI/ML keyword + company
+# filter, US-wide (no remote restriction so hybrid/on-site hits surface).

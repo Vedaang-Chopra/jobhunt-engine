@@ -1,0 +1,109 @@
+# LinkedIn Search Query Configuration — surface-separated (2026-08-26)
+#
+# LinkedIn Jobs and LinkedIn Posts have DIFFERENT ranking algorithms and
+# content formats; queries are NOT interchangeable.
+#   - Jobs: fuzzy title+description match → short high-recall TITLE queries;
+#     let score_jobs_v2 do the filtering, not the query string.
+#   - Posts: nobody writes "research engineer post-training" — they write
+#     "we're hiring! building post-training infra at X". Queries must combine
+#     hiring-intent phrases × domain keywords.
+#
+# Consumers:
+#   scripts/linkedin_posts_sweep.py        -> POST_INTENT_PHRASES / POST_DOMAIN_KEYWORDS / HASHTAG_QUERIES
+#   linkedin_saved_searches.yaml           -> JOBS_TITLE_QUERIES (URL boolean form there)
+#   Effectiveness feedback: <data_root>/job_research/config/linkedin_keyword_yields.csv
+#     (surface column separates Jobs vs Posts hit rates)
+
+# ---------------------------------------------------------------- Jobs -----
+# Title-level: short, high-recall. Search broadly on title; the scoring
+# pipeline filters quality. Do NOT pack description terms into these.
+JOBS_TITLE_QUERIES:
+  - "AI engineer"
+  - "ML engineer"
+  - "machine learning engineer"
+  - "research engineer"
+  - "applied scientist"
+  - "GenAI engineer"
+  - "LLM engineer"
+  # SWE-titled ML roles — large missed category (see JOB_MARKET_PATTERNS):
+  - "software engineer machine learning"
+  - "software engineer AI"
+  - "SWE LLM"
+  # profile-matched additions (AI security coursework -> safety; eval breadth):
+  - "AI safety engineer"
+  - "evaluation engineer"
+  # borderline but often agentic-infra in practice:
+  - "AI platform engineer"
+
+# Description-signal terms: use as standalone sweeps or AND-combined in the
+# saved-searches URL grammar — never as the sole title query for Jobs.
+JOBS_DESCRIPTION_SIGNALS:
+  - "post-training"
+  - "agentic"
+  - "reinforcement learning"
+  - "multimodal"
+  - "code generation"
+  - "fine-tuning"
+
+JOBS_FILTERS:
+  date_posted: past_week          # primary; past_month as secondary sweep only
+  experience_levels: [entry, associate, mid_senior]   # exclude Director/Exec
+  job_type: full_time             # exclude contract/internship
+  workplace: [remote, hybrid, onsite]   # DO NOT filter — let ranking handle it
+  location_note: >
+    Keep geo list from location-preferences.yaml; add a 'United States'
+    catch-all geo so remote roles that don't name a city are not lost.
+
+# ---------------------------------------------------------------- Posts ----
+POST_INTENT_PHRASES:
+  - "we're hiring"
+  - "we are hiring"
+  - "hiring for"
+  - "hiring a"
+  - "join my team"
+  - "join our team"
+  - "open role"
+  - "open position"
+  - "open roles"
+  - "looking for"
+  - "growing the team"
+  - "growing our team"
+  - "come work with us"
+  - "come build with us"
+  - "DM me"
+  - "reach out"
+
+POST_DOMAIN_KEYWORDS:
+  - "LLM"
+  - "large language model"
+  - "agentic"
+  - "AI agents"
+  - "agent systems"
+  - "post-training"
+  - "RLHF"
+  - "fine-tuning"
+  - "research engineer"
+  - "ML engineer"
+  - "applied scientist"
+  - "multimodal"
+  - "VLM"
+  - "reasoning"
+  - "code generation"
+
+POST_COMPOSITE_LIMIT: 12        # composite queries per run, rotate via yields
+POST_MAX_AGE: past_week         # posts decay fast; older is almost surely filled
+
+HASHTAG_QUERIES:
+  weekly_check: ["#hiring #AI", "#hiring #ML", "#hiring #LLM", "#nowhiring"]
+  skip: ["#opentowork"]          # candidate-side tag, not poster-side
+
+# Company + hiring post sweeps for priority companies lacking ATS coverage —
+# catches roles posted on LinkedIn before the careers page updates.
+COMPANY_HIRING_POST_QUERIES:
+  template: "{company} hiring OR {company} open roles"
+  companies:
+    - Modal
+    - Replicate
+    - Fireworks AI
+    - Together AI
+    - Perplexity

@@ -1,0 +1,113 @@
+# Bounded Search Campaigns (canonical, 2026-08-22)
+# Per user directive §10: guided campaigns, ~80-90% curated / ~10-20% open discovery.
+# Each campaign = bounded scope + worker skills + output destinations.
+# Orchestrator/cron wiring comes ONLY after system validation (user directive §13).
+
+campaigns:
+
+  # --- L1 advantage campaign (aggressive effort) ---
+  security_ai_advantage:
+    description: "Security companies where Fortinet background = asymmetric advantage"
+    opportunity_levels: [L1, L2]
+    companies: [fortinet, palo alto networks, crowdstrike, cisco, cloudflare,
+                zscaler, sentinelone, okta, snyk, wiz]
+    role_families: [ml_engineering, applied_ai, agentic_ai, eval_inference,
+                    research_engineer, post_training]
+    sources: [greenhouse_api, company_careers, linkedin_jobs, linkedin_hiring_posts]
+    effort: aggressive
+    output: tracking/jobs/jobs.csv + per-company dirs
+    status: not_started
+
+  # --- L2 realistic research targets ---
+  ai_infrastructure:
+    description: "Inference/serving/infra companies (vLLM, ONNX, routing alignment)"
+    opportunity_levels: [L1, L2]
+    companies: [together_ai, fireworks_ai, anyscale, databricks, snowflake, wandb]
+    role_families: [eval_inference, ml_engineering, post_training, agentic_ai]
+    sources: [greenhouse_api, company_careers]
+    effort: high
+    status: partial   # together_ai/databricks/scale_ai already fetched
+
+  enterprise_agentic_ai:
+    description: "Enterprise AI with agentic platforms"
+    opportunity_levels: [L2]
+    companies: [salesforce, servicenow, palantir, snowflake, microsoft]
+    role_families: [agentic_ai, applied_ai, ml_engineering]
+    sources: [company_careers_workday, greenhouse_api, linkedin_jobs]
+    effort: high
+    status: not_started
+
+  ai_native_startups:
+    description: "Strong AI-native startups (L2)"
+    opportunity_levels: [L2, L3]
+    companies: [cohere, reka, character_ai, runway, sierra_ai, cognition, adept, ai2]
+    role_families: [agentic_ai, research_engineer, eval_inference, applied_ai]
+    sources: [greenhouse_api, company_careers, linkedin_jobs]
+    effort: high
+    status: partial   # cohere intel complete; jobs not yet fetched
+
+  post_training_model_improvement:
+    description: "Post-training/RL/data roles — VALID targets (corrected policy)"
+    opportunity_levels: [L2, L3, L4]
+    companies: [anthropic, openai, cohere, together_ai, scale_ai, xai, databricks]
+    role_families: [post_training, research_engineer]
+    sources: [greenhouse_api, company_careers, linkedin_hiring_posts]
+    effort: high
+    notes: "Prioritize inference-adjacent + data/eval-heavy PT roles; deep-specialization roles at L4 effort"
+    status: partial   # anthropic/togetherai PT roles already in table
+
+  # --- L3 optimistic ---
+  big_tech_research:
+    description: "Large tech AI research orgs"
+    opportunity_levels: [L3]
+    companies: [google, meta, microsoft, amazon, nvidia, apple]
+    role_families: [research_engineer, ml_engineering, eval_inference, applied_ai]
+    sources: [company_careers, linkedin_jobs]
+    effort: moderate
+    status: not_started
+
+  # --- L4 stretch ---
+  frontier_labs:
+    description: "Frontier labs (selective deep customization + referral outreach)"
+    opportunity_levels: [L4]
+    companies: [openai, anthropic, deepmind, xai]
+    role_families: [research_engineer, post_training, agentic_ai, eval_inference]
+    sources: [greenhouse_api, company_careers, linkedin_hiring_posts]
+    effort: selective
+    notes: "Referral + researcher outreach where possible; never bulk-apply"
+    status: partial   # anthropic/xai roles already collected
+
+  # --- Cross-cutting ---
+  linkedin_hiring_posts:
+    description: "Recent hiring posts from target-company employees (7-14 days)"
+    opportunity_levels: [L1, L2, L3, L4]
+    companies: all_target_companies
+    sources: [linkedin_hiring_posts]
+    effort: continuous
+    status: not_started
+
+  referral_network:
+    description: "Referral path research for companies with queued/strong roles"
+    opportunity_levels: [L1, L2, L3]
+    companies: active_pipeline_companies
+    sources: [linkedin_people]
+    effort: continuous
+    status: partial   # cohere contacts done (41)
+
+  open_discovery:
+    description: "Open-ended discovery: new companies via boards/posts/trends (10-20% budget)"
+    opportunity_levels: [L1, L2, L3, L4]
+    companies: none   # unbounded by design
+    sources: [linkedin_jobs, indeed, jobride, yc_jobs, wellfound, search_engines]
+    effort: bounded_10_20_pct
+    notes: "Exceptional new companies get added to companies.csv with full intel before role search"
+    status: not_started
+
+# Effort definitions
+effort_levels:
+  aggressive: "Apply to all L1/L2 matches; weekly networking; hiring-post monitoring"
+  high: "Apply to all matches; networking on top 5; hiring-post monitoring"
+  moderate: "Apply to strong matches only; networking opportunistic"
+  selective: "Deep-customize each application; referral/researcher outreach first"
+  continuous: "Ongoing monitoring; no fixed cadence until cron phase"
+  bounded_10_20_pct: "Time-boxed; max 1-2 new companies per week added"

@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# setup/crontab.sample — OS-level equivalents of the 9 Hermes cron jobs.
+# MIGRATION NOTE: These are INERT until installed. Hermes crons on the Mac keep
+# running until you flip. On the server laptop:
+#   1. git clone <repo> && cd application_hunting && ./setup/bootstrap.sh
+#   2. rsync personal data from the Mac (see HANDOFF.md §Data Transfer)
+#   3. crontab -l | cat - setup/crontab.sample | crontab -
+#   4. Then disable the matching Hermes jobs on the Mac (hermes cron pause <id>).
+# Paths are resolved via scripts/env.sh; logs go to $JOBHUNT_HOME/logs/.
+# Schedule times mirror the Hermes jobs as of 2026-08-26.
+
+REPO="$(cd "$(dirname "$0")/.." && pwd)"
+S="$REPO/scripts/env.sh"
+
+# discovery-linkedin: LinkedIn jobs sweep every 2h (gated sweeps l1/l2)
+0 */2 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/discovery_run.py --sources l1,l2 >> "$JOBHUNT_HOME/logs/discovery_linkedin.log" 2>&1
+
+# linkedin-people-posts-2h: people + hiring-posts sweep every 2h
+0 */2 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/cron_lhp_people_driver.py >> "$JOBHUNT_HOME/logs/lhp_people.log" 2>&1
+
+# daily-ops / morning-job-digest / discovery-career-ops: morning cycle 8AM.
+# d-c-o runs Mon & Thu only (1,4); digest + ops run daily — kept separate so
+# day-specific logic stays honest.
+0 8 * * *   . $S && cd "$JOBHUNT_REPO" && python scripts/daily_ops.py >> "$JOBHUNT_HOME/logs/daily_ops.log" 2>&1
+0 8 * * 1,4 . $S && cd "$JOBHUNT_REPO" && python scripts/career_ops_sweep.py >> "$JOBHUNT_HOME/logs/career_ops.log" 2>&1
+
+# outreach-batch: 10AM — per-job apply is human-gated (see
+# docs/rules/OUTREACH_RULES.md); this slot runs the queued-review build only.
+0 10 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/urgent_check.py >> "$JOBHUNT_HOME/logs/outreach_batch.log" 2>&1
+
+# apps-sync: 8PM application status sync
+0 20 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/application_sync.py >> "$JOBHUNT_HOME/logs/apps_sync.log" 2>&1
+
+# discovery-freshness: 9PM tiered re-verify + expiry sweep
+0 21 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/freshness_check.py >> "$JOBHUNT_HOME/logs/freshness.log" 2>&1
+
+# ops-health: 9:30PM health check (dry-run; alerts only)
+30 21 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/ops_health.py >> "$JOBHUNT_HOME/logs/ops_health.log" 2>&1

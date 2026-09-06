@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobhunt-engine"
+version = "0.1.0"
+description = "Human-in-the-loop job search engine: discovery, tracking, resume customization, and NiceGUI dashboard."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+dependencies = [
+    "nicegui>=2.0",
+    "pandas>=1.5",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+# Browser sweeps (scripts/web_nav_agent, LinkedIn sweeps) drive a real
+# browser via Playwright. Optional: tests skip on fresh clones without it.
+browser = [
+    "playwright>=1.40",
+]
+
+[project.scripts]
+jobhunt-ui = "ui.app:main"
+jobhunt-wizard = "setup.wizard:main"
+
+[tool.setuptools]
+packages = ["ui", "setup", "scripts"]

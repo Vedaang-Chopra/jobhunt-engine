@@ -1,0 +1,49 @@
+# Example configuration for the job-hunt workspace.
+# Copy to <data_root>/config.yaml and fill in real values.
+# NEVER commit a config.yaml with real keys or credentials.
+
+# Data root pointer (alternative to $JOBHUNT_HOME).
+# This file is normally written by `python -m setup.wizard --apply`.
+data_root: /path/to/your/jobhunt/data
+
+llm:
+  providers:
+    # Small-model chain: OpenRouter free models are tried FIRST, NVIDIA Build
+    # (nemotron-super) second, any custom provider third. Per-provider model
+    # lists: openrouter has one configured model; nvidia falls back to
+    # openai/gpt-oss-120b -> meta/llama-3.3-70b-instruct ->
+    # meta/llama-3.1-8b-instruct when `model` is unset. Set `priority` to
+    # override the order (lower number = tried earlier).
+    openrouter:
+      base_url: https://openrouter.ai/api/v1   # placeholder
+      model: meta-llama/llama-3.3-70b-instruct:free   # OpenRouter free-tier default; replace with any :free slug
+      api_key: ""                              # set via env var or getpass prompt; do not commit
+
+    # NVIDIA Build backup (integrate.api.nvidia.com / nemotron-super family)
+    nvidia:
+      base_url: https://integrate.api.nvidia.com/v1  # placeholder
+      model: nvidia/nemotron-3-super-49b-v1.5        # placeholder; built-in fallbacks: gpt-oss-120b, llama-3.3-70b, llama-3.1-8b
+      api_key: ""                                    # set via env var or getpass prompt; do not commit
+
+email:
+  # Optional. Only needed for automated outreach/follow-up features.
+  imap_host: ""        # e.g. imap.gmail.com (placeholder)
+  smtp_host: ""        # e.g. smtp.gmail.com (placeholder)
+  username: ""
+  password: ""         # prefer app-specific password supplied at runtime; do not commit
+
+# ---------------------------------------------------------------------------
+# Candidate identity — REQUIRED. Read by config_lib.identity() at runtime;
+# outreach emails, referral notes, cover letters and resume headers are
+# built from these values. This file is a template: your real values live in
+# <data_root>/config.yaml, which is gitignored and must never be committed.
+identity:
+  full_name: "Your Full Name"
+  first_name: "Your"
+  email: "you@example.edu"
+  phone: "+1 (555) 000-0000"
+  location: "City, ST"
+  school: "Your School"
+  degree: "M.S. Computer Science"
+  headline_background: "one line: who you are professionally, used in outreach intros"
+  signature_name: "Your Full Name"
