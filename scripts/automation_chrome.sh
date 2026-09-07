@@ -14,6 +14,14 @@ PROFILE="$HOME/.hermes/browser-profiles/job-hunt"
 PORT=9333
 LOG="$HOME/.hermes/browser-profiles/automation_chrome.log"
 
+# Chrome needs an X display for a visible window; under systemd the user
+# manager may not carry DISPLAY. Default to the first local display.
+if [ "$(uname -s)" = "Linux" ] && [ -z "${DISPLAY:-}" ]; then
+  for d in :1 :0; do
+    if [ -S "/tmp/.X11-unix/X${d#:}" ]; then export DISPLAY="$d"; break; fi
+  done
+fi
+
 mkdir -p "$PROFILE"
 
 # ---- locate a Chrome/Chromium binary for this OS -------------------------
@@ -73,7 +81,7 @@ fi
 # logins behave like a real browser.
 EXTRA_FLAGS=()
 if [ "$(uname -s)" = "Linux" ]; then
-  EXTRA_FLAGS+=(--headless=never --disable-dev-shm-usage)
+  EXTRA_FLAGS+=(--remote-allow-origins='*' --disable-dev-shm-usage)
   if grep -qsE "max_user_namespaces.*0|unprivileged_userns" /proc/sys/user/max_user_namespaces 2>/dev/null \
      && [ "$(cat /proc/sys/user/max_user_namespaces 2>/dev/null || echo 0)" = "0" ]; then
     EXTRA_FLAGS+=(--no-sandbox)

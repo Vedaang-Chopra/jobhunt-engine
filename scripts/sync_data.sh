@@ -60,7 +60,7 @@ sync_to_worktree() {  # working tree -> private worktree
   for p in "${PERSONAL_PATHS[@]}"; do
     if [ -e "$REPO/$p" ]; then
       mkdir -p "$WORKTREE/$(dirname "$p")"
-      rsync -a --delete "$REPO/$p" "$WORKTREE/$p"
+      rsync -a --delete "$REPO/$p/" "$WORKTREE/$p/"
     fi
   done
   # never sync secrets or caches into the data repo
@@ -73,7 +73,7 @@ sync_from_worktree() {  # private worktree -> working tree
   for p in "${PERSONAL_PATHS[@]}"; do
     if [ -e "$WORKTREE/$p" ]; then
       mkdir -p "$REPO/$(dirname "$p")"
-      rsync -a "$WORKTREE/$p" "$REPO/$p"
+      rsync -a --delete "$WORKTREE/$p/" "$REPO/$p/"
     fi
   done
 }
