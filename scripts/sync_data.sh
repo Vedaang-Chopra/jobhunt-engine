@@ -41,6 +41,7 @@ PERSONAL_PATHS=(
   "jobhunt-data/browser_runs"
   "jobhunt-data/job_research"
   "jobhunt-data/config.yaml"
+  "jobhunt-data/runs"
   "jobhunt-data/logs"
   "all_custom_resumes"
   "export_packages"
