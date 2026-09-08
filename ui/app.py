@@ -75,6 +75,7 @@ ROUTE_REDIRECTS: dict[str, str] = {
 _OWNED_ROUTES: set[str] = {
     "/", "/today", "/jobs", "/applications", "/network",
     "/operations", "/insights", "/linkedin-posts", "/job-search",
+    "/right-people",
     *ROUTE_REDIRECTS,
 }
 
@@ -1318,6 +1319,30 @@ def _application_card(record: dict, stages: list[str], on_stage_change) -> None:
             label="Stage",
             on_change=lambda e, rec=record, handler=on_stage_change: handler(rec, e),
         ).classes("w-full").props("outlined dense")
+
+
+# ---------------------------------------------------------------- right people
+@ui.page("/right-people")
+def right_people_page():  # pragma: no cover - requires running server
+    """Drop a job link -> per-company people directory + email formats."""
+    from nicegui import ui as _ui
+
+    from ui.pages_right_people import render_right_people_page
+
+    from nicegui import context as _ctx
+
+    company = ""
+    try:
+        company = _ctx.client.request.query_params.get("company", "")
+    except Exception:  # noqa: BLE001 - no request context (tests)
+        company = ""
+    page_shell(
+        "Right People",
+        "Drop a job link or company name — track the right people to "
+        "connect with, with email-format candidates and one-click "
+        "LinkedIn profiles.",
+    )
+    render_right_people_page(company_slug=company)
 
 
 # ---------------------------------------------------------------- network

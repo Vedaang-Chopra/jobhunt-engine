@@ -2171,3 +2171,381 @@ def set_hiring_post_status(post_id: str, new_status: str) -> None:
         w = _csv.DictWriter(fh, fieldnames=fieldnames)
         w.writeheader()
         w.writerows(rows)
+
+
+# ================================================================ right people
+# Data layer for the /right-people page: company people directory
+# (connections.csv per company + registry email patterns + people sweep +
+# contacts) and the add-people pipeline (right_people CLI family).
+
+RIGHT_PEOPLE_DIR_REL = "job_research/companies"
+RP_EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+@?[^@\s]*$")
+
+
+def _rp_email(value) -> str:
+    """Email cell with legacy prose junk stripped (returns '')."""
+    text = _clean(value)
+    return text if _EMAIL_RE.match(text) else ""
+
+
+def right_people_companies() -> list[dict]:
+    """Companies that have a people directory, newest activity first.
+
+    Sources: per-company ``<data_root>/job_research/companies/<slug>/``
+    dirs (connections.csv / connections_report.md) merged with the
+    companies registry (email pattern, careers url, status).
+    """
+    base = _data_root() / RIGHT_PEOPLE_DIR_REL
+    registry: dict[str, dict] = {}
+    reg_path = _data_root() / "tracking" / "companies" / "companies_registry.csv"
+    if reg_path.is_file():
+        try:
+            with open(reg_path, newline="", encoding="utf-8") as fh:
+                for row in csv.DictReader(fh):
+                    slug = (row.get("company_slug") or "").strip()
+                    if slug:
+                        registry[slug] = row
+        except OSError as exc:  # noqa: BLE001 - graceful empty state
+            print(f"ui.data: could not read {reg_path}: {exc}")
+
+    companies: dict[str, dict] = {}
+
+    def _entry(slug: str, name: str = "") -> dict:
+        if slug not in companies:
+            reg = registry.get(slug, {})
+            companies[slug] = {
+                "slug": slug,
+                "company": (reg.get("company") or name or slug).strip(),
+                "people_count": 0,
+                "with_email": 0,
+                "report_date": "",
+                "email_pattern": (reg.get("email_pattern") or "").strip(),
+                "email_pattern_status":
+                    (reg.get("email_pattern_status") or "unknown").strip(),
+                "has_connections_csv": False,
+                "has_report": False,
+            }
+        elif name and companies[slug]["company"] == slug:
+            companies[slug]["company"] = name
+        return companies[slug]
+
+    for slug in registry:  # registry-only companies still list
+        _entry(slug)
+    if base.is_dir():
+        for company_dir in sorted(base.iterdir()):
+            if not company_dir.is_dir():
+                continue
+            entry = _entry(company_dir.name)
+            conn = company_dir / "connections.csv"
+            if conn.is_file():
+                entry["has_connections_csv"] = True
+                try:
+                    with open(conn, newline="", encoding="utf-8") as fh:
+                        rows = list(csv.DictReader(fh))
+                    entry["people_count"] += len(rows)
+                    email_cols = ("email", "email_format_1", "email_format_2",
+                                  "email_format_3", "linkedin_visible_email")
+                    entry["with_email"] += sum(
+                        1 for r in rows
+                        if any(_rp_email(r.get(c)) for c in email_cols))
+                    for r in rows:
+                        d = (r.get("last_updated") or "").strip()[:10]
+                        if d > entry["report_date"]:
+                            entry["report_date"] = d
+                except OSError as exc:  # noqa: BLE001
+                    print(f"ui.data: could not read {conn}: {exc}")
+            report = company_dir / "connections_report.md"
+            if report.is_file():
+                entry["has_report"] = True
+                try:
+                    head = report.read_text(encoding="utf-8", limit=400)
+                except TypeError:
+                    head = report.read_text(encoding="utf-8")[:400]
+                import re as _re
+
+                m = _re.search(r"— (\d{4}-\d{2}-\d{2})", head)
+                if m and m.group(1) > entry["report_date"]:
+                    entry["report_date"] = m.group(1)
+
+    return sorted(companies.values(),
+                  key=lambda c: (c["report_date"], c["company"]),
+                  reverse=True)
+
+
+def right_people_company(slug: str) -> dict | None:
+    """One company's full directory row (registry info + connections.csv)."""
+    slug = (slug or "").strip().lower()
+    if not slug:
+        return None
+    for c in right_people_companies():
+        if c["slug"] == slug:
+            return c
+    # known to the registry but no directory yet — still show it
+    reg_path = _data_root() / "tracking" / "companies" / "companies_registry.csv"
+    if reg_path.is_file():
+        try:
+            with open(reg_path, newline="", encoding="utf-8") as fh:
+                for row in csv.DictReader(fh):
+                    if (row.get("company_slug") or "").strip() == slug:
+                        return {
+                            "slug": slug,
+                            "company": (row.get("company") or slug).strip(),
+                            "people_count": 0, "with_email": 0,
+                            "report_date": "",
+                            "email_pattern":
+                                (row.get("email_pattern") or "").strip(),
+                            "email_pattern_status":
+                                (row.get("email_pattern_status")
+                                 or "unknown").strip(),
+                            "has_connections_csv": False,
+                            "has_report": False,
+                        }
+        except OSError as exc:  # noqa: BLE001
+            print(f"ui.data: could not read {reg_path}: {exc}")
+    return None
+
+
+def _rp_match_existing(rows: list[dict], url: str, name: str,
+                       company: str) -> dict | None:
+    """Find an existing directory row for a person (url exact, then name)."""
+    url_n = (url or "").strip().rstrip("/").lower()
+    name_n = (name or "").strip().lower()
+    for r in rows:
+        r_url = (r.get("linkedin_profile_url")
+                 or r.get("linkedin_url") or "").strip().rstrip("/").lower()
+        if url_n and r_url == url_n:
+            return r
+        if not url_n and name_n and \
+                (r.get("name") or "").strip().lower() == name_n and \
+                (r.get("company") or "").strip().lower() == \
+                (company or "").strip().lower():
+            return r
+    return None
+
+
+def right_people_add(company_slug: str, people: list[dict],
+                     today: str = "") -> dict:
+    """Append/upsert people rows into a company's connections.csv.
+
+    ``people`` items: {name, title, linkedin_url, email, degree, location,
+    reason, priority}. Existing rows (matched by linkedin url) are updated
+    fill-empty-only; others append. Returns {added, updated, skipped}.
+    Writes ONLY the per-company file — contacts.csv / ledger stay untouched
+    until the person is actually queued for outreach on the Network page.
+    """
+    slug = (company_slug or "").strip().lower()
+    if not slug:
+        raise ValueError("company_slug is required")
+    company = right_people_company(slug)
+    if company is None:
+        raise ValueError(f"unknown company: {slug!r}")
+    company_dir = _data_root() / RIGHT_PEOPLE_DIR_REL / slug
+    company_dir.mkdir(parents=True, exist_ok=True)
+    conn_path = company_dir / "connections.csv"
+    header = [
+        "priority_group", "name", "current_role", "team_department",
+        "location", "location_tier", "linkedin_profile_url",
+        "connection_degree", "mutual_connections", "common_ground",
+        "email_format_1", "email_format_2", "email_format_3",
+        "linkedin_visible_email", "contact_type", "outreach_strategy",
+        "connection_sent", "response_received", "notes", "last_updated",
+    ]
+    rows: list[dict] = []
+    fieldnames = list(header)
+    if conn_path.is_file() and conn_path.stat().st_size > 0:
+        try:
+            with open(conn_path, newline="", encoding="utf-8") as fh:
+                reader = csv.DictReader(fh)
+                if reader.fieldnames:
+                    fieldnames = list(reader.fieldnames)
+                rows = [dict(r) for r in reader]
+        except OSError as exc:  # noqa: BLE001
+            print(f"ui.data: could not read {conn_path}: {exc}")
+
+    iso = (today or datetime.date.today().isoformat())
+    counts = {"added": 0, "updated": 0, "skipped": 0}
+    for p in people:
+        name = str(p.get("name") or "").strip()
+        if not name:
+            counts["skipped"] += 1
+            continue
+        url = str(p.get("linkedin_url") or "").strip()
+        existing = _rp_match_existing(rows, url, name, company["company"])
+        if existing is not None:
+            changed = False
+            for col in fieldnames:
+                if col == "last_updated":
+                    continue
+                val = str(p.get({
+                    "current_role": "title", "linkedin_profile_url":
+                        "linkedin_url", "common_ground": "reason",
+                    "connection_degree": "degree"}.get(col, col)) or "").strip()
+                if val and not (existing.get(col) or "").strip():
+                    existing[col] = val
+                    changed = True
+            if changed:
+                existing["last_updated"] = iso
+                counts["updated"] += 1
+            else:
+                counts["skipped"] += 1
+            continue
+        row = {c: "" for c in fieldnames}
+        row["name"] = name
+        row["current_role"] = str(p.get("title") or "").strip()
+        row["linkedin_profile_url"] = url
+        row["location"] = str(p.get("location") or "").strip()
+        row["connection_degree"] = str(p.get("degree") or "").strip()
+        row["common_ground"] = str(p.get("reason") or "").strip()
+        row["email_format_1"] = str(p.get("email") or "").strip()
+        row["priority_group"] = str(p.get("priority") or "").strip()
+        row["last_updated"] = iso
+        rows.append(row)
+        counts["added"] += 1
+
+    with open(conn_path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=fieldnames)
+        w.writeheader()
+        w.writerows(rows)
+    return counts
+
+
+def right_people_email_pattern(slug: str) -> dict:
+    """Email-format intel for one company via email_pattern_finder.find_pattern.
+
+    Returns {pattern, example_email, status, source, method} (blank pattern
+    when nothing derivable). Never writes — the registry is updated only via
+    the email_pattern_finder CLI.
+    """
+    try:
+        import email_pattern_finder as epf
+
+        result = epf.find_pattern((slug or "").strip())
+        return {k: result.get(k, "") for k in
+                ("pattern", "example_email", "status", "source", "method")}
+    except Exception as exc:  # noqa: BLE001 - graceful degradation
+        return {"pattern": "", "example_email": "", "status": "unknown",
+                "source": "", "method": "none", "error": str(exc)}
+
+
+def right_people_render_email(name: str, slug: str, message: str = "") -> str:
+    """Best-effort email guess for one person using the company pattern.
+
+    Confirmed/unverified patterns only; guessed/unknown returns ''. The
+    result is a CANDIDATE address (status-labeled upstream), never a
+    verified one.
+    """
+    name_parts = (name or "").replace("-", " ").split()
+    if len(name_parts) < 2:
+        return ""
+    first, last = name_parts[0], name_parts[-1]
+    intel = right_people_email_pattern(slug)
+    pattern = intel.get("pattern") or ""
+    if not pattern or "@" not in pattern:
+        return ""
+    key, domain = pattern.split("@", 1)
+    try:
+        import email_pattern_finder as epf
+
+        return epf.render_example(key, first.lower(), last.lower(), domain) or ""
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def right_people_people(slug: str) -> list[dict]:
+    """All tracked people for one company, merged from connections.csv and
+    contacts.csv (contacts wins for email/status — canonical outreach data).
+
+    Each row: name, title, linkedin_url, email, degree, location, source,
+    status, priority, reason, last_updated.
+    """
+    slug = (slug or "").strip().lower()
+    if not slug:
+        return []
+    company = right_people_company(slug)
+    if company is None:
+        return []
+    label = company["company"]
+    out: dict[str, dict] = {}  # key: linkedin url (norm) or name
+
+    def _key(url: str, name: str) -> str:
+        u = (url or "").strip().rstrip("/").lower()
+        return u or (name or "").strip().lower()
+
+    def _status_col(value: str) -> str:
+        return (value or "").split("(")[0].strip().lower()
+
+    conn_path = _data_root() / RIGHT_PEOPLE_DIR_REL / slug / "connections.csv"
+    if conn_path.is_file():
+        try:
+            with open(conn_path, newline="", encoding="utf-8") as fh:
+                for r in csv.DictReader(fh):
+                    name = (r.get("name") or "").strip()
+                    if not name:
+                        continue
+                    url = (r.get("linkedin_profile_url") or "").strip()
+                    email = ""
+                    for c in ("email", "email_format_1", "email_format_2",
+                              "email_format_3", "linkedin_visible_email"):
+                        email = _rp_email(r.get(c))
+                        if email:
+                            break
+                    out[_key(url, name)] = {
+                        "name": name,
+                        "title": (r.get("current_role") or "").strip(),
+                        "linkedin_url": url,
+                        "email": email,
+                        "degree": (r.get("connection_degree") or "").strip(),
+                        "location": (r.get("location") or "").strip(),
+                        "source": "directory",
+                        "status": "not_contacted",
+                        "priority": (r.get("priority_group") or "").strip(),
+                        "reason": (r.get("common_ground")
+                                   or r.get("outreach_strategy") or "").strip(),
+                        "last_updated":
+                            (r.get("last_updated") or "").strip()[:10],
+                    }
+        except OSError as exc:  # noqa: BLE001
+            print(f"ui.data: could not read {conn_path}: {exc}")
+
+    try:
+        contacts = load_contacts()
+    except Exception as exc:  # noqa: BLE001
+        contacts = None
+        print(f"ui.data: could not load contacts: {exc}")
+    if contacts is not None and not contacts.empty:
+        for _, c in contacts.iterrows():
+            comp = _clean(c.get("company"))
+            name = _clean(c.get("name"))
+            if not name or comp.lower() not in (
+                    slug, label.lower(), (label or "").lower()):
+                continue
+            key = _key(_clean_url(c.get("linkedin_url")), name)
+            email = _clean_email(c.get("email"))
+            row = out.setdefault(key, {
+                "name": name, "title": "", "linkedin_url":
+                    _clean_url(c.get("linkedin_url")), "email": "",
+                "degree": _clean(c.get("relationship")), "location": "",
+                "source": "contacts", "status": "not_contacted",
+                "priority": _clean(c.get("outreach_priority")),
+                "reason": _clean_reason(c.get("reason_to_contact")),
+                "last_updated": _clean(c.get("last_verified_date"))[:10],
+            })
+            row["source"] = "contacts" if row["source"] != "contacts" \
+                else row["source"]
+            if email:
+                row["email"] = email
+            status = _status_col(_clean(c.get("outreach_status")))
+            if status:
+                row["status"] = status
+            if _clean(c.get("role")):
+                row["title"] = _clean(c.get("role"))
+            if _clean(c.get("outreach_priority")):
+                row["priority"] = _clean(c.get("outreach_priority"))
+
+    people = list(out.values())
+
+    def _rank(p: dict) -> tuple:
+        prio = {"P0": 0, "P1": 1, "P2": 2}.get(p["priority"].upper(), 3)
+        return (prio, p["last_updated"], p["name"].lower())
+
+    return sorted(people, key=_rank, reverse=False)

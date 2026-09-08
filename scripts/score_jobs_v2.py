@@ -36,6 +36,11 @@ try:
 except ImportError:
     import config_lib
 
+try:
+    from scripts import profile_fit_rules as _fit
+except ImportError:
+    import profile_fit_rules as _fit  # type: ignore[no-redef]
+
 REPO = Path(__file__).resolve().parent.parent
 # Live data lives under the data root ($JOBHUNT_HOME / pointer file), not the repo.
 DATA_ROOT = config_lib.data_root()
@@ -372,7 +377,8 @@ def main():
 
     need_cols = ["opportunity_level", "recommended_action", "priority_v2",
                  "score_explanation", "score_confidence", "missing_info",
-                 "override_reason", "last_scored"]
+                 "override_reason", "last_scored",
+                 _fit.FIT_COL, _fit.REASON_COL]
     for c in need_cols:
         if c not in fieldnames:
             fieldnames.append(c)
@@ -420,7 +426,16 @@ def main():
         priority = round(sum(dims.values()), 1)
 
         blocked = row.get("is_medical_false_positive", "").lower() == "true"
+        fit_rules = cfg.get("profile_fit_rules")  # None -> built-in defaults
+        fit = _fit.evaluate_row(row, fit_rules, companies_by_slug)
+        if fit["fit_class"] == "disqualified":
+            blocked = True  # hard gate -> SKIP regardless of keyword score
         action = classify(priority, blocked)
+        if fit["fit_class"] == "borderline" and action not in ("SKIP",):
+            # soft cap: senior+ IC roles never surface above STRETCH
+            if action in ("APPLY_NOW", "APPLY", "OPTIMISTIC"):
+                action = "STRETCH"
+                priority = min(priority, 54.9)
         level = level_for(action)
 
         missing = []
@@ -432,6 +447,7 @@ def main():
             missing.append("description_file pointer empty")
 
         explanation = (
+            f"fit_class={fit['fit_class']}({','.join(fit['matched_rules'])}) "
             f"fit={dims['role_fit']} research={dims['research_alignment']}"
             f"(+{','.join(r_hits[:5])}) tech={dims['technical_alignment']}"
             f" agentic={dims['agentic_reasoning_alignment']}(+{','.join(a_hits[:4])})"
@@ -453,12 +469,16 @@ def main():
         row["score_confidence"] = confidence
         row["missing_info"] = "; ".join(missing)
         row["override_reason"] = row.get("override_reason", "")
+        row[_fit.FIT_COL] = fit["fit_class"]
+        row[_fit.REASON_COL] = fit["reason"]
         row["last_scored"] = TODAY.isoformat()
         scored += 1
 
         report.append({"job_id": row["job_id"], "company": row.get("company"),
                        "title": row.get("title"), "priority": priority,
                        "level": level, "action": action,
+                       "fit_class": fit["fit_class"],
+                       "fit_rules": fit["matched_rules"],
                        "dimensions": dims, "explanation": explanation,
                        "confidence": confidence, "missing": missing})
 
