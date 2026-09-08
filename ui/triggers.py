@@ -276,6 +276,7 @@ class AgentWorkflowPanel:
                 "white-space: pre-wrap; font-family: monospace; "
                 "user-select: text")
         self.timer = page_timer(1.0, self.refresh)
+        self._last_log = None
         self.refresh()
 
     def _start(self) -> None:
@@ -318,10 +319,11 @@ class AgentWorkflowPanel:
             f"{latest['run_id']} · {status} · agent {session} "
             f"(trigger: {latest['trigger']})")
         lines = self.manager.tail(latest["run_id"], 300)
-        if lines:
-            self.log_label.set_text("\n".join(lines))
-        elif status == "RUNNING":
-            self.log_label.set_text("(waiting for output…)")
+        text = "\n".join(lines) if lines else (
+            "(waiting for output…)" if status == "RUNNING" else None)
+        if text is not None and text != self._last_log:
+            self._last_log = text
+            self.log_label.set_text(text)
 
 
 class RunPanel:
@@ -343,6 +345,7 @@ class RunPanel:
                 "white-space: pre-wrap; font-family: monospace; "
                 "user-select: text")
         self.timer = page_timer(1.0, self.refresh)
+        self._last_log = None
         self.refresh()
 
     def _cmd(self) -> Optional[List[str]]:
@@ -381,7 +384,8 @@ class RunPanel:
         rc_txt = "" if rc is None else f" (exit {rc})"
         self.status_label.set_text(f"{run_id}: {st['state']}{rc_txt}")
         lines = RUNS.tail(run_id, 300)
-        if lines:
-            self.log_label.set_text("\n".join(lines))
-        elif st["state"] == "running":
-            self.log_label.set_text("(waiting for output…)")
+        text = "\n".join(lines) if lines else (
+            "(waiting for output…)" if st["state"] == "running" else None)
+        if text is not None and text != self._last_log:
+            self._last_log = text
+            self.log_label.set_text(text)

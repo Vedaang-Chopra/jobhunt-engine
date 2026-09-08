@@ -144,9 +144,14 @@ class RunManager:
 
     def get(self, run_id: str) -> dict:
         handle = self._handles.get(run_id)
-        if handle is None:
-            raise KeyError(f"unknown run_id: {run_id}")
-        return dict(handle.record)
+        if handle is not None:
+            return dict(handle.record)
+        # Not in memory: fall back to persisted history (runs written by
+        # another process, or before a restart). Read-only view.
+        for record in self._load_records():
+            if record["run_id"] == run_id:
+                return record
+        raise KeyError(f"unknown run_id: {run_id}")
 
     def list_runs(self, limit: int = 50) -> List[dict]:
         """Newest-first view of all runs (in-memory first, then history)."""
@@ -351,6 +356,23 @@ class RunManager:
         return final
 
     # --------------------------------------------------------- reconcile
+    # A STARTING record has pid=None until the spawn thread attaches the
+    # child. Any other process constructing a RunManager must NOT orphan
+    # such a record — the owning manager may still be mid-launch. Grace
+    # window: records younger than this without a pid are left untouched.
+    PID_NONE_GRACE_S = 120
+
+    @staticmethod
+    def _record_age_s(record: dict) -> float:
+        """Age in seconds of a run record, from its created_at stamp."""
+        try:
+            created = datetime.fromisoformat(record["created_at"])
+        except (KeyError, ValueError, TypeError):
+            return float("inf")
+        if created.tzinfo is None:
+            created = created.replace(tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - created).total_seconds()
+
     def reconcile(self) -> int:
         """Crash/restart recovery: reattach live pids, fail orphans."""
         fixed = 0
@@ -375,6 +397,11 @@ class RunManager:
                     proc.stdout = None
                 except OSError:
                     alive = False
+            elif self._record_age_s(record) < self.PID_NONE_GRACE_S:
+                # pid not attached yet AND record is fresh: another manager
+                # process may own this run and is still spawning it. Leave
+                # it alone instead of falsely marking it INTERRUPTED.
+                continue
             handle = RunHandle(dict(record))
             handle.proc = proc
             self._handles[run_id] = handle
@@ -407,6 +434,18 @@ class RunManager:
             time.sleep(2)
         with handle.lock:
             record = handle.record
+            # Re-read the record fresh from disk: the owning manager (if this
+            # run was adopted from another process) may have already written
+            # a terminal state after our stale snapshot was taken. Never
+            # overwrite a terminal status with INTERRUPTED.
+            for fresh in self._load_records():
+                if fresh["run_id"] == run_id:
+                    record = fresh if record is handle.record else record
+                    if fresh["status"] not in LIVE_STATES:
+                        self._append_log(run_id,
+                                         "detached process exited → already "
+                                         f"{fresh['status']}; no change")
+                        return
             if record["status"] in LIVE_STATES:
                 record["status"] = INTERRUPTED
                 record["error"] = "process exited during detached period"

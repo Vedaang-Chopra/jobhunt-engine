@@ -249,15 +249,26 @@ def append_rows(rows: list[dict], posts_csv: Path = POSTS_CSV) -> int:
 def log_run(run_id: str, sources: str, detail: str, scanned: int,
             new: int, dups: int, status: str,
             runs_csv: Path = RUNS_CSV) -> None:
+    """Append one run row in the CANONICAL 9-col search_runs schema.
+
+    The canonical schema (search_runs.csv, shared with discovery_lib and
+    wellfound_crawler) is:
+        run_id,date,sources,queries,total_scanned,new_jobs_found,
+        duplicates_skipped,strong_fits,notes
+    Earlier this wrote a private 7/8-col schema into the same file, which
+    made pandas fail to parse the whole CSV in ui.data.
+    """
     runs_csv.parent.mkdir(parents=True, exist_ok=True)
     header_missing = not runs_csv.exists() or runs_csv.stat().st_size == 0
     with open(runs_csv, "a", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         if header_missing:
-            w.writerow(["date", "search_id", "source", "results_seen",
-                        "new_rows", "rejected", "status"])
-        w.writerow([datetime.now().strftime("%Y-%m-%dT%H:%M"), run_id, sources,
-                    detail, scanned, new, dups, status])
+            w.writerow(["run_id", "date", "sources", "queries",
+                        "total_scanned", "new_jobs_found",
+                        "duplicates_skipped", "strong_fits", "notes"])
+        w.writerow([run_id, datetime.now().strftime("%Y-%m-%d"), sources,
+                    "", scanned, new, dups, 0,
+                    f"{detail}; status={status}"])
 
 
 # ------------------------------------------------------- keyword adaptation
