@@ -60,7 +60,13 @@ sync_to_worktree() {  # working tree -> private worktree
   for p in "${PERSONAL_PATHS[@]}"; do
     if [ -e "$REPO/$p" ]; then
       mkdir -p "$WORKTREE/$(dirname "$p")"
-      rsync -a --delete "$REPO/$p/" "$WORKTREE/$p/"
+      if [ -f "$REPO/$p" ]; then
+        # plain file (e.g. jobhunt-data/config.yaml): no trailing slash,
+        # ensure the parent dir exists so rsync doesn't see a dir/file clash
+        rsync -a "$REPO/$p" "$WORKTREE/$p"
+      else
+        rsync -a --delete "$REPO/$p/" "$WORKTREE/$p/"
+      fi
     fi
   done
   # never sync secrets or caches into the data repo
@@ -73,7 +79,11 @@ sync_from_worktree() {  # private worktree -> working tree
   for p in "${PERSONAL_PATHS[@]}"; do
     if [ -e "$WORKTREE/$p" ]; then
       mkdir -p "$REPO/$(dirname "$p")"
-      rsync -a --delete "$WORKTREE/$p/" "$REPO/$p/"
+      if [ -f "$WORKTREE/$p" ]; then
+        rsync -a "$WORKTREE/$p" "$REPO/$p"
+      else
+        rsync -a --delete "$WORKTREE/$p/" "$REPO/$p/"
+      fi
     fi
   done
 }
