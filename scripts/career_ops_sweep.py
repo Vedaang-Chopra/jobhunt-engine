@@ -26,7 +26,10 @@ REPO = os.environ.get(
     "JOBHUNT_HOME",
     str(Path(__file__).resolve().parent.parent),
 )
-CAREER_OPS = os.path.normpath(os.path.join(REPO, "..", "career-ops"))
+# career-ops is a sibling of the ENGINE repo, not of the data root — derive
+# from this file's location so JOBHUNT_HOME overrides don't misplace it.
+ENGINE_REPO = str(Path(__file__).resolve().parent.parent)
+CAREER_OPS = os.path.normpath(os.path.join(ENGINE_REPO, "..", "career-ops"))
 SCAN_TSV = os.path.join(CAREER_OPS, "data", "scan-history.tsv")
 RUNS_CSV = os.path.join(REPO, "tracking", "search_runs", "search_runs.csv")
 
@@ -69,7 +72,7 @@ def main():
 
     # Import: dry-run first to get counts, then apply.
     code, out, _ = run([sys.executable,
-                        os.path.join(REPO, "scripts", "import_career_ops_scan.py")], REPO)
+                        os.path.join(ENGINE_REPO, "scripts", "import_career_ops_scan.py")], REPO)
     if code != 0:
         sys.exit(f"import dry-run failed: {out}")
     new_match = re.search(r"new\s*:\s*(\d+)", out)
@@ -79,7 +82,7 @@ def main():
 
     if new_count:
         code, out, err = run([sys.executable,
-                              os.path.join(REPO, "scripts", "import_career_ops_scan.py"),
+                              os.path.join(ENGINE_REPO, "scripts", "import_career_ops_scan.py"),
                               "--apply"], REPO)
         if code != 0 or "APPLIED" not in out:
             sys.exit(f"import apply failed:\n{out}\n{err}")
