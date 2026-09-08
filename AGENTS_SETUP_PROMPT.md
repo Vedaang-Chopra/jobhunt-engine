@@ -28,9 +28,9 @@ Context you must know:
    registered in `scripts/config_lib.py` PATHS. Never write reports,
    digests, sweep payloads or fill plans to the repo root.
 
-4. **The 9 Hermes cron jobs** live in `~/.hermes/profiles/job-hunt/cron/jobs.json`
+4. **The 8 Hermes cron jobs (the duplicate `morning-job-digest` was removed 2026-09-08; canonical fleet is in `setup/CRON_JOBS_LINUX.md`)** live in `~/.hermes/profiles/job-hunt/cron/jobs.json`
    (copied from my Mac). Their prompts contain the OLD Mac repo path and the
-   old macOS venv python — rewrite them with
+   old macOS venv python — recreate them from `setup/CRON_JOBS_LINUX.md` (single source of truth, with `{{REPO}}`/`{{PY}}` placeholders), or rewrite them with
    `setup/migrate_cron_paths.py --to-repo "$HOME/git/jobhunt-engine" --apply`.
    Every job is pinned to provider `nvidia`, model
    `nvidia/nemotron-3-super-120b-a12b` — do not change this; unpinned jobs
@@ -46,12 +46,16 @@ Context you must know:
    After that, verify CDP answers on 127.0.0.1:9333 before running any
    LinkedIn sweep.
 
-7. **Cutover discipline**: the old Mac's 9 cron jobs must be PAUSED before
+7. **Cutover discipline**: the old Mac's cron jobs must be PAUSED before
    any cron fires here (both machines writing the same tracking CSVs
    corrupts the registry). Ask me to confirm the Mac is paused before Phase 7.
 
+    Cron creation on this machine: paste each job from `setup/CRON_JOBS_LINUX.md`
+    with `{{REPO}}`/`{{PY}}` substituted. All jobs start `enabled: false`; enable
+    only after the Phase 6 verification gate passes.
+
 8. **Verification before declaring done**: pytest suite green,
-   `hermes doctor` healthy, `hermes cron list` shows 9 jobs with zero
+   `hermes doctor` healthy, `hermes cron list` shows 8 jobs with zero
    `/Users/` references in jobs.json, CDP :9333 answers, `ops-health` cron
    run completes with status ok, `jobhunt-ui` systemd unit active.
 
@@ -67,3 +71,7 @@ Context you must know:
 Execute Phase 1 → 6 autonomously (stopping only for sudo prompts and the
 LinkedIn login), show me a checkpoint with pass/fail evidence after each
 phase, then ask me to pause the Mac crons before doing Phase 7.
+
+    Cron creation on this machine: paste each job from `setup/CRON_JOBS_LINUX.md`
+    with `{{REPO}}`/`{{PY}}` substituted. All jobs start `enabled: false`; enable
+    only after the Phase 6 verification gate passes.

@@ -1,6 +1,6 @@
 # Live Cron Registry — 2026-08-26 Migration Snapshot
 
-> This section is the CURRENT STATE of the 9 Hermes cron jobs after the
+> This section is the CURRENT STATE of the 8 Hermes cron jobs after the
 > small-model migration (2026-08-26). The original consolidated plan below is
 > preserved for design intent. OS-level equivalents: `setup/crontab.sample`.
 
