@@ -115,3 +115,29 @@ override_policy:
   allowed: true
   required_fields: [override_reason, override_by, override_date]
   example: "Raise priority despite lower attainability: HM outreach already responded positively"
+
+# Profile-fit qualification gates (2026-09-07) — evaluated by
+# scripts/profile_fit_rules.py at scoring time and by qualify_sweep.py for
+# backlog cleanup. mode=hard  -> recommended_action=SKIP (disqualified)
+#                              (qualify_sweep archives these)
+# mode=soft  -> capped at STRETCH (borderline; attainable but stretch)
+# Matched against the lowercased job title. Flip 'enabled' to change behavior.
+profile_fit_rules:
+  - {id: internship,       mode: hard, enabled: true,
+     reason: "internship/co-op; candidate seeks experienced IC roles",
+     pattern: '\bintern(ship)?\b|co-?op\b'}
+  - {id: new_grad_program, mode: hard, enabled: true,
+     reason: "new-grad/campus program; candidate has 4.5 yrs experience",
+     pattern: 'new\s*grad|graduate\s+(engineer|scientist|ml|mle)|(engineer|scientist|ml|mle)\s+graduate|university\s+grad|\bearly career\b|campus\s+(hire|program|new)'}
+  - {id: exec_leadership,  mode: hard, enabled: true,
+     reason: "director/VP/head/manager; not an experienced-IC target",
+     pattern: '\b(vp|vice president)\b|\bdirector\b|\bhead of\b|\bmanager\b'}
+  - {id: tutor_annotation, mode: hard, enabled: true,
+     reason: "tutor/annotation/labeling gig; not engineering",
+     pattern: '\btutor\b|annotat|data\s+label|labeling|\bai trainer\b'}
+  - {id: consulting_sales, mode: hard, enabled: true,
+     reason: "consulting/advisory/sales/recruiting; not product engineering",
+     pattern: '\bconsultant\b|solutions\s+consultant|\bsales\b|account\s+executive|\brecruiter\b|\bsourcer\b|business\s+development'}
+  - {id: senior_plus_ic,   mode: soft, enabled: true,
+     reason: "senior/staff/principal/lead IC; attainable stretch only",
+     pattern: '\bsenior\b|\bsr\.?\s|\bstaff\b|\bprincipal\b|\blead\b'}
