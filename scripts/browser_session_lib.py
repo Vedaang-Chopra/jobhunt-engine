@@ -271,6 +271,13 @@ def classify_auth_state(page, site: str = "linkedin") -> tuple[str, str]:
     for marker in CHALLENGE_MARKERS:
         if marker in url:
             return CHALLENGE_OR_2FA, marker
+    # Positive URL signal BEFORE body-text scan: a logged-in feed page can
+    # legitimately contain the word "challenge" in posts/feed content, which
+    # must not be misread as a security checkpoint.
+    if site == "linkedin" and "linkedin.com" in url:
+        if "/feed" in url or "mynetwork" in url or "/jobs/" in url \
+                or "/search/results" in url or "/notifications" in url:
+            return AUTHENTICATED, "in-app url"
     for marker in LOGIN_MARKERS:
         if marker in url:
             # challenge pages can also contain login words; challenge wins via
@@ -289,11 +296,6 @@ def classify_auth_state(page, site: str = "linkedin") -> tuple[str, str]:
             return AUTH_REQUIRED, marker
     if not url or url.startswith(("about:", "chrome:")):
         return UNKNOWN, "no page loaded"
-    # Site-specific positive signals
-    if site == "linkedin" and "linkedin.com" in url:
-        if "/feed" in url or "mynetwork" in url or "/jobs/" in url \
-                or "/search/results" in url or "/notifications" in url:
-            return AUTHENTICATED, "in-app url"
     return UNKNOWN, f"no decisive signal at {url}"
 
 

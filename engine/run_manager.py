@@ -190,7 +190,10 @@ class RunManager:
                 raise WorkflowBusy(
                     f"'{workflow}' already running ({live}); duplicate "
                     "execution prevented")
-            run_id = (f"{workflow}-{time.strftime('%Y%m%d-%H%M%S')}-"
+            # ':' is illegal in filenames on some mounts (e.g. NTFS) and the
+            # run_id becomes the log filename — keep it filesystem-safe.
+            safe_wf = workflow.replace(":", "-")
+            run_id = (f"{safe_wf}-{time.strftime('%Y%m%d-%H%M%S')}-"
                       f"{next(self._seq)}")
             record = {
                 "run_id": run_id,

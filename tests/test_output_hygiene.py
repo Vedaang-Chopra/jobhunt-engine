@@ -88,6 +88,8 @@ def test_repo_root_has_no_stray_working_files():
         "config.yaml",
         # rolling session state the user maintains at the root (tracked)
         "session_state.md",
+        # canonical agent-driven setup docs (committed in 341a801)
+        "AGENTS_SETUP_PROMPT.md", "SETUP_ON_LINUX.md",
     }
     allowed_prefixes = ("setup.cfg", "poetry.lock", "uv.lock", "requirements")
     strays: list[str] = []
