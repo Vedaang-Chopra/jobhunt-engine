@@ -37,3 +37,27 @@ via parallel subagent waves. All work committed on `main`.
 - B6/B7 in BACKLOG.md (cron merge, systemd units) — deferred deliberately.
 - Verify next fire (~00:00) of pinned LinkedIn crons succeeded.
 - Server laptop setup: clone + `./setup/bootstrap.sh` + HANDOFF.md data transfer.
+
+## 2026-09-07 — Right People UI page (/right-people)
+
+- **New page**: `/right-people` (`ui/pages_right_people.py`), nav entry
+  "Right People" after LinkedIn Posts. Drop a job URL / LinkedIn post /
+  company name -> resolves via `right_people_lib.resolve_target` ->
+  deep-link `?company=<slug>` opens that company's people workspace.
+- **Data layer** (`ui/data.py`): `right_people_companies()` (per-company
+  job_research/companies/<slug>/ dirs + registry merge),
+  `right_people_company()`, `right_people_people()` (connections.csv +
+  contacts.csv merge, contacts wins for email/status),
+  `right_people_add()` (append/upsert into per-company connections.csv
+  ONLY — never touches contacts.csv/ledger), `right_people_email_pattern()`
+  + `right_people_render_email()` (email_pattern_finder confirmed/unverified
+  only; guessed never rendered).
+- **Verified live** (Playwright): Cohere shows 147 merged people, confirmed
+  pattern first@cohere.com, search "grace" filters to 1 row with
+  grace@cohere.com mailto; typed "Mistral AI" resolved + navigated to
+  mistral_ai workspace. Query params read via `nicegui.context.client.request`
+  (Client.request on the class returns the raw property — pitfall).
+- **Tests**: `tests/ui/test_right_people_page.py` (7) + nav registry count
+  bumped 11→12 in test_shell_components. Suite: 864 passed, 1 skipped.
+- Pre-existing failure in test_output_hygiene (repo-root tracking/ leak)
+  is unrelated to this change — still open.
