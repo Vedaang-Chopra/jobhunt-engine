@@ -2,7 +2,7 @@
 # setup/crontab.sample — OS-level equivalents of the 9 Hermes cron jobs.
 # MIGRATION NOTE: These are INERT until installed. Hermes crons on the Mac keep
 # running until you flip. On the server laptop:
-#   1. git clone <repo> && cd application_hunting && ./setup/bootstrap.sh
+#   1. git clone <repo> && cd jobhunt-engine && ./setup/bootstrap.sh
 #   2. rsync personal data from the Mac (see HANDOFF.md §Data Transfer)
 #   3. crontab -l | cat - setup/crontab.sample | crontab -
 #   4. Then disable the matching Hermes jobs on the Mac (hermes cron pause <id>).

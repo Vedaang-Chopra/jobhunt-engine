@@ -49,6 +49,8 @@ Canonical layout — a container dir holding BOTH checkouts side by side:
 mkdir -p ~/git/jobhunt && cd ~/git/jobhunt
 git clone git@github.com:Vedaang-Chopra/jobhunt-engine.git
 git clone git@github.com:Vedaang-Chopra/jobhunt-data-private.git jobhunt-data
+# career-ops: third repo, sibling of the engine (career_ops_sweep scans ../career-ops)
+git clone https://github.com/santifer/career-ops.git career-ops
 cd jobhunt-engine
 
 # Pull the engine data subtree out of the private checkout into the shared

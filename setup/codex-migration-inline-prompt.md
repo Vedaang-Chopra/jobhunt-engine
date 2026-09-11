@@ -91,7 +91,7 @@ Final message must include: config diff summary per profile, smoke-test log line
 
 ```bash
 hermes config set model.provider nvidia
-hermes config set model.default nvidia/nemotron-3-super-120b-a55b   # or this machine's previous default
+hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b   # this machine's previous default
 hermes config set model.base_url https://integrate.api.nvidia.com/v1
 ```
 
