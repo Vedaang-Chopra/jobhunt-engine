@@ -32,3 +32,12 @@ def test_ai_review_rejects_unrecognized_decisions_without_changing_status():
     assert changed == []
     assert rows[0]["status"] == "new"
     assert "ai_review_verdict" not in rows[0]
+
+
+def test_ai_review_loads_canonical_profile_context(tmp_path, monkeypatch):
+    from scripts import ai_backlog_review as review
+
+    profile = tmp_path / "profile.md"
+    profile.write_text("Target: applied AI/ML roles", encoding="utf-8")
+    monkeypatch.setattr(review, "PROFILE_PATH", profile)
+    assert review.profile_context() == "Target: applied AI/ML roles"

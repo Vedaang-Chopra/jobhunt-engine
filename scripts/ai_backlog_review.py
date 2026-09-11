@@ -25,6 +25,7 @@ except ImportError:
 DATA_ROOT = Path(config_lib.data_root())
 JOBS_CSV = DATA_ROOT / "tracking/jobs/jobs.csv"
 POSTS_CSV = DATA_ROOT / "tracking/hiring_posts/hiring_posts.csv"
+PROFILE_PATH = DATA_ROOT / "profile_info/profile.md"
 REPORT_DIR = DATA_ROOT / "execution_results/cleanup_reports"
 REVIEW_FIELDS = ["ai_reviewed_at", "ai_review_verdict", "ai_review_reason"]
 
@@ -66,6 +67,14 @@ def _json_decision(response: str, allowed: set[str]) -> dict | None:
     return {"decision": decision, "reason": reason[:500]}
 
 
+def profile_context() -> str:
+    """Load the canonical candidate facts without failing an otherwise safe review."""
+    try:
+        return PROFILE_PATH.read_text(encoding="utf-8")[:12000].strip()
+    except OSError:
+        return ""
+
+
 def _judge(kind: str, row: dict) -> dict | None:
     if kind == "job":
         allowed = {"KEEP", "ARCHIVE"}
@@ -92,7 +101,8 @@ def _judge(kind: str, row: dict) -> dict | None:
             "team-hiring, referral, or direct-application signals. Return exactly JSON: "
             "{\"decision\":\"KEEP|DISMISS\",\"reason\":\"...\"}.")
     response = chat([
-        {"role": "system", "content": "You are a conservative job-search reviewer. " + instruction},
+        {"role": "system", "content": "You are a conservative job-search reviewer. "
+         + instruction + "\n\nCanonical candidate profile:\n" + profile_context()},
         {"role": "user", "content": json.dumps(record, ensure_ascii=False)},
     ], temperature=0.0, max_tokens=180)
     return _json_decision(response, allowed)
