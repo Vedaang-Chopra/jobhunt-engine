@@ -2118,6 +2118,7 @@ def filter_hiring_posts(
     poster_type: str = "",
     role_family: str = "",
     status: str = "",
+    priority: str = "",
     max_age_days: float | None = None,
 ) -> pd.DataFrame:
     """Server-side filtering for the posts table (mirrors filter_jobs)."""
@@ -2140,10 +2141,33 @@ def filter_hiring_posts(
     if status:
         col = out.get("status", pd.Series(dtype=str)).fillna("")
         out = out[col.str.lower() == status.lower()]
+    if priority:
+        col = out.get("priority", pd.Series(dtype=str)).fillna("")
+        out = out[col.str.lower() == priority.lower()]
     if max_age_days is not None:
         recency = out.get("_recency", pd.Series(dtype=float))
         out = out[recency.fillna(10**6) <= max_age_days]
     return out
+
+
+def sort_hiring_posts(df: pd.DataFrame, sort_by: str = "posted_date",
+                      descending: bool = True) -> pd.DataFrame:
+    """Sort by effective post date, newest first, using discovery as fallback."""
+    if df.empty:
+        return df
+    out = df.copy()
+    if sort_by == "posted_date":
+        posted = pd.to_datetime(out.get("posted_date"), errors="coerce")
+        discovered = pd.to_datetime(out.get("discovered_date"), errors="coerce")
+        out["_sort_key"] = posted.fillna(discovered)
+    elif sort_by in out.columns:
+        numeric = pd.to_numeric(out[sort_by], errors="coerce")
+        out["_sort_key"] = numeric if numeric.notna().any() else \
+            out[sort_by].fillna("").astype(str).str.lower()
+    else:
+        return out
+    return out.sort_values("_sort_key", ascending=not descending,
+                           na_position="last").drop(columns="_sort_key")
 
 
 def set_hiring_post_status(post_id: str, new_status: str) -> None:

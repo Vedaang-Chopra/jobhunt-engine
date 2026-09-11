@@ -85,3 +85,25 @@ def render_job_search_page() -> None:
         "tracking/jobs/jobs.csv. Continue?",
         icon="verified",
     )
+
+    _run_panel_confirmed(
+        "Profile-fit backlog cleanup",
+        "qualify_sweep",
+        triggers.qualify_sweep_cmd,
+        "Applies profile-fit rules and the score floor to every open job, "
+        "archives disqualified/low-priority jobs, and dismisses unreviewed "
+        "hiring posts older than 14 days. Records are retained with their "
+        "new status; nothing is deleted. Continue?",
+        icon="cleaning_services",
+    )
+
+    _run_panel_confirmed(
+        "AI review & conservative cleanup",
+        "ai_backlog_review",
+        triggers.ai_backlog_review_cmd,
+        "Uses the configured LLM to review each open job and new hiring post "
+        "individually. Only explicit ARCHIVE/DISMISS verdicts are applied; "
+        "invalid or failed model responses leave that record unchanged. The "
+        "verdict and reason are saved for audit. Continue?",
+        icon="psychology",
+    )

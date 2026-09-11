@@ -35,6 +35,8 @@ TIER_ORDER = ["A", "B", "C", "D", "E"]
 COMPONENT_LABELS = {
     "discovery": "Run discovery",
     "freshness": "Run freshness check",
+    "qualify_sweep": "Apply backlog cleanup",
+    "ai_backlog_review": "Run AI review & cleanup",
     "people_sweep": "Run people sweep (plan)",
     "poster_connect_sweep": "Run poster connect sweep (plan)",
     "linkedin_live_sweep": "Collect LinkedIn jobs now",
@@ -70,6 +72,17 @@ def freshness_cmd() -> List[str]:
 def freshness_live_cmd() -> List[str]:
     """Live freshness pass: reseed referral registry, then verify/expiry."""
     return [PYTHON, script("freshness_check.py"), "--live"]
+
+
+def qualify_sweep_cmd() -> List[str]:
+    """Apply profile-fit cleanup to jobs and stale unreviewed hiring posts."""
+    return [PYTHON, script("qualify_sweep.py"), "--apply", "--posts",
+            "--post-age-days", "14"]
+
+
+def ai_backlog_review_cmd() -> List[str]:
+    """Run conservative LLM review on every open job and new hiring post."""
+    return [PYTHON, script("ai_backlog_review.py"), "--apply"]
 
 
 def career_ops_sweep_cmd() -> List[str]:

@@ -135,15 +135,20 @@ def clean_jobs(rules, min_priority: float, include_expired: bool):
 
 
 def clean_posts(max_age_days: int):
+    """Return the canonical post rows with stale `new` rows dismissed."""
     if not POSTS_CSV.is_file():
-        return [], Counter()
+        return [], [], [], Counter()
     fieldnames, rows = load_csv(POSTS_CSV)
     today = datetime.now()
     changed, counts = [], Counter()
     for row in rows:
         if row.get("status") != "new":
             continue
-        seen = row.get("first_seen") or row.get("date_posted") or ""
+        # Canonical hiring_posts.csv stores discovered_date / posted_date.
+        # Legacy imports may still provide first_seen / date_posted, so retain
+        # those only as trailing compatibility fallbacks.
+        seen = (row.get("discovered_date") or row.get("posted_date")
+                or row.get("first_seen") or row.get("date_posted") or "")
         try:
             age = (today - datetime.strptime(seen[:10], "%Y-%m-%d")).days
         except ValueError:
@@ -154,7 +159,7 @@ def clean_posts(max_age_days: int):
             changed.append({"post_id": row.get("post_id"),
                             "author": row.get("author") or row.get("author_name"),
                             "age_days": age})
-    return changed, counts
+    return fieldnames, rows, changed, counts
 
 
 def main(argv=None) -> int:
@@ -164,9 +169,10 @@ def main(argv=None) -> int:
     fieldnames, rows, changed, counts = clean_jobs(
         rules, args.min_priority, args.include_expired)
 
-    post_changed, post_counts = [], Counter()
+    post_fieldnames, post_rows, post_changed, post_counts = [], [], [], Counter()
     if args.posts:
-        post_changed, post_counts = clean_posts(args.post_age_days)
+        post_fieldnames, post_rows, post_changed, post_counts = clean_posts(
+            args.post_age_days)
 
     print(f"Jobs: {len(rows)} scanned, {len(changed)} to archive "
           f"(min_priority={args.min_priority:g}, dry_run={not args.apply})")
@@ -193,8 +199,9 @@ def main(argv=None) -> int:
     if args.apply:
         write_csv(JOBS_CSV, fieldnames, rows)
         if post_changed:
-            pf, prows = load_csv(POSTS_CSV)
-            write_csv(POSTS_CSV, pf, prows)
+            # clean_posts has already updated these canonical in-memory rows;
+            # reloading would discard the selected dismissals.
+            write_csv(POSTS_CSV, post_fieldnames, post_rows)
         print(f"\nWrote {JOBS_CSV}" + (f" and {POSTS_CSV}" if post_changed else ""))
     else:
         print("\nDry run — no files written.")

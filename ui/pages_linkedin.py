@@ -216,7 +216,7 @@ def _posts_table() -> None:
     stats = data_layer.hiring_post_stats(df)
     state: dict = {
         "search": "", "poster_type": "", "role_family": "",
-        "status": "", "max_age": None, "sort_by": "posted_date",
+        "status": "", "priority": "", "max_age": None, "sort_by": "posted_date",
         "sort_desc": True,
     }
 
@@ -235,18 +235,10 @@ def _posts_table() -> None:
         def current_rows() -> list[dict]:
             filtered = data_layer.filter_hiring_posts(
                 df, state["search"], state["poster_type"],
-                state["role_family"], state["status"], state["max_age"])
-            col = state["sort_by"]
-            if col in filtered.columns:
-                ascending = not state["sort_desc"]
-                series = filtered[col].astype(str)
-                numbers = pd.to_numeric(series, errors="coerce")
-                key = numbers if numbers.notna().any() else \
-                    series.fillna("").str.lower()
-                filtered = (filtered.assign(_k=key)
-                            .sort_values("_k", ascending=ascending,
-                                         na_position="last")
-                            .drop(columns="_k"))
+                state["role_family"], state["status"], state["priority"],
+                state["max_age"])
+            filtered = data_layer.sort_hiring_posts(
+                filtered, state["sort_by"], state["sort_desc"])
             return filtered.fillna("").to_dict("records")
 
         def refresh() -> None:
@@ -310,11 +302,12 @@ def _posts_table() -> None:
 
         def _clear():
             state.update(search="", poster_type="", role_family="",
-                         status="", max_age=None)
+                         status="", priority="", max_age=None)
             search_input.set_value(None)
             type_select.set_value("")
             family_select.set_value("")
             status_select.set_value("")
+            priority_select.set_value("")
             age_input.set_value(None)
             refresh()
 
@@ -337,9 +330,20 @@ def _posts_table() -> None:
                     STATUS_OPTIONS, label="Status", value=None,
                     on_change=lambda e: _live("status", e),
                 ).classes("col-grow").props("outlined dense clearable")
+                priority_select = ui.select(
+                    {"": "All priorities", "high": "High priority",
+                     "normal": "Normal priority", "low": "Low priority"},
+                    label="Priority", value="",
+                    on_change=lambda e: _live("priority", e),
+                ).classes("col-grow").props("outlined dense clearable")
                 age_input = ui.number(
                     label="Max age (days)", format="%.0f",
                     on_change=lambda e: _live("max_age", e),
+                ).classes("col-grow").props("outlined dense")
+                sort_select = ui.select(
+                    {"posted_date": "Newest posted", "discovered_date": "Newest discovered",
+                     "priority": "Priority"}, label="Sort", value="posted_date",
+                    on_change=lambda e: _live("sort_by", e),
                 ).classes("col-grow").props("outlined dense")
                 ui.button("Clear", icon="filter_alt_off",
                           on_click=_clear).props("outline dense")
