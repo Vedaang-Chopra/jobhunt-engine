@@ -34,6 +34,19 @@ def test_ai_review_rejects_unrecognized_decisions_without_changing_status():
     assert "ai_review_verdict" not in rows[0]
 
 
+def test_ai_review_invokes_hermes_with_the_codex_profile(monkeypatch):
+    from scripts import ai_backlog_review as review
+
+    seen = {}
+    def fake_run(command, **kwargs):
+        seen["command"] = command
+        return type("Result", (), {"returncode": 0, "stdout": '{"decision":"KEEP","reason":"fit"}', "stderr": ""})()
+
+    monkeypatch.setattr(review.subprocess, "run", fake_run)
+    assert review.codex_chat("return JSON") == '{"decision":"KEEP","reason":"fit"}'
+    assert seen["command"][:4] == ["hermes", "--profile", "job-hunt-fresh", "chat"]
+
+
 def test_ai_review_loads_canonical_profile_context(tmp_path, monkeypatch):
     from scripts import ai_backlog_review as review
 

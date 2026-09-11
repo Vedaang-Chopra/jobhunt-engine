@@ -11,16 +11,15 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import subprocess
 import sys
 from datetime import date
 from pathlib import Path
 
 try:
     from scripts import config_lib
-    from scripts.search_strategy.llm import chat
 except ImportError:
     import config_lib  # type: ignore[no-redef]
-    from search_strategy.llm import chat  # type: ignore[no-redef]
 
 DATA_ROOT = Path(config_lib.data_root())
 JOBS_CSV = DATA_ROOT / "tracking/jobs/jobs.csv"
@@ -75,6 +74,16 @@ def profile_context() -> str:
         return ""
 
 
+def codex_chat(prompt: str) -> str:
+    """Use Hermes's OpenAI Codex OAuth route, never the engine API-key chain."""
+    result = subprocess.run(
+        ["hermes", "--profile", "job-hunt-fresh", "chat", "-q", prompt],
+        text=True, capture_output=True, timeout=180, check=False)
+    if result.returncode:
+        raise RuntimeError(result.stderr.strip() or "Hermes Codex call failed")
+    return result.stdout.strip()
+
+
 def _judge(kind: str, row: dict) -> dict | None:
     if kind == "job":
         allowed = {"KEEP", "ARCHIVE"}
@@ -100,12 +109,10 @@ def _judge(kind: str, row: dict) -> dict | None:
             "actual hiring lead, irrelevant, or unusable. Keep plausible recruiting, "
             "team-hiring, referral, or direct-application signals. Return exactly JSON: "
             "{\"decision\":\"KEEP|DISMISS\",\"reason\":\"...\"}.")
-    response = chat([
-        {"role": "system", "content": "You are a conservative job-search reviewer. "
-         + instruction + "\n\nCanonical candidate profile:\n" + profile_context()},
-        {"role": "user", "content": json.dumps(record, ensure_ascii=False)},
-    ], temperature=0.0, max_tokens=180)
-    return _json_decision(response, allowed)
+    prompt = ("You are a conservative job-search reviewer. " + instruction
+              + "\n\nCanonical candidate profile:\n" + profile_context()
+              + "\n\nRecord to review:\n" + json.dumps(record, ensure_ascii=False))
+    return _json_decision(codex_chat(prompt), allowed)
 
 
 def apply_job_decisions(rows: list[dict], decisions: dict[str, dict], today: str) -> list[str]:
