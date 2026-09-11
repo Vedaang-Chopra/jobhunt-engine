@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import subprocess
 import sys
 from datetime import date
@@ -76,9 +77,13 @@ def profile_context() -> str:
 
 def codex_chat(prompt: str) -> str:
     """Use Hermes's OpenAI Codex OAuth route, never the engine API-key chain."""
+    # systemd/UI workers can inherit a half-activated Conda environment.
+    # Hermes' launcher must not re-activate that broken stack.
+    env = {key: value for key, value in os.environ.items()
+           if not key.startswith("CONDA_")}
     result = subprocess.run(
         ["hermes", "--profile", "job-hunt-fresh", "chat", "-q", prompt],
-        text=True, capture_output=True, timeout=180, check=False)
+        text=True, capture_output=True, timeout=180, check=False, env=env)
     if result.returncode:
         raise RuntimeError(result.stderr.strip() or "Hermes Codex call failed")
     return result.stdout.strip()
