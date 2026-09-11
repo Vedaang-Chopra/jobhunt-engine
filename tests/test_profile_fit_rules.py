@@ -99,6 +99,7 @@ def test_column_names_stable():
     assert REASON_COL == "disqualify_reason"
 
 
+@pytest.mark.jobhunt_env_free
 def test_sweep_dry_run_leaves_csv_untouched(tmp_path, monkeypatch, rules):
     """qualify_sweep main(dry) must not rewrite jobs.csv."""
     import scripts.qualify_sweep as qs

@@ -17,6 +17,9 @@ sys.path.insert(0, os.path.join(REPO, "scripts"))
 
 from search_strategy.ontology import Ontology, TITLE_CANON, DATA_ROOT_DEFAULT
 
+# These tests read the REAL search config (read-only) via config_lib.data_root.
+JOBHUNT_ENV_FREE = True
+
 
 # ---------------------------------------------------------------------------
 # Real-config loads (read-only against jobhunt-data via config_lib.data_root)

@@ -25,7 +25,10 @@ import os
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-REPO_DATA_ROOT = REPO_ROOT / "jobhunt-data"
+# Tests must never touch real personal data (it lives in the sibling
+# jobhunt-data checkout). Pin to a repo-local scratch tree instead;
+# tests create whatever fixtures they need under it.
+REPO_DATA_ROOT = REPO_ROOT / "tests" / "_data_scratch"
 
 
 def _opted_out(request) -> bool:

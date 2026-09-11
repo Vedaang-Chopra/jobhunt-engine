@@ -55,3 +55,13 @@ archive/plans_20260826/
 jobhunt-data/runs/
 archive/stale_repo_data_20260824/
 .data-private/
+
+# ---- restructure 2026-09-08: personal data lives in the SIBLING data repo
+# (../jobhunt-data), never inside the engine repo.
+jobhunt-data/
+all_custom_resumes/
+export_packages/
+job-hunt-docs/
+archive/
+job_research/
+linkedin_sweep_html/

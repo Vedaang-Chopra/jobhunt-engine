@@ -280,6 +280,7 @@ def test_append_rows_creates_csv_with_schema(tmp_path):
 # Preferences parsing
 # ---------------------------------------------------------------------------
 
+@pytest.mark.jobhunt_env_free
 def test_load_preferences_from_repo():
     prefs = people_sweep.load_preferences()  # resolves via config_lib.data_root()
     assert prefs["role_keywords"], "expected role keyword families"

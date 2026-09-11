@@ -26,12 +26,20 @@ def data_root() -> Path:
     """Resolve the data root directory.
 
     Order: $JOBHUNT_HOME env var -> ./config.yaml pointer file ->
-    repo-local ``jobhunt-data/`` (created on demand).
+    sibling ``../jobhunt-data/`` -> repo-local ``jobhunt-data/`` (created
+    on demand).
 
-    The final fallback is the repo-local ``jobhunt-data`` dir, NOT the repo
-    root: run outputs and personal data must never land at the repo root
-    (that leaked personal files into the public engine tree once — guarded
-    by tests/test_output_hygiene.py). bootstrap.sh creates this layout.
+    The canonical layout (2026-09-08) is a container dir holding the engine
+    clone and the personal-data checkout side by side::
+
+        <container>/jobhunt-engine/   # this repo (public code)
+        <container>/jobhunt-data/     # jobhunt-data-private (personal data)
+
+    The fallbacks exist for standalone checkouts (e.g. the public engine
+    cloned alone on a laptop): first try the sibling data checkout, then a
+    repo-local ``jobhunt-data`` dir — never the repo root itself, so run
+    outputs and personal data can't leak into the public tree (guarded by
+    tests/test_output_hygiene.py).
     """
     env_root = os.environ.get("JOBHUNT_HOME")
     if env_root:
@@ -50,6 +58,10 @@ def data_root() -> Path:
             pointer = data.get("data_root")
             if isinstance(pointer, str) and pointer.strip():
                 return Path(pointer).expanduser()
+
+    sibling = REPO_ROOT.parent / "jobhunt-data"
+    if (sibling / "config.yaml").is_file() or sibling.is_dir():
+        return sibling
 
     return REPO_ROOT / "jobhunt-data"
 
@@ -151,7 +163,8 @@ if __name__ == "__main__":
 # ---------------------------------------------------------------------------
 
 def _p(*parts: str) -> Path:
-    return data_root().joinpath(*parts)
+    """Data-root-relative path parts, resolved lazily via path()."""
+    return Path(parts[0]).joinpath(*parts[1:]) if parts else Path()
 
 
 PATHS: Dict[str, Path] = {
@@ -201,14 +214,16 @@ PATHS: Dict[str, Path] = {
 
 
 def path(name: str) -> Path:
-    """Return a registered canonical path by name. Raises on unknown names."""
-    try:
-        return PATHS[name]
-    except KeyError:
+    """Return a registered canonical path by name, resolved against the
+    CURRENT data root (re-resolves every call so tests and runtime can
+    repoint $JOBHUNT_HOME without reimporting). Raises on unknown names."""
+    rel = PATHS.get(name)
+    if rel is None:
         raise KeyError(
             f"Unknown path '{name}'. Register it in config_lib.PATHS instead of "
             f"building it at the call site."
         ) from None
+    return data_root() / rel
 
 
 # ---------------------------------------------------------------------------

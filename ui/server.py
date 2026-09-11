@@ -24,13 +24,20 @@ def is_running() -> bool:
         return sock.connect_ex(("127.0.0.1", PORT)) == 0
 
 
+def _default_data_root() -> Path:
+    """Default JOBHUNT_HOME for detached children: sibling data checkout
+    (<container>/jobhunt-data) if present, else the repo-local fallback."""
+    repo = Path(__file__).resolve().parent.parent
+    sibling = repo.parent / "jobhunt-data"
+    if sibling.is_dir():
+        return sibling
+    return repo / "jobhunt-data"
+
+
 def _detached(cmd: list[str]) -> None:
     """Run a command fully detached so it survives this process exiting."""
     env = dict(os.environ)
-    env.setdefault(
-        "JOBHUNT_HOME",
-        str(Path(__file__).resolve().parent.parent / "jobhunt-data"),
-    )
+    env.setdefault("JOBHUNT_HOME", str(_default_data_root()))
     subprocess.Popen(  # noqa: S603 - fixed internal scripts only
         cmd,
         cwd=str(REPO),
