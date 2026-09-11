@@ -1,0 +1,135 @@
+# Member of Technical Staff, MLE
+
+**Company:** cohere
+**Location:** San Francisco
+**Remote/Hybrid/On-site:** Remote
+**Job URL:** https://jobs.ashbyhq.com/cohere/110ba167-4efd-43b7-85d2-3ff719a28b0f
+**Source:** Ashby (company migrated from Greenhouse; boards-api 404)
+**Date Discovered:** 2026-08-22
+**Date Posted:** 2026-01-06
+**Date Updated:** 2026-01-06
+**Salary Range:** {"compensationTierSummary": null, "scrapeableCompensationSalarySummary": null, "compensationTiers": [], "summaryComponents": []}
+
+---
+
+## Full Job Description Text
+Who are we?
+
+Cohere is the leading security-first enterprise AI company.  We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems.
+
+We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that.
+
+We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a team of researchers, engineers, designers, and more, who are all passionate about their craft.
+
+We are a global technology company headquartered in Toronto with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul. Join us!
+
+WHY THIS ROLE IS DIFFERENT
+
+This is not a typical “Applied Scientist” or “ML Engineer” role. As a Member of Technical Staff, Applied ML, you will:
+
+ 1. Work directly with enterprise customers on problems that push LLMs to their limits.
+    You’ll rapidly understand customer domains, design custom LLM solutions, and deliver production-ready models that solve high-value, real-world problems.
+
+ 2. Train and customize frontier models — not just use APIs.
+    You’ll leverage Cohere’s full stack: CPT, post-training, retrieval + agent integrations, model evaluations, and SOTA modeling techniques.
+
+ 3. Influence the capabilities of Cohere’s foundation models.
+    Techniques, datasets, evaluations, and insights you develop for customers will directly shape the next generation of Cohere’s frontier models.
+
+ 4. Operate with an early-startup level of ownership inside a frontier-model company.
+    This role combines the breadth of an early-stage CTO with the infrastructure and scale of a deep-learning lab.
+
+ 5. Wear multiple hats, set a high technical bar, and define what Applied ML at Cohere becomes.
+    Few roles in the industry combine application, research, customer-facing engineering, and core-model influence as directly as this one.
+
+WHAT YOU’LL DO
+
+Technical Leadership & Solution Design
+
+ - Contribute to the design and delivery of custom LLM solutions for enterprise customers.
+
+ - Translate ambiguous business problems into well-framed ML problems with clear success criteria and evaluation methodologies.
+
+Modeling, Customization & Foundations Contribution
+
+ - Build custom models using Cohere’s foundation model stack, CPT recipes, post-training pipelines (including RLVR), and data assets.
+
+ - Develop SOTA modeling techniques that directly enhance model performance for customer use-cases.
+
+ - Contribute improvements back to the foundation-model stack — including new capabilities, tuning strategies, and evaluation frameworks.
+
+Customer-Facing Technical Impact
+
+ - Work as part of Cohere’s customer facing MLE team to identify high-value opportunities where LLMs can unlock transformative impact to our enterprise customers.
+
+YOU MAY BE A GOOD FIT IF YOU HAVE:
+
+Technical Foundations
+
+ - Strong ML fundamentals and the ability to frame complex, ambiguous problems as ML solutions.
+
+ - Fluency with Python and core ML/LLM frameworks.
+
+ - Experience working with (or the ability to learn) large-scale datasets and distributed training or inference pipelines.
+
+ - Understanding of LLM architectures, tuning techniques (CPT, post-training), and evaluation methodologies.
+
+ - Demonstrated ability to meaningfully shape LLM performance.
+
+Experience & Leadership
+
+ - A broad view of the ML research landscape and a desire to push the state of the art.
+
+Mindset
+
+ - Bias toward action, high ownership, and comfort with ambiguity.
+
+ - Humility and strong collaboration instincts.
+
+ - A deep conviction that AI should meaningfully empower people and organizations.
+
+JOIN US
+
+This is a pivotal moment in Cohere’s history. As an MTS in Applied ML, you will define not only what we build — but how the world experiences AI. If you're excited about building custom models, solving generational problems for global organizations, and shaping frontier-model capabilities, we’d love to meet you.
+
+FULL-TIME EMPLOYEES AT COHERE ENJOY THESE PERKS:
+
+ - A weekly lunch stipend of $75/£75 or equivalent in your local currency for lunch.
+
+ - Full health and dental benefits, including a separate budget for mental health.
+
+ - RRSP matching, 401K, Pension Scheme.
+
+ - 100% Parental Leave top-up for up to 6 months, for either parent.
+
+ - Annual enrichment benefits:
+   
+   Arts & culture, fitness/wellness, quality time, and a workspace improvement credit.
+   
+   Education & learning stipend for conferences, courses, and coaching.
+
+ - 6 weeks of paid vacation (30 working days!)
+
+ - Budget for traveling to other offices if you are remote, plus an annual company offsite.
+
+HOW AND WHERE WE WORK:
+
+ - Cohere is remote-friendly, but we also have offices in Toronto, London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul with more opening soon.
+
+ - For those in the office: a daily lunch program, plenty of snacks, and regular community and social events.
+
+ - For those not near an office: a co-working benefit so you can work alongside others in your city.
+
+ - Everyone receives a $500 home office stipend to set up your workspace properly.
+   
+   
+
+If any of the above doesn’t line up exactly with your experience, we still encourage you to apply. 
+
+We strive to create an inclusive work environment for all; we welcome applicants from all backgrounds and are committed to providing equal opportunities. Should you require any accommodations during the recruitment process, please submit an Accommodations Request Form https://docs.google.com/forms/d/12a6IrLdF3kI2nonKSr4tiFuz18rLQbaeYV-JM9L4o9Q/edit, and we will work together to meet your needs.
+
+We may use AI-enabled tools to screen and assess applicants against the criteria for this position. This helps our recruiters identify potentially qualified candidates, but it doesn't limit the applications our recruiters may review or consider.
+
+Beware of Scams: Cohere will never ask for payment or third-party services (e.g., CV writing) as part of our hiring process. All legitimate roles are listed on the Cohere careers page and LinkedIn only, with all communications from Cohere employees coming from an @cohere.com or @cw.cohere email alias. If jobs are viewed on other sites then please verify these through our official careers https://cohere.com/careers page.
+
+---

@@ -1,0 +1,94 @@
+# Member of Technical Staff - Sovereign AI
+
+**Company:** cohere
+**Location:** Canada
+**Remote/Hybrid/On-site:** Remote
+**Job URL:** https://jobs.ashbyhq.com/cohere/b9306620-a110-46b5-b4c4-7363e1d03a8d
+**Source:** Ashby (company migrated from Greenhouse; boards-api 404)
+**Date Discovered:** 2026-08-22
+**Date Posted:** 2025-11-12
+**Date Updated:** 2025-11-12
+**Salary Range:** {"compensationTierSummary": null, "scrapeableCompensationSalarySummary": null, "compensationTiers": [], "summaryComponents": []}
+
+---
+
+## Full Job Description Text
+Who are we?
+
+Cohere is the leading security-first enterprise AI company.  We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems.
+
+We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that.
+
+We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a team of researchers, engineers, designers, and more, who are all passionate about their craft.
+
+We are a global technology company headquartered in Toronto with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul. Join us!
+
+Why this role?
+
+Design and implement novel research ideas, ship state of the art models to production, and maintain deep connections to academia and the government. We have one of the highest ratio of compute to engineers in the world. We do not delineate strongly between engineering and research. Everyone will contribute to writing production code and conducting research depending on individual interest and organizational needs. We have all the compute, data, and talent available for you to do your best work.
+
+As a Member of Technical Staff - Sovereign AI, you will:
+
+ - Design, build and scale agentic AI systems for serving mission critical use cases.
+
+ - Research, implement, and experiment with ideas on our supercompute and data infrastructure.
+
+ - Learn from and work with the best researchers in the field.
+
+ - Execute across the full AI stack and ship products to serve public interest.
+
+You may be a good fit if you have:
+
+ - Canadian citizenship and eligibility for security clearance (required for this role).
+
+ - Extremely strong software engineering skills.
+
+ - Proficiency in Python and related ML frameworks.
+
+ - Experience training, evaluating, and using (as an end-user) LLMs.
+
+ - Experience using large-scale distributed (GPU) LLM training strategies.
+
+ - Bonus: paper at top-tier venues (such as NeurIPS, ICML, ICLR, AIStats, MLSys, JMLR, AAAI, Nature, COLING, ACL, EMNLP).
+
+FULL-TIME EMPLOYEES AT COHERE ENJOY THESE PERKS:
+
+ - A weekly lunch stipend of $75/£75 or equivalent in your local currency for lunch.
+
+ - Full health and dental benefits, including a separate budget for mental health.
+
+ - RRSP matching, 401K, Pension Scheme.
+
+ - 100% Parental Leave top-up for up to 6 months, for either parent.
+
+ - Annual enrichment benefits:
+   
+   Arts & culture, fitness/wellness, quality time, and a workspace improvement credit.
+   
+   Education & learning stipend for conferences, courses, and coaching.
+
+ - 6 weeks of paid vacation (30 working days!)
+
+ - Budget for traveling to other offices if you are remote, plus an annual company offsite.
+
+HOW AND WHERE WE WORK:
+
+ - Cohere is remote-friendly, but we also have offices in Toronto, London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul with more opening soon.
+
+ - For those in the office: a daily lunch program, plenty of snacks, and regular community and social events.
+
+ - For those not near an office: a co-working benefit so you can work alongside others in your city.
+
+ - Everyone receives a $500 home office stipend to set up your workspace properly.
+   
+   
+
+If any of the above doesn’t line up exactly with your experience, we still encourage you to apply. 
+
+We strive to create an inclusive work environment for all; we welcome applicants from all backgrounds and are committed to providing equal opportunities. Should you require any accommodations during the recruitment process, please submit an Accommodations Request Form https://docs.google.com/forms/d/12a6IrLdF3kI2nonKSr4tiFuz18rLQbaeYV-JM9L4o9Q/edit, and we will work together to meet your needs.
+
+We may use AI-enabled tools to screen and assess applicants against the criteria for this position. This helps our recruiters identify potentially qualified candidates, but it doesn't limit the applications our recruiters may review or consider.
+
+Beware of Scams: Cohere will never ask for payment or third-party services (e.g., CV writing) as part of our hiring process. All legitimate roles are listed on the Cohere careers page and LinkedIn only, with all communications from Cohere employees coming from an @cohere.com or @cw.cohere email alias. If jobs are viewed on other sites then please verify these through our official careers https://cohere.com/careers page.
+
+---

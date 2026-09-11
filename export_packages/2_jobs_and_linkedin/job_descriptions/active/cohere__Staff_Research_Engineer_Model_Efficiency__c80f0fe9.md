@@ -1,0 +1,98 @@
+# Staff Research Engineer, Model Efficiency
+
+**Company:** cohere
+**Location:** New York
+**Remote/Hybrid/On-site:** Remote
+**Job URL:** https://jobs.ashbyhq.com/cohere/c80f0fe9-3fc4-49fe-9f26-a7115350b1fc
+**Source:** Ashby (company migrated from Greenhouse; boards-api 404)
+**Date Discovered:** 2026-08-22
+**Date Posted:** 2025-11-07
+**Date Updated:** 2025-11-07
+**Salary Range:** {"compensationTierSummary": null, "scrapeableCompensationSalarySummary": null, "compensationTiers": [], "summaryComponents": []}
+
+---
+
+## Full Job Description Text
+Who are we?
+
+Cohere is the leading security-first enterprise AI company.  We build cutting-edge foundation AI models and end-to-end products that are designed to solve real-world business problems.
+
+We’re training and deploying frontier models for enterprises who are building AI systems. We believe that our work is instrumental to the widespread adoption of AI and we are looking for folks that want to be part of that.
+
+We obsess over what we build. Each one of us is responsible for contributing to increasing the capabilities of our models and the value they drive for our customers. Cohere is a team of researchers, engineers, designers, and more, who are all passionate about their craft.
+
+We are a global technology company headquartered in Toronto with key offices in London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul. Join us!
+
+Why this role?
+
+Large Language Models (LLMs) continue to push the boundaries of what AI systems can do — but inference is still the bottleneck. The Model Efficiency team is responsible for pushing the limits of LLM inference efficiency across our foundation models. We explore and ship breakthroughs across the model execution stack, including:
+
+ - model architecture and MoE routing optimization
+
+ - decoding and inference-time algorithm improvements
+
+ - software/hardware co-design for GPU acceleration
+
+ - performance optimization without compromising model quality
+
+Please Note: We have offices in Toronto, Montreal, San Francisco, New York, Paris, Seoul and London. We embrace a remote-friendly environment, and as part of this approach, we strategically distribute teams based on interests, expertise, and time zones to promote collaboration and flexibility. You'll find the Model Efficiency team concentrated in the EST and PST time zones, these are our preferred locations.
+
+As a Staff Research Engineer, you will develop, prototype, and deploy techniques that materially improve how fast and efficiently our models run in production.
+
+You may be a good fit for the model efficiency team if you:
+
+ - Have a PhD in Machine Learning or a related field
+
+ - Understand LLM architecture, and how to optimize LLM inference given resource constraints
+
+ - Have significant experience with one or more techniques that enhance model efficiency
+
+ - Strong software engineering skills
+
+ - An appetite to work in a fast-paced high-ambiguity start-up environment
+
+ - Publications at top-tier conferences and venues (ICLR, ACL, NeurIPS)
+
+ - Passion to mentor others
+
+FULL-TIME EMPLOYEES AT COHERE ENJOY THESE PERKS:
+
+ - A weekly lunch stipend of $75/£75 or equivalent in your local currency for lunch.
+
+ - Full health and dental benefits, including a separate budget for mental health.
+
+ - RRSP matching, 401K, Pension Scheme.
+
+ - 100% Parental Leave top-up for up to 6 months, for either parent.
+
+ - Annual enrichment benefits:
+   
+   Arts & culture, fitness/wellness, quality time, and a workspace improvement credit.
+   
+   Education & learning stipend for conferences, courses, and coaching.
+
+ - 6 weeks of paid vacation (30 working days!)
+
+ - Budget for traveling to other offices if you are remote, plus an annual company offsite.
+
+HOW AND WHERE WE WORK:
+
+ - Cohere is remote-friendly, but we also have offices in Toronto, London, New York City, San Francisco, Montreal, Paris, Berlin and Seoul with more opening soon.
+
+ - For those in the office: a daily lunch program, plenty of snacks, and regular community and social events.
+
+ - For those not near an office: a co-working benefit so you can work alongside others in your city.
+
+ - Everyone receives a $500 home office stipend to set up your workspace properly.
+   
+   
+
+If any of the above doesn’t line up exactly with your experience, we still encourage you to apply. 
+
+We strive to create an inclusive work environment for all; we welcome applicants from all backgrounds and are committed to providing equal opportunities. Should you require any accommodations during the recruitment process, please submit an Accommodations Request Form https://docs.google.com/forms/d/12a6IrLdF3kI2nonKSr4tiFuz18rLQbaeYV-JM9L4o9Q/edit, and we will work together to meet your needs.
+
+We may use AI-enabled tools to screen and assess applicants against the criteria for this position. This helps our recruiters identify potentially qualified candidates, but it doesn't limit the applications our recruiters may review or consider.
+
+Beware of Scams: Cohere will never ask for payment or third-party services (e.g., CV writing) as part of our hiring process. All legitimate roles are listed on the Cohere careers page and LinkedIn only, with all communications from Cohere employees coming from an @cohere.com or @cw.cohere email alias. If jobs are viewed on other sites then please verify these through our official careers https://cohere.com/careers page.
+
+---

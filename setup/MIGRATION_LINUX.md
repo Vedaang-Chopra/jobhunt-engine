@@ -1,3 +1,8 @@
+> **DEPRECATED 2026-09-08:** Superseded by `SETUP_ON_LINUX.md` + `AGENTS_SETUP_PROMPT.md`.
+> References to the old `application_hunting` repo are historical — the live
+> remote is `git@github.com:Vedaang-Chopra/jobhunt-engine.git` (the old repo is
+> archived read-only on GitHub).
+
 # Linux Migration Runbook — Mac → Ubuntu/Debian Laptop
 
 Cutover plan for moving the job-hunt system from this Mac to an Ubuntu/Debian

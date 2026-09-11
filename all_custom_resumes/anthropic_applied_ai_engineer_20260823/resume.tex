@@ -1,0 +1,101 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume_style}
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge \scshape Vedaang Chopra} \\ \vspace{2pt}
+  \small
+  \href{mailto:vedaangchopra@gatech.edu}{\underline{vedaangchopra@gatech.edu}} \;|\;
+  \underline{+1 (404) 740-9905} \;|\;
+  Atlanta, GA \;|\;
+  \href{https://linkedin.com/in/vedaang-chopra}{\underline{LinkedIn}} \;|\;
+  \href{https://github.com/Vedaang-Chopra}{\underline{GitHub}} \;|\;
+  \href{https://vedaangchopra.live/}{\underline{Website}}
+  \\ \vspace{3pt}
+  \small
+  MS CS (ML) at Georgia Tech \;|\; Advised by \textbf{Dr.\ Matthew Gombolay}, CORE Robotics Lab \\\
+  \textit{Forward Deployed Engineer / Applied AI specialist -- Production LLM agents (Fortinet RAG, ~70\% resolution-time reduction) -- Agentic frameworks with evaluation suites (CAD 202-test harness, ARTEMIS multiple VLM backends, ATHENA 5-agent orchestration) -- Technical advisory \& solution architecture for enterprise AI adoption}
+\end{center}
+\vspace{-6pt}
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology}{Atlanta, GA}
+{\textbf{M.S.\ in Computer Science} (Machine Learning Specialization), \textbf{GPA: 4.0/4.0}}{Aug 2024 -- Dec 2026}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.20in, topsep=0pt, itemsep=0pt]
+  \item\footnotesize{\textbf{Coursework:} Deep Learning, Deep RL, ML Security, Large \& Vision Language Models, Agentic AI, Systems for AI}
+\end{itemize}
+\vspace{-6pt}
+\resumeEducationCompact
+{Maharaja Surajmal Institute of Technology}{New Delhi, India}
+{B.Tech.\ in Information Technology, CGPA: 8.8/10.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+%---------- INDUSTRY EXPERIENCE ----------
+\section{Industry Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fortinet Technologies Inc.\ (AIOps R\&D)}{Bengaluru, India}
+{Software Development Engineer I \& II (ML/AI)}{Feb 2021 -- Jul 2025}
+\resumeItemListStart
+  \resumeItem{Led development of an agentic RAG diagnostics system for enterprise network telemetry: LLM plans multi-step tool calls, invokes APIs, and verifies hypotheses via structured function calling to produce autonomous root-cause analysis -- customized pilot from hackathon prototype to production deployment, reducing mean resolution time ~70\% through cross-functional collaboration with platform and support teams.}
+
+  \resumeItem{Patent (Filed): PCT/IN2022/058026 -- Unsupervised distributional thresholding for wireless connectivity anomaly detection; reduced manual troubleshooting ~75\% by replacing heuristic rules with learned thresholds.}
+
+  \resumeItem{Scaled OpenSearch ingestion pipelines from 50 to 2,000 events/sec (40x) using Golang; deployed edge ML inference via ONNX Runtime (~40\% latency reduction); built SLA forecasting for 60+ classifiers across 4 categories to resolve technical roadblocks in production monitoring.}
+
+  \resumeItem{Designed evaluation suites for LLM-driven diagnostics: automated test harnesses validating tool-call correctness, hypothesis verification accuracy, and end-to-end resolution quality across diverse network topologies.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- RESEARCH EXPERIENCE ----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology -- CORE Robotics Lab @ Siemens}{Atlanta, GA}
+{Graduate Research Assistant \;|\; Advisor: \textbf{Dr.\ Matthew Gombolay}}{Jan 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{Building a closed-loop agentic pipeline for parametric CAD code generation with inference-time search and verifiable geometric reward: frozen LLM generates CadQuery programs, execution feedback and geometric verification (Chamfer/Hausdorff on STL/B-Rep) drive a LangGraph-orchestrated repair loop with structured evidence prompts -- 16-module system with 202-test evaluation harness and VLM-based visual judgment for bespoke code-generation solutions.}
+
+  \resumeItem{Designing geometric verification components scoring compile validity, parametric 3D correctness, and repair trajectory quality; AST/code-graph structural analysis for failure diagnosis and attributed source-edit spans enabling iterative repair under cost/latency constraints.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Georgia Institute of Technology -- CS 8903 Special Problems}{Atlanta, GA}
+{Graduate Researcher}{Jan 2025 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{ARTEMIS} (Aug 2025--Present): Developing cost-aware VLM routing for agentic tool-use selection; trained neural multi-task router with SLA-aware load balancing serving multiple VLM backends (Gemma 3, Qwen-VL, Llama-4) via vLLM with dynamic routing modes (accuracy/cost/latency) -- production-grade inference optimization for customized multimodal deployments.}
+
+  \resumeItem{\textbf{SHASTRA} (Jan 2026--Present): Designing a trace-to-graph pipeline converting agent execution traces (GAIA, 94 sessions, 4,037 events) into reusable task-composition graphs with dependency/control/conditional edges; LangGraph-based planner with Pydantic state schemas and component registry for compositional workflow reuse -- enabling long-horizon task decomposition with evaluation-driven iteration.}
+
+  \resumeItem{\textbf{ATHENA} (Jan--May 2025): Built a multi-agent screenplay generation system with supervisor-worker orchestration via LangGraph Command routing; coordinated 5 specialized agents with reflection-based quality critique and dynamic plan modification; Pydantic-validated structured outputs; evaluated with cross-modal metrics (BLEU-4 +0.18 absolute, CLIPScore, METEOR, BERTScore, SSIM, PSNR) on 100 reference videos.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- PUBLICATIONS & PATENTS ----------
+\section{Publications \& Patents}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Patent (Filed):} \href{https://patents.justia.com/inventor/vedaang-chopra}{\textbf{PCT/IN2022/058026}} -- Unsupervised distributional thresholding for wireless
+  connectivity anomaly detection.}{}
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\footnotesize
+\textbf{Agentic AI:} LangChain, LangGraph, Agentic RAG, Tool/Function Calling, Multi-Agent Orchestration,
+  Supervisor-Worker Patterns, Planning \& Reasoning, LLM-as-a-Judge, Structured Generation (Pydantic),
+  Workflow Composition, Long-Horizon Task Decomposition, Evaluation Suites \\[1pt]
+\textbf{AI / ML:} PyTorch, Hugging Face Transformers, Deep Learning, CNNs, Vision Transformers, NLP,
+  Computer Vision, Scikit-Learn, NumPy, Pandas \\[1pt]
+\textbf{LLMs / VLMs:} vLLM, VLM Routing \& Evaluation, CLIP, SBERT, FAISS, Inference Optimization,
+  Model Evaluation \& Benchmarking, Cross-Modal Retrieval, Cost-Aware Serving \\[1pt]
+\textbf{Reinforcement Learning:} PPO, DQN, Reward Shaping, Curriculum Learning, Self-Play (academic projects) \\[1pt]
+\textbf{Systems:} Python, Go, C/C++, SQL/PostgreSQL, Redis, OpenSearch/Elasticsearch, Docker, Linux, Git,
+  ONNX Runtime, FastAPI, Azure, W\&B, TensorBoard
+
+\end{document}

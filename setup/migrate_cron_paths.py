@@ -18,7 +18,7 @@ profile directory is in place):
     python3 setup/migrate_cron_paths.py \
         --jobs-file ~/.hermes/profiles/job-hunt/cron/jobs.json \
         --from-repo "/old/mac/repo/path" \
-        --to-repo "/home/<you>/git/application_hunting" \
+        --to-repo "/home/<you>/git/jobhunt-engine" \
         --apply          # omit --apply for a dry-run diff
 
 Also scans for any residual '/Users/' references after rewriting and exits

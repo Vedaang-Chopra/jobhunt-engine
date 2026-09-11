@@ -1,0 +1,124 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume_style}
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge \scshape Vedaang Chopra} \\ \vspace{2pt}
+  \small
+  \href{mailto:vedaangchopra@gatech.edu}{\underline{vedaangchopra@gatech.edu}} \;|\;
+  \underline{+1 (404) 740-9905} \;|\;
+  Atlanta, GA \;|\;
+  \href{https://linkedin.com/in/vedaang-chopra}{\underline{LinkedIn}} \;|\;
+  \href{https://github.com/Vedaang-Chopra}{\underline{GitHub}} \;|\;
+  \href{https://vedaangchopra.live/}{\underline{Website}}
+  \\ \vspace{3pt}
+  \small
+  MS CS (ML) at Georgia Tech \;|\; Advised by \textbf{Dr.\ Matthew Gombolay}, CORE Robotics Lab \\
+  \textit{Research:} Production agentic AI systems -- Multi-agent orchestration, planning \& tool use -- LLM evaluation -- RAG
+\end{center}
+\vspace{-6pt}
+
+%---------- EDUCATION ----------
+\vspace{-6pt}
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology}{Atlanta, GA}
+{\textbf{M.S.\ in Computer Science} (Machine Learning Specialization), \textbf{GPA: 4.0/4.0}}{Aug 2024 -- Dec 2026}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.20in, topsep=0pt, itemsep=0pt]
+  \item\footnotesize{\textbf{Coursework:} Agentic AI, Deep Learning, Deep RL, ML Security, Large \& Vision Language Models, Systems for AI}
+\end{itemize}
+\vspace{-6pt}
+\resumeEducationCompact
+{Maharaja Surajmal Institute of Technology}{New Delhi, India}
+{B.Tech.\ in Information Technology, CGPA: 8.8/10.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+%---------- RESEARCH EXPERIENCE ----------
+\section{AI Research \& Engineering Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology -- CORE Robotics Lab @ Siemens}{Atlanta, GA}
+{Graduate Research Assistant \;|\; Advisor: \textbf{Dr.\ Matthew Gombolay}}{Jan 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{Building a closed-loop agentic pipeline for parametric CAD code generation: an LLM plans and generates
+  CadQuery programs, an execution environment returns compile and geometry feedback, and a
+  LangGraph-orchestrated repair loop iteratively corrects errors -- an autonomous agent workflow with
+  verifiable execution reward across a modular multi-package system.}
+
+  \resumeItem{Own the full evaluation lifecycle: pytest harness with golden datasets, regression suites,
+  and VLM-as-judge visual scoring gating every change; ablations isolating retrieval, prompt,
+  and repair-policy contributions to quality.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Georgia Institute of Technology -- CS 8903 Special Problems}{Atlanta, GA}
+{Graduate Researcher}{Jan 2025 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{SHASTRA} (Jan 2026--Present): Building an agent orchestration framework with
+  constraint-aware plan search over cost, latency, and accuracy budgets; component registry with
+  pluggable storage; and a runnable trace-to-graph pipeline extracting reusable workflow
+  templates from prior agent execution traces.}
+
+  \resumeItem{\textbf{ATHENA} (Jan--May 2025): Built a multi-agent system with supervisor-worker
+  orchestration via LangGraph Command routing; coordinated 5 specialized agents (ideation,
+  character design, world building, story generation, scene breakdown) plus an intent-planning
+  agent, with a reflection router that critiques outputs, re-routes with targeted feedback,
+  and dynamically modifies plans.}
+
+  \resumeItem{\textbf{ARTEMIS} (Aug 2025--Present): Developing a cost-aware routing system for Vision-Language Models
+  that dynamically selects the optimal VLM per request; trained a neural multi-task router with
+  SLA-aware load balancing (simulation-validated, 90.3\% oracle-utility recovery), routing across
+  5 VLMs (10 vLLM endpoints) spanning VQA, OCR, captioning, and reasoning tasks.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- INDUSTRY EXPERIENCE ----------
+\section{Industry Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fortinet Technologies Inc.\ (AIOps R\&D)}{Bengaluru, India}
+{Software Development Engineer I \& II (ML/AI)}{Feb 2021 -- Jul 2025}
+\resumeItemListStart
+  \resumeItem{Led development of an agentic RAG diagnostics system: LLM plans multi-step tool calls over
+  network telemetry, invokes APIs, and verifies hypotheses via structured function calling
+  behind prompt-level output guardrails, producing autonomous root-cause analysis -- reduced mean resolution time ~70\%
+  (hackathon prototype to production deployment).}
+
+  \resumeItem{Scaled OpenSearch ingestion pipelines from 50 to 2,000 events/sec using Golang while
+  maintaining reliability, observability, and production monitoring; integrated ML models into backend services
+  with Python and Go across distributed enterprise infrastructure.}
+
+  \resumeItem{Patent (Filed): PCT/IN2022/058026 -- Unsupervised distributional thresholding for wireless
+  connectivity anomaly detection using density-based analysis; reduced manual troubleshooting ~75\%.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- PUBLICATIONS & PATENTS ----------
+\section{Publications \& Patents}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Patent (Filed):} \href{https://patents.justia.com/inventor/vedaang-chopra}{\textbf{PCT/IN2022/058026}} -- Unsupervised distributional thresholding for wireless
+  connectivity anomaly detection.}{}
+\resumeProjectHeading
+{\textbf{Ontology-based Text Classification (Structured Knowledge Representation)} \;|\; \href{https://ceur-ws.org/Vol-2786/Paper16.pdf}{\textbf{Published: CEUR Workshop Proceedings Vol.\ 2786}}}{2020}
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\footnotesize
+\textbf{Agentic AI:} LangChain, LangGraph, Multi-Agent Orchestration, Supervisor-Worker Patterns,
+  Planning \& Reasoning, Tool/Function Calling, Agentic RAG, Agent Memory, Reflection \& Self-Critique,
+  LLM-as-a-Judge, Structured Generation (Pydantic) \\[1pt]
+\textbf{RAG / Knowledge:} Semantic Search, FAISS, Vector Databases, Cross-Modal Retrieval, SBERT, CLIP \\[1pt]
+\textbf{Evaluation:} Offline Benchmarks, A/B Experimentation, Regression Suites, Human Evaluation,
+  Confidence Estimation \\[1pt]
+\textbf{AI / ML:} PyTorch, Hugging Face Transformers, Deep Learning, NLP, Computer Vision, Multimodal AI,
+  Scikit-Learn, Small Language Model Fine-Tuning (Edge Assistant) \\[1pt]
+\textbf{LLMs / RL:} vLLM, VLM Routing, Inference \& Model Optimization (ONNX), PPO/DQN (academic projects) \\[1pt]
+\textbf{Systems:} Python, Go, C/C++, SQL/PostgreSQL, Redis, OpenSearch/Elasticsearch, Docker, CI/CD,
+  Linux, Git, ONNX Runtime, FastAPI, Azure (no AWS/GCP), W\&B
+
+\end{document}

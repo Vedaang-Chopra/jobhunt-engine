@@ -1,0 +1,565 @@
+{
+  "fresh": [
+    {
+      "source_id": "4453736138",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "AI Research Scientist",
+        "Post-Training LLM",
+        "LLM Fine-Tuning Engineer",
+        "Applied Scientist AI",
+        "LLM Evaluation Research"
+      ],
+      "title": "Research Engineer, LangSmith Engine",
+      "company": "LangChain",
+      "location": "New York, NY (On-site)"
+    },
+    {
+      "source_id": "4456022405",
+      "queries": [
+        "Research Engineer Machine Learning"
+      ],
+      "title": "Research Engineer, AGI Safety and Alignment, DeepMind",
+      "company": "Google DeepMind",
+      "location": "New York, NY (On-site)"
+    },
+    {
+      "source_id": "4445210572",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "AI Research Scientist",
+        "Post-Training LLM",
+        "Applied Scientist AI",
+        "LLM Evaluation Research"
+      ],
+      "title": "AI Researcher - Efficient AI (Contractor)",
+      "company": "LG Electronics North America",
+      "location": "Santa Clara, CA"
+    },
+    {
+      "source_id": "4446146763",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "AI Research Scientist",
+        "Applied Scientist AI"
+      ],
+      "title": "AI Agent Researcher",
+      "company": "Vast.ai",
+      "location": "Los Angeles, CA (On-site)"
+    },
+    {
+      "source_id": "4456411142",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "Post-Training LLM"
+      ],
+      "title": "MTS, Research Engineer",
+      "company": "Fireworks AI",
+      "location": "San Mateo, CA"
+    },
+    {
+      "source_id": "4398462870",
+      "queries": [
+        "Research Engineer Machine Learning"
+      ],
+      "title": "Research Engineer, AI",
+      "company": "Biohub",
+      "location": "New York, NY (Hybrid)"
+    },
+    {
+      "source_id": "4416680839",
+      "queries": [
+        "Research Engineer Machine Learning"
+      ],
+      "title": "Applied Research Engineer, Agents",
+      "company": "Hebbia",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4445276729",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "Post-Training LLM",
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "Research Scientist / Engineer \u2013 Reinforcement Learning Infrastructure",
+      "company": "Luma",
+      "location": "Redwood City, CA (Hybrid)"
+    },
+    {
+      "source_id": "4317542784",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "Post-Training LLM"
+      ],
+      "title": "Researcher, Post Training",
+      "company": "Cartesia",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4436475694",
+      "queries": [
+        "Research Engineer Machine Learning"
+      ],
+      "title": "AI Agent Researcher",
+      "company": "Vast.ai",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4398642162",
+      "queries": [
+        "Research Engineer Machine Learning"
+      ],
+      "title": "Research Engineer, AI",
+      "company": "Biohub",
+      "location": "Redwood City, CA (Hybrid)"
+    },
+    {
+      "source_id": "4315273495",
+      "queries": [
+        "AI Research Scientist",
+        "Applied Scientist AI"
+      ],
+      "title": "Applied AI Researcher, System Self-Construction",
+      "company": "Distyl",
+      "location": "San Francisco, CA (Hybrid)"
+    },
+    {
+      "source_id": "4315267558",
+      "queries": [
+        "AI Research Scientist",
+        "Post-Training LLM",
+        "LLM Fine-Tuning Engineer",
+        "LLM Evaluation Research"
+      ],
+      "title": "Applied AI Researcher, Post-Training",
+      "company": "Distyl",
+      "location": "San Francisco, CA (Hybrid)"
+    },
+    {
+      "source_id": "4455972884",
+      "queries": [
+        "Post-Training LLM",
+        "LLM Evaluation Research"
+      ],
+      "title": "Member of Technical Staff - Post Training",
+      "company": "Microsoft AI",
+      "location": "Redmond, WA"
+    },
+    {
+      "source_id": "4444619270",
+      "queries": [
+        "Post-Training LLM",
+        "AI Agent Engineer"
+      ],
+      "title": "Member of Technical Staff (AI Software Engineer, Agents)",
+      "company": "Perplexity",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4456414109",
+      "queries": [
+        "Post-Training LLM",
+        "LLM Evaluation Research"
+      ],
+      "title": "Member of Technical Staff, Evals & Post-Training Product",
+      "company": "Fireworks AI",
+      "location": "San Mateo, CA"
+    },
+    {
+      "source_id": "4315269534",
+      "queries": [
+        "Post-Training LLM",
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "Applied AI Researcher, Post-Training",
+      "company": "Distyl",
+      "location": "New York, NY (Hybrid)"
+    },
+    {
+      "source_id": "4420164179",
+      "queries": [
+        "Post-Training LLM",
+        "LLM Fine-Tuning Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "AI Systems, Language & Reasoning Models",
+      "company": "Unconventional AI",
+      "location": "Mountain View, CA"
+    },
+    {
+      "source_id": "3813454490",
+      "queries": [
+        "Post-Training LLM",
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "Research Engineer, Post-Training (All Industry Levels)",
+      "company": "Character.AI",
+      "location": "San Francisco Bay Area (Hybrid)"
+    },
+    {
+      "source_id": "4417166196",
+      "queries": [
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "Research Engineer, Codex",
+      "company": "OpenAI",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4456002537",
+      "queries": [
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "Research Engineer, AGI Safety and Alignment, DeepMind",
+      "company": "Google DeepMind",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4437084478",
+      "queries": [
+        "LLM Fine-Tuning Engineer",
+        "AI Agent Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Advisory AI Prototyping Engineer",
+      "company": "Lenovo",
+      "location": "North Carolina, United States"
+    },
+    {
+      "source_id": "4445178021",
+      "queries": [
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "AI Research Engineer - NLP",
+      "company": "Lucas James Talent Partners",
+      "location": "Evanston, IL (Remote)"
+    },
+    {
+      "source_id": "4454664077",
+      "queries": [
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "AI Resident",
+      "company": "Ema",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "source_id": "4322223560",
+      "queries": [
+        "LLM Fine-Tuning Engineer"
+      ],
+      "title": "Member of Technical Staff (AI Researcher)",
+      "company": "Perplexity",
+      "location": "Palo Alto, CA (On-site)"
+    },
+    {
+      "source_id": "4266777241",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Member of Technical Staff - Agent Platform (Agent OS)",
+      "company": "Boson AI",
+      "location": "Santa Clara, CA (On-site)"
+    },
+    {
+      "source_id": "4389798215",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Agent Deployment Engineer (Residency Program)",
+      "company": "Hippocratic AI",
+      "location": "Palo Alto, CA (On-site)"
+    },
+    {
+      "source_id": "4399791760",
+      "queries": [
+        "AI Agent Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "AI Agent Engineer",
+      "company": "General Motors",
+      "location": "Austin, TX (Hybrid)"
+    },
+    {
+      "source_id": "4428886430",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Application/Agentic AI Engineer",
+      "company": "NextGen Federal Systems",
+      "location": "Aberdeen, MD (On-site)"
+    },
+    {
+      "source_id": "4456464748",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Artificial Intelligence Engineer",
+      "company": "Yara AI",
+      "location": "United States (Remote)"
+    },
+    {
+      "source_id": "4418470446",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Agentic AI Engineer",
+      "company": "Benchling",
+      "location": "San Francisco, CA (Hybrid)"
+    },
+    {
+      "source_id": "4453795302",
+      "queries": [
+        "AI Agent Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Software Engineer, Applied AI",
+      "company": "Clay",
+      "location": "New York City Metropolitan Area (Hybrid)"
+    },
+    {
+      "source_id": "4443795896",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Forward Deployed Engineer (AI Agents)",
+      "company": "Arcadia",
+      "location": "San Francisco, CA (Hybrid)"
+    },
+    {
+      "source_id": "4451703401",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Agentic AI Engineer",
+      "company": "Infosys",
+      "location": "Austin, TX"
+    },
+    {
+      "source_id": "4445233762",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Senior AI Engineer",
+      "company": "Finastra",
+      "location": "Atlanta, GA"
+    },
+    {
+      "source_id": "4416598983",
+      "queries": [
+        "AI Agent Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "AI Engineer (Research & Development)",
+      "company": "Bandwidth Inc.",
+      "location": "Raleigh, NC (On-site)"
+    },
+    {
+      "source_id": "4446828683",
+      "queries": [
+        "AI Agent Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Applied AI Engineer",
+      "company": "Gradial",
+      "location": "Seattle, WA"
+    },
+    {
+      "source_id": "4387803752",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "AI Engineer",
+      "company": "HockeyStack",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4454826251",
+      "queries": [
+        "AI Agent Engineer",
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Machine Learning Engineer",
+      "company": "Crowe",
+      "location": "Atlanta, GA"
+    },
+    {
+      "source_id": "4444653399",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Agentic AI Engineer II",
+      "company": "EchoStar Corporation",
+      "location": "San Mateo, CA (On-site)"
+    },
+    {
+      "source_id": "4454418767",
+      "queries": [
+        "AI Agent Engineer"
+      ],
+      "title": "Artificial Intelligence Engineer",
+      "company": "The Intersect Group",
+      "location": "Atlanta Metropolitan Area (Hybrid)"
+    },
+    {
+      "source_id": "4445643997",
+      "queries": [
+        "Applied Scientist AI"
+      ],
+      "title": "Staff Applied Scientist",
+      "company": "Lyft",
+      "location": "San Francisco County, CA (Hybrid)"
+    },
+    {
+      "source_id": "4315279413",
+      "queries": [
+        "Applied Scientist AI"
+      ],
+      "title": "Applied AI Researcher, System Discovery",
+      "company": "Distyl",
+      "location": "New York, NY (Hybrid)"
+    },
+    {
+      "source_id": "4438206154",
+      "queries": [
+        "Applied Scientist AI"
+      ],
+      "title": "AI Scientist 2",
+      "company": "Intuit",
+      "location": "Atlanta, GA (On-site)"
+    },
+    {
+      "source_id": "4418514625",
+      "queries": [
+        "Applied Scientist AI"
+      ],
+      "title": "Senior Applied Scientist",
+      "company": "Adobe",
+      "location": "San Jose, CA"
+    },
+    {
+      "source_id": "4427044959",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Research Engineer \u2014 Post-Training & Small Language Models (SLMs), Healthcare AI",
+      "company": "Deloitte",
+      "location": "Costa Mesa, CA (Hybrid)"
+    },
+    {
+      "source_id": "4417159976",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Machine Learning Engineer, Integrity",
+      "company": "OpenAI",
+      "location": "San Francisco, CA (On-site)"
+    },
+    {
+      "source_id": "4341002791",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Machine Learning Engineer",
+      "company": "Abaka AI",
+      "location": "Palo Alto, CA (Hybrid)"
+    },
+    {
+      "source_id": "4434035022",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "AI/LLM Engineer",
+      "company": "Gap International",
+      "location": "Greater Philadelphia (On-site)"
+    },
+    {
+      "source_id": "4454809440",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Machine Learning Engineer",
+      "company": "Crowe",
+      "location": "San Francisco, CA"
+    },
+    {
+      "source_id": "4446845111",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Software Engineer, AI Research & Prototyping",
+      "company": "Sage Care",
+      "location": "Palo Alto, CA (Hybrid)"
+    },
+    {
+      "source_id": "4436372606",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "Applied AI Engineer",
+      "company": "Hasbro",
+      "location": "Boston, MA (Hybrid)"
+    },
+    {
+      "source_id": "4440777564",
+      "queries": [
+        "Machine Learning Engineer LLM"
+      ],
+      "title": "AI Modeling Specialist Engineer",
+      "company": "Lenovo",
+      "location": "North Carolina, United States"
+    },
+    {
+      "source_id": "4409906845",
+      "queries": [
+        "LLM Evaluation Research"
+      ],
+      "title": "Senior Researcher - Agentic AI - Microsoft Research AI Frontiers",
+      "company": "Microsoft",
+      "location": "Redmond, WA (Hybrid)"
+    },
+    {
+      "source_id": "4315286019",
+      "queries": [
+        "LLM Evaluation Research"
+      ],
+      "title": "Applied AI Researcher, Benchmarking",
+      "company": "Distyl",
+      "location": "New York, NY (Hybrid)"
+    }
+  ],
+  "dupes": [
+    {
+      "source_id": "4322260479",
+      "queries": [
+        "Research Engineer Machine Learning",
+        "AI Research Scientist",
+        "Post-Training LLM",
+        "Applied Scientist AI",
+        "LLM Evaluation Research"
+      ],
+      "title": "Research Engineer/Research Scientist, Pre-training",
+      "company": "Anthropic",
+      "location": "Seattle, WA (Hybrid)"
+    },
+    {
+      "source_id": "4317705634",
+      "queries": [
+        "LLM Evaluation Research"
+      ],
+      "title": "Senior Research Scientist, Model Evaluation",
+      "company": "Cohere",
+      "location": "San Francisco, CA (Remote)"
+    },
+    {
+      "source_id": "4437905316",
+      "queries": [
+        "LLM Evaluation Research"
+      ],
+      "title": "Research Engineer, Model Evaluations",
+      "company": "Anthropic",
+      "location": "San Francisco Bay Area (Remote)"
+    }
+  ]
+}

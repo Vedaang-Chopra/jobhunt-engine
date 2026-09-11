@@ -1,0 +1,87 @@
+# Staff Engineer, Distributed Storage and HPC & AI Infrastructure
+
+**Company:** together_ai
+**Location:** San Francisco
+**Remote/Hybrid/On-site:** Unknown
+**Job URL:** https://job-boards.greenhouse.io/togetherai/jobs/5155722007
+**Source:** Greenhouse
+**Date Discovered:** 2026-08-22
+**Date Posted:** 2026-07-10
+**Date Updated:** 2026-07-10
+**Salary Range:** Not listed in API
+
+---
+
+## Full Job Description Text
+## Full Job Description Text
+About the Role
+In this role, you will operate, scale, and optimize multi-petabyte storage systems purpose-built for the world’s largest AI training and inference workloads. You’ll manage and scale high-performance parallel filesystems and object stores, evaluate and integrate cutting-edge technologies such as Vast, Weka, Ceph, and Lustre, and solve the complex engineering challenges of operating at extreme throughput, low-latency data paths, and massive cluster-scale storage operations. 
+
+You will also build Kubernetes-native storage operators and self-service platforms that provide automated provisioning, strict multi-tenancy, performance isolation, and quota enforcement at cluster scale. Day-to-day, you’ll optimize end-to-end data paths for 10-50 GB/s per node, design multi-tier caching architectures, implement intelligent prefetching and model-weight distribution, and tune parallel filesystems for AI workloads. 
+
+Responsibilities
+
+- Architect and implement the technical strategy and storage roadmap for Together AI, driving high-performance architectural decisions as we scale our GPU fleet.
+
+- Engineer and scale multi-petabyte AI/ML storage systems by integrating Vast, Weka, and Ceph while executing deep cost optimization through automated tiering and lifecycle policies.
+
+- Develop intelligent caching and tiered storage architectures to achieve extreme IOPS and cluster-wide throughput at GPU scale for training and inference workloads.
+
+- Tune storage isolation at the L2/L3 network layers to ensure secure, production-grade multi-tenancy for storage clients.
+
+- Code Kubernetes storage operators and controllers to enable automated provisioning, self-service abstractions, and quota enforcement.
+
+- Engineer end-to-end data paths to achieve 10+ GB/s per GPU node; architect multi-tier caching for model weights and datasets; tune parallel filesystems using advanced profiling; and scale storage infrastructure across thousands of nodes.
+
+- Optimize end-to-end data paths through advanced benchmarking and profiling, contributing high-impact code to open-source storage projects and internal tooling.
+
+Requirements
+
+- 8+ years in storage engineering, managing distributed storage at multi-petabyte scale
+
+- Proven track record deploying and operating high-performance storage for GPU/HPC clusters
+
+- Deep Kubernetes and cloud-native storage experience in production environments
+
+- Strong coding skills in Go and Python with demonstrated ability to build production-grade systems and tooling
+
+- BS/MS in Computer Science, Engineering, or equivalent practical experience
+
+- History of technical leadership: designing systems that significantly improved performance, reliability (99.999%+ uptime), or cost efficiency
+
+- Distributed Storage Systems: Deep expertise in either of Ceph, WekaFS, Lustre, Vast, GPFS, or similar parallel filesystems at multi-petabyte scale
+
+- Object Storage: Production experience with S3, MinIO, Ceph, or R2 including performance optimization and cost management
+
+- Kubernetes Storage: CSI drivers, StatefulSets, PersistentVolumes, storage operators, and custom controllers
+
+- Storage optimization for GPU workloads, RDMA/InfiniBand networking, parallel filesystem optimization (TB/s aggregate cluster throughput - line saturation)
+
+- Programming: Go and Python for automation, operators, and tooling
+
+- Infrastructure as Code: Terraform, Ansible, Helm, GitOps (ArgoCD)
+
+- Linux Storage Stack: Advanced knowledge of filesystems (ext4, xfs), LVM, NVMe optimization, RAID configurations
+
+- Observability: Prometheus, Grafana, Thanos architecture and operations
+
+Nice to Have Skills
+
+- GPU Direct Storage (GDS), NVMe-oF, storage networking, RDMA implementations
+
+- ML/AI storage patterns (model weights, checkpointing, dataset caching)
+
+- Storage benchmarking and profiling tools (fio, iperf3, iostat, blktrace).
+
+About Together AI
+Together AI is a research-driven artificial intelligence company. We believe open and transparent AI systems will drive innovation and create the best outcomes for society, and together we are on a mission to significantly lower the cost of modern AI systems by co-designing software, hardware, algorithms, and models. We have contributed to leading open-source research, models, and datasets to advance the frontier of AI, and our team has been behind technological advancement such as FlashAttention, Hyena, FlexGen, and RedPajama. We invite you to join a passionate group of researchers in our journey in building the next generation AI infrastructure.
+
+Compensation
+We offer competitive compensation, startup equity, health insurance, and other benefits, as well as flexibility in terms of remote work. The US base salary range for this full-time position is: $250,000 - $300,000 + equity + benefits. Our salary ranges are determined by location, level and role. Individual compensation will be determined by experience, skills, and job-related knowledge.
+
+Equal Opportunity
+Together AI is an Equal Opportunity Employer and is proud to offer equal employment opportunity to everyone regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, veteran status, and more.
+
+Please see our privacy policy at https://www.together.ai/privacy
+
+---

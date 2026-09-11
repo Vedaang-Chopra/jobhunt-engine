@@ -1,0 +1,119 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume_style}
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge \scshape Vedaang Chopra} \\ \vspace{2pt}
+  \small
+  \href{mailto:vedaangchopra@gatech.edu}{\underline{vedaangchopra@gatech.edu}} \;|\;
+  \underline{+1 (404) 740-9905} \;|\;
+  Atlanta, GA \;|\;
+  \href{https://linkedin.com/in/vedaang-chopra}{\underline{LinkedIn}} \;|\;
+  \href{https://github.com/Vedaang-Chopra}{\underline{GitHub}} \;|\;
+  \href{https://vedaangchopra.live/}{\underline{Website}}
+  \\ \vspace{3pt}
+  \small
+  MS CS (ML) at Georgia Tech \;|\; Advised by \textbf{Dr.\ Matthew Gombolay}, CORE Robotics Lab \\
+  \textit{AI Scientist:} Production ML (4.5 yrs, enterprise scale) -- Causal/ablation evaluation -- LLM/GenAI applied research
+\end{center}
+\vspace{-6pt}
+
+%---------- INDUSTRY EXPERIENCE (LEAD) ----------
+\section{Industry Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fortinet Technologies Inc.\ (AIOps R\&D)}{Bengaluru, India}
+{Software Development Engineer I \& II (ML/AI)}{Feb 2021 -- Jul 2025}
+\resumeItemListStart
+  \resumeItem{Built and deployed production ML for enterprise network telemetry: SLA forecasting pipelines serving
+  \textbf{60+ classifiers} across 4 categories with automated model evaluation and retraining; unsupervised
+  anomaly detection and data mining over large-scale event data (patent PCT/IN2022/058026;
+  reduced manual troubleshooting \textbf{\textasciitilde75\%}).}
+
+  \resumeItem{Owned end-to-end ML pipelines from data acquisition to model output delivery: scaled ingestion from 50 to
+  \textbf{2,000 events/sec (40x)} in Golang --- discovering sources, building ETL and featurization, and making
+  large-scale telemetry model-ready with reliability and observability.}
+
+  \resumeItem{Led an agentic RAG diagnostics system from hackathon prototype to production: LLM plans multi-step
+  tool calls over telemetry and verifies hypotheses via structured function calling ---
+  reduced mean resolution time \textbf{\textasciitilde70\%}.}
+
+  \resumeItem{Deployed inference-optimized models via ONNX Runtime on edge appliances (\textbf{\textasciitilde40\%} latency reduction);
+  integrated ML into Python/Go backend services across distributed infrastructure.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- RESEARCH EXPERIENCE ----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology -- CORE Robotics Lab @ Siemens}{Atlanta, GA}
+{Graduate Research Assistant \;|\; Advisor: \textbf{Dr.\ Matthew Gombolay}}{Jan 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{Designing execution-grounded evaluation for LLM code generation: geometric verification
+  (Chamfer/Hausdorff on STL/B-Rep), compile validity, and VLM-based visual judgment --- maintained as a
+  \textbf{202-test harness} across a 16-module system framing synthesis as inference-time search with verifiable reward.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Georgia Institute of Technology -- CS 8903 Special Problems}{Atlanta, GA}
+{Graduate Researcher}{Jan 2025 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{ATHENA}: Built a multi-agent generation system (\textbf{5 specialized agents},
+  supervisor-worker orchestration via LangGraph Command) with reflection-based quality critique ---
+  ablation studies showed removing the critique agent cut fact coverage by \textbf{27\%}; evaluated against
+  \textbf{100 reference videos} with BLEU-4 (+0.18 absolute) and CLIPScore.}
+
+  \resumeItem{\textbf{ARTEMIS}: Developing cost-aware routing that selects the optimal Vision-Language Model per
+  request --- trained neural router, SLA-aware load balancing, \textbf{6+ backends served via vLLM}
+  across VQA, OCR, captioning, and multimodal reasoning tasks.}
+
+  \resumeItem{\textbf{CERBERUS}: Cross-modal alignment of frozen encoders (CLIP/SBERT) with Matryoshka embedding
+  compression (4096$\to$128 dims, \textasciitilde96\% retention); trained with PyTorch DDP + mixed precision on
+  H100/A100 clusters; achieved \textbf{R@5 78\%} on PixMo retrieval.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology}{Atlanta, GA}
+{\textbf{M.S.\ in Computer Science} (Machine Learning), \textbf{GPA: 4.0/4.0}}{Aug 2024 -- Dec 2026}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.20in, topsep=0pt, itemsep=0pt]
+  \item\footnotesize{\textbf{Graduate Coursework:} Deep Learning, Deep Reinforcement Learning, ML Security,
+  Large \& Vision Language Models, Agentic AI, Systems for AI --- covering supervised/unsupervised learning,
+  reinforcement learning, Bayesian approaches, and experimental design \& analysis.}
+\end{itemize}
+\vspace{-6pt}
+\resumeEducationCompact
+{Maharaja Surajmal Institute of Technology}{New Delhi, India}
+{B.Tech.\ in Information Technology, CGPA: 8.8/10.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+%---------- PUBLICATIONS & PATENTS ----------
+\section{Publications \& Patents}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Patent (Filed):} \href{https://patents.justia.com/inventor/vedaang-chopra}{\textbf{PCT/IN2022/058026}} -- Unsupervised distributional thresholding for wireless anomaly detection.}{}
+\resumeProjectHeading
+{\textbf{IEEE ICAIA 2026} \;|\; ML + Memory Forensics for Ransomware Detection in IoT-Enabled Energy Systems.}{}
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\footnotesize
+\textbf{ML Paradigms:} Supervised/Unsupervised Learning, Deep Learning, A/B Test Design \& Analysis, Ablation
+Studies, Data Mining, Model Evaluation \& Benchmarking, Experimentation \& Success-Criteria Definition,
+Explainability (ablation- and attribution-based) \\\\[1pt]
+\textbf{Deep Learning / NLP:} PyTorch, Hugging Face Transformers, Scikit-Learn, NLP (BLEU, METEOR,
+BERTScore, CLIPScore), Computer Vision, Vision-Language Models \\\\[1pt]
+\textbf{LLMs / Generative AI:} LangChain, LangGraph, Agentic RAG, Tool/Function Calling, Structured Generation,
+Prompt Evaluation, vLLM, Inference Optimization, LLM-as-a-Judge \\\\[1pt]
+\textbf{Data \& Systems:} Python, Go, SQL/PostgreSQL, OpenSearch/Elasticsearch, Pandas, NumPy,
+Docker, Linux, Git, FastAPI, Azure \\\\[1pt]
+\textbf{Reinforcement Learning:} PPO, DQN, Reward Shaping, Curriculum Learning, Self-Play (academic projects)
+
+\end{document}

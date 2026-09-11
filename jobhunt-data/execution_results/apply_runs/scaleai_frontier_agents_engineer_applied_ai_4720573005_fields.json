@@ -1,0 +1,135 @@
+[
+ {
+  "label": "First Name",
+  "type": "input_text",
+  "name": "first_name",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Last Name",
+  "type": "input_text",
+  "name": "last_name",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Preferred First Name",
+  "type": "input_text",
+  "name": "preferred_name",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "Email",
+  "type": "input_text",
+  "name": "email",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Phone",
+  "type": "input_text",
+  "name": "phone",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Candidate Location",
+  "type": "input_text",
+  "name": "candidate_location",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Resume/CV",
+  "type": "input_file",
+  "name": "resume",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Resume/CV",
+  "type": "textarea",
+  "name": "resume_text",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Cover Letter",
+  "type": "input_file",
+  "name": "cover_letter",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "Cover Letter",
+  "type": "textarea",
+  "name": "cover_letter_text",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "LinkedIn Profile",
+  "type": "input_text",
+  "name": "question_8947750005",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "Website",
+  "type": "input_text",
+  "name": "question_8947751005",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "Are you open to working in person in our San Francisco or New York office 3 times a week?",
+  "type": "multi_value_single_select",
+  "name": "question_8947752005",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "Are you currently bound by any agreements with a current or former employer that may restrict your ability to work for Scale AI or perform the duties of the position for which you are applying? \nThis includes, but is not limited to, non-compete agreements, non-solicitation agreements, confidentiality or non-disclosure agreements, or any other contractual obligations that could limit your employment activities.",
+  "type": "multi_value_single_select",
+  "name": "question_8947753005",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "If yes, please provide further explanation below.",
+  "type": "input_text",
+  "name": "question_8947754005",
+  "required": false,
+  "values": []
+ },
+ {
+  "label": "Are you legally authorized to work in the country where the job is located?",
+  "type": "multi_value_single_select",
+  "name": "question_8947755005",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Will you now or in the future require company sponsorship to retain or extend your work authorization in the country where the job is located?",
+  "type": "multi_value_single_select",
+  "name": "question_8947756005",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "Who is your current or most recent employer?",
+  "type": "input_text",
+  "name": "question_8947757005",
+  "required": true,
+  "values": []
+ },
+ {
+  "label": "What is your current or most recent job title?",
+  "type": "input_text",
+  "name": "question_8947758005",
+  "required": true,
+  "values": []
+ }
+]

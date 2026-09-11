@@ -1,0 +1,106 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume_style}
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge \scshape Vedaang Chopra} \\ \vspace{2pt}
+  \small
+  \href{mailto:vedaangchopra@gatech.edu}{\underline{vedaangchopra@gatech.edu}} \;|\;
+  \underline{+1 (404) 740-9905} \;|\;
+  Atlanta, GA \;|\;
+  \href{https://linkedin.com/in/vedaang-chopra}{\underline{LinkedIn}} \;|\;
+  \href{https://github.com/Vedaang-Chopra}{\underline{GitHub}} \;|\;
+  \href{https://vedaangchopra.live/}{\underline{Website}}
+  \\ \vspace{3pt}
+  \small
+  MS CS (ML) at Georgia Tech \;|\; Advised by \textbf{Dr.\ Matthew Gombolay}, CORE Robotics Lab \\
+  \textit{Research:} Verifiable-reward alignment on frozen models -- Evaluation-driven reasoning systems -- Production ML (4.5 yrs)
+\end{center}
+\vspace{-6pt}
+
+%---------- RESEARCH EXPERIENCE ----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology -- CORE Robotics Lab @ Siemens}{Atlanta, GA}
+{Graduate Research Assistant \;|\; Advisor: \textbf{Dr.\ Matthew Gombolay}}{Jan 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{CAD Code Generation Pipeline}: Designing synthesis as inference-time search with
+  verifiable geometric reward on a frozen model -- reward signals from compile validity, geometric
+  correctness (Chamfer/Hausdorff on STL/B-Rep), and structural diffs guide a LangGraph repair loop,
+  an explicit alternative to training-time alignment for code generation; 16-module system maintained
+  as a 202-test automated evaluation harness with VLM-based visual judgment.}
+
+  \resumeItem{Designing verifier components that turn engineering constraints into checkable reward
+  signals: failure classification, AST/code-graph structural analysis, and repair-trajectory quality
+  scoring -- correctness is checked against ground truth rather than asserted.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Georgia Institute of Technology -- CS 8903 Special Problems}{Atlanta, GA}
+{Graduate Researcher}{Jan 2025 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{ATHENA}: Built a 5-agent supervisor-worker system with reflection-based critique
+  loops improving output quality measurably (+0.18 BLEU-4 absolute over single-agent baseline);
+  designed cross-modal evaluation framework (BLEU-4, METEOR, BERTScore, CLIPScore, SSIM, PSNR)
+  over 100 reference videos; ablation showed removing the critique agent cut fact coverage 27\% --
+  hallucination-style failures surfaced by systematic evaluation.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- INDUSTRY EXPERIENCE ----------
+\section{Industry Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fortinet Technologies Inc.\ (AIOps R\&D)}{Bengaluru, India}
+{Software Development Engineer I \& II (ML/AI)}{Feb 2021 -- Jul 2025}
+\resumeItemListStart
+  \resumeItem{Led development of an agentic RAG diagnostics system from hackathon prototype to
+  production deployment: LLM plans multi-step tool calls over network telemetry and verifies
+  hypotheses via structured function calling before concluding -- verification-gated autonomous
+  root-cause analysis reducing mean resolution time ~70\%.}
+
+  \resumeItem{Trained cross-functional alignment stack with PyTorch DDP + mixed precision on
+  H100/A100 clusters for encoder-frozen multimodal retrieval (Georgia Tech research); deployed
+  edge ML inference via ONNX Runtime (~40\% latency reduction); scaled OpenSearch telemetry
+  ingestion 50$\to$2,000 events/sec (40x) in Golang.}
+
+  \resumeItem{Patent (Filed): PCT/IN2022/058026 -- Unsupervised distributional thresholding for
+  wireless connectivity anomaly detection; reduced manual troubleshooting ~75\%. Built SLA
+  forecasting for 60+ classifiers across 4 categories with automated evaluation and retraining.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\footnotesize
+\textbf{Model Alignment \& Evaluation:} Verifiable-Reward Design \& Verifiers, Inference-Time Search on Frozen Models,
+  Model Evaluation \& Benchmarking, Ablation Studies, LLM-as-a-Judge, Hallucination Detection (coursework),
+  Calibration Concepts (coursework), Familiarity with Current Alignment \& Training-Time Method Literatures (coursework/self-study) \\[1pt]
+\textbf{LLMs / Reasoning:} PyTorch, Hugging Face Transformers, Deep Learning, Transformers \& Attention Architectures,
+  Data Quality \& Deduplication Pipelines, Structured Generation (Pydantic) \\[1pt]
+\textbf{Inference \& Systems:} vLLM, Inference Optimization (ONNX Runtime), Latency/Throughput Engineering,
+  Distributed Training (PyTorch DDP, Mixed Precision), Quantization Contexts (ONNX),
+  Python, Go, SQL/PostgreSQL, OpenSearch/Elasticsearch, Docker, Linux, Git \\[1pt]
+\textbf{Agentic AI:} LangChain, LangGraph, Agentic RAG, Tool/Function Calling, Multi-Agent Orchestration,
+  Long-Horizon Task Decomposition, Reflection \& Critique Loops \\[1pt]
+\textbf{Reinforcement Learning:} PPO, DQN, Reward Shaping, Curriculum Learning, Self-Play (academic projects)
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology}{Atlanta, GA}
+{\textbf{M.S.\ in Computer Science} (Machine Learning Specialization), \textbf{GPA: 4.0/4.0}}{Aug 2024 -- Dec 2026}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.20in, topsep=2pt, itemsep=0pt]
+  \item\footnotesize{\textbf{Coursework:} Deep Learning, Deep RL, ML Security, Large \& Vision Language Models, Agentic AI, Systems for AI}
+\end{itemize}
+\vspace{-2pt}
+\resumeEducationCompact
+{Maharaja Surajmal Institute of Technology}{New Delhi, India}
+{B.Tech.\ in Information Technology, CGPA: 8.8/10.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

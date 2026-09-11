@@ -1,0 +1,643 @@
+# =============================================================================
+# RESUME FACT BANK — Canonical Machine-Readable Source of Truth
+# =============================================================================
+# Every resume bullet must trace back to an entry here.
+# If a fact is not in this file, it MUST NOT appear on a resume.
+#
+# Status:  VERIFIED | PARTIAL (use ~ qualifier) | IN_PROGRESS (ongoing language) | CONTRADICTED (never use)
+# Updated: 2026-08-22
+#
+# AUTHORITY NOTE: Generation *behavior* (pipeline, section architecture, page
+# policy, evaluation) now lives in resume_custom/rules/RESUME_GENERATION_RULES.md.
+# This file remains the canonical FACT source. Evidence retrieval layer:
+# resume_custom/evidence/EVIDENCE_LIBRARY.md. Historical role-family mapping
+# below (role_families:) is retained for fact priorities but superseded by
+# resume_custom/rules/ROLE_FAMILIES.md for strategy/architecture decisions.
+# =============================================================================
+
+candidate:
+  name: "Vedaang Chopra"
+  email: "vedaangchopra@gatech.edu"
+  phone: "+1 (404) 740-9905"
+  location: "Atlanta, GA"
+  linkedin: "https://linkedin.com/in/vedaang-chopra"
+  github: "https://github.com/Vedaang-Chopra"
+  website: "https://vedaangchopra.live/"
+  visa: "F-1 (OPT eligible Dec 2026)"
+
+education:
+  - institution: "Georgia Institute of Technology"
+    location: "Atlanta, GA"
+    degree: "M.S. in Computer Science"
+    specialization: "Machine Learning"
+    gpa: "4.0/4.0"
+    dates: "Aug 2024 -- Dec 2026"
+    advisor: "Dr. Matthew Gombolay"
+    lab: "CORE Robotics Lab @ Siemens"
+    secondary_advisor: "Dr. Alexey Tumanov (Systems for AI Lab — use only in extended variant)"
+    coursework:
+      - "Deep Learning"
+      - "Deep RL"
+      - "ML Security"
+      - "Large & Vision Language Models"
+      - "Agentic AI"
+      - "Systems for AI"
+    status: VERIFIED
+    evidence: "LinkedIn, all resume variants consistent"
+
+  - institution: "Maharaja Surajmal Institute of Technology"
+    location: "New Delhi, India"
+    degree: "B.Tech. in Information Technology"
+    gpa: "8.8/10.0"
+    dates: "Aug 2016 -- Aug 2020"
+    status: VERIFIED
+
+# =============================================================================
+# INDUSTRY EXPERIENCE — FORTINET
+# =============================================================================
+experience:
+  - org: "Fortinet Technologies Inc."
+    team: "AIOps R&D"
+    location: "Bengaluru, India"
+    role: "Software Development Engineer I & II (ML/AI)"
+    dates: "Feb 2021 -- Jul 2025"
+    duration: "4 years 6 months"
+
+    facts:
+      - id: fort_agentic_rag
+        claim: "Led development of an agentic RAG diagnostics system"
+        detail: "LLM plans multi-step tool calls over network telemetry, invokes APIs, and verifies hypotheses via structured function calling, producing autonomous root-cause analysis"
+        impact: "reduced mean resolution time ~70% (hackathon prototype to production deployment)"
+        technologies: ["LLM orchestration", "tool/function calling", "structured output", "RAG", "LangChain"]
+        status: VERIFIED
+        impact_status: PARTIAL  # ~70% is self-reported
+        evidence: "LinkedIn description"
+        role_families: [agentic_ai, agent_reasoning, applied_ml, eval_inference]
+        priority:
+          agentic_ai: 1
+          agent_reasoning: 4
+          applied_ml: 1
+          eval_inference: 2
+
+      - id: fort_patent
+        claim: "Patent (Filed): PCT/IN2022/058026"
+        detail: "Unsupervised distributional thresholding for wireless connectivity anomaly detection using density-based analysis"
+        impact: "reduced manual troubleshooting ~75%"
+        link: "https://patents.justia.com/inventor/vedaang-chopra"
+        status: VERIFIED
+        impact_status: PARTIAL  # ~75% self-reported
+        evidence: "Justia patents database"
+        role_families: [applied_ml, agentic_ai, eval_inference, agent_reasoning]
+        priority:
+          applied_ml: 2
+          agentic_ai: 5
+          eval_inference: 5
+          agent_reasoning: 6
+
+      - id: fort_opensearch
+        claim: "Re-architected OpenSearch ingestion pipelines (complete redesign, async I/O + Golang) from 50 to 2,000 events/sec (40x)"
+        detail: "full pipeline/database-layer re-architecture, not incremental tuning; async I/O + Golang"
+        technologies: ["Golang", "OpenSearch", "Elasticsearch", "async I/O"]
+        status: VERIFIED
+        evidence: "LinkedIn + GitHub profile; user confirmation 2026-08-23 (complete re-architecture)"
+
+      - id: fort_pickle_cpu_serving
+        claim: "Integrated data-science team's pickled ML models into production backend services; deployed CPU-only inference"
+        detail: "backend integration in Go/Python; inference handled purely on CPUs without GPU dependency"
+        technologies: ["Python", "Go", "pickle", "CPU inference"]
+        status: VERIFIED  # user-direct statement 2026-08-23
+        evidence: "User direct statement; consistent with LinkedIn backend-integration role"
+
+      - id: fort_dbscan_sdwan
+        claim: "Implemented DBSCAN-based anomaly detection for SD-WAN telemetry, reportedly preventing over 50% of potential network outages"
+        detail: "unsupervised density-based detection over SD-WAN telemetry"
+        technologies: ["DBSCAN", "scikit-learn", "SD-WAN telemetry"]
+        status: PARTIAL  # metric self-reported — always qualify with 'reportedly'
+        impact_status: CAUTION
+        evidence: "Old resume material (career_master_context.md)"
+
+      - id: fort_hackathon_origin
+        claim: "Agentic RAG system originated as own Fortinet Global Hackathon 2023 entry — top-5 finalist (5th place) — then productionized"
+        technologies: ["LLM orchestration", "RAG"]
+        status: VERIFIED
+        evidence: "career_master_context.md + user confirmation 2026-08-23"
+        role_families: [applied_ml, agentic_ai, eval_inference]
+        priority:
+          applied_ml: 3
+          agentic_ai: 4
+          eval_inference: 4
+
+      - id: fort_onnx
+        claim: "Deployed inference-optimized ML models via ONNX Runtime for edge network appliances"
+        impact: "~40% latency reduction"
+        technologies: ["ONNX Runtime"]
+        status: VERIFIED
+        impact_status: PARTIAL  # self-reported
+        evidence: "Original CV, LinkedIn"
+        role_families: [eval_inference, applied_ml]
+        priority:
+          eval_inference: 3
+          applied_ml: 4
+
+      - id: fort_sla
+        claim: "Built SLA forecasting pipelines supporting 60+ classifiers across 4 categories"
+        detail: "performance, capacity, availability, connectivity with automated evaluation and retraining"
+        technologies: ["Python", "Scikit-Learn", "PyTorch"]
+        status: VERIFIED
+        evidence: "LinkedIn description"
+        role_families: [applied_ml, eval_inference]
+        priority:
+          applied_ml: 5
+          eval_inference: 4
+
+      - id: fort_backend
+        claim: "Integrated ML models into backend services with Python and Go across distributed systems and telemetry infrastructure"
+        technologies: ["Python", "Go", "FastAPI", "Docker"]
+        status: VERIFIED
+        evidence: "LinkedIn"
+        role_families: [applied_ml]
+
+# =============================================================================
+# RESEARCH EXPERIENCE — GEORGIA TECH
+# =============================================================================
+research:
+  - org: "Georgia Institute of Technology — CORE Robotics Lab @ Siemens"
+    location: "Atlanta, GA"
+    role: "Graduate Research Assistant"
+    advisor: "Dr. Matthew Gombolay"
+    dates: "Jan 2026 -- Present"
+    project: "CAD Code Generation"
+    repo: "Private: CAD_Code_Generation (113 commits, 7 branches)"
+
+    facts:
+      - id: cad_pipeline
+        claim: "Building a closed-loop agentic pipeline for parametric CAD code generation"
+        detail: "an LLM generates CadQuery programs, an execution environment returns compile and geometry feedback, and a LangGraph-orchestrated repair loop iteratively corrects errors — framing synthesis as inference-time search with verifiable geometric reward rather than single-pass generation"
+        technologies: ["LangGraph", "CadQuery", "Pydantic", "VLMs"]
+        status: VERIFIED
+        evidence: "PROJECT_OVERVIEW.md, full codebase"
+        critical_note: "Model is FROZEN — NO RL post-training, NO fine-tuning, NO RLHF/RLAIF"
+        role_families: [agentic_ai, agent_reasoning, eval_inference, applied_ml]
+        priority:
+          agentic_ai: 1
+          agent_reasoning: 1
+          eval_inference: 1
+          applied_ml: 2
+
+      - id: cad_evaluation
+        claim: "Designing geometric verification components"
+        detail: "scoring compile validity, parametric 3D correctness (Chamfer/Hausdorff distances on STL and B-Rep representations), and repair trajectory quality; maintaining a 202-test evaluation harness with VLM-based visual judgment and RAG-augmented prompt construction across a 16-module system"
+        metrics:
+          modules: 16
+          tests: 202
+        technologies: ["Chamfer Distance", "Hausdorff Distance", "STL", "B-Rep", "VLM evaluation", "RAG", "AST graphs", "code graphs"]
+        status: VERIFIED
+        evidence: "Codebase modules, test suite"
+        role_families: [eval_inference, agentic_ai, agent_reasoning, applied_ml]
+
+      - id: cad_frozen_model
+        claim: "Model is FROZEN — no training, no fine-tuning, no RL post-training"
+        detail: "PROJECT_OVERVIEW.md explicitly states 'NOT RLVR, because the model is frozen and reward is dense.' Search for PPO → 0 results."
+        status: VERIFIED
+        evidence: "PROJECT_OVERVIEW.md"
+        note: "This contradicts ALL old resumes that claim RL post-training for this project"
+
+  - org: "Georgia Institute of Technology — CS 8903 Special Problems"
+    location: "Atlanta, GA"
+    role: "Graduate Researcher"
+    dates: "Jan 2025 -- Present"
+
+    projects:
+      - id: shastra
+        name: "SHASTRA"
+        period: "Jan 2026 -- Present"
+        status_project: IN_PROGRESS
+        repo: "Private: fork of gatech-sysml/shastra"
+
+        facts:
+          - id: shastra_framework
+            claim: "Designing an agent workflow retrieval and adaptation framework"
+            detail: "enables compositional reuse of prior tool-call sequences for new long-horizon tasks under cost/latency constraints; implementing a LangGraph-based planner with Pydantic state and a component registry with pluggable storage"
+            technologies: ["LangGraph", "Pydantic", "YAML"]
+            status: VERIFIED
+            evidence: "Private repo README"
+            role_families: [agentic_ai, agent_reasoning]
+
+          - id: shastra_trace
+            claim: "Trace-to-graph pipeline converting agent execution traces"
+            detail: "GAIA, 94 sessions, 4,037 events, 1,377 semantic blocks, 442 graph nodes into reusable task-composition graphs with dependency/control/conditional edges"
+            metrics:
+              gaia_sessions: 94
+              events: 4037
+              semantic_blocks: 1377
+              graph_nodes: 442
+            status: VERIFIED
+            evidence: "Private repo README"
+            role_families: [agent_reasoning, agentic_ai]
+
+          - id: shastra_incomplete
+            note: "Orchestrator is STUB only. Executor NOT done. Do not claim these as completed."
+            status: IN_PROGRESS
+
+      - id: athena
+        name: "ATHENA"
+        period: "Jan -- May 2025"
+        status_project: COMPLETED
+        repo: "Private: ATHENA"
+        coauthor: "Prof. Vijay Madisetti"
+
+        facts:
+          - id: athena_agents
+            claim: "Built a multi-agent screenplay generation system with supervisor-worker orchestration using LangGraph Command routing"
+            detail: "coordinated 5 specialized agents (ideation, character design, world building, story generation, scene breakdown) with reflection-based quality critique and dynamic plan modification"
+            technologies: ["LangGraph Command", "Pydantic", "supervisor-worker pattern"]
+            status: VERIFIED
+            evidence: "supervisor.py, tools.py"
+            role_families: [agentic_ai, agent_reasoning]
+
+          - id: athena_eval
+            claim: "Evaluated with BLEU-4 and CLIPScore metrics"
+            detail: "+0.18 BLEU-4 absolute improvement over single-agent baseline on 100 reference videos"
+            metrics:
+              bleu4_improvement: "+0.18 absolute"
+              reference_videos: 100
+              ablation_fact_coverage_drop: "27%"
+              ablation_visual_relevance: "4.1 → 3.3/5.0 (n=5 raters)"
+            status: VERIFIED
+            evidence: "text_metrics.py (sacrebleu), athena.tex, evaluation JSONs"
+            role_families: [eval_inference, agentic_ai, agent_reasoning]
+
+      - id: artemis
+        name: "ARTEMIS"
+        period: "Aug 2025 -- Present"
+        status_project: IN_PROGRESS
+        repo: "Public: Which-VLM-Router"
+
+        facts:
+          - id: artemis_router
+            claim: "Developing a cost-aware routing system for Vision-Language Models that dynamically selects the optimal VLM per request"
+            detail: "trained a neural multi-task router with SLA-aware load balancing, serving 6+ VLM backends via vLLM across VQA, OCR, captioning, and reasoning tasks"
+            technologies: ["vLLM", "PyTorch", "CUDA"]
+            models_served: ["Gemma 3 27B", "Qwen3-VL 8B", "Qwen2.5-VL 7B", "DeepSeek OCR", "Glider", "Llama-4 Scout 17B"]
+            routing_modes: ["accuracy", "cheap", "fast", "balanced", "reward-based"]
+            metrics:
+              backends: "6+"
+              routing_modes: 5
+              tasks: ["VQA", "OCR", "Captioning", "Reasoning"]
+            status: VERIFIED
+            evidence: "README, best_multitask_router_v1.pt, SLA YAML configs"
+            role_families: [eval_inference, agentic_ai, applied_ml]
+
+          - id: artemis_banned_claims
+            note: "NEVER claim: 100K+ query profiles, ~30% lower cost, KL-divergence matching, F1 0.97-0.98, outperforming RouteLLM, arXiv submission"
+            status: CONTRADICTED
+
+      - id: cerberus
+        name: "CERBERUS"
+        period: "Aug 2025 -- Present"
+        status_project: IN_PROGRESS
+        repo: "Public: Edge-Glass"
+
+        facts:
+          - id: cerberus_alignment
+            claim: "Cross-modal alignment with frozen encoders (CLIP/SBERT) using Matryoshka Representation Learning"
+            detail: "DDP-based distributed training with mixed precision on H100/A100 clusters"
+            metrics:
+              embedding_compression: "4096 → 128 dims"
+              retention_512d: "~96%"
+              r_at_5_pixmo: "78%"
+              trm_rouge_l: "0.24 vs 0.08 (text-only baseline)"
+              trm_bleu: "0.066 vs 0.008"
+            technologies: ["PyTorch DDP", "mixed precision", "CLIP ViT-L/14", "SBERT", "Matryoshka", "Perceiver Resampler", "Qwen-14B"]
+            status: VERIFIED
+            evidence: "Edge-Glass README, CEREBRUS.pdf"
+            role_families: [eval_inference]
+
+          - id: cerberus_perceiver_negative
+            claim: "Perceiver Resampler ablation: negative result identifying initialization/gradient issues"
+            status: VERIFIED
+            note: "Show this in eval/inference roles — demonstrates research rigor"
+
+      - id: sign_reading
+        name: "Sign Reading AR Glasses"
+        status_project: IN_PROGRESS
+        repo: "Private: Sign_Reading_AR_Glasses"
+
+        facts:
+          - id: sign_reading_system
+            claim: "AR scene understanding system for Meta Ray-Ban smart glasses"
+            detail: "VLM-powered (Gemma 4 26B), cross-platform (Android, iOS, Web/PWA), production v2 with health monitoring, assistive technology for blind and low-vision users"
+            technologies: ["Gemma 4 26B", "LM Studio", "OpenRouter", "Android", "iOS", "PWA"]
+            status: VERIFIED
+            evidence: "Private repo README"
+            role_families: [agentic_ai, applied_ml]
+            note: "Include when space permits and role values product engineering"
+
+      - id: drl_post_training_literacy
+        name: "Post-training algorithm literacy (self-study, evidence-backed)"
+        period: "2026 (DRL coursework extension)"
+        status_project: COMPLETED
+        facts:
+          - id: drl_pt_notes
+            claim: "Self-studied modern post-training methods with authored research-extension notes"
+            detail: >-
+              DPO/KTO/IPO/online-DPO/GRPO/DAPO, RLHF vs RLVR,
+              process-vs-outcome reward models — notes explicitly tied to the CAD
+              code-generation project's verifiable-reward design. Companion:
+              from-scratch REINFORCE/VPG/PPO implementation (executed notebook) and
+              DDPM components passing the CS 7643 instructor test suite
+              (profile_info/education/gt_coursework_evidence.md).
+            tier: STUDY-CLAIM
+            rule: "Usable in interviews and cover letters. On resumes ONLY inside Skills as '(coursework/self-study: RLHF/DPO/GRPO theory)' — never imply hands-on production post-training implementation."
+
+      - id: rl_soccer
+        name: "RL Soccer"
+        status_project: COMPLETED
+        repo: "Public: RL_Soccer_project"
+        nature: "COURSEWORK — always qualify as (academic project)"
+
+        facts:
+          - id: rl_soccer_methods
+            claim: "Implemented PPO and DQN agents with reward shaping, curriculum learning, and self-play"
+            technologies: ["Ray/RLlib", "PPO", "DQN", "Unity ML-Agents (SoccerTwos)"]
+            status: VERIFIED
+            evidence: >-
+              Public repo + SoccerTwos project artifacts (audited 2026-08-22):
+              Ray Tune PPO checkpoints with progress.csv/TensorBoard event files,
+              head-to-head eval JSONs, executed pipeline notebooks, compiled
+              CoRL-format report — Course Content/CS 8803- DRL/project/project/
+              soccer-twos-starter/. See profile_info/education/gt_coursework_evidence.md.
+            metrics:
+              baseline_reward: "0.2399 @ ~2.0M steps"
+              shaped_reward: "0.4036 @ ~2.0M steps"
+              curriculum_reward: "1.7869 @ ~2.06M steps"
+              final_agent_reward: "1.9692 @ ~30M cumulative steps"
+              final_vs_baseline: "won 8 of 10 recorded matches (small-N)"
+            critical_note: "TEAM project (4 members; 7/64 commits by candidate — docs/report/notebook organization). Never claim solo authorship of training results."
+            role_families: [agent_reasoning, agentic_ai]
+            note: "ALWAYS qualify as (academic project); cite metrics only with small-N qualifier"
+
+# =============================================================================
+# PUBLICATIONS & PATENTS
+# =============================================================================
+publications:
+  - id: patent
+    title: "Unsupervised distributional thresholding for wireless connectivity anomaly detection"
+    type: "Patent (Filed)"
+    number: "PCT/IN2022/058026"
+    link: "https://patents.justia.com/inventor/vedaang-chopra"
+    status: VERIFIED
+    include_on_1page: true
+
+  - id: ceur_paper
+    title: "Ontology-based Text Classification"
+    type: "Workshop Paper"
+    venue: "CEUR Workshop Proceedings Vol. 2786"
+    link: "https://ceur-ws.org/Vol-2786/Paper16.pdf"
+    year: 2020
+    status: VERIFIED
+    include_on_1page: false  # 6 years old, different domain, workshop venue
+    note: "Include only in applied_ml variant if Publications section has space"
+
+  - id: athena_paper
+    title: "Screenplay generation via multi-agent orchestration"
+    type: "Manuscript in preparation"
+    coauthor: "Prof. Vijay Madisetti"
+    status: IN_PROGRESS
+    note: "Do NOT claim as submitted or published"
+
+  - id: icaia_paper
+    title: "Integrating Machine Learning and Memory Forensics for Enhancing Cybersecurity in IoT-Enabled Energy Systems"
+    type: "Conference Paper (PUBLISHED)"
+    venue: "IEEE ICAIA 2026"
+    coauthor: "Sonika Malik"
+    metrics:
+      memory_dumps: 18
+      ransomware_families: 12
+      yara_rules: "100+"
+      hf_dataset: "Vedaang/malware_analysis (33 GB)"
+    technologies: ["Volatility3", "YARA", "scikit-learn", "pandas", "Docker", "Hugging Face Hub"]
+    status: VERIFIED
+    include_on_1page: true   # for ai_security / applied_scientist / research families
+    role_families: [ai_security, applied_ml, agentic_ai, eval_inference]
+    note: "Published — safe to claim. Lead evidence for ai_security family."
+
+# =============================================================================
+# BANNED CLAIMS — EVIDENCE-TIERED SYSTEM (rebuilt 2026-08-22 after code audits)
+# =============================================================================
+# Rebuilt from 4 parallel code audits (see profile_info/projects/CLAIM_AUDITS_2026-08-22.md).
+# Every claim now carries a verdict from actual codebase inspection, not assumption.
+#
+# Tiers:
+#   banned_tier_1_anywhere      = contradicted by code/artifacts. NEVER claim.
+#   unverifiable_no_artifact    = code exists but NO persisted result. Do not
+#                                 cite NUMBERS; qualitative framing allowed only
+#                                 with "(evaluation implemented; results internal)".
+#   candidate_attested          = user-confirmed real work, no local artifact
+#                                 (Fortinet-proprietary). Method-level claims only.
+#   verified_by_code_audit      = previously banned, now UPGRADED — code proof exists.
+# =============================================================================
+
+# --- FALSE: contradicted by code audit (2026-08-22) ---
+banned_tier_1_anywhere:
+  # --- ATHENA architecture ---
+  - claim: "14-agent ATHENA"
+    verdict: "FALSE"
+    truth: "v1 = 6 active supervisor members (5 creative + intent). v0.2 experimental: 11+supervisor. '14' only in athena.tex placeholders."
+    correct: "5 specialized agents + intent-planning agent, supervisor-worker"
+
+  - claim: "Blackboard controller (ATHENA)"
+    verdict: "FALSE"
+    truth: "Git pickaxe across all history: 'blackboard' never in .py files — only docs."
+    correct: "Supervisor-worker orchestration via LangGraph Command"
+
+  # --- ARTEMIS inflated metrics ---
+  - claim: "100K+ query profiles (ARTEMIS)"
+    verdict: "PARTIAL-UNDERSTATED"
+    truth: "339,056 model-response profiles; ~68K unique queries x 5 models (router_profiles_with_utility.parquet)"
+    correct: "~340K profiles across ~68K queries"
+
+  - claim: "~30% lower cost (ARTEMIS)"
+    verdict: "FALSE"
+    truth: "Recomputed: +591%/+385% MORE expensive than CascadeFlow; production router crashes on construction (inference_reward_router.py self.model unassigned) and silently falls back"
+    correct: "Remove. Usable alternative: 90.3% oracle-utility recovery (balanced mode)"
+
+  - claim: "outperforming RouteLLM"
+    verdict: "FALSE"
+    truth: "RouteLLM appears only as citation; zero comparisons"
+    correct: "Remove"
+
+  - claim: "ARTEMIS arXiv preprint"
+    verdict: "FALSE"
+    truth: "Draft PDF exists, no submission; MASTER_PLAN_publication.md lists submission as goal"
+    correct: "Remove entirely"
+
+  - claim: "6+ VLM backends (ARTEMIS)"
+    verdict: "FALSE as worded"
+    truth: "Exactly 5 distinct models x 2 endpoints: gemma_3_27b, qwen3_vl_8b_thinking, qwen2_5_vl_7b, qwen2_5_vl_3b, deepseek_ocr"
+    correct: "5 VLMs (10 vLLM endpoints)"
+
+  # --- CAD method (model is FROZEN — no training, no fine-tuning, no RL) ---
+  - claim: "RL-based post-training (PPO/GRPO) for CAD"
+    verdict: "FALSE"
+    truth: "Model is frozen, no training"
+    correct: "Inference-time search with geometric verification"
+
+  - claim: "RLHF / RLAIF"
+    verdict: "FALSE"
+    truth: "Zero code in any codebase"
+    correct: "Remove entirely"
+
+  - claim: "Reward modeling (RL sense)"
+    verdict: "FALSE"
+    truth: "No reward model trained"
+    correct: "Geometric verification scoring"
+
+  - claim: "SHASTRA workflow retrieval / agent memory as BUILT"
+    verdict: "PLANNED-ONLY"
+    truth: "Retrieval/composition only in untracked design docs (deer-flow fork_checklist). GAIA trace-to-graph pipeline IS real and runnable."
+    correct: "Constraint-aware plan search (cost/latency/accuracy), component registry, runnable GAIA trace-to-graph pipeline; retrieval not yet implemented"
+
+  - claim: "SHASTRA LangGraph planner / Pydantic state"
+    verdict: "FALSE"
+    truth: "Zero LangGraph imports in project code; plain ABC planners; dataclasses not Pydantic"
+    correct: "Remove LangGraph/Pydantic attribution from SHASTRA"
+
+  - claim: "SHASTRA orchestrator complete"
+    verdict: "FALSE (confirmed stub)"
+    truth: "Only MockComponent; cannot run real task end-to-end; 157 tests pass against mocks"
+
+  - claim: "CERBERUS trained on Fortinet infra"
+    verdict: "FALSE on disk"
+    truth: "All training paths = Georgia Tech HICE cluster (/home/hice1/vchopra37, H100/A100); zero Fortinet references in repo"
+    correct: "Trained on Georgia Tech HICE cluster"
+
+  - claim: "CAD 202-test harness"
+    verdict: "FALSE as stated"
+    truth: "pytest collects 188 tests with 97 collection errors (unresolved imports); '202' exists nowhere in current code — stale doc claim"
+    correct: "'pytest harness' without the number until the suite is repaired; fixing imports would also restore a real count"
+  - claim: "CAD 16-module system"
+    verdict: "PARTIAL (stale)"
+    truth: "12 top-level packages under modules/ (+visualization); 507 .py files; '16 modules' only in archived refactor-era docs"
+    correct: "'modular multi-package system' or '12-module'"
+  - claim: "Chamfer/Hausdorff on STL and B-Rep"
+    verdict: "PARTIAL"
+    truth: "distances.py implements both on tessellated STL point clouds (plus precision/recall/F1, normal_consistency); B-Rep comparison is a separate module — metrics do not operate on B-Rep directly"
+    correct: "'Chamfer/Hausdorff on STL meshes'"
+
+# CAD verified claims (added 2026-08-22):
+verified_by_code_audit_append:
+  - claim: "CAD closed-loop repair loop + VLM-as-judge + RAG prompts + frozen model"
+    now: "ALL VERIFIED — routers gate on compile/STL success; vlm_evaluation module with fail-open guardrails and no-correctness-claim test; rag_system_instruction wired; zero training code (362 grep hits all substring false positives)"
+  - claim: "CAD Chamfer + Hausdorff implementations"
+    now: "VERIFIED — modules/evaluation/metric_evaluation/evaluation/distances.py, STL-based via trimesh evaluator"
+
+# --- UNVERIFIABLE: code exists, no persisted result — never cite numbers ---
+# SECOND DEEP SCAN 2026-08-22: module-level eval results DO exist
+# (dataset/processed_dataset/results/, 97 videos: BLEU 0.154, ROUGE-L 0.306,
+# METEOR 0.302, BERTScore-F1 0.333, CLIPScore 0.471 absolute; ~half partial runs).
+# Absolute metrics now citable with "preliminary" qualifier.
+# Still banned: all RELATIVE/comparative figures and the human study.
+unverifiable_no_artifact:
+  - claim: "ATHENA BLEU-4 +0.18 absolute improvement"
+    truth: "No comparative figure exists anywhere; corpus BLEU is 0.154 (persisted)"
+    correct: "May cite 'corpus BLEU-4 of 0.15 (preliminary)'; never +0.18 or any delta"
+  - claim: "ATHENA CLIPScore +22%"
+    truth: "Absolute CLIPScore 0.471 persisted; no relative +22% anywhere"
+    correct: "May cite 'CLIPScore 0.47'; never +22%"
+  - claim: "ATHENA ablation 27% fact coverage / 4.1->3.3 n=5 raters"
+    truth: "Zero artifacts after two scans incl. notebooks; research agent existed in v0.2 code but no ablation was ever run"
+    correct: "Never claim"
+  - claim: "ARTEMIS SLA-aware routing in production"
+    truth: "sla_monitor.py + per-task SLAs real, but simulation-only; vLLM backends never live-reachable"
+    correct: "SLA-aware load balancing (simulation-validated)"
+
+# --- CANDIDATE-ATTESTED: user-confirmed, no local artifact ---
+candidate_attested:
+  - claim: "CI/CD experience at Fortinet"
+    status: "user-confirmed 2026-08-22, tooling unspecified"
+    rule: "Skills-section only; no tool names, no project-bullet claims"
+
+# --- UPGRADED: previously banned, code audit found proof ---
+verified_by_code_audit:
+  - claim: "KL-divergence matching (ARTEMIS)"
+    was: "banned as 'not in code'"
+    now: "VERIFIED — classical_router.py:157 F.kl_div (CE+KL loss) + notebooks; classical-router lineage only"
+  - claim: "Qwen SLM fine-tuning (Edge Assistant/CERBERUS)"
+    was: "banned under blanket 'Fine-tuning / LoRA / QLoRA / SFT / DPO'"
+    now: "VERIFIED — peft LoraConfig r=32 a=64; real runs Qwen2.5-7B (40.4M trainable/7.66B) + Qwen2.5-1.5B (17.4M/1.56B); configs 7B/3B/1.5B-Instruct; notebooks 01-07 with executed outputs; GT HICE cluster"
+    wording: "LoRA fine-tuning of Qwen2.5 (7B/3B/1.5B) decoders"
+  - claim: "Matryoshka 4096->128 compression (CERBERUS)"
+    now: "VERIFIED — src/encoders/mrl.py + eval tables (~77.7% R@5 @4096-d -> ~63% @128-d; Perceiver branch honest negative)"
+    note: "MRL = prefix-slicing of learned projector, not separate cascade"
+  - claim: "ATHENA 5 specialized agents"
+    now: "VERIFIED — agents/screenplay/{ideation,charachter,world_prop,story,scene_breakdown}.py"
+  - claim: "ATHENA reflection critique + dynamic plan modification"
+    now: "VERIFIED in code (integration partial: router validation commented out)"
+
+# --- STILL BANNED: blanket fine-tuning family narrows to these ---
+# llama-chat-finetune.ipynb QLoRA/SFT self-study execution: still unverified
+# (no saved outputs). Re-run with outputs to claim as "(self-study)".
+# DPO: no evidence anywhere. Keep banned.
+
+banned_tier_2_project_bullets_only:
+  - "DeepSpeed"      # appears only in CERBERUS training logs, not user-authored config
+  - "Kubernetes"     # UNVERIFIED (GitHub README only)
+  - "JAX"            # UNVERIFIED
+
+# Grep patterns for Pass 1 (whole .tex scan). Any hit = fix before delivery.
+banned_tier_1_grep_patterns:
+  - "14-agent"
+  - "blackboard"
+  - "BLEU +18%"
+  - "CLIPScore +22%"
+  - "100K+"
+  - "~30% lower cost"
+  - "RouteLLM"
+  - "RLHF"
+  - "RLAIF"
+  - "DPO"
+  - "GRPO"
+  - "arXiv"
+  - "6+ VLM"
+  # NOTE: "KL-divergence" REMOVED from ban list (verified 2026-08-22).
+  # NOTE: "fine-tun", "SFT", "QLoRA", "LoRA" REMOVED from blanket ban — now
+  # allowed ONLY for CERBERUS Qwen LoRA wording; llama-chat notebook claims
+  # remain banned. Check context manually on any hit.
+
+# =============================================================================
+# ROLE FAMILY → BASE TEMPLATE MAPPING
+# =============================================================================
+role_families:
+  agentic_ai:
+    template: "base_agentic_ai.tex"
+    tagline: "Agentic AI for code generation with execution verification -- Multi-agent orchestration -- VLM routing"
+    section_order: [education, research, industry, publications, skills]
+    skills_order: [agentic_ai, ai_ml, llms_vlms, rl, systems]
+    lead_projects: [cad_pipeline, athena_agents, shastra_framework, fort_agentic_rag, artemis_router]
+    omit: [cerberus_alignment, ceur_paper]
+    default: true  # Use this when role family is unclear
+
+  eval_inference:
+    template: "base_eval_inference.tex"
+    tagline: "LLM evaluation with execution-grounded verification -- Cost-aware VLM routing -- Inference systems"
+    section_order: [education, research, industry, skills]
+    skills_order: [llms_vlms, ai_ml, agentic, rl, systems]
+    lead_projects: [cad_evaluation, cerberus_alignment, artemis_router, fort_onnx, fort_sla]
+    omit: [athena_agents, ceur_paper]
+
+  applied_ml:
+    template: "base_applied_ml.tex"
+    tagline: "4+ years production ML + active research in agentic systems, model evaluation, and VLM routing"
+    section_order: [education, industry, research, publications, skills]  # Industry FIRST
+    skills_order: [ai_ml, llms_vlms, agentic, rl, systems]
+    lead_projects: [fort_agentic_rag, fort_onnx, fort_opensearch, fort_sla, fort_patent, cad_pipeline]
+
+  agent_reasoning:
+    template: "base_agent_reasoning.tex"
+    tagline: "Multi-agent orchestration with structured generation -- Tool-use planning with execution verification -- Workflow reuse for long-horizon tasks"
+    section_order: [education, research, industry, publications, skills]
+    skills_order: [agentic_ai, ai_ml, llms_vlms, rl, systems]
+    lead_projects: [athena_agents, shastra_trace, cad_pipeline, fort_agentic_rag, artemis_router]
+    omit: [cerberus_alignment, ceur_paper]
+    requires_referral: true

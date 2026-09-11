@@ -1,0 +1,42 @@
+# Support Team Lead — scale_ai
+
+- **Source:** greenhouse
+- **URL:** https://job-boards.greenhouse.io/scaleai/jobs/4716431005
+- **Location:** Argentina; Mexico City, MX
+- **Posted (board):** 2026-08-04T01:05:04-04:00
+- **Discovered:** 2026-08-23 (lab sweep)
+- **source_id:** gh_4716431005
+- **full_description_hash:** 9bd91a18cd34b508
+
+## Full Job Description Text
+
+&lt;h2&gt;Role Summary&lt;/h2&gt;
+&lt;p&gt;The Support Team Manager is responsible for the day-to-day leadership and performance of a team of Support Specialists, serving as the primary connection between frontline agents and broader operational leadership. This role balances hands-on people management with operational oversight, including but not limited to coaching team members, driving performance outcomes, managing escalations, and ensuring contributors receive consistent, high-quality support experiences.&lt;/p&gt;
+&lt;p&gt;The ideal candidate leads with curiosity, communicates proactively, and holds themselves and their team to a high standard of accountability, quality, and continuous improvement. Success in this role requires strong judgment, a people-first mindset, and the ability to thrive in a fast-paced, evolving environment.&lt;/p&gt;
+&lt;h2&gt;Key Responsibilities&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Team Leadership &amp;amp; Coaching:&lt;/strong&gt; Lead, coach, and develop a team of Support Specialists (Tier 1-3) through regular 1:1s, structured feedback, and performance conversations. Foster a collaborative, accountable, and high-performing team culture. Recognize strong performance and address performance concerns in a timely and constructive manner.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance Management:&lt;/strong&gt; Monitor and evaluate team performance across quality, productivity, CSAT, SLA attainment, and adherence metrics. Identify trends, surface insights, and create action plans to drive continuous improvement at both the individual and team levels.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operational Oversight:&lt;/strong&gt; Manage day-to-day team operations including ticket queue health, schedule adherence, coverage coordination, and shift handoffs. Ensure workflows, policies, and documentation are consistently followed and updated as processes evolve.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Escalation Management:&lt;/strong&gt; Serve as the primary escalation point for complex or unresolved contributor issues. Support agents with difficult tickets, providing guidance and decision-making to ensure timely, high-quality resolutions with complete documentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reporting &amp;amp; Analytics:&lt;/strong&gt; Track and report on team performance metrics, surfacing trends and actionable insights to the Regional Workforce Manager. Maintain accurate records of team health, individual performance, and operational outcomes to support data-driven decisions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross-functional Collaboration:&lt;/strong&gt; Partner with Leadership, Quality, Enablement, and SME teams to drive process improvements and contributor experience enhancements. Communicate updates effectively and support the team through change management initiatives.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Team Development &amp;amp; Training:&lt;/strong&gt; Support the onboarding of new team members and contribute to ongoing training and development. Identify individual growth opportunities and partner with leadership on performance improvement plans (PIPs) where needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Minimum Qualifications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Experience:&lt;/strong&gt; Minimum 2 years of direct people management experience in a customer support or operations environment, with a demonstrated track record of leading teams, driving performance outcomes, and developing individual contributors. Previous experience as a Support Specialist, SME, or Team Lead within a tiered support structure is a plus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Skills:&lt;/strong&gt; Strong written and verbal communication skills in English. Proven ability to manage competing priorities, make sound decisions under pressure, and deliver constructive feedback effectively.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Technical:&lt;/strong&gt; Proficiency in support and collaboration tools including Zendesk, Slack, and Google Workspace. Comfortable working across multiple systems and reporting platforms. Experience with data and analytics tools such as Redash or Snowflake, or familiarity with basic coding/scripting, is a plus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attributes:&lt;/strong&gt; High ownership and accountability. People-first mindset with the ability to balance empathy and operational efficiency. Adaptable, proactive, and committed to continuous learning and team growth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What Success Looks Like&lt;/h2&gt;
+&lt;p&gt;Successful Team Managers build trust while holding their teams accountable. They coach through curiosity, empower agents to work more independently, and communicate proactively with both their team and stakeholders. They prioritize based on business impact, foster a culture of continuous learning, and consistently deliver results across quality, productivity, and contributor experience metrics.&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;PLEASE NOTE:&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;Our policy requires a 90-day waiting period before reconsidering candidates for the same role. This allows us to ensure a fair and thorough evaluation of all applicants.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About Us:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;At Scale, our mission is to develop reliable AI systems for the world&#39;s most important decisions. Our products provide the high-quality data and full-stack technologies that power the world&#39;s leading models, and help enterprises and governments build, deploy, and oversee AI applications that deliver real impact. We work closely with industry leaders like Meta, &lt;/em&gt;&lt;em&gt;Ernst&lt;/em&gt;&lt;em&gt; &lt;/em&gt;&lt;em&gt;&amp;amp;&lt;/em&gt;&lt;em&gt; Young, Mayo Clinic, Time Inc., the Government of Qatar, and U.S. government agencies including the Army and Air Force. We are expanding our team to accelerate the development of AI applications.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We believe that everyone should be able to bring their whole selves to work, which is why we are proud to be an inclusive and equal opportunity workplace. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability status, gender identity or Veteran status.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We are committed to working with and providing reasonable accommodations to applicants with physical and mental disabilities. If you need assistance and/or a reasonable accommodation in the application or recruiting process due to a disability, please contact us at accommodations@scale.com. Please see the United States Department of Labor&#39;s &lt;/em&gt;&lt;a href=&quot;https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf&quot;&gt;&lt;em&gt;Know Your Rights poster&lt;/em&gt;&lt;/a&gt;&lt;em&gt; for additional information.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We comply with the United States Department of Labor&#39;s &lt;/em&gt;&lt;em&gt;Pay Transparency provision&lt;/em&gt;&lt;em&gt;.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;PLEASE NOTE: &lt;/strong&gt;We collect, retain and use personal data for our professional business purposes, including notifying you of job opportunities that may be of interest and sharing with our affiliates. We limit the personal data we collect to that which we believe is appropriate and necessary to manage applicants’ needs, provide our services, and comply with applicable laws. Any information we collect in connection with your application will be treated in accordance with our internal policies and programs designed to protect personal data. Please see our &lt;a href=&quot;https://scale.com/legal/privacy&quot; target=&quot;_blank&quot;&gt;privacy policy&lt;/a&gt; for additional information.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
+
+---

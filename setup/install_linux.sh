@@ -86,7 +86,7 @@ export JOBHUNT_HOME="$INSTALL_DIR/jobhunt-data"
 log "Installing systemd user units"
 mkdir -p "$HOME/.config/systemd/user"
 for unit in jobhunt-automation-chrome jobhunt-ui; do
-  sed "s|%h/git/application_hunting|$INSTALL_DIR|g" "setup/systemd/$unit.service" \
+  sed "s|%h/git/jobhunt-engine|$INSTALL_DIR|g" "setup/systemd/$unit.service" \
     > "$HOME/.config/systemd/user/$unit.service"
 done
 systemctl --user daemon-reload

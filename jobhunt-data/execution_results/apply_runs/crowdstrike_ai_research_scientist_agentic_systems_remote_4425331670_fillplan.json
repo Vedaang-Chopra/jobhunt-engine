@@ -1,0 +1,20 @@
+[
+ {
+  "label": "Email Address",
+  "key": "identity.email",
+  "source": "rule:\\bemail\\b",
+  "action": "AUTO_FILL",
+  "field_type": "text",
+  "required": true,
+  "value": "vedaangchopra@gatech.edu"
+ },
+ {
+  "label": "Yes, I understand and acknowledge the terms and conditions.",
+  "key": null,
+  "source": "unmatched",
+  "action": "ASK_USER",
+  "field_type": "checkbox",
+  "required": false,
+  "value": null
+ }
+]

@@ -1,0 +1,50 @@
+# Senior AI Product Manager, Leaderboard — scale_ai
+
+- **Source:** greenhouse
+- **URL:** https://job-boards.greenhouse.io/scaleai/jobs/4720216005
+- **Location:** New York, NY; San Francisco, CA
+- **Posted (board):** 2026-08-10T19:22:54-04:00
+- **Discovered:** 2026-08-23 (lab sweep)
+- **source_id:** gh_4720216005
+- **full_description_hash:** bf60c7bd5f88c3e0
+
+## Full Job Description Text
+
+&lt;p&gt;Scale has been the leading AI data foundry, helping fuel the most exciting advancements in AI, including frontier model training, enterprise adoption, defense applications, and autonomous vehicles. Our mission is to develop reliable AI systems for the world&#39;s most important decisions.&lt;/p&gt;
+&lt;p&gt;We’re looking for a &lt;strong&gt;Senior AI Product Manager&lt;/strong&gt; to own and scale &lt;strong&gt;Scale’s SEAL Leaderboard&lt;/strong&gt; portfolio. In this role, you will define the strategy, roadmap, and operational excellence of Scale’s evaluation products, benchmarks, and public/private leaderboards. You will work across AI Product Management, ML Researchers, Engineering, Operations, and Go-To-Market teams to transform cutting-edge model evaluations into trusted industry benchmarks that influence model development and purchasing decisions across the AI ecosystem.&lt;/p&gt;
+&lt;p&gt;You will serve as the product owner for leaderboard initiatives, driving benchmark innovation, governance, infrastructure, customer adoption, and business impact. You will work directly with leading AI labs and enterprise customers, representing Scale as a thought leader in AI evaluation and measurement.&lt;/p&gt;
+&lt;p&gt;The ideal candidate combines strong product judgment, technical fluency, operational rigor, and customer-facing experience, with a passion for turning emerging model capabilities into scalable evaluation products.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You Will&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Own the roadmap and strategy for Scale’s SEAL Leaderboard portfolio, defining priorities across benchmark development, leaderboard launches, infrastructure investments, and product expansion.&lt;/li&gt;
+&lt;li&gt;Facilitate the Leaderboard Steering Committee and drive alignment across AI-PM, ML, Engineering, Operations, and GTM stakeholders.&lt;/li&gt;
+&lt;li&gt;Evaluate, prioritize, and operationalize new leaderboard proposals, ensuring alignment with customer demand, market opportunities, and company strategy.&lt;/li&gt;
+&lt;li&gt;Define and manage the end-to-end leaderboard product lifecycle, from ideation and benchmark design to launch, growth, maintenance, and sunset decisions.&lt;/li&gt;
+&lt;li&gt;Partner with ML researchers and domain experts to develop trustworthy evaluation methodologies, benchmark specifications, and leaderboard scoring frameworks.&lt;/li&gt;
+&lt;li&gt;Drive the roadmap for leaderboard infrastructure, automation, and operational tooling to improve scalability, reduce manual effort, and accelerate benchmark releases.&lt;/li&gt;
+&lt;li&gt;Establish governance processes for benchmark quality, evaluation integrity, release management, auditability, and update cadence.&lt;/li&gt;
+&lt;li&gt;Work directly with frontier AI labs and enterprise customers to understand evaluation needs, gather feedback, and influence future leaderboard investments.&lt;/li&gt;
+&lt;li&gt;Track adoption, usage, customer impact, and business outcomes, using data-driven insights to guide roadmap decisions and resource allocation.&lt;/li&gt;
+&lt;li&gt;Identify new evaluation categories, benchmark opportunities, and leaderboard products that strengthen Scale’s industry leadership and create new revenue opportunities.&lt;/li&gt;
+&lt;li&gt;Collaborate closely with GTM teams to support customer engagements, thought leadership initiatives, product launches, and strategic partnerships.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ideally, You’d Have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5+ years of experience in product management, technical program management, consulting, or customer-facing technical roles.&lt;/li&gt;
+&lt;li&gt;Strong technical fluency, including familiarity with machine learning systems, AI model evaluation, benchmarking, or data products.&lt;/li&gt;
+&lt;li&gt;Experience building and scaling products that require coordination across engineering, operations, and business teams.&lt;/li&gt;
+&lt;li&gt;Excellent stakeholder management and executive communication skills, with a demonstrated ability to drive alignment across cross-functional organizations.&lt;/li&gt;
+&lt;li&gt;Strong analytical skills and the ability to translate ambiguous market and customer signals into clear product strategy.&lt;/li&gt;
+&lt;li&gt;Experience working with AI researchers, ML teams, or evaluation frameworks is strongly preferred.&lt;/li&gt;
+&lt;li&gt;Entrepreneurial mindset with a track record of creating new products, programs, or business initiatives from the ground up.&lt;/li&gt;
+&lt;li&gt;Bias for action and comfort operating in fast-moving, ambiguous environments.&lt;/li&gt;
+&lt;li&gt;Passion for advancing trustworthy AI evaluation and helping define industry standards for measuring frontier model capabilities.&lt;/li&gt;
+&lt;/ul&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;description&quot;&gt;&lt;p&gt;&lt;em&gt;Compensation packages at Scale for eligible roles include base salary, equity, and benefits. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position and may be inclusive of several career levels at Scale; it will be determined during the interview process based on work location and additional factors, including job-related skills, experience, qualifications, interview performance, and relevant education or training. Scale employees in eligible roles are also granted equity based compensation, subject to Board of Director approval. Your recruiter can share more about the specific salary range for your preferred location during the hiring process, and confirm whether the hired role will be eligible for equity grant. You&#39;ll also receive benefits including, but not limited to: comprehensive health, dental and vision coverage, retirement benefits, a learning and development stipend, and generous PTO. Additionally, this role may be eligible for additional benefits such as a commuter stipend.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;title&quot;&gt;Please reference the job posting&#39;s subtitle for where this position will be located. For pay transparency purposes, the base salary range for this full-time position in the locations of San Francisco, New York, Seattle is:&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$205,600&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$257,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;PLEASE NOTE:&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;Our policy requires a 90-day waiting period before reconsidering candidates for the same role. This allows us to ensure a fair and thorough evaluation of all applicants.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About Us:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;At Scale, our mission is to develop reliable AI systems for the world&#39;s most important decisions. Our products provide the high-quality data and full-stack technologies that power the world&#39;s leading models, and help enterprises and governments build, deploy, and oversee AI applications that deliver real impact. We work closely with industry leaders like Meta, &lt;/em&gt;&lt;em&gt;Ernst&lt;/em&gt;&lt;em&gt; &lt;/em&gt;&lt;em&gt;&amp;amp;&lt;/em&gt;&lt;em&gt; Young, Mayo Clinic, Time Inc., the Government of Qatar, and U.S. government agencies including the Army and Air Force. We are expanding our team to accelerate the development of AI applications.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We believe that everyone should be able to bring their whole selves to work, which is why we are proud to be an inclusive and equal opportunity workplace. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability status, gender identity or Veteran status.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We are committed to working with and providing reasonable accommodations to applicants with physical and mental disabilities. If you need assistance and/or a reasonable accommodation in the application or recruiting process due to a disability, please contact us at accommodations@scale.com. Please see the United States Department of Labor&#39;s &lt;/em&gt;&lt;a href=&quot;https://www.eeoc.gov/sites/default/files/2023-06/22-088_EEOC_KnowYourRights6.12ScreenRdr.pdf&quot;&gt;&lt;em&gt;Know Your Rights poster&lt;/em&gt;&lt;/a&gt;&lt;em&gt; for additional information.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We comply with the United States Department of Labor&#39;s &lt;/em&gt;&lt;em&gt;Pay Transparency provision&lt;/em&gt;&lt;em&gt;.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;PLEASE NOTE: &lt;/strong&gt;We collect, retain and use personal data for our professional business purposes, including notifying you of job opportunities that may be of interest and sharing with our affiliates. We limit the personal data we collect to that which we believe is appropriate and necessary to manage applicants’ needs, provide our services, and comply with applicable laws. Any information we collect in connection with your application will be treated in accordance with our internal policies and programs designed to protect personal data. Please see our &lt;a href=&quot;https://scale.com/legal/privacy&quot; target=&quot;_blank&quot;&gt;privacy policy&lt;/a&gt; for additional information.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
+
+---

@@ -6,7 +6,7 @@ After=graphical-session.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=%h/git/application_hunting/scripts/automation_chrome.sh
+ExecStart=%h/git/jobhunt-engine/scripts/automation_chrome.sh
 # The script is idempotent; a restart just re-checks CDP and exits.
 ExecStop=-/bin/pkill -f 'user-data-dir=%h/.hermes/browser-profiles/job-hunt'
 TimeoutStartSec=60

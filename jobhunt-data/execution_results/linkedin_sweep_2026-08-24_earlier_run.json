@@ -1,0 +1,740 @@
+{
+  "per_query": {
+    "Research Engineer Machine Learning": {
+      "cards": 9,
+      "new": 0
+    },
+    "AI Research Scientist": {
+      "cards": 9,
+      "new": 0
+    },
+    "Post-Training LLM": {
+      "cards": 9,
+      "new": 0
+    },
+    "LLM Fine-Tuning Engineer": {
+      "cards": 9,
+      "new": 1
+    },
+    "AI Agent Engineer": {
+      "cards": 9,
+      "new": 1
+    },
+    "Applied Scientist AI": {
+      "cards": 9,
+      "new": 0
+    },
+    "Machine Learning Engineer LLM": {
+      "cards": 9,
+      "new": 1
+    },
+    "LLM Evaluation Research": {
+      "cards": 9,
+      "new": 0
+    }
+  },
+  "fresh": [
+    {
+      "source_id": "4455850588",
+      "title": "Applied AI Engineer [33307]",
+      "company": "Stealth Startup",
+      "location": "California, United States",
+      "date_posted_raw": "2026-08-24",
+      "posted_rel": "1 hour ago",
+      "url": "https://www.linkedin.com/jobs/view/4455850588/",
+      "dup_of_existing": false
+    },
+    {
+      "source_id": "4438337740",
+      "title": "Advisory AI Engineer",
+      "company": "Lenovo",
+      "location": "Chicago, IL",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4438337740/",
+      "dup_of_existing": false
+    },
+    {
+      "source_id": "4349250403",
+      "title": "Generative AI & Machine Learning Engineer",
+      "company": "Thomson Reuters",
+      "location": "McLean, VA",
+      "date_posted_raw": "2026-08-24",
+      "posted_rel": "11 minutes ago",
+      "url": "https://www.linkedin.com/jobs/view/4349250403/",
+      "dup_of_existing": false
+    }
+  ],
+  "duplicates": [
+    {
+      "source_id": "4445192971",
+      "title": "Senior Research Engineer",
+      "company": "Google",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4445192971/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4438377391",
+      "title": "Senior Research Engineer - Enterprise Products",
+      "company": "NVIDIA",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4438377391/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4446860126",
+      "title": "Senior AI Research Engineer",
+      "company": "Duolingo",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4446860126/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4410781418",
+      "title": "Machine Learning Research Engineer",
+      "company": "Anduril Industries",
+      "location": "Washington, DC",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4410781418/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4452862947",
+      "title": "AI Research Engineer \u2013 Agentic AI",
+      "company": "Bosch USA",
+      "location": "Sunnyvale, CA",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4452862947/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4447705538",
+      "title": "Staff Machine Learning Engineer, Applied Research",
+      "company": "Pinterest",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4447705538/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4456297705",
+      "title": "Research Engineer",
+      "company": "Tessera Labs",
+      "location": "San Jose, CA",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4456297705/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455905140",
+      "title": "Member of Technical Staff, Artificial General Intelligence",
+      "company": "Amazon",
+      "location": "Sunnyvale, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455905140/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4322259770",
+      "title": "Research Engineer/Research Scientist, Pre-training",
+      "company": "Anthropic",
+      "location": "San Francisco Bay Area",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4322259770/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4453806406",
+      "title": "Research Scientist- Robotics AI",
+      "company": "Bosch USA",
+      "location": "Sunnyvale, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4453806406/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454152710",
+      "title": "AI Research Scientist- World Model",
+      "company": "Bosch USA",
+      "location": "Sunnyvale, CA",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454152710/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455773999",
+      "title": "Applied Scientist, Fauna",
+      "company": "Amazon",
+      "location": "Sunnyvale, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455773999/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4458112360",
+      "title": "Applied Researcher II (AI Foundations, LLM Core and Agentic AI)",
+      "company": "Capital One",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "20 hours ago",
+      "url": "https://www.linkedin.com/jobs/view/4458112360/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4447415167",
+      "title": "Senior Research Scientist - Generative World Models for Autonomous Driving and Physical AI",
+      "company": "NVIDIA",
+      "location": "Santa Clara, CA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4447415167/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4417165187",
+      "title": "Research Scientist",
+      "company": "OpenAI",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-17",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4417165187/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4370864081",
+      "title": "Research Scientist - AI Incubation",
+      "company": "Zoom",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4370864081/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4457346426",
+      "title": "Applied Researcher II (AI Foundations)",
+      "company": "Capital One",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4457346426/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4456735682",
+      "title": "Senior Research Scientist",
+      "company": "Sereact",
+      "location": "Greater Boston",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4456735682/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4446284243",
+      "title": "Machine Learning Engineer Graduate (Commercial AI-CRM and Transaction) - 2027 Start",
+      "company": "TikTok",
+      "location": "San Jose, CA",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4446284243/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455451925",
+      "title": "Applied AI Engineer",
+      "company": "MaintainX",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455451925/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4447703289",
+      "title": "Engineer 1: AI Agentic Solutions (Hybrid - Seattle, WA)",
+      "company": "Nordstrom",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4447703289/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455016866",
+      "title": "Applied AI Engineer [33331]",
+      "company": "Stealth Startup",
+      "location": "California, United States",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455016866/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454904417",
+      "title": "LLM Engineer",
+      "company": "Emonics LLC",
+      "location": "New York, United States",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454904417/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455460803",
+      "title": "Applied AI Engineer",
+      "company": "MaintainX",
+      "location": "Raleigh, NC",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455460803/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4448785094",
+      "title": "Agent Evaluation & Evolution Machine Learning Engineer Graduate (AML-Ark-US) - 2027 Start",
+      "company": "ByteDance",
+      "location": "San Jose, CA",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4448785094/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4432461443",
+      "title": "Member of Technical Staff, Model Training",
+      "company": "Parallel Web Systems",
+      "location": "San Francisco Bay Area",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4432461443/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4453712825",
+      "title": "LLM Post-Training Engineer Graduate (Research & Product) - 2027 Start",
+      "company": "TikTok",
+      "location": "San Jose, CA",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4453712825/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4348883636",
+      "title": "Applied AI Engineer",
+      "company": "Twenty",
+      "location": "Arlington, VA",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4348883636/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454656670",
+      "title": "AI Engineer",
+      "company": "scalr",
+      "location": "New York, United States",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454656670/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454196842",
+      "title": "AI Engineer",
+      "company": "scalr",
+      "location": "San Francisco Bay Area",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454196842/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4403252857",
+      "title": "AI Engineer",
+      "company": "Gamma",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4403252857/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4456167120",
+      "title": "Member of Technical Staff, LLM Post-Training, Applied",
+      "company": "Sanas",
+      "location": "Palo Alto, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4456167120/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4418852774",
+      "title": "Applied AI Engineer, Codex Core Agent",
+      "company": "OpenAI",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4418852774/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4446557716",
+      "title": "Software Engineer, Generative AI",
+      "company": "Abridge",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4446557716/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454433359",
+      "title": "Senior Applied AI Engineer",
+      "company": "Venture Global LNG",
+      "location": "Arlington, VA",
+      "date_posted_raw": "2026-08-17",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454433359/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4441218161",
+      "title": "Lead, AI Engineering",
+      "company": "Bain & Company",
+      "location": "Washington, DC",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4441218161/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4441209409",
+      "title": "Lead, AI Engineering",
+      "company": "Bain & Company",
+      "location": "Chicago, IL",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4441209409/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4437911916",
+      "title": "Senior AI Engineer",
+      "company": "Tata Consultancy Services",
+      "location": "Oakland, CA",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4437911916/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4419513504",
+      "title": "Senior Engineer:  AI Agentic Solutions (Hybrid - Seattle, WA)",
+      "company": "Nordstrom",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4419513504/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454964256",
+      "title": "Associate AI Engineer",
+      "company": "Jumpmind",
+      "location": "Columbus, OH",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454964256/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4456224722",
+      "title": "Senior Software Engineer / Senior AI Engineer",
+      "company": "Elsevier",
+      "location": "Philadelphia, PA",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4456224722/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4434035022",
+      "title": "AI/LLM Engineer",
+      "company": "Gap International",
+      "location": "Greater Philadelphia",
+      "date_posted_raw": "2026-08-17",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4434035022/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455798109",
+      "title": "Applied Scientist III - AMZ27579.1",
+      "company": "Amazon",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455798109/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455919011",
+      "title": "Sr. Applied Scientist, Special Projects",
+      "company": "Amazon",
+      "location": "Boston, MA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455919011/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455919192",
+      "title": "Applied Scientist, Applied AI Solutions",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455919192/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455854830",
+      "title": "Applied Scientist III - AMZ10362489",
+      "company": "Amazon Science",
+      "location": "Santa Clara, CA",
+      "date_posted_raw": "2026-08-24",
+      "posted_rel": "6 minutes ago",
+      "url": "https://www.linkedin.com/jobs/view/4455854830/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455091789",
+      "title": "Applied Scientist II - AMZ27496.1",
+      "company": "Amazon Science",
+      "location": "Boston, MA",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4455091789/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4438355383",
+      "title": "Data Scientist II",
+      "company": "Scribd, Inc.",
+      "location": "Miami, FL",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4438355383/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4438360264",
+      "title": "Data Scientist II",
+      "company": "Scribd, Inc.",
+      "location": "Jacksonville, FL",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4438360264/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455398188",
+      "title": "AI Innovation and Development, Lead Scientist",
+      "company": "FICO",
+      "location": "San Diego, CA",
+      "date_posted_raw": "2026-08-17",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455398188/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4411293048",
+      "title": "Senior Applied Scientist",
+      "company": "Microsoft AI",
+      "location": "Mountain View, CA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4411293048/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4341825663",
+      "title": "Machine Learning Engineer - LLMs & Generative AI",
+      "company": "Truveta",
+      "location": "Greater Seattle Area",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "19 hours ago",
+      "url": "https://www.linkedin.com/jobs/view/4341825663/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4454422688",
+      "title": "LLM Engineer (Remote)",
+      "company": "Cognizant",
+      "location": "Louisville, KY",
+      "date_posted_raw": "2026-08-17",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4454422688/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455421950",
+      "title": "Senior Machine Learning Engineer",
+      "company": "Entrata",
+      "location": "Lehi, UT",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455421950/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4387663037",
+      "title": "Senior Machine Learning Engineer - Content and Contributor Intelligence (Remote - United States)",
+      "company": "Yelp",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4387663037/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4455576787",
+      "title": "Senior Machine Learning Engineer, E-Commerce",
+      "company": "TikTok USDS Joint Venture",
+      "location": "Seattle, WA",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4455576787/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4456786774",
+      "title": "Senior Agentic AI Engineer",
+      "company": "Akoncagua AI",
+      "location": "Lakeland, FL",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4456786774/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4457805871",
+      "title": "Lead AI Engineer (AI Foundations, LLM Core and Agentic AI)",
+      "company": "Capital One",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4457805871/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4437596983",
+      "title": "Research Engineer, Model Evaluations",
+      "company": "Anthropic",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-22",
+      "posted_rel": "1 day ago",
+      "url": "https://www.linkedin.com/jobs/view/4437596983/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4437905316",
+      "title": "Research Engineer, Model Evaluations",
+      "company": "Anthropic",
+      "location": "San Francisco Bay Area",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4437905316/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4315277457",
+      "title": "Applied AI Researcher, Benchmarking",
+      "company": "Distyl",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-17",
+      "posted_rel": "6 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4315277457/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4436651567",
+      "title": "Content Engineer, Meta Superintelligence Labs",
+      "company": "Meta",
+      "location": "Menlo Park, CA",
+      "date_posted_raw": "2026-08-23",
+      "posted_rel": "22 hours ago",
+      "url": "https://www.linkedin.com/jobs/view/4436651567/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4456176081",
+      "title": "Member of Technical Staff, Research Evaluations",
+      "company": "Sanas",
+      "location": "Palo Alto, CA",
+      "date_posted_raw": "2026-08-19",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4456176081/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4315286019",
+      "title": "Applied AI Researcher, Benchmarking",
+      "company": "Distyl",
+      "location": "New York, NY",
+      "date_posted_raw": "2026-08-18",
+      "posted_rel": "5 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4315286019/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4317544242",
+      "title": "Researcher, Evals",
+      "company": "Cartesia",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-21",
+      "posted_rel": "2 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4317544242/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4377036139",
+      "title": "Model Behavior Engineer",
+      "company": "Notion",
+      "location": "San Francisco, CA",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "4 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4377036139/",
+      "dup_of_existing": true
+    },
+    {
+      "source_id": "4446755595",
+      "title": "Senior Language Engineer",
+      "company": "Microsoft",
+      "location": "Redmond, WA",
+      "date_posted_raw": "2026-08-20",
+      "posted_rel": "3 days ago",
+      "url": "https://www.linkedin.com/jobs/view/4446755595/",
+      "dup_of_existing": true
+    }
+  ]
+}

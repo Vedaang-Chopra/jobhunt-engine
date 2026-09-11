@@ -1,0 +1,192 @@
+[
+ {
+  "label": "First Name",
+  "key": "identity.first_name",
+  "source": "rule:^(first|given)\\s*name",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "first_name",
+  "required": true,
+  "value": "Vedaang"
+ },
+ {
+  "label": "Last Name",
+  "key": "identity.last_name",
+  "source": "rule:^(last|family|surname)",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "last_name",
+  "required": true,
+  "value": "Chopra"
+ },
+ {
+  "label": "Preferred First Name",
+  "key": null,
+  "source": "observed_answer_bank",
+  "action": "USE_SAVED_ANSWER",
+  "field_type": "input_text",
+  "field_name": "preferred_name",
+  "required": false,
+  "value": null
+ },
+ {
+  "label": "Email",
+  "key": "identity.email",
+  "source": "rule:\\bemail\\b",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "email",
+  "required": true,
+  "value": "vedaangchopra@gatech.edu"
+ },
+ {
+  "label": "Phone",
+  "key": "identity.phone",
+  "source": "rule:\\bphone\\b|mobile|contact\\s*num",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "phone",
+  "required": true,
+  "value": "+1 (404) 740-9905"
+ },
+ {
+  "label": "Candidate Location",
+  "key": null,
+  "source": "user_answer_2026-08-22",
+  "action": "USER_CONFIRMED",
+  "field_type": "input_text",
+  "field_name": "candidate_location",
+  "required": true,
+  "value": "San Francisco, CA (also open to New York, NY)"
+ },
+ {
+  "label": "Resume/CV",
+  "key": "application.resume_upload",
+  "source": "rule:^resume|upload.*resume|attach.",
+  "action": "UPLOAD_RESUME",
+  "field_type": "input_file",
+  "field_name": "resume",
+  "required": true,
+  "value": "applications/scaleai_frontier_agents_engineer_20260822/resume.pdf"
+ },
+ {
+  "label": "Resume/CV",
+  "key": "application.resume_upload",
+  "source": "rule:^resume|upload.*resume|attach.",
+  "action": "AUTO_FILL",
+  "field_type": "textarea",
+  "field_name": "resume_text",
+  "required": true,
+  "value": null
+ },
+ {
+  "label": "Cover Letter",
+  "key": "application.cover_letter",
+  "source": "rule:cover\\s*letter",
+  "action": "SKIP_OPTIONAL_FILE",
+  "field_type": "input_file",
+  "field_name": "cover_letter",
+  "required": false,
+  "value": "applications/scaleai_frontier_agents_engineer_20260822/resume.pdf"
+ },
+ {
+  "label": "Cover Letter",
+  "key": "application.cover_letter",
+  "source": "rule:cover\\s*letter",
+  "action": "AUTO_FILL",
+  "field_type": "textarea",
+  "field_name": "cover_letter_text",
+  "required": false,
+  "value": null
+ },
+ {
+  "label": "LinkedIn Profile",
+  "key": "identity.linkedin",
+  "source": "rule:linkedin",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "question_8947750005",
+  "required": false,
+  "value": "https://linkedin.com/in/vedaang-chopra"
+ },
+ {
+  "label": "Website",
+  "key": "never.portfolio",
+  "source": "rule:portfolio|website|personal\\s*(",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "question_8947751005",
+  "required": false,
+  "value": null
+ },
+ {
+  "label": "Are you open to working in person in our San Francisco or New York office 3 times a week?",
+  "key": null,
+  "source": "user_answer_2026-08-22",
+  "action": "USER_CONFIRMED",
+  "field_type": "multi_value_single_select",
+  "field_name": "question_8947752005",
+  "required": false,
+  "value": "Yes"
+ },
+ {
+  "label": "Are you currently bound by any agreements with a current or former employer that may restrict your ability to work for Scale AI or perform the duties of the position for which you are applying? \nThis includes, but is not limited to, non-compete agreements, non-solicitation agreements, confidentiality or non-disclosure agreements, or any other contractual obligations that could limit your employment activities.",
+  "key": null,
+  "source": "user_answer_2026-08-22",
+  "action": "USER_CONFIRMED",
+  "field_type": "multi_value_single_select",
+  "field_name": "question_8947753005",
+  "required": true,
+  "value": "No"
+ },
+ {
+  "label": "If yes, please provide further explanation below.",
+  "key": null,
+  "source": "user_answer_2026-08-22",
+  "action": "USER_CONFIRMED",
+  "field_type": "input_text",
+  "field_name": "question_8947754005",
+  "required": false,
+  "value": ""
+ },
+ {
+  "label": "Are you legally authorized to work in the country where the job is located?",
+  "key": "work_authorization.authorized_to_work_us",
+  "source": "user_answer_2026-08-22",
+  "action": "USER_CONFIRMED",
+  "field_type": "multi_value_single_select",
+  "field_name": "question_8947755005",
+  "required": true,
+  "value": "Yes"
+ },
+ {
+  "label": "Will you now or in the future require company sponsorship to retain or extend your work authorization in the country where the job is located?",
+  "key": "work_authorization.authorized_to_work_us",
+  "source": "user_answer_2026-08-22",
+  "action": "USER_CONFIRMED",
+  "field_type": "multi_value_single_select",
+  "field_name": "question_8947756005",
+  "required": true,
+  "value": "Yes"
+ },
+ {
+  "label": "Who is your current or most recent employer?",
+  "key": null,
+  "source": "application_context:profile_info/experience",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "question_8947757005",
+  "required": true,
+  "value": "Fortinet Technologies"
+ },
+ {
+  "label": "What is your current or most recent job title?",
+  "key": null,
+  "source": "application_context:profile_info/experience",
+  "action": "AUTO_FILL",
+  "field_type": "input_text",
+  "field_name": "question_8947758005",
+  "required": true,
+  "value": "Software Development Engineer II (ML/AI)"
+ }
+]

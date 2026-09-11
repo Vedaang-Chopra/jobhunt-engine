@@ -1,0 +1,1653 @@
+{
+ "sierra_software_engineer_agent_e9f5fdb6": {
+  "verdict": "useful",
+  "reasons": [
+   "Core role is building production-grade AI agents/LLM systems - directly matches candidate's agentic AI (CAD pipeline, ATHENA, SHASTRA), agentic RAG, and eval harness experience",
+   "Bonus criteria align strongly: eval frameworks, RAG pipelines, agent tooling, and Go (candidate has Golang/OpenSearch backend scaling)",
+   "No explicit years-of-experience minimum stated; 'experience building and scaling end-to-end production systems' fits 4.5 yrs profile without exceeding it",
+   "Not an internship/new-grad pipeline, not executive/people-manager track"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "sierra_agent_experience_designer_voice_multilingual_1a0e307f": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is a voice/conversation experience design position (multilingual voice quality, personas, applied linguistics), not aligned with candidate's target ML/AI engineering or research roles",
+   "Requires 5+ years experience vs candidate's ~4.5 years, with no explicit flexibility phrasing on the requirement",
+   "Core competencies (speech synthesis, global language families, linguistics/sound background, localization) are absent from candidate profile; only partial overlap via evaluation frameworks and conversational agents"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_healthcare_eb3ee157": {
+  "verdict": "useful",
+  "reasons": [
+   "Core requirements are agentic AI/LLM production systems, eval frameworks, RAG pipelines, and Go\u2014direct match to candidate's Fortinet agentic RAG, CAD harness/benchmarks, and Golang/OpenSearch scaling work",
+   "No stated minimum years of experience; 'end-to-end production systems' phrasing fits ~4.5 yrs without exceeding the >4.5 exclusion threshold",
+   "Not an internship/executive/people-manager role; IC agent engineer track aligns with target AI Engineer/agentic roles",
+   "Healthcare domain experience listed only as 'even better' preference, not a hard requirement; HIPAA/EHR familiarity is learnable"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_data_platform_78c5dce4": {
+  "verdict": "borderline",
+  "reasons": [
+   "Experience bar '4-7+ years' is satisfied by candidate's ~4.5 yrs, so not auto-excluded",
+   "Core required depth (Spark/Flink/Trino/Presto, Iceberg/Hudi lakehouse, streaming/batch ETL, OLAP modeling) is absent from candidate profile; strongest overlap is Golang distributed backend scaling and agentic-AI context rather than data-infra stack",
+   "Partial fit via transferable skills: reward-based routing, RL optimization loops map to 'optimization loops/multi-armed bandits' nice-to-have; Go backend fundamentals match shared requirements",
+   "Product-engineering track expects full-stack TypeScript/React, which is outside candidate's stated strengths"
+  ],
+  "exp_req": 4,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_brazilian_portuguese_speaking_f51d6c09": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement: professional fluency in Brazilian Portuguese AND English; candidate profile shows no Portuguese fluency",
+   "Otherwise strong technical fit (production LLM agents, eval frameworks, RAG, Go) but language gate is disqualifying as stated",
+   "Primarily in-person San Francisco role; no salary posted to verify $150k floor"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_travel_hospitality_e2d3e1f5": {
+  "verdict": "useful",
+  "reasons": [
+   "Role centers on production AI agents, ADLC ownership, eval frameworks, RAG pipelines, and prompt engineering\u2014directly matching candidate's agentic AI, RAG, and evaluation-harness strengths",
+   "No stated minimum years of experience; 'experience building end-to-end production systems' is satisfied by ~4.5 yrs production ML/AI work",
+   "Go listed as a plus and candidate has OpenSearch/Golang backend scaling background",
+   "Not an internship, executive, or people-manager role; IC-level agent engineering aligns with target AI Engineer/agentic roles"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_retail_93fea91f": {
+  "verdict": "useful",
+  "reasons": [
+   "Role centers on building production-grade AI agents; candidate has direct agentic AI, agentic RAG, and agent tooling experience",
+   "Preferred qualifications (eval frameworks, RAG pipelines, prompt engineering, Go) map closely to candidate's strengths including Golang backend scaling and benchmark/harness work",
+   "No stated minimum years of experience; 'end-to-end production systems' requirement satisfied by ~4.5 yrs production ML/AI work",
+   "No posted salary range, so the <$150k exclusion cannot be triggered; SF-based full-time IC role fits target profile"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "elevenlabs_engineering_internal_ai_transformation_a3097257": {
+  "verdict": "useful",
+  "reasons": [
+   "Core work is designing/shipping agentic AI workflows, RAG patterns, and orchestration - direct match to candidate's agentic RAG (Fortinet) and CAD-pipeline agent experience",
+   "Owning evaluation and monitoring frameworks aligns with candidate's 202-test CAD harness and ARTEMIS benchmark strengths",
+   "No stated minimum years requirement; 'proven production experience' phrasing comfortably fits ~4.5 yrs profile",
+   "Remote-global posting compatible with US-remote preference; no salary posted so the <$150k exclusion cannot be triggered"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "vapi_agent_strategist_sf_adbc573f": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is a post-sales customer success/technical account management position ('Agent Strategist'), clearly unrelated to candidate's ML engineering/research profile",
+   "Requires 5+ years specifically in customer success/TAM/solutions consulting, exceeding candidate's 4.5 years and in a different domain entirely",
+   "No posted salary; only 'competitive salary' mentioned, so $150k floor cannot be verified"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "fireworks_ai_mts_research_engineer_34147044": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role centers on distributed training infrastructure (CUDA/NCCL/MPI, PyTorch/JAX internals, implementing DL algorithms from scratch) where candidate evidence is thin; candidate's depth is in agentic AI, eval harnesses, and inference/serving",
+   "Partial fit with transferable skills: candidate has hands-on vLLM/ONNX inference experience (explicit nice-to-have here), MS degree, RL fundamentals, and backend scaling background",
+   "No explicit years-of-experience or PhD hard requirement (MS listed as nice-to-have), so no hard exclusion applies; no salary posted to check $150k floor"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "deepgram_backend_software_engineer_engine_team_voice_agent_7c7064bb": {
+  "verdict": "borderline",
+  "reasons": [
+   "Meets 3+ years industry experience bar (~4.5 yrs) and role aligns well with inference/serving, model orchestration, observability, and agentic RAG integration strengths",
+   "Stated requirement of Rust (or C/C++) proficiency not evidenced in profile (Golang/Python background); partial fit via transferable low-latency systems and vLLM/ONNX edge work",
+   "No salary posted, so pay-floor check inconclusive"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "deepgram_embedded_ai_engineer_on_device_models_0b7494b3": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role requires deep embedded systems expertise (C/C++/Rust, bare-metal/RTOS, microcontroller development, model quantization/pruning for edge) which candidate lacks; candidate's background is in agentic AI, LLM serving, backend scaling, and evaluation harnesses, not embedded/edge AI deployment."
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "glean_machine_learning_engineer_assistant_quality_gh_4711484005": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong skill overlap: role centers on LLM systems, agent quality, evaluation/benchmarking loops, RAG/retrieval, and optional post-training/RL - all core candidate strengths (agentic AI at Fortinet, 202-test CAD harness, ARTEMIS benchmarks, academic RL)",
+   "Experience bar is only 2+ years ML/AI ownership; candidate's ~4.5 years production ML comfortably exceeds it without overqualification risk",
+   "Base salary $180k-$205k clears the $150k floor",
+   "IC-level MLE role, no people-management or seniority mismatch"
+  ],
+  "exp_req": 2,
+  "pay_min": 180000
+ },
+ "openai_research_engineer_frontier_evals_environments_bba18df5": {
+  "verdict": "useful",
+  "reasons": [
+   "Role is a direct match for target profiles (Research Engineer, post-training/evals/agentic): building RL environments, graders, benchmarks, and agent evaluations aligns with candidate's evaluation harnesses (202-test CAD harness, ARTEMIS), agentic AI systems, and academic RL background",
+   "No stated years-of-experience requirement exceeds ~4.5 yrs; JD emphasizes fundamentals and ability to learn rather than a seniority bar",
+   "Hands-on LLM/RL/post-training/evals experience explicitly listed as thriving criteria, matching candidate's vLLM/inference and agentic RAG work",
+   "No internship/new-grad or executive/people-manager signals; individual-contributor research engineer scope"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_software_engineer_model_inference_83b6755d": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states 'at least 5 years of professional software engineering experience' as a firm minimum, exceeding candidate's ~4.5 years with no flexibility phrasing",
+   "Otherwise strong topical fit (LLM inference/serving, vLLM, GPU optimization, distributed systems) but hard requirement disqualifies"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_startups_71e7252f": {
+  "verdict": "borderline",
+  "reasons": [
+   "Requires 5+ years vs candidate's ~4.5 years, but phrased as 'software engineer, ML engineer or equivalent' leaving room for equivalence consideration",
+   "Role is customer-facing applied/solutions-oriented (startup advisory) rather than pure research/inference/post-training, so fit is partial despite strong LLM/agentic alignment",
+   "Candidate's agentic AI, evaluation harnesses, and LLM serving background maps well to prototyping and best-practice guidance duties",
+   "No salary posted; OpenAI comp typically clears $150k threshold"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "openai_software_engineer_inference_multi_modal_4d14449e": {
+  "verdict": "useful",
+  "reasons": [
+   "Role is LLM/multimodal inference infrastructure, directly matching candidate's vLLM/ONNX serving and reward-based routing experience",
+   "No explicit years-of-experience minimum stated, so 4.5 yrs does not exceed any hard bar",
+   "Individual-contributor software engineer role, not internship/executive/people-manager",
+   "No posted pay below $150k (compensation not disclosed in JD)"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_research_engineer_codex_793964ae": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong alignment with agentic AI systems, post-training (RL/RLHF), evaluation harnesses, and production ML infrastructure \u2014 core to candidate's experience (CAD pipeline, ATHENA, SHASTRA, agentic RAG, 202-test harness, ARTEMIS benchmarks, vLLM/ONNX serving, RL background).",
+   "No explicit years-of-experience minimum; phrasing emphasizes hands-on experience across LLMs, RL, evals, graders, synthetic data, coding/tool-using agents, and production ML systems \u2014 candidate meets all.",
+   "Role is squarely in target family (Research Engineer, Applied Scientist, ML/AI Engineer, LLM/inference/post-training/agentic).",
+   "OpenAI compensation typically well above $150k; no posted pay below threshold."
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_machine_learning_engineer_distributed_data_systems_robotics_4a13c764": {
+  "verdict": "borderline",
+  "reasons": [
+   "No explicit years-of-experience minimum stated; ~4.5 yrs plus strong infra record plausibly clears the 'strong experience' bar",
+   "Role centers on distributed data systems/orchestration/streaming/storage for robotics training; candidate's core strength is agentic AI/evals/inference, with only adjacent infra experience (OpenSearch/Golang scaling, vLLM serving) - partial fit via transferable skills",
+   "Title (MLE/Research Engineer track) and SF-based location match target roles and US-based preference; relocation assistance offered",
+   "No salary posted; cannot verify $150k floor, though OpenAI MLE comp typically exceeds it"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_digital_natives_3254f6a7": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement of 8+ years experience exceeds candidate's ~4.5 years (rule: >5 years stated as minimum = non_useful)"
+  ],
+  "exp_req": 8,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_codex_core_agent_577e6673": {
+  "verdict": "useful",
+  "reasons": [
+   "Role targets applied AI engineers building agentic LLM systems with evals, prompting, tool-use, and production reliability - directly matching candidate's agentic AI, evaluation harness, and LLM inference/serving experience",
+   "No stated minimum years of experience; requirements phrased as capability-based ('experience building or shipping ML/LLM products'), comfortably within candidate's ~4.5 yrs",
+   "Bonus points (agent frameworks, tool-using LLM systems, code generation/dev tooling) align exactly with candidate's CAD pipeline and coding-agent work",
+   "Not an internship, new-grad pipeline, or executive/people-manager role; title maps to target Applied/AI Engineer track"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_machine_learning_engineer_api_multicloud_5acf4854": {
+  "verdict": "useful",
+  "reasons": [
+   "MS from Georgia Tech satisfies the 'Master's or PhD or equivalent' requirement",
+   "Stated minimum of 3+ years is below candidate's ~4.5 years of production ML experience",
+   "Role centers on agentic workloads, evaluation systems, and post-training workflows - directly matching candidate's agentic AI, benchmark/harness, and RL background",
+   "Requirements phrased flexibly ('might look something like', 'or equivalent practical experience'), so the partial gap in hands-on LLM fine-tuning/SFT production experience does not disqualify"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "openai_security_preparedness_lead_coding_agents_1bec5fd1": {
+  "verdict": "borderline",
+  "reasons": [
+   "Partial fit: agentic AI systems expertise (coding agents, agent pipelines) plus security-domain background (Fortinet AIOps) transfers to securing internal coding agents",
+   "Key gap: role expects direct experience with advanced persistent threat actors / cyberoffensive groups; candidate's security background is defensive AIOps, not APT-facing threat intelligence or offense",
+   "'Lead' title plus 'led technical programs or teams' expectation may conflict with candidate's exclusion of people-manager/leadership-track roles, though emphasis on hands-on execution softens this",
+   "No years-of-experience minimum stated and no posted salary, so neither hard exclusion is triggered; OpenAI comp likely clears $150k but unverifiable from posting"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_proactivity_e57d196b": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong topical fit: role centers on agentic capabilities, robust evaluations, and post-training\u2014directly matching candidate's agentic systems work (CAD pipeline, ATHENA, SHASTRA), evaluation harness experience (202-test CAD harness, ARTEMIS benchmarks), and academic RL (PPO/DQN/reward shaping)",
+   "JD states no explicit years-of-experience or PhD requirement; Research Engineer track is credible for MS + 4.5 yrs production ML",
+   "LLM post-training/evaluation working knowledge requested aligns with candidate's LLM serving, reward-based routing, and benchmark-building background",
+   "SF-based hybrid with relocation assistance satisfies US-based target; no hard exclusions triggered (not internship/executive, no stated >4.5 yr bar)"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_agent_post_training_artifacts_research_6897d024": {
+  "verdict": "useful",
+  "reasons": [
+   "Role targets agentic post-training (RL, evals, graders, reward signals) which directly matches candidate's agentic AI systems, evaluation harnesses, and academic RL background",
+   "No explicit years-of-experience minimum; requirements phrased flexibly ('hands-on experience with... or')",
+   "Individual-contributor research role, not internship/executive/people-manager",
+   "No posted salary, so pay-floor exclusion not triggered"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_software_engineer_cloud_agents_f6278b60": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states 9+ years of professional engineering experience as a stated minimum; candidate has ~4.5 years \u2014 hard requirement far exceeds candidate profile (>2x gap)",
+   "Topical fit is otherwise strong (agentic orchestration, sandboxing, backend/platform infra in Go/Python), but the experience bar is a hard blocker and not phrased with equivalent-experience flexibility"
+  ],
+  "exp_req": 9,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_personalization_1bf678c5": {
+  "verdict": "useful",
+  "reasons": [
+   "Directly targets candidate's core strengths: agentic AI, evaluation harnesses/benchmarks, RL, and post-training research",
+   "Role title (Research Engineer / Research Scientist) and scope (memory/personalization agents, evals, RL) align with candidate's target roles and Fortinet agentic-RAG plus ARTEMIS benchmark experience",
+   "No stated minimum years of experience or PhD requirement that exceeds candidate's ~4.5 yrs + MS profile",
+   "US-based (San Francisco hybrid) matches candidate location preference; relocation assistance offered"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_messenger_integrations_3cb8b1c4": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role is partner-facing integration/product engineering (OAuth, webviews, mobile release cycles, consumer UX) rather than the candidate's core ML/inference/agentic/post-training strengths",
+   "Partial fit via transferable skills: daily coding, API integrations, distributed-systems debugging, Golang/OpenSearch backend scaling, and AI-product ecosystem exposure from agentic RAG work",
+   "No stated years-of-experience minimum, so no hard-exp requirement exceeded; OpenAI comp almost certainly clears $150k though not posted",
+   "Location mismatch risk: SF-hybrid 3 days/week with quarterly international/APAC travel vs candidate's US/Remote-US preference; relocation assistance offered softens this"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_enterprise_01091aed": {
+  "verdict": "useful",
+  "reasons": [
+   "Role directly matches candidate's core strengths: hands-on AI engineering, evaluation harnesses/graders, agentic systems, and prototype-to-production delivery in enterprise environments",
+   "No explicit years-of-experience minimum ('demonstrated track record' phrasing), so ~4.5 yrs production ML experience satisfies requirements without triggering the >4.5yr exclusion",
+   "Not an internship/new-grad pipeline and not a Director/VP/Principal/people-manager title; individual-contributor applied engineering scope fits target roles (AI Engineer/Applied roles)",
+   "US-based SF/NYC hybrid with relocation assistance satisfies US-based preference; no posted pay figure, so the <$150k exclusion cannot be triggered"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "openai_new_geography_and_international_growth_lead_86c04f38": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is clearly unrelated to candidate profile: it is an infrastructure strategy/market-entry position (site selection, energy, policy, international expansion), not an ML/AI research or engineering role",
+   "Hard requirement of 8+ years exceeds candidate's ~4.5 years with no flexibility phrasing",
+   "No overlap with candidate strengths (agentic AI, LLM inference, evaluation harnesses); no pay range posted but fit fails on domain and experience regardless"
+  ],
+  "exp_req": 8,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_agent_enablement_c1a28411": {
+  "verdict": "useful",
+  "reasons": [
+   "Candidate's 4.5 years production ML/AI experience falls within the 4-6 year requirement.",
+   "Strong alignment with agentic AI systems (CAD pipeline, ATHENA, SHASTRA, agentic RAG) and evaluation harnesses/benchmarks (202-test CAD harness, ARTEMIS benchmarks) directly relevant to agent enablement integrations and evaluations.",
+   "LLM inference/serving (vLLM, ONNX edge) and OpenSearch/Golang backend scaling match the role's need for production code, APIs, and developer tooling.",
+   "Security-domain AIOps background at Fortinet provides relevant context for identity, permissions, and enterprise constraints."
+  ],
+  "exp_req": 4.5,
+  "pay_min": null
+ },
+ "openai_software_engineer_api_agents_a6ab3111": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Requires 7+ years professional engineering experience, candidate has ~4.5 years; requirement not phrased flexibly"
+  ],
+  "exp_req": 7,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_ai_systems_engineer_rsi_7243bdb7": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ },
+ "anthropic_accounting_revenue_internal_controls_gh_5205545008": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is a Director-level finance/accounting position focused on SOX compliance, revenue controls, and order-to-cash processes \u2014 completely unrelated to candidate's ML/AI engineering background (agentic AI, LLM inference, evaluation harnesses, RL).",
+   "Position is a people-manager/executive role (Director), which candidate explicitly excludes.",
+   "Preferred qualification asks for 15+ years progressive experience in internal controls/revenue operations; candidate has ~4.5 years in ML/AI.",
+   "No transferable skills match; candidate lacks accounting, SOX, ASC 606, ERP, or revenue systems experience."
+  ],
+  "exp_req": 15,
+  "pay_min": 300000
+ },
+ "anthropic_research_engineer_chip_design_rl_reinforcement_learning_gh_5231612008": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ },
+ "anthropic_research_engineer_life_sciences_gh_5265365008": {
+  "verdict": "useful",
+  "reasons": [
+   "Core minimum qualifications (training/evaluating LLMs, Python, large-scale data pipelines) align directly with candidate's eval-harness/benchmark and LLM serving experience",
+   "Life sciences background explicitly 'welcome, but not required'; 8+ years listed only as preferred qualification, so no hard requirement exceeds candidate's ~4.5 yrs",
+   "Strong overlap with target Research Engineer/Applied Scientist roles: evaluation frameworks, RL background, cloud/containerization transferable from production ML work",
+   "Pay range $350k-$500k far exceeds $150k floor; hybrid 25% office policy compatible with US-based preference"
+  ],
+  "exp_req": null,
+  "pay_min": 350000
+ },
+ "anthropic_research_scientist_life_sciences_chemistry_gh_5387564008": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role requires PhD in chemistry and deep medicinal chemistry wet-lab experience, which is unrelated to candidate's ML/AI background",
+   "Candidate lacks chemistry PhD and hands-on synthetic chemistry experience",
+   "Target roles are ML/AI engineering/research, not life sciences chemistry"
+  ],
+  "exp_req": null,
+  "pay_min": 300000
+ },
+ "deepmind_research_engineer_materials_science_gh_7339890": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted US base salary range starts at $141,000, below the $150k floor",
+   "Materials-science-specific qualification paths (inorganic chemistry, solid-state physics, ML force fields, MD/HPC simulations) are absent from candidate profile; fit relies only on generic LLM-agent/distributed-systems alternatives, making domain fit partial"
+  ],
+  "exp_req": null,
+  "pay_min": 141000
+ },
+ "deepmind_research_scientist_multimodal_alignment_safety_and_fairness_gh_7680885": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement: PhD in CS/ML or related field; candidate holds MS only",
+   "Requires strong publication record at top ML conferences (NeurIPS/CVPR/ICML/ICLR), not evidenced in candidate profile",
+   "Posted US base salary range starts at $147,000, below the $150k minimum threshold",
+   "Research Scientist track centered on sociotechnical/multimodal alignment research rather than candidate's applied/agentic engineering strengths"
+  ],
+  "exp_req": null,
+  "pay_min": 147000
+ },
+ "xai_software_engineer_training_inference_c_gh_4533894007": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ },
+ "anyscale_distributed_llm_inference_engineer_1cf38233": {
+  "verdict": "useful",
+  "reasons": [
+   "Direct match to candidate's LLM inference/serving background (vLLM experience explicitly valued, listed under bonus points)",
+   "Requirements phrased flexibly ('Familiarity with...') with no stated minimum years, so 4.5 yrs clears the bar",
+   "IC engineer role, not internship/executive/principal-level; no PhD or hard credential gate",
+   "Partial gaps: no explicit Ray or CUDA/compiler contributions, but distributed backend scaling and ONNX edge deployment are transferable"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "cognition_applied_ai_engineer_811c3f5a": {
+  "verdict": "borderline",
+  "reasons": [
+   "Meets stated bar: 3+ yrs required vs ~4.5 yrs production ML/AI; MS Georgia Tech satisfies STEM degree",
+   "Agentic AI production experience (agentic RAG, agent pipelines) directly matches 'deployed LLM/agent-based systems' preference",
+   "Role is heavily customer-facing forward-deployed/solutions work (workshops, enablement playbooks, adoption ROI) rather than core ML/inference/post-training engineering, so only partial overlap with candidate's target research/ML engineer profile",
+   "No salary posted; cannot verify $150k floor"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "tenstorrent_machine_learning_research_engineer_llms_ai_systems_gh_5163484007": {
+  "verdict": "useful",
+  "reasons": [
+   "Meets stated '4+ years' ML/LLM experience bar (~4.5 yrs); PhD/published research listed only as 'highly valued,' not required",
+   "Strong overlap with inference-optimization core: vLLM serving, ONNX edge deployment, reward-based routing, benchmark/eval harness experience maps to train-evaluate-optimize duties",
+   "Caveats: hybrid on-site Toronto/Boston (Boston is US-viable but not remote), and hands-on large-scale training depth is partial (profile leans inference/agentic plus academic RL)",
+   "Posted comp range $100k-$500k is explicitly level-dependent; floor is below $150k but wide range and level-based assessment imply realistic offer for this seniority exceeds threshold"
+  ],
+  "exp_req": 4,
+  "pay_min": 100000
+ },
+ "figma_data_scientist_core_data_phd_2026_gh_5976930004": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement: PhD in a quantitative field explicitly required; candidate holds MS only",
+   "Title 'PhD (2026)' indicates a new-grad PhD cohort pipeline, which falls under excluded early-career pipelines",
+   "Role centers on experimentation platform/causal inference/analytics tooling rather than candidate's LLM/inference/agentic engineering target roles"
+  ],
+  "exp_req": null,
+  "pay_min": 170000
+ },
+ "ramp_applied_ai_engineer_d204e136": {
+  "verdict": "useful",
+  "reasons": [
+   "Role directly targets agentic AI, RAG, structured extraction, fine-tuning, and LLM inference infrastructure \u2014 all core strengths of the candidate",
+   "No stated minimum years of experience; ~4.5 yrs production ML/AI comfortably meets implied seniority",
+   "Backend/infrastructure emphasis (cloud, backend systems) aligns with candidate's Golang/OpenSearch scaling and vLLM serving background",
+   "Minor gap: JD stresses full-stack/web frameworks while candidate is backend-heavy, but primary scope is LLM/AI engineering with transferable skills"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "etched_design_verification_engineer_internal_ip_77f0497f": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hardware design verification role (UVM/SystemVerilog, RTL, NoC/DMA/systolic array verification) is explicitly outside the candidate's software/ML profile and falls under the 'hardware' exclusion category",
+   "Requires deep digital design/DV expertise the candidate does not have; no overlap with agentic AI, LLM inference, or post-training target roles",
+   "On-site Austin with ~2 weeks/month in San Jose during ramp conflicts with US-based/Remote-US preference"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "baseten_frontend_engineer_dedicated_inference_3622a1ee": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is a dedicated Frontend Engineer position (React/TypeScript/UI work) \u2014 clearly unrelated to candidate's ML/AI engineering profile",
+   "Requires 5+ years of production web application experience, exceeding candidate's ~4.5 years",
+   "No posted salary range in JD"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "baseten_post_training_research_engineer_68328a94": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role type matches target (Research Engineer, post-training/LLM) and JD states 'we don't have a rigid set of skills' with no years-of-experience minimum, so no hard requirement exceeds the ~4.5y profile",
+   "Core technical demands skew toward distributed training infrastructure (tensor/pipeline/context parallelism, GPU kernel profiling, roofline analysis, Slurm/HPC) which the candidate does not demonstrate; profile centers on inference/serving (vLLM, ONNX edge), agentic systems, evals, and academic RL",
+   "Partial transferable fit exists: vLLM/ONNX inference internals, Kubernetes/systems-level ops, Golang backend scaling, and RL fundamentals (PPO/DQN/reward shaping) are relevant to post-training tooling, but gap between serving and large-scale training is material",
+   "Compensation not posted ('competitive compensation + equity'); cannot verify the $150k floor, though Baseten Series F stage suggests market-rate comp"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "baseten_ai_inference_engineer_db6477fc": {
+  "verdict": "useful",
+  "reasons": [
+   "Requirements (BS/MS/PhD, 2+ yrs, Python, ML deployment lifecycle) sit well within candidate's ~4.5 yrs MS-level production ML experience",
+   "Role centers on productionizing/serving AI models on Baseten's inference platform, directly matching candidate's vLLM/ONNX/model-serving and evaluation-harness strengths",
+   "No hard exclusions triggered: not an internship/new-grad pipeline, no >4.5 yr minimum, no Director+/people-manager scope, no posted pay below $150k (comp not listed)",
+   "Caveat: description is Forward Deployed Engineer flavored with pre-sales/customer-success/PM duties, so fit is strong but not a pure research/backend IC role"
+  ],
+  "exp_req": 2,
+  "pay_min": null
+ },
+ "cresta_senior_forward_deployed_engineer_ai_agent_gh_5205398008": {
+  "verdict": "useful",
+  "reasons": [
+   "Requirements (3+ years, BS/MS) are comfortably below/at candidate level (~4.5 yrs, MS Georgia Tech)",
+   "Strong skill overlap: agentic AI systems, RAG, function calling, LLM hands-on, prompt optimization, Python + Golang",
+   "Role is deployment/customer-facing FDE rather than pure research/inference, but core work (building and tuning AI agents) aligns with candidate's agentic AI strengths",
+   "No salary range posted in JD; pay threshold unverifiable, though senior AI-agent FDE roles at this company typically clear $150k"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "cresta_solutions_engineer_ai_agent_gh_5397262008": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Title is 'Principal Solutions Engineer' - Principal-level roles are a hard exclusion for this candidate",
+   "Requires 5+ years customer-facing technical role plus 3-5 years enterprise pre-sales, exceeding candidate's ~4.5 years and lacking any pre-sales/solutions engineering background",
+   "Role is pre-sales solutions engineering focused on demos/workshops/ROI modeling, not aligned with candidate's target Research Engineer/Applied Scientist/ML Engineer IC roles"
+  ],
+  "exp_req": 5,
+  "pay_min": 220000
+ },
+ "reflection_ai_forward_deployed_engineer_lead_llm_post_training_1d029ec2": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Requires 6+ years engineering experience (candidate has ~4.5 years)",
+   "Requires 2+ years LLM post-training in leadership capacity (candidate lacks explicit leadership tenure)",
+   "Role is a Lead position implying people/tech-lead responsibility beyond candidate's current scope"
+  ],
+  "exp_req": 6,
+  "pay_min": null
+ },
+ "reflection_ai_forward_deployed_engineer_lead_ai_engineer_56fbaa8a": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states hard minimum of 6+ years software engineering experience vs candidate's ~4.5 years, with no 'or equivalent' flexibility phrasing",
+   "Requires 2+ years in a formal technical leadership capacity and owning org-building/playbooks/mentorship for scaling the FDE function - conflicts with candidate's exclusion of Lead/people-manager roles despite strong agentic AI/RAG/eval/inference skill overlap"
+  ],
+  "exp_req": 6,
+  "pay_min": null
+ },
+ "writer_ai_engineer_8889d06e": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states '5+ years of professional experience' building/deploying ML/AI systems as a hard minimum; candidate has ~4.5 years and no flexibility/equivalent-experience phrasing is present",
+   "Role content itself (agentic AI agents, LLMs, evaluation, MLOps) aligns well with candidate profile, but the stated experience floor exceeds the candidate's profile without softening language"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "coderabbit_senior_applied_ai_engineer_8f17b66f": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states '5+ years' ML/LLM production experience as a hard minimum with no 'or equivalent' flexibility on experience, exceeding candidate's ~4.5 years",
+   "Strong topical fit otherwise (agentic RAG, RLHF/reward modeling, eval harnesses, LLM serving), but the experience gate is a stated hard requirement",
+   "Secondary gap: TypeScript emphasized alongside Python; candidate shows Python/Golang but no TypeScript evidence"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "serve_robotics_lead_machine_learning_engineer_021eee2a": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Requires 'Minimum of 5 years' professional ML production experience vs candidate's ~4.5 yrs, stated as a hard minimum with no flexibility phrasing",
+   "Title is 'Lead' ML Engineer implying lead-level scope beyond target IC roles",
+   "Only posted range is $177k-$215k CAD (~$130k-$155k USD), at/below the $150k USD floor; no actual US range provided despite claim it applies to US candidates",
+   "Core focus is petabyte-scale distributed multimodal training (video/LiDAR point clouds) for autonomy, whereas candidate's depth is LLM inference/serving, agentic systems, and eval harnesses; only partial transferable overlap"
+  ],
+  "exp_req": 5,
+  "pay_min": 177000
+ },
+ "snorkel_ai_research_scientist_gh_5690608004": {
+  "verdict": "useful",
+  "reasons": [
+   "PhD preferred but explicitly waived for equivalent industry/research expertise, so MS + ~4.5 yrs production ML qualifies",
+   "No stated experience minimum exceeding candidate's 4.5 years",
+   "Strong skill overlap: LLMs/generative AI, LLM-as-a-Judge aligns with candidate's eval harness/benchmark work, plus applied research-to-production emphasis fits agentic/inference background",
+   "Pay range $200k-$350k clears $150k floor"
+  ],
+  "exp_req": null,
+  "pay_min": 200000
+ },
+ "retell_ai_senior_machine_learning_engineer_dcc921b7": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong overlap with target roles: LLM fine-tuning/post-training, evaluation benchmarks, and latency-sensitive inference deployment match candidate's benchmark-harness and vLLM/ONNX serving experience",
+   "No stated years-of-experience minimum that exceeds ~4.5 yrs; 'real-world experience' phrased flexibly",
+   "Base salary $225k-$325k well above $150k floor; on-site US (Redwood City) with visa sponsorship offered",
+   "IC senior role, not Director/VP/Principal or people-manager; not internship/new-grad"
+  ],
+  "exp_req": null,
+  "pay_min": 225000
+ },
+ "retell_ai_research_scientist_llm_b0d780eb": {
+  "verdict": "useful",
+  "reasons": [
+   "Title and domain are direct targets: Research Scientist - LLM at an agentic voice-AI company maps to candidate's agentic AI, evaluation-harness, and LLM inference/serving strengths",
+   "No years-of-experience minimum stated; Master's required is satisfied by MS (Georgia Tech), PhD only 'preferred' with 'equivalent research-level engineering experience also considered'",
+   "Base salary $225k-$400k clears the $150k floor; US location with relocation and visa sponsorship offered",
+   "Partial gap: JD emphasizes model training (pre/post-training, TTS, multimodal) where candidate's evidence is thinner, but academic RL (PPO/DQN/reward shaping) transfers to post-training and eval-framework design is an explicit responsibility"
+  ],
+  "exp_req": null,
+  "pay_min": 225000
+ },
+ "standard_bots_ai_research_engineer_a3cd1d01": {
+  "verdict": "borderline",
+  "reasons": [
+   "Stated '5+ years AI modeling' exceeds candidate's ~4.5 yrs, but phrased under 'might thrive' preferences and company notes openness to varied seniority levels, so not a hard disqualifier",
+   "JD explicitly requires proven ML planning background in autonomous vehicles plus professional diffusion/autoregressive experience; candidate has no AV/robotics industry experience \u2014 only partial overlap via academic RL (PPO/DQN/reward shaping)",
+   "Transferable strengths exist: LLM work covers autoregressive models professionally, plus strong eval-harness, model debugging/optimization, and training-pipeline experience matching several listed responsibilities",
+   "Role type (AI Research Engineer) aligns with candidate targets and salary range $225k-$300k clears the $150k floor"
+  ],
+  "exp_req": 5,
+  "pay_min": 225000
+ },
+ "physical_intelligence_research_scientist_f83ba447": {
+  "verdict": "borderline",
+  "reasons": [
+   "No stated experience floor ('at all levels'), so no hard-exclusion on years vs ~4.5 yrs",
+   "Role is ML/robotics research; candidate lacks robotics domain experience but academic RL (PPO/DQN/reward shaping) plus strong implementation/system-building skills are transferable",
+   "JD requires 'a record of excellent research results'; candidate profile shows production ML and internal benchmarks/harnesses rather than an external research publication track record",
+   "No salary posted; cannot verify >=$150k threshold"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "cartesia_software_engineer_agents_16cd6cd7": {
+  "verdict": "useful",
+  "reasons": [
+   "Agent-platform engineering role closely matches candidate's agentic AI, eval-harness (LLM-as-judge/regression tracking), and LLM inference/latency-optimization background",
+   "No strict years requirement stated ('we care more about what you've shipped than strict years'), so 4.5 yrs profile clears the bar",
+   "Backend/distributed-systems emphasis aligns with OpenSearch/Golang scaling and vLLM serving experience",
+   "Pay not posted numerically, so no sub-$150k disqualifier applies; SF in-office is within candidate's US-based scope"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "goodfire_machine_learning_engineer_gh_5019847008": {
+  "verdict": "borderline",
+  "reasons": [
+   "JD states '5+ years' as required minimum vs candidate's ~4.5 years (~0.5yr gap), but closing note explicitly invites applicants who don't meet every requirement, signaling flexibility",
+   "Strong skill overlap otherwise: ML infra/training-eval tooling, inference optimization, distributed systems, research-to-production engineering matches candidate's vLLM/serving, eval harness, and agentic-systems background",
+   "Pay $200k-$400k clears $150k floor; IC ML Engineer role matches target roles",
+   "Constraint: fully on-site SF or NYC 5 days/week (one remote week/month) - US-based OK but no remote option"
+  ],
+  "exp_req": 5,
+  "pay_min": 200000
+ },
+ "prime_intellect_research_engineer_reinforcement_learning_ee13090e": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong overlap with candidate strengths: vLLM/distributed inference optimization, RL background (PPO/DQN/reward shaping), agentic/pipeline engineering, and eval/benchmark experience map directly to the synthetic data + distributed RL + inference workload responsibilities",
+   "No explicit years-of-experience minimum stated ('extensive experience' phrased flexibly), so ~4.5 yrs does not violate the >4.5 exclusion",
+   "Posted cash compensation $150-350k meets the $150k floor",
+   "Remote option available (flexible work arrangements), matching US-based/Remote-US preference"
+  ],
+  "exp_req": null,
+  "pay_min": 150000
+ },
+ "openrouter_research_scientist_8daf0f29": {
+  "verdict": "useful",
+  "reasons": [
+   "Core scope (LLM evaluation frameworks, benchmarks, routing optimization, empirical model studies) directly matches candidate's eval-harness/benchmark work (202-test CAD harness, ARTEMIS) and reward-based routing experience",
+   "MS from Georgia Tech satisfies the MS-or-PhD requirement; no years-of-experience minimum stated, so no >4.5yr violation",
+   "RL background (PPO/DQN/reward shaping) and LLM landscape familiarity map to routing-intelligence and RLHF-adjacent requirements",
+   "Gaps: no evidence of first-author publications or deep causal-inference/statistics expertise, but JD phrases research track record flexibly ('equivalent impact in industry research') and explicitly welcomes partial fits"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "arize_ai_forward_deployed_ai_engineer_east_gh_5993755004": {
+  "verdict": "useful",
+  "reasons": [
+   "Stated 2-5 years software development range comfortably covers candidate's ~4.5 years production ML/AI experience",
+   "Strong topical fit: Arize's core focus on LLM/agent observability and evaluation aligns directly with candidate's eval harness/benchmark (202-test CAD harness, ARTEMIS) and agentic AI/RAG experience",
+   "GenAI-in-production and MLOps requirements match candidate's vLLM inference serving, ONNX edge deployment, and OpenSearch/Golang backend scaling background",
+   "Pay floor of $155k exceeds the $150k minimum threshold; equity plus variable comp adds upside"
+  ],
+  "exp_req": 2,
+  "pay_min": 155000
+ },
+ "vannevar_labs_machine_learning_engineer_gh_5045652007": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states 5+ years production ML experience as a hard minimum with no 'or equivalent' flexibility; candidate has ~4.5 years",
+   "Skill match is otherwise strong (vLLM, ONNX, PyTorch, eval/monitoring systems) and salary range ($150k-$215k) meets threshold, but the stated experience floor exceeds candidate profile"
+  ],
+  "exp_req": 5,
+  "pay_min": 150000
+ },
+ "stack_ai_forward_deployed_ai_engineer_d65c8bc9": {
+  "verdict": "borderline",
+  "reasons": [
+   "Technical bar matches: 3+ years required vs candidate's ~4.5 yrs, and RAG/LLM/agentic workflow expertise aligns directly with Fortinet agentic RAG and evaluation-harness experience",
+   "Role is heavily customer-facing/GTM (forecasting, closing deals, pitching stakeholders, evangelizing at events), diverging from candidate's research/ML-engineering target profile",
+   "Requires direct contribution across Python backend AND React/Next.js TypeScript frontend plus enterprise account management - broader than candidate's backend/ML focus",
+   "No salary posted, so the $150k floor cannot be verified"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "poolside_member_of_engineering_agent_sandboxes_9a4f25e5": {
+  "verdict": "borderline",
+  "reasons": [
+   "Candidate has strong Go, distributed systems, and ML workload experience (vLLM, ONNX, agentic systems) but lacks explicit sandbox/container runtime and large-scale CI/CD platform experience; role is infrastructure-focused on agent execution environments, adjacent to candidate's agentic AI work but requires deeper systems/virtualization expertise.",
+   "Requirements are phrased flexibly (prioritizing sandbox experience, not strict years), and candidate's 4.5 years meets any implicit seniority.",
+   "No posted pay below $150k, not an internship/executive role, and location supports remote-US."
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "labelbox_forward_deployed_research_scientist_gh_5101375007": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role matches target profile (Research Scientist, LLM/post-training focus); MS requirement satisfied by Georgia Tech MS",
+   "Pay range $200k-$300k clears $150k floor; no stated years-of-experience minimum exceeding 4.5 yrs",
+   "Strong match on preferred criteria: LLM eval/benchmark harness design (202-test CAD harness, ARTEMIS) and RL/reward modeling background map directly to ablation studies and RLHF/DPO work",
+   "Gap: required hands-on fine-tuning of open-weight LLMs (SFT/LoRA etc.) is not evidenced in candidate profile; training-pipeline depth inferred only from academic RL"
+  ],
+  "exp_req": null,
+  "pay_min": 200000
+ },
+ "superannotate_research_engineer_26b7799a-b68a-47d2-bde1-891fbd7e2e68": {
+  "verdict": "useful",
+  "reasons": [
+   "Research Engineer title directly matches candidate's target roles",
+   "JD emphasizes agents, benchmarks, and reimplementing prior work - aligns with candidate's agentic AI and evaluation-harness strengths",
+   "No stated experience minimum exceeding 4.5 years; no PhD or seniority hard requirements listed",
+   "Hybrid SF location is US-based, compatible with candidate's US preference"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "field_ai_senior_research_engineer_humanoid_manipulation_1ae59c17-eabd-4e36-a2c2-e9ac96ba0f85": {
+  "verdict": "borderline",
+  "reasons": [
+   "Core focus is humanoid manipulation and embodiment-agnostic robot foundation models; candidate has no demonstrated robotics/manipulation/sim-to-real experience, only academic RL (PPO/DQN)",
+   "Senior Research Engineer title likely implies 5+ years though JD states no explicit requirement; candidate sits at ~4.5 yrs",
+   "Partial transferability via RL/reward-shaping background and research-engineering eval/benchmark skills; role location Boston fits US-based preference but pay not posted so cannot verify $150k floor"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "zoox_senior_machine_learning_engineer_perception_2f65fc0e-16f1-48a9-b34d-5ca5dcf76800": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role is AV perception (detection/tracking, sensor fusion, embeddings) \u2014 specialized CV domain with no matching experience in candidate's LLM/agentic/inference-focused profile; only general production-ML skills transfer",
+   "'Senior' title implies a higher bar (~5+ yrs) but JD states no explicit years requirement, so candidate's 4.5 yrs is not formally excluded",
+   "No salary posted, so the $150k floor cannot be verified"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "waabi_research_engineer_learnable_planner_integration_30f77194-6f1c-4ee2-8bb9-0eb9763250af": {
+  "verdict": "borderline",
+  "reasons": [
+   "MS requirement met by Georgia Tech MS; no stated years-of-experience minimum, so 4.5 yrs is acceptable",
+   "Academic RL background (PPO/DQN/reward shaping) directly matches the JD's planning/decision-making requirement (imitation/RL), and production ML integration + evaluation-harness experience transfers to model validation/deployment work",
+   "Significant domain gap: no autonomous driving, motion planning, robotics, or computer vision experience; candidate's depth is LLM/agentic AI and inference serving rather than learned planners",
+   "No demonstrated proficiency in Rust/C++/CUDA (JD requires Python plus at least one of these); candidate shows Golang/OpenSearch instead"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "waabi_research_scientist_17dda427-f822-4e89-bff7-2b9541fb3a9d": {
+  "verdict": "useful",
+  "reasons": [
+   "MS satisfies degree requirement (PhD not mandatory; exceptional Bachelors also considered)",
+   "No explicit years-of-experience minimum; 'both senior and junior scientists welcome' so 4.5 yrs is not exceeded",
+   "Research Scientist is a direct target role type; JD explicitly cites LLMs/VLMs, generative modeling, and imitation/reinforcement learning matching candidate's academic RL and agentic-LLM background",
+   "Shipping ML models to production is listed as bonus and candidate has strong production ML record"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "waabi_research_scientist_simulation_agents_48a13158-5489-4fac-8643-2d4e2fdc410e": {
+  "verdict": "useful",
+  "reasons": [
+   "Candidate's academic RL background (PPO/DQN/reward shaping) directly matches the strong background in imitation learning/reinforcement learning requirement.",
+   "MS from Georgia Tech satisfies the Masters/PhD education requirement.",
+   "Agentic AI systems (CAD pipeline, ATHENA, SHASTRA) and evaluation harnesses align with developing realistic/controllable simulation agents and research agenda.",
+   "Experience with LLM inference/serving (vLLM, ONNX) and large-scale backend scaling (OpenSearch/Golang) supports prototype-to-production and large-scale training bonuses."
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "li_4430192444": {
+  "verdict": "useful",
+  "reasons": [
+   "Title (Research Engineer) directly matches candidate target roles",
+   "Compensation $190K-$320K clears the $150K floor",
+   "No stated minimum years of experience or PhD requirement; mid-senior level fits ~4.5 yrs profile",
+   "Core responsibilities align strongly with candidate strengths: eval harnesses/benchmarks (202-test CAD harness, ARTEMIS), LLM inference/serving (vLLM, ONNX edge), production ML shipping"
+  ],
+  "exp_req": null,
+  "pay_min": 190000
+ },
+ "li_4455252412": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong alignment with candidate's agentic AI systems, evaluation harnesses/benchmarks, LLM post-training, RL for reasoning, and inference serving experience",
+   "Pay range $250K-$400K well above $150K floor",
+   "No hard years requirement; 'Mid-Senior level' and phrasing 'exceptional PhD graduate, Research Engineer, Applied Researcher or experienced Research Scientist' indicates flexibility for 4.5 years MS candidate",
+   "Role directly matches target titles (Research Scientist/Applied Scientist) and focuses on hands-on ownership of reasoning systems"
+  ],
+  "exp_req": null,
+  "pay_min": 250000
+ },
+ "li_4454152710": {
+  "verdict": "borderline",
+  "reasons": [
+   "Meets degree/experience bar via flexible path: MS + ~4.5 yrs exceeds 'master's + 3+ yrs' alternative to PhD; pay ($165k-$185k) clears $150k floor",
+   "Core specializations required (2 of: diffusion models, 3D reconstruction, world models) have no supporting evidence in candidate profile; background is agentic LLM/RAG/inference, not CV/robotics world modeling",
+   "Basic qual requires publication record in top CV/robotics venues (CVPR, ICCV, CoRL, etc.) \u2014 none listed in profile",
+   "Partial overlap exists: GenAI/foundation-model research scope, eval/benchmark rigor, RL coursework tangentially relates to world models; research-scientist track matches target roles"
+  ],
+  "exp_req": 3,
+  "pay_min": 165000
+ },
+ "li_4457346426": {
+  "verdict": "useful",
+  "reasons": [
+   "Basic qualifications explicitly allow M.S. plus 4 years of applied research experience; candidate has MS plus ~4.5 years production ML/AI, meeting the stated minimum without exceeding the 4.5-year exclusion",
+   "Role is squarely a target role type (Applied Researcher/AI Foundations covering LLM training, evaluation, post-training, RLHF) and candidate strengths in LLM inference/serving, evaluation harnesses/benchmarks, agentic systems, and academic RL map directly onto the described work",
+   "Preferred qualifications (publications, 10B+ pre-training) exceed profile but are listed as preferred, not required; candidate's hands-on model delivery at scale satisfies the 'engineering mindset' basic expectation",
+   "Pay posted for New York, NY is $286,400-$326,800, well above the $150k floor; full-time mid-senior IC role, not internship/executive/people-manager"
+  ],
+  "exp_req": 4,
+  "pay_min": 286400
+ },
+ "li_4447703289": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Entry-level Engineer 1 role targeting early-career/new-grad candidates; candidate has 4.5 years production ML/AI experience and is overqualified.",
+   "Posted pay range minimum $104,500 is below candidate's $150k hard floor.",
+   "Role seniority (entry-level) does not match target roles (Research Engineer/Scientist, Applied Scientist, ML Engineer, AI Engineer).",
+   "Hard exclusion: internships/new-grad pipelines."
+  ],
+  "exp_req": 1,
+  "pay_min": 104500
+ },
+ "li_4448785094": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Internship/new-grad pipeline role (2027 start, graduate position) - candidate has 4.5 years production experience and excludes internships/new-grad roles",
+   "Posted pay minimum $128k below candidate's $150k floor",
+   "Role targets recent Bachelor's/Master's graduates, not experienced professionals"
+  ],
+  "exp_req": 0,
+  "pay_min": 128000
+ },
+ "li_4430130904": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong overlap: multi-step agentic LLM workflows, evaluation frameworks/harnesses, RAG pipelines, and frontier-model experimentation map directly to candidate's agentic AI and benchmarking experience",
+   "Experience bar (2+ years building/deploying AI/ML applications) is well below candidate's ~4.5 years; MS satisfies degree requirement",
+   "Compensation $171K-$242K clears the $150K floor",
+   "Minor gaps are non-blocking: Python/FastAPI backend preferred over candidate's Golang/OpenSearch stack (transferable), regulated life-sciences domain is nice-to-have only"
+  ],
+  "exp_req": 2,
+  "pay_min": 171000
+ },
+ "": {
+  "verdict": "useful",
+  "reasons": [
+   "Candidate has 4.5 years production ML/AI experience exceeding 1+ year requirement",
+   "Strong Python and hands-on LLM/agent experience (agentic AI systems, evaluation harnesses, inference serving)",
+   "Experience with evaluating AI-generated work via benchmarks and harnesses",
+   "Project ownership and end-to-end delivery demonstrated"
+  ],
+  "exp_req": 1,
+  "pay_min": 200000
+ },
+ "li_4454433359": {
+  "verdict": "borderline",
+  "reasons": [
+   "Stated minimum '5+ years' slightly exceeds candidate's ~4.5 years and lacks explicit flexibility phrasing ('or equivalent'), though the 0.5-year gap is marginal",
+   "Otherwise strong functional fit: hands-on agentic AI, RAG/retrieval strategies, orchestration, prompt/tool development, and evaluation-harness design directly match core duties",
+   "Pay range $152k-$190k clears the $150k floor",
+   "Role type (Applied AI Engineer, mid-senior, IC) aligns with target roles; no internship/executive/people-manager conflict"
+  ],
+  "exp_req": 5,
+  "pay_min": 152000
+ },
+ "li_4437911916": {
+  "verdict": "useful",
+  "reasons": [
+   "Core requirements (multi-agent orchestration, agentic RAG, LLM apps, prompt eval/hallucination mitigation) map directly to candidate's CAD pipeline/ATHENA/SHASTRA and Fortinet agentic RAG work",
+   "Preferred quals align strongly: model/agent evaluation harnesses (202-test CAD harness, ARTEMIS), LLMOps exposure, and regulated/security-sensitive environment experience at Fortinet",
+   "No explicit years-of-experience minimum stated; 'Senior' phrased as 'strong experience as a Senior AI/GenAI Engineer', so ~4.5 yrs + MS is a credible fit rather than a hard exclusion",
+   "Salary range $150k-$170k meets the $150k floor; full-time IC role with technical leadership/mentoring, not a people-manager or Principal/Director track"
+  ],
+  "exp_req": null,
+  "pay_min": 150000
+ },
+ "li_4454964256": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Explicitly an entry-level/new-grad pipeline: 'designed for early career talent, recent graduates and career changers' with internship/coursework expectations \u2014 matches candidate's hard exclusion despite their 4.5 yrs experience",
+   "Seniority level listed as Entry level with associate title and mentorship framing, well below candidate's seniority",
+   "Employment type listed as 'Volunteer', implying unpaid/no posted compensation, far below $150k threshold"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "li_4456786774": {
+  "verdict": "borderline",
+  "reasons": [
+   "JD states '5+ years' professional experience as a required qualification, slightly above candidate's ~4.5 years, with no explicit 'or equivalent' flexibility phrasing",
+   "Otherwise exceptional fit: candidate's agentic AI systems, evaluation harnesses/benchmarks, agentic RAG, and CAD-pipeline automation map directly to core responsibilities and the strongly-preferred CS+Civil/CAD-GIS interdisciplinary background",
+   "Preferred qualifications align well (inference optimization via vLLM/routing/quantization, post-training methods, RL background)",
+   "Mentoring/architecture-review duties are senior-IC scope, not people-management, so no exclusion triggered"
+  ],
+  "exp_req": 5,
+  "pay_min": 150000
+ },
+ "amazon_sr_applied_scientist_special_projects_4455919011": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Basic qualification requires a PhD in CS/ML or related quantitative field; candidate holds MS from Georgia Tech",
+   "Stated minimum of 5+ years building ML models exceeds candidate's ~4.5 years with no flexibility phrasing",
+   "Role focused on ML for life sciences (preferred qualification), misaligned with candidate's agentic AI/LLM inference/security AIOps profile"
+  ],
+  "exp_req": 5,
+  "pay_min": 167100
+ },
+ "amazon_science_applied_scientist_ii_amz27496_1_4455091789": {
+  "verdict": "non_useful",
+  "reasons": [
+   "LinkedIn metadata explicitly lists Employment type as 'Internship' and Seniority level as 'Entry level' \u2014 triggers candidate's hard exclusion on internships/new-grad pipelines",
+   "JD body reads like a full-time Applied Scientist II role (40 hrs/week, salary band, mentoring duties), but the posted classification conflicts; strict rule treats internship-labeled postings as excluded",
+   "Non-exclusion factors otherwise fit: MS + 1 year experience requirement satisfied by ~4.5 yrs production ML + Georgia Tech MS; pay range $161,803-$193,200 clears $150k floor; supervised/unsupervised ML modeling scope aligns with profile"
+  ],
+  "exp_req": 1,
+  "pay_min": 161803
+ },
+ "microsoft_ai_senior_applied_scientist_4411274987": {
+  "verdict": "useful",
+  "reasons": [
+   "Meets required qualifications via Master's + 3+ years path (candidate: MS Georgia Tech + ~4.5 yrs); 'or equivalent experience' adds flexibility",
+   "Strong topical fit: hands-on LLM/SLM work, agentic modeling, generative AI, evaluation/experimentation align directly with Bing/Copilot Applied Scientist scope",
+   "Preferred qualification of MS + 6 years is above profile but explicitly preferred, not a hard requirement",
+   "Bay Area base range $160,200-$261,000 clears the $150k floor for the Mountain View location"
+  ],
+  "exp_req": 3,
+  "pay_min": 160200
+ },
+ "qualcomm_senior_ai_research_quantization_engineer_4402121726": {
+  "verdict": "useful",
+  "reasons": [
+   "Meets/exceeds minimum qualifications: MS + ~4.5 yrs vs 1-2 yr minimums; PhD only 'preferred', not required",
+   "Strong overlap with core scope: efficient LLM inference (KV caching, batching, speculative decoding) maps directly to candidate's vLLM/serving and reward-based routing work; ONNX edge deployment transfers to on-device optimization",
+   "Quantization/model-compression research depth not explicitly evidenced in profile, but adjacent skills (edge inference, PyTorch, benchmarking/harnesses) make fit credible",
+   "Caveat: posted band floor $140,800 is below candidate's $150k floor, but band extends to $211,200 so senior-level offers >=$150k are plausible; monitor during negotiation"
+  ],
+  "exp_req": 2,
+  "pay_min": 140800
+ },
+ "texas_a_m_university_research_scientist_4457053402": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Requires PhD in Agricultural Economics or related field; candidate holds MS",
+   "Requires six years of related experience in Conflict and Development; candidate has ~4.5 years in ML/AI, an unrelated domain",
+   "Role is agricultural economics/conflict-development research, unrelated to candidate's LLM/agentic AI profile",
+   "Part-time on-site academic staff position with salary listed only as 'Commensurate' (unverifiable, unlikely to meet $150k floor)"
+  ],
+  "exp_req": 6,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_conversational_assistant_modeling_and_learning_4455905006": {
+  "verdict": "borderline",
+  "reasons": [
+   "Strong topical fit: role centers on LLM fine-tuning/alignment (RLHF/DPO), agentic reasoning/orchestration, evaluation frameworks, and inference serving (vLLM listed) \u2014 directly matching candidate's agentic AI, eval-harness, vLLM, and RL background",
+   "All basic qualifications within profile: MS required (candidate has MS GT), max stated experience bar is 3+ years vs candidate's ~4.5; PhD/publications only preferred, not required",
+   "Pay concern: posted base range floor ($142,800) falls below the $150k hard floor, though the ceiling ($193,200) plus sign-on/RSUs makes clearing $150k realistic \u2014 hence borderline rather than auto-reject",
+   "On-site Bellevue, WA is US-based and acceptable, but assumes relocation/willingness to work on-site"
+  ],
+  "exp_req": 3,
+  "pay_min": 142800
+ },
+ "tiktok_multimodal_generative_ai_research_scientist_intelligent_creation_global_frontier_tech_recruitment_program_2027_start_phd_4448497891": {
+  "verdict": "non_useful",
+  "reasons": [
+   "PhD explicitly required in minimum qualifications (title tagged '(PhD)', 'completing or recently completed a PhD'); candidate holds MS only",
+   "Role is part of a new-graduate recruitment program ('Global Frontier Tech Recruitment Program', 2027 start, graduate onboarding), which matches the candidate's hard exclusion of new-grad pipelines despite their ~4.5 yrs experience",
+   "On-site Seattle requirement conflicts with US-based/Remote-US preference"
+  ],
+  "exp_req": null,
+  "pay_min": 241680
+ },
+ "volvo_cars_memphis_car_salesperson_4454126155": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is clearly unrelated to candidate profile (automotive sales vs ML/AI engineering/research)",
+   "Entry-level sales position with no ML/AI component",
+   "On-site in Memphis, TN, not US-based remote",
+   "No posted salary but commission-based sales unlikely to meet $150k base requirement"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "amazon_web_services_aws_applied_scientist_amazon_redshift_4455792916": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted base salary range for the actual role location (Redmond, WA) starts at $142,800, below the $150k hard floor",
+   "Otherwise strong fit: MS + 4.5 years satisfies 'Master's degree and 4+ years' basic qualification without exceeding candidate's experience cap",
+   "Applied Scientist role aligns with target roles; deep learning/RL for query resource prediction matches candidate's RL background and inference/systems experience"
+  ],
+  "exp_req": 4,
+  "pay_min": 142800
+ },
+ "stott_and_may_forward_deployed_senior_machine_learning_engineer_4447143610": {
+  "verdict": "borderline",
+  "reasons": [
+   "Strong technical alignment: agentic workflows, RAG, embeddings/vector search, and production LLM deployment map directly to candidate's Fortinet agentic-RAG/inference experience",
+   "Security-domain AIOps background relevant to national-security mission context",
+   "Hard gate: Active U.S. Secret clearance + U.S. Citizenship required with no sponsorship; candidate profile does not confirm clearance or citizenship status",
+   "No explicit years-of-experience minimum stated; Mid-Senior level consistent with ~4.5 yrs"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "capgemini_gen_ai_engineer_4456246023": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted base range $80k-$160k sits largely below candidate's $150k floor, and posting explicitly states hires are 'not typical' at/near the top of range, making realistic comp well under $150k",
+   "Skills fit is otherwise strong (agentic AI end-to-end ownership, RAG pipelines, embeddings/vector DBs, LangChain-style orchestration, AWS Bedrock, observability) and matches candidate's agentic/RAG background",
+   "On-site requirement in Charlotte/NJ/Atlanta conflicts with candidate's Remote-US preference, though location alone is not disqualifying"
+  ],
+  "exp_req": null,
+  "pay_min": 80000
+ },
+ "truveta_machine_learning_engineer_llms_generative_ai_4341825663": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement exceeds candidate: minimum qualifications demand 6+ years software/ML experience (or 3+ years with a PhD); candidate has ~4.5 years with an MS only",
+   "JD language also targets 'new graduates,' conflicting with seniority expectations, reinforcing misfit on experience tier",
+   "Role content itself is a strong match (LLM post-training, RLHF/RLVR, PEFT, RAG, generative evals align with candidate's RL background, agentic RAG, and eval-harness work) and posted pay $155k-$175k clears the $150k floor, but the stated experience bar disqualifies"
+  ],
+  "exp_req": 6,
+  "pay_min": 155000
+ },
+ "google_deepmind_research_engineer_agi_safety_and_alignment_deepmind_4417168169": {
+  "verdict": "useful",
+  "reasons": [
+   "Role is a frontier evals/environments research engineer position directly matching candidate's core strengths: evaluation harnesses/benchmarks (202-test CAD harness, ARTEMIS), agentic AI systems, and academic RL (PPO/DQN/reward shaping)",
+   "No explicit years-of-experience minimum; requirements phrased flexibly ('strong technical fundamentals... can learn quickly'), so ~4.5 yrs production ML experience is credible",
+   "Compensation $205K-$380K exceeds $150k floor",
+   "Mid-Senior level IC research engineer role, not internship/executive/people-manager"
+  ],
+  "exp_req": null,
+  "pay_min": 205000
+ },
+ "openai_research_engineer_codex_4315969761": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong alignment with post-training/RL focus: candidate's agentic AI systems (CAD pipeline, ATHENA, SHASTRA) and academic RL (PPO/DQN/reward shaping) directly match reward signal design and long-horizon reasoning work",
+   "Evaluation harness expertise (202-test CAD harness, ARTEMIS benchmarks) directly relevant to building evaluation frameworks for long-context failure modes",
+   "Production ML systems experience (vLLM, ONNX edge, OpenSearch/Golang backend scaling) matches large-scale data/ML systems and infrastructure requirements",
+   "No explicit years requirement; JD emphasizes 'quick learning and grit' over rigid experience, fitting candidate's 4.5 years"
+  ],
+  "exp_req": null,
+  "pay_min": 200000
+ },
+ "lenovo_advisory_ai_prototyping_engineer_4437046937": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted pay range floor ($138,800) is below the $150k hard exclusion threshold despite range extending to $208,200",
+   "Otherwise credible fit: requires MS (candidate has Georgia Tech MS) and 4+ years AI research experience (candidate ~4.5 yrs)",
+   "Strong topical match: LLM inference efficiency/acceleration aligns with candidate's vLLM, ONNX edge deployment, and reward-based routing work",
+   "PhD only preferred, not required; no top-tier publication requirement is mandatory"
+  ],
+  "exp_req": 4,
+  "pay_min": 138800
+ },
+ "adobe_research_engineer_4399734283": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role matches target profile (Research Engineer, LLM/agentic focus) and pay ($225k-$400k base) exceeds $150k floor",
+   "MS required and candidate has MS (Georgia Tech); PhD only preferred, not required",
+   "No explicit years-of-experience minimum; 'equivalent research-level engineering experience also considered' phrasing is flexible",
+   "Partial fit: JD centers on LLM pre/post-training, TTS/transcription/multimodal model training which candidate lacks direct evidence of; strengths align more on evaluation harnesses, inference/serving, and RL/reward methods"
+  ],
+  "exp_req": null,
+  "pay_min": 225000
+ },
+ "hebbia_applied_research_engineer_agents_4436253202": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong fit: requires only 2+ years production ML experience vs candidate's ~4.5 years",
+   "Direct hands-on vLLM experience matches the modern inference engines requirement (SGLang/vLLM/TensorRT-LLM)",
+   "Academic RL (PPO/DQN/reward shaping) and post-training interest aligns with RL workload optimization nice-to-have",
+   "Golang + OpenSearch backend scaling satisfies Python-or-Go SWE requirement and large-scale production systems plus"
+  ],
+  "exp_req": 2,
+  "pay_min": 200000
+ },
+ "cisco_applied_ai_scientist_4456418113": {
+  "verdict": "borderline",
+  "reasons": [
+   "Research-focused role (novel architectures, training methods, foundational LLM/multimodal research) with PhD and first-author peer-reviewed publications listed as preferred; candidate has MS-only with no stated publications",
+   "Hard minimums are flexible (no PhD or years-of-experience requirement), and candidate's LLM inference/serving (vLLM), evaluation harness/benchmark, and agentic AI experience credibly transfers to Fireworks' low-latency inference/model-serving mission",
+   "Posting metadata inconsistent (header says Cisco/Atlanta but body is Fireworks AI Member of Technical Staff, Research team), creating identity/location verification risk"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "lucas_james_talent_partners_ai_research_engineer_nlp_4438603830": {
+  "verdict": "useful",
+  "reasons": [
+   "Meets all minimum qualifications: MS (Georgia Tech) + ~4.5 yrs exceeds the 2+ yrs industry research requirement",
+   "Satisfies the '1+ year in at least one of' clause via LLM modeling for structured/unstructured data; gap is graph/GNN depth, which is the team's primary focus but only a preferred qualification",
+   "Strong transferable/domain fit: security & observability machine-data AIOps at Fortinet, foundation-model fine-tuning, distributed training/inference efficiency (vLLM, ONNX edge)",
+   "Research Engineer title matches target roles; base range $168k-$212.4k clears $150k floor"
+  ],
+  "exp_req": 2,
+  "pay_min": 168000
+ },
+ "ibm_ai_foundations_research_scientist_4392155207": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Minimum qualification requires a Ph.D. in CS/AI or related field; candidate holds MS only",
+   "Posting is framed as a graduate/new-hire pipeline ('As a graduate...', must state graduation date, 2026 cohort onboarding), matching candidate's new-grad pipeline exclusion",
+   "Otherwise strong topical fit (LLM/VLM pretraining, RL alignment, vLLM/inference efficiency, evaluations) and pay range $162k-$387.6k exceeds $150k floor"
+  ],
+  "exp_req": null,
+  "pay_min": 162000
+ },
+ "harmonic_research_engineer_training_inference_3813454490": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Job requires PhD (or equivalent) as a hard requirement; candidate holds an MS with ~4.5 years experience, which does not meet the stated PhD threshold."
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "unconventional_ai_ai_systems_language_reasoning_models_4456297705": {
+  "verdict": "useful",
+  "reasons": [
+   "Research Engineer role squarely in candidate's target space: post-training, agentic RL, eval harnesses, and LLM inference/serving all map to stated strengths (202-test CAD harness, ARTEMIS benchmarks, vLLM serving, agentic RAG)",
+   "No explicit years-of-experience minimum; 'significant experience' phrased flexibly with 'or equivalent industry research experience' for degree requirement \u2014 4.5 yrs + MS qualifies",
+   "Pay range $200K-$300K clears the $150K floor; mid-senior level, full-time, not internship/executive/people-manager",
+   "Gap: RL is called 'close to a requirement' but candidate's RL is academic (PPO/DQN/reward shaping) rather than production post-training (SFT/RLHF/GRPO); distributed GPU training depth not evidenced \u2014 partially offset by strong harness, agentic-systems, and inference-optimization track record"
+  ],
+  "exp_req": null,
+  "pay_min": 200000
+ },
+ "capgemini_gen_ai_engineer_4418852774": {
+  "verdict": "useful",
+  "reasons": [
+   "Role content (despite 'Capgemini' header, JD body is OpenAI Codex agent team) directly matches candidate strengths: agentic AI systems, eval harnesses/benchmarks, tool-use LLM, production reliability/debugging",
+   "No stated years-of-experience minimum; Mid-Senior level fits ~4.5 yrs profile",
+   "Compensation $230K-$385K exceeds $150k floor",
+   "Bonus points (agent frameworks, code-gen/dev tooling, production logs) align with CAD pipeline/ATHENA/SHASTRA and Fortinet AIOps background"
+  ],
+  "exp_req": null,
+  "pay_min": 230000
+ },
+ "hippocratic_ai_agent_deployment_engineer_residency_program_4418470446": {
+  "verdict": "non_useful",
+  "reasons": [
+   "7+ years experience required (hard minimum), candidate has ~4.5 years",
+   "Title 'Residency Program' conflicts with senior founding engineer description",
+   "Company name mismatch (Hippocratic AI vs Benchling description)"
+  ],
+  "exp_req": 7,
+  "pay_min": 176000
+ },
+ "roku_software_engineer_embedded_agentic_ai_4452862947": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong match: JD centers on agentic AI systems, RAG, agent memory, self-improving loops, harness/eval frameworks, and edge model optimization \u2014 all core candidate strengths (agentic RAG at Fortinet, CAD eval harness, ARTEMIS benchmarks, ONNX edge inference, academic RL)",
+   "Basic quals require BS/MS in CS/engineering plus hands-on LLM/agentic experience; candidate's Georgia Tech MS and ~4.5 yrs production ML exceed these",
+   "Preferred '3+ years industrial research' is below candidate's 4.5 years and phrased flexibly; no hard >4.5 yr requirement stated",
+   "Pay range $165k-$180k base exceeds $150k floor; full-time IC research-engineer role, not internship/executive/people-manager"
+  ],
+  "exp_req": 3,
+  "pay_min": 165000
+ },
+ "adobe_senior_applied_scientist_4445643997": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role type matches target (Applied Scientist, mid-senior); JD body is actually Lyft pricing/ETA ML+OR team despite Adobe header \u2014 verify actual employer",
+   "Experience bar is low (2+ yrs algorithms) and candidate (~4.5 yrs, MS Georgia Tech) exceeds it; no over-qualification exclusion triggered",
+   "Base pay $193,600\u2013$242,000 clears the $150k floor",
+   "Core emphasis is operations research/pricing/marketplace optimization, where candidate has no direct background; fit is partial but transferable via academic RL (PPO/DQN/reward shaping), production ML pipelines, and evaluation/metrics methodology"
+  ],
+  "exp_req": 2,
+  "pay_min": 193600
+ },
+ "whatnot_llm_platform_engineer_4446828683": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted salary range starts at $130k, below candidate's $150k hard floor",
+   "On-site Los Angeles requirement conflicts with candidate's US/Remote-US preference",
+   "Data inconsistency: header says Whatnot/LA but JD body describes Gradial (Seattle), reducing posting reliability",
+   "Role content itself is a strong fit (agentic systems, RL for agents, evals/benchmarks), but pay exclusion governs"
+  ],
+  "exp_req": 4,
+  "pay_min": 130000
+ },
+ "cohere_senior_research_scientist_model_evaluation_4317703639": {
+  "verdict": "useful",
+  "reasons": [
+   "Role is a direct match for candidate's core strength: building evaluation benchmarks/harnesses (202-test CAD harness, ARTEMIS) and rigorous LLM capability measurement",
+   "Research Scientist on LLM evaluation/judges/data-synthesis aligns with target roles (Research/Applied Scientist, LLM/agentic); candidate also brings inference/serving and agentic systems depth",
+   "No stated years-of-experience minimum; 'Senior' title is mid-senior level and JD explicitly invites applicants whose experience doesn't line up exactly",
+   "Remote-friendly Seattle posting fits US/Remote-US preference; full-time IC role, not internship/executive/people-manager"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "distyl_applied_ai_researcher_benchmarking_4420979677": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD states '10+ years of relevant engineering or applied science experience' as a hard requirement, far exceeding candidate's ~4.5 years with no flexibility phrasing on the years criterion",
+   "Role is Staff Applied Scientist expecting time as a technical lead and org-wide technical leadership/mentorship, above candidate seniority band",
+   "Domain fit is otherwise strong (agent eval harnesses, benchmark design, retrieval/tool-selection metrics align with candidate's ARTEMIS/CAD harness work) but blocked by experience gate"
+  ],
+  "exp_req": 10,
+  "pay_min": 276000
+ },
+ "ema_ai_resident_4454664077": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Fixed-term AI Residency program (entry-level, half/full-time for a term) \u2014 structurally an internship/residency pipeline, excluded by candidate's hard filters",
+   "Posted pay is $4,000/month (~$48k/yr annualized), far below the $150k minimum",
+   "Topical fit is otherwise strong (agentic systems, eval harnesses, post-training, vLLM serving match candidate profile), but compensation and program format are disqualifying"
+  ],
+  "exp_req": null,
+  "pay_min": 48000
+ },
+ "jpmorganchase_artificial_intelligence_research_senior_associate_4438871811": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ },
+ "google_deepmind_research_engineer_gemini_code_post_training_deepmind_4456214401": {
+  "verdict": "borderline",
+  "reasons": [
+   "Stated minimum of 5 years ML software/research experience exceeds candidate's ~4.5 years and lacks explicit 'or equivalent' flexibility on that clause",
+   "Otherwise near-perfect domain fit: LLM post-training RL/SFT, evaluation benchmark design (matches candidate's 202-test CAD harness/ARTEMIS), agentic coding workflows (CAD pipeline), and reward modeling align directly with responsibilities",
+   "Preferred quals (agentic code generation, reward models, synthetic data) map strongly to candidate background despite academic-only RL depth",
+   "Compensation $174k-$252k base plus bonus/equity clears the $150k floor; Research Engineer title matches target roles; on-site Mountain View is US-based and not excluded"
+  ],
+  "exp_req": 5,
+  "pay_min": 174000
+ },
+ "impact_com_internal_systems_engineer_applied_ai_4418548391": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted salary range minimum $140k below $150k hard exclusion"
+  ],
+  "exp_req": null,
+  "pay_min": 140000
+ },
+ "amazon_applied_scientist_spx_ai_lab_4455796387": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted pay minimum ($142,800) is below the $150k hard exclusion threshold"
+  ],
+  "exp_req": 4,
+  "pay_min": 142800
+ },
+ "intuit_ai_scientist_2_4438206154": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ },
+ "toyota_research_institute_ai_research_scientist_adaptive_behavior_systems_4346835542": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD explicitly requires a PhD in CS/ML or closely related field; candidate holds an MS only, which is a hard disqualifier per audit rules",
+   "Strong publication record with Google Scholar link required; candidate profile shows production/applied work and academic RL coursework but no stated research publications",
+   "Research scope centers on human behavior modeling / behavioral science / HCI, only partially overlapping candidate's agentic AI, eval harnesses, and inference-serving strengths",
+   "Pay range $176k-$253.5k clears the $150k floor and 1-7 yrs experience band would otherwise fit (~4.5 yrs), so the PhD/publication requirements are the sole blockers"
+  ],
+  "exp_req": 1,
+  "pay_min": 176000
+ },
+ "lululemon_applied_ai_ml_scientist_4410301671": {
+  "verdict": "useful",
+  "reasons": [
+   "Applied AI/ML Scientist matches candidate's target applied-scientist/ML roles",
+   "4-8 years requirement (including education) accommodates ~4.5 yrs + MS; minimum is 4, not exceeded",
+   "Strong overlap with JD emphasis on evaluation frameworks/experimentation (202-test CAD harness, ARTEMIS benchmarks), model iteration, and production integration",
+   "Python/PyTorch/cloud ML and NLP/generative AI experience aligns; retail domain (forecasting/personization) is learnable"
+  ],
+  "exp_req": 4,
+  "pay_min": 146830
+ },
+ "tiktok_research_scientist_generative_ai_seattle_4456256807": {
+  "verdict": "borderline",
+  "reasons": [
+   "Meets 3+ years experience bar (candidate ~4.5 yrs) and pay range $207,480-$368,220 exceeds $150k floor",
+   "Role is CV-centric (diffusion models, GANs, video synthesis, pose estimation, facial analysis) while candidate profile is LLM/agentic-AI focused with no stated CV projects or publications",
+   "Partial transferable overlap: generative AI broadly, multimodal/vision-language adjacency, strong Python/C++ coding, and RL background could support 'including but not limited to' flexible phrasing",
+   "Research Scientist title aligns with candidate target roles; publication preference (CVPR/ICCV/SIGGRAPH/NeurIPS) unmet by listed profile"
+  ],
+  "exp_req": 3,
+  "pay_min": 207480
+ },
+ "sereact_senior_research_scientist_4456735682": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role requires proven research track record with significant publications at top conferences (NeurIPS, CVPR, ICRA, CoRL) which candidate lacks; candidate's background is applied ML engineering (agentic systems, inference serving, backend scaling) not robotics/VLA research.",
+   "Requires deep expertise in Vision-Language-Action models, diffusion models, and robotic manipulation/navigation; candidate has no mentioned robotics or computer vision experience.",
+   "Senior Research Scientist position expects PhD or Master's with focus on Deep Learning and Computer Vision; candidate's MS from Georgia Tech may not have that focus.",
+   "Role is research-heavy with publication expectations, while candidate's profile is engineering-focused (production ML/AI, evaluation harnesses, LLM serving)."
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "tiktok_research_scientist_world_models_graduate_intelligent_creation_global_frontier_tech_recruitment_program_2027_start_phd_4404711426": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement: PhD (completing or recently completed) in CS/CE or related field; candidate holds MS from Georgia Tech only",
+   "Position is part of a graduate/new-grad recruitment program with 2027 start and LinkedIn seniority listed as Internship-level; candidate has ~4.5 years production experience and targets experienced roles",
+   "Topical overlap exists (post-training SFT/RL, agentic foundation models, multimodal GenAI) but candidate fails the degree/pipeline exclusions regardless of fit",
+   "Compensation ($254,400-$588,000 base) clears the $150k floor, so pay is not a disqualifier"
+  ],
+  "exp_req": null,
+  "pay_min": 254400
+ },
+ "bytedance_research_scientist_ai_compute_dpu_global_frontier_tech_recruitment_program_2027_start_phd_4435853291": {
+  "verdict": "non_useful",
+  "reasons": [
+   "PhD required (minimum qualification explicitly states completing or recently completed PhD), candidate holds MS with 4.5 years experience",
+   "Role targets 2027 PhD graduates via Global Frontier Recruitment Program, not experienced professionals without PhD",
+   "Hard requirement exceeds candidate profile"
+  ],
+  "exp_req": null,
+  "pay_min": 207480
+ },
+ "stealth_startup_ai_systems_builder_impact_driven_33164_4455846691": {
+  "verdict": "useful",
+  "reasons": [
+   "Strong overlap with target profile: agentic multi-step workflow systems, evaluation frameworks/edge-case harnesses, production deployment, and post-training (instruction tuning, RLHF, ablations) all match candidate strengths",
+   "Bonus criteria align well: RAG, multi-agent systems, RLHF/reward methods, GPU optimization via vLLM/ONNX inference experience",
+   "Stated 1-4 years band vs candidate's ~4.5 yrs is a slight overshoot on the top end, but bands like this are typically soft filters and candidate far exceeds the minimum; not a >4.5yr hard requirement",
+   "No salary posted, so $150k floor cannot be verified - risk flag but not disqualifying"
+  ],
+  "exp_req": 4,
+  "pay_min": null
+ },
+ "stealth_startup_research_scientist_audio_33363_4455859359": {
+  "verdict": "borderline",
+  "reasons": [
+   "MS in CS/ML required and candidate holds MS from Georgia Tech; PhD 'preferred' with explicit 'or equivalent research-level industry experience' flexibility, so no hard credential barrier",
+   "No stated minimum years of experience exceeding candidate's ~4.5 yrs; seniority listed as Mid-Senior level",
+   "Core role focus is speech/audio (ASR, TTS, audio modeling) where candidate shows no direct domain experience; fit is partial via listed-but-flexible areas (LLMs, multimodal AI), plus strong overlap in evaluation framework design, RLHF-style feedback loops, and inference optimization",
+   "Qualifications phrased inclusively ('background in areas such as'), keeping the door open for transferable agentic-LLM/eval/inference skills"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "google_software_engineer_iii_ai_ml_platforms_and_devices_4456880327": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted pay range starts at $147,000, below the $150k hard floor",
+   "Otherwise credible fit: min quals (2 yrs Python/C++, 1 yr RL/ML infrastructure) fall well under candidate's ~4.5 yrs; MS satisfies preferred qualification; RL + ML deployment/evaluation experience matches the specialized-ML responsibilities",
+   "On-site Seattle is US-based, consistent with location preference"
+  ],
+  "exp_req": 2,
+  "pay_min": 147000
+ },
+ "cobalt_llm_post_training_and_evaluation_researcher_contract_4458136070": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Listed seniority level is 'Internship' and employment type is part-time contract gig work, matching the candidate's hard exclusion for internships",
+   "No posted pay; 'rates vary by project' cannot be verified against the $150k minimum, and 10-40 hr/week structure implies well below full-time comp",
+   "Role is fundamentally expert data annotation/eval-item authoring (job function: Human Resources), not a staff research/engineering position aligned with target roles",
+   "Partial skill overlap only: eval harness/benchmark design and academic RL match, but JD centers on SFT/RLHF/reward modeling/post-training experience not evidenced in profile"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "lenovo_advisory_ai_engineer_4438337740": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Required qualification states '6 years of industry experience in ML or applied AI' as a flat minimum, exceeding candidate's ~4.5 years with no flexibility or equivalent-experience phrasing",
+   "Skill fit is otherwise excellent (agentic LLM orchestration, RAG/vector stores, vLLM inference optimization, agent evaluation frameworks all map directly to candidate strengths)",
+   "Base salary $200k-$250k clears the $150k floor; MS satisfies preferred degree; hybrid Chicago 3 days/week on-site may be a secondary constraint"
+  ],
+  "exp_req": 6,
+  "pay_min": 200000
+ },
+ "bytedance_research_scientist_graduate_seed_large_language_model_llm_2027_start_4439545757": {
+  "verdict": "non_useful",
+  "reasons": [
+   "New-grad pipeline role ('Research Scientist Graduate', 2027 start) targeting candidates completing/recently completed a Bachelor's \u2014 matches candidate's hard exclusion for internships/new-grad pipelines",
+   "LinkedIn seniority level explicitly listed as 'Internship'",
+   "Candidate (~4.5 yrs production ML/AI, MS Georgia Tech) is significantly overqualified for an entry-level graduate cohort",
+   "Domain fit (LLM posttraining/inference/eval) would otherwise be strong, but role level disqualifies"
+  ],
+  "exp_req": 0,
+  "pay_min": 218400
+ },
+ "cubiq_recruitment_research_engineer_4455869850": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement exceeds candidate: PhD (or near completion) in Robotics/ML required; candidate holds MS",
+   "Strong publication record at NeurIPS/ICRA/RSS/CoRL/T-RO expected; no such record in profile",
+   "Role centers on robot learning (manipulation, imitation learning, VLA models, teleoperation) and deploying on physical robots; candidate's RL is academic with no real-world robotics deployment",
+   "On-site Palo Alto lab conflicts with candidate's US-based-or-remote preference"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "goliath_partners_research_engineer_4458207930": {
+  "verdict": "borderline",
+  "reasons": [
+   "Meets stated '4+ years' ML/AI requirement (~4.5 yrs) and title matches target Research Engineer track",
+   "Core domain mismatch: role centers on large multimodal (image/video) world-model datasets and synthetic data pipelines, while candidate's depth is agentic LLM systems, inference/serving, and security AIOps",
+   "Transferable strengths: evaluation harnesses/benchmarks, ML lifecycle experimentation, distributed backend scaling (K8s-adjacent), RL background supports experimental mindset",
+   "No posted salary to verify $150k floor; venture-backed staffing/recruiting-listed posting adds uncertainty"
+  ],
+  "exp_req": 4,
+  "pay_min": null
+ },
+ "carnegie_mellon_university_senior_machine_learning_research_scientist_frontier_lab_4457111010": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard experience requirement exceeds candidate: MS requires 8 years or PhD requires 5 years of relevant experience; candidate has MS + ~4.5 years with no 'or equivalent' flexibility phrasing",
+   "Senior IC role expects demonstrated technical leadership, mentorship, and multi-person workstream coordination at a level above current profile",
+   "Requires 5 days/week onsite in Pittsburgh or Arlington plus DoW security clearance eligibility, adding location/access constraints"
+  ],
+  "exp_req": 8,
+  "pay_min": null
+ },
+ "anthropic_applied_ai_engineer_beneficial_deployments_life_sciences_gh_5021015008": {
+  "verdict": "borderline",
+  "reasons": [
+   "Core engineering skills align strongly: LLM agent architectures, evaluation frameworks/benchmarks, MCP-style ecosystem tooling, and production shipping all match the responsibilities",
+   "Primary fit criterion is deep life sciences/biomedical/genomics research experience, which the candidate entirely lacks (background is security AIOps/CAD), making domain credibility a significant gap despite soft 'might be a good fit' phrasing",
+   "No stated minimum years of experience (tied to internal leveling), so no hard-experience violation; hybrid office expectation (~25%) may conflict with remote-US preference",
+   "Pay $280k-$320k clears the $150k floor comfortably; role level (Applied AI Engineer) fits target titles"
+  ],
+  "exp_req": null,
+  "pay_min": 280000
+ },
+ "openai_applied_ai_engineer_cyber_b46ffd99": {
+  "verdict": "borderline",
+  "reasons": [
+   "JD states 5+ years of customer-facing technical experience, slightly above candidate's ~4.5 years, though phrased flexibly with 'or equivalent'",
+   "Strong domain overlap: candidate's security-domain AIOps background (Fortinet), agentic AI systems, and evaluation harnesses map directly to the role's agents/evals/guardrails/retrieval requirements",
+   "Role is heavily customer-facing solutions/field engineering (CISO advisory, demos, pilots) rather than the candidate's core target roles (research/applied scientist, ML/inference engineering), making fit partial",
+   "SF HQ location is US-based so acceptable, but relocation may be needed"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "anduril_industries_international_legal_counsel_gh_5181971007": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is an International Legal Counsel position requiring a law license and legal/contracting expertise \u2014 completely unrelated to the candidate's ML/AI engineering profile",
+   "Requires U.S. citizenship, security clearance eligibility, and California law licensure or Rule 9.46 in-house registration",
+   "On-site only in Costa Mesa, CA with monthly international travel; no remote option"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "anduril_industries_research_scientist_battlespace_awareness_gh_5207729007": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted salary range starts at $126,000, below the $150k minimum threshold",
+   "Role centers on controls, estimation theory, DSP, and sensor fusion rather than candidate's LLM/agentic-AI/inference strengths",
+   "Requires proficiency in Rust and C++, not evidenced in candidate profile (Golang/Python background)",
+   "Requires eligibility for U.S. Top Secret SCI clearance, a significant barrier not addressed in profile"
+  ],
+  "exp_req": null,
+  "pay_min": 126000
+ },
+ "anduril_industries_senior_international_trade_compliance_engineer_gh_5217458007": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Requires 10+ years of export classification/trade compliance experience, far exceeding candidate's ~4.5 years and violating stated hard exclusion",
+   "Role is a Legal Department trade compliance position requiring deep EAR/ITAR regulatory expertise \u2014 clearly unrelated to candidate's ML/AI engineering profile despite incidental AI/analytics mentions",
+   "Requires Bachelor's in Aerospace/Mechanical/Electrical Engineering plus U.S. Top Secret clearance eligibility; no indication candidate has defense export-control or clearance background"
+  ],
+  "exp_req": 10,
+  "pay_min": 166000
+ },
+ "anduril_industries_senior_research_scientist_battlespace_awareness_gh_5178340007": {
+  "verdict": "borderline",
+  "reasons": [
+   "Role aligns with Research Scientist target and MS satisfies the degree requirement (PhD not mandatory)",
+   "No explicit years-of-experience minimum stated despite 'Senior' title, so no hard exclusion, but ~4.5 yrs may be light for senior-level research expectations",
+   "Required qualifications skew heavily toward applied math, controls, estimation theory, DSP, and random processes rather than candidate's core LLM/agentic/inference strengths; fit is partial via ML, academic RL, and strong software/engineering overlap",
+   "Requires eligibility to obtain/maintain U.S. Top Secret SCI clearance - candidate clearability unknown though security-domain AIOps background is a positive signal"
+  ],
+  "exp_req": null,
+  "pay_min": 190000
+ },
+ "anduril_industries_software_engineer_agent_platform_gh_5174717007": {
+  "verdict": "useful",
+  "reasons": [
+   "Role centers on LLM agent framework design, orchestration patterns, and agent evaluation tooling - direct match to candidate's agentic AI systems (CAD pipeline, ATHENA, SHASTRA, agentic RAG) and benchmark/harness experience (202-test CAD harness, ARTEMIS)",
+   "Post-training workflows (SFT, preference tuning, RL) align with candidate's academic RL background (PPO/DQN/reward shaping) and inference/serving depth",
+   "Backend platform/API requirements match candidate's OpenSearch/Golang production scaling work",
+   "No stated years-of-experience minimum that exceeds ~4.5 yrs; requirements phrased as expertise-based rather than tenure-based"
+  ],
+  "exp_req": null,
+  "pay_min": 220000
+ },
+ "ttn_talent_ai_ml_phd_graduate_4458522588": {
+  "verdict": "borderline",
+  "reasons": [
+   "Title says 'AI / ML PhD Graduate' suggesting PhD preference, but JD explicitly allows 'early-career researcher or experienced hire with strong background in CS/ML/AI/NLP from top university', making the PhD flexible rather than a hard requirement",
+   "Strong topical match: agents, evaluations, benchmarking, RL environments directly align with candidate's agentic systems, eval harnesses (202-test CAD, ARTEMIS), and RL background",
+   "Pay $200k-$400k exceeds $150k floor; mid-senior level, not internship/executive",
+   "Risk factors: posted via staffing agency for confidential employer, and recruiter screening may still favor PhD candidates given the title"
+  ],
+  "exp_req": null,
+  "pay_min": 200000
+ },
+ "deloitte_agentic_ai_engineer_senior_anthropic_claude_4458548391": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted pay range starts at $122k, below the $150k floor",
+   "Requires 1+ year hands-on production experience with Claude Agent SDK and native Anthropic API, which the candidate's profile does not evidence",
+   "Role is client-facing consulting delivery (workstream management, stakeholder management, up to 50% travel) rather than the candidate's target research/applied ML engineering track"
+  ],
+  "exp_req": 4,
+  "pay_min": 122000
+ },
+ "qualcomm_machine_learning_researcher_4429652864": {
+  "verdict": "useful",
+  "reasons": [
+   "Meets minimum quals: MS + ~4.5 yrs experience exceeds 'MS + 2+ years' requirement",
+   "Pay range $159,100-$238,700 clears $150k floor",
+   "Strong overlap with duties: academic RL (PPO/DQN/reward shaping), ONNX edge deployment, vLLM inference/serving map to model-efficiency, quantization, and platform research focus areas",
+   "Research-targeted preferred quals (PhD, 2+ conference publications) not required; candidate lacks stated publications but role remains accessible via MS path"
+  ],
+  "exp_req": 2,
+  "pay_min": 159100
+ },
+ "amazon_web_services_aws_applied_scientist_agentic_ai_aws_agentic_ai_4455911793": {
+  "verdict": "borderline",
+  "reasons": [
+   "Core quals met: MS + ~4.5 yrs satisfies 'Master's degree and 3+ years' path; agentic AI systems, RL (PPO/DQN/reward shaping), and eval/benchmark experience directly match the team's stated areas",
+   "Basic qualification requires patents/publications at top-tier peer-reviewed venues; candidate profile shows no publication or patent evidence",
+   "No salary posted, so the $150k floor cannot be verified",
+   "Location conflict: header states United States but hiring entity is Amazon Development Center (Tel Aviv), creating risk of non-US/non-remote placement"
+  ],
+  "exp_req": 3,
+  "pay_min": null
+ },
+ "amazon_machine_learning_engineer_ii_agi_customization_4455796592": {
+  "verdict": "useful",
+  "reasons": [
+   "Role content aligns tightly with candidate targets: LLM customization (fine-tuning, distillation, model evaluation, prompt optimization) maps to their eval-harness/benchmark and LLM/post-training experience",
+   "Basic quals (3+ yrs non-internship SDE, 2+ yrs design/architecture) are met by ~4.5 yrs production ML/AI work; MS from Georgia Tech exceeds the Bachelor's preferred qualification",
+   "MLE II is mid-level IC track, not an excluded seniority (no Director/Principal/people-manager scope)",
+   "Boston base band $143.7k-$194.4k: floor sits slightly under the $150k bar, but band ceiling plus sign-on/RSUs makes realistic comp comfortably above $150k"
+  ],
+  "exp_req": 3,
+  "pay_min": 143700
+ },
+ "amazon_applied_scientist_agi_customization_services_4455914308": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Posted base salary range starts at $142,800, below candidate's $150k hard minimum",
+   "Basic qualification requires patents/publications at top-tier peer-reviewed venues, not evidenced in candidate profile"
+  ],
+  "exp_req": 4,
+  "pay_min": 142800
+ },
+ "nvidia_applied_ai_engineer_4445787636": {
+  "verdict": "non_useful",
+  "reasons": [
+   "JD lists '5+ years' ML/AI experience as a hard minimum; candidate has ~4.5 years and the requirement is not phrased flexibly ('or equivalent' applies only to the degree)",
+   "Core 'What We Need To See' items require silicon-domain experience: working within a silicon development environment, chip characterization/timing/power analysis, hands-on silicon bring-up and lab debug with oscilloscopes/logic analyzers, and strong EE fundamentals \u2014 all absent from the candidate's software-focused ML profile",
+   "Preferred static-language examples (C/C++/C#/Java/Scala) don't clearly cover candidate's Golang, and the role centers on post-silicon validation rather than candidate's target LLM/inference/agentic research roles"
+  ],
+  "exp_req": 5,
+  "pay_min": 152000
+ },
+ "predii_artificial_intelligence_engineer_architect_4457162764": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement of 5+ years production ML/AI experience exceeds candidate's 4.5 years",
+   "No posted salary to verify >= $150k"
+  ],
+  "exp_req": 5,
+  "pay_min": null
+ },
+ "li_4459045024": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Hard requirement: 5+ years AI modeling experience specifically in self-driving car industry (or PhD with 3+ years in that domain). Candidate has ~4.5 years production ML/AI but not in self-driving/robotics; background is agentic AI, LLM inference, security AIOps, academic RL. No self-driving industry experience."
+  ],
+  "exp_req": 5,
+  "pay_min": 225000
+ },
+ "li_4427706138": {
+  "verdict": "borderline",
+  "reasons": [
+   "Contract part-time (10-40 hrs/week) not full-time; candidate targets full-time roles",
+   "Associate seniority suggests junior level vs candidate's 4.5 years experience",
+   "TensorFlow-specific requirement not explicitly highlighted in candidate profile (vLLM/ONNX focus)",
+   "No posted compensation to verify $150k+ threshold"
+  ],
+  "exp_req": null,
+  "pay_min": null
+ },
+ "li_4413902666": {
+  "verdict": "non_useful",
+  "reasons": [
+   "Role is tutoring/teaching, not ML engineering/research",
+   "Entry-level contract position misaligned with 4.5 years production experience",
+   "Pay up to $40/hour (~$83k annualized) below $150k threshold",
+   "Job function is Education and Training, not target ML/AI engineering roles"
+  ],
+  "exp_req": null,
+  "pay_min": 83200
+ },
+ "li_4458762251": {
+  "verdict": "borderline",
+  "reasons": [
+   "Experience requirement (4+ years) matches candidate's 4.5 years.",
+   "Role is ML Engineer, aligning with target roles (ML Engineer, AI Engineer).",
+   "Job title emphasizes Computer Vision but description is generic ML; candidate lacks explicit CV experience.",
+   "Required skills include time-series forecasting, not highlighted in candidate profile (though NLP and PyTorch are present)."
+  ],
+  "exp_req": 4,
+  "pay_min": null
+ },
+ "li_4458739275": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ },
+ "li_4421897730": {
+  "verdict": "useful",
+  "reasons": [
+   "Meets basic qualifications (MS + 4.5 years > 2 years required with Master's)",
+   "Strong alignment with agentic AI, LLM inference/serving, evaluation harnesses, and optimization techniques",
+   "Pay range $197.3k-$225.1k exceeds $150k floor",
+   "US-based location (McLean, VA) matches candidate preference"
+  ],
+  "exp_req": 2,
+  "pay_min": 197300
+ },
+ "li_4455924480": {
+  "verdict": "error",
+  "reasons": [
+   "RuntimeError: no LLM provider responded: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410,"
+  ]
+ }
+}

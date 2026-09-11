@@ -1,0 +1,123 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume_style}
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge \scshape Vedaang Chopra} \\ \vspace{2pt}
+  \small
+  \href{mailto:vedaangchopra@gatech.edu}{\underline{vedaangchopra@gatech.edu}} \;|\;
+  \underline{+1 (404) 740-9905} \;|\;
+  Atlanta, GA \;|\;
+  \href{https://linkedin.com/in/vedaang-chopra}{\underline{LinkedIn}} \;|\;
+  \href{https://github.com/Vedaang-Chopra}{\underline{GitHub}} \;|\;
+  \href{https://vedaangchopra.live/}{\underline{Website}}
+  \\ \vspace{3pt}
+  \small
+  MS CS (ML) at Georgia Tech \;|\; Advised by \textbf{Dr.\ Matthew Gombolay}, CORE Robotics Lab \\
+  \textit{Research:} Agentic AI systems with execution-grounded evaluation -- Multimodal model routing \& serving -- Production ML at enterprise scale
+\end{center}
+\vspace{-6pt}
+
+%---------- RESEARCH EXPERIENCE ----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology -- CORE Robotics Lab @ Siemens}{Atlanta, GA}
+{Graduate Research Assistant \;|\; Advisor: \textbf{Dr.\ Matthew Gombolay}}{Jan 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{Building a closed-loop agentic pipeline for parametric CAD code generation:
+  a frozen LLM generates CadQuery programs and execution feedback (compile validity, geometric
+  correctness via Chamfer/Hausdorff on STL/B-Rep) drives a LangGraph-orchestrated repair loop --
+  inference-time search with verifiable geometric reward; 16-module system maintained as a 202-test automated evaluation harness with VLM-based visual judgment.}
+
+  \resumeItem{Designed scalable data curation and processing for the pipeline's retrieval-augmented
+  prompting: structured evidence collection, prompt-evaluation components, and failure classification
+  feeding the automated quality-control gates of a 202-test evaluation harness.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Georgia Institute of Technology -- CS 8903 Special Problems}{Atlanta, GA}
+{Graduate Researcher}{Jan 2025 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{ARTEMIS} (Aug 2025--Present): Developing cost-aware routing for Vision-Language
+  Models (VLMs): trained neural multi-task router selects the optimal VLM per request across VQA,
+  OCR, captioning, and reasoning -- SLA-aware load balancing serves 6+ heterogeneous backends
+  (Gemma 3, Qwen-VL, DeepSeek OCR, Llama-4) via vLLM with 5 dynamic routing modes.}
+
+  \resumeItem{\textbf{CERBERUS} (Aug 2025--Present): Encoder-frozen cross-modal alignment research:
+  trained alignment stack with PyTorch DDP + mixed precision on H100/A100 clusters; Matryoshka
+  Representation Learning compresses embeddings 4096$\to$128 dims at ~96\% retention -- R@5 78\%
+  on PixMo vision-text retrieval; ablated Perceiver Resampler integration and diagnosed retrieval
+  collapse to initialization/gradient issues.}
+
+  \resumeItem{\textbf{ATHENA} (Jan--May 2025): Built a 5-agent supervisor-worker multi-agent system
+  via LangGraph Command routing with reflection-based critique; designed cross-modal evaluation
+  framework (BLEU-4, METEOR, BERTScore, CLIPScore) over 100 reference videos -- +0.18 BLEU-4
+  absolute over single-agent baseline; ablation cut fact coverage 27\% without the critique agent.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- INDUSTRY EXPERIENCE ----------
+\section{Industry Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fortinet Technologies Inc.\ (AIOps R\&D)}{Bengaluru, India}
+{Software Development Engineer I \& II (ML/AI)}{Feb 2021 -- Jul 2025}
+\resumeItemListStart
+  \resumeItem{Led development of an agentic RAG diagnostics system from hackathon prototype to
+  production deployment: LLM plans multi-step tool calls over network telemetry and verifies
+  hypotheses via structured function calling -- autonomous root-cause analysis reducing mean
+  resolution time ~70\%.}
+
+  \resumeItem{Scaled OpenSearch telemetry ingestion pipelines from 50 to 2,000 events/sec (40x)
+  via complete re-architecture (async I/O + Golang); deployed edge ML inference via ONNX Runtime
+  (~40\% latency reduction); built SLA forecasting for 60+ production classifiers across 4 categories
+  with automated evaluation and retraining.}
+
+  \resumeItem{Patent (Filed): PCT/IN2022/058026 -- Unsupervised distributional thresholding for
+  wireless connectivity anomaly detection; reduced manual troubleshooting ~75\%. Security-telemetry ML deployed in a production network-security environment (patented anomaly detection).}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- PUBLICATIONS & PATENTS ----------
+\section{Publications \& Patents}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Patent (Filed):} PCT/IN2022/058026 -- Distributional thresholding for connectivity anomaly detection.}{}
+\resumeProjectHeading
+{\textbf{IEEE ICAIA 2026:} ML + Memory Forensics for IoT Cybersecurity (co-author).}{}
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\footnotesize
+\textbf{AI / ML:} PyTorch, Hugging Face Transformers, Deep Learning, Transformers, NLP, Computer Vision,
+  Model Training \& Evaluation, Scikit-Learn, NumPy, Pandas, Experimentation \& Ablation Design \\[1pt]
+\textbf{Agentic AI:} LangChain, LangGraph, Multi-Agent Frameworks, Tool/Function Calling, Agentic RAG,
+  Planning \& Reflection, Long-Horizon Task Decomposition, Structured Generation (Pydantic) \\[1pt]
+\textbf{Inference \& Deployment:} vLLM, Inference Optimization (ONNX Runtime), Latency/Throughput Engineering,
+  Model Serving, Distributed Training (PyTorch DDP, Mixed Precision), Docker, Linux, Azure \\[1pt]
+\textbf{Data Pipelines:} Python, Go, SQL/PostgreSQL, OpenSearch/Elasticsearch, Redis, Data Curation \&
+  Quality Control, ETL, FAISS \\[1pt]
+\textbf{Security ML:} Adversarial Robustness (PGD, Poisoning, Membership Inference -- coursework),
+  Anomaly Detection (patented), Memory Forensics (published) \\[1pt]
+\textbf{Reinforcement Learning:} PPO, DQN, Reward Shaping, Curriculum Learning, Self-Play (academic projects)
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology}{Atlanta, GA}
+{\textbf{M.S.\ in Computer Science} (Machine Learning Specialization), \textbf{GPA: 4.0/4.0}}{Aug 2024 -- Dec 2026}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.20in, topsep=2pt, itemsep=0pt]
+  \item\footnotesize{\textbf{Coursework:} Deep Learning, Deep RL, ML Security, Large \& Vision Language Models, Agentic AI, Systems for AI}
+\end{itemize}
+\vspace{-2pt}
+\resumeEducationCompact
+{Maharaja Surajmal Institute of Technology}{New Delhi, India}
+{B.Tech.\ in Information Technology, CGPA: 8.8/10.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

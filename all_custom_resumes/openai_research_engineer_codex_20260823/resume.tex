@@ -1,0 +1,114 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume_style}
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\Huge \scshape Vedaang Chopra} \\ \vspace{2pt}
+  \small
+  \href{mailto:vedaangchopra@gatech.edu}{\underline{vedaangchopra@gatech.edu}} \;|\;
+  \underline{+1 (404) 740-9905} \;|\;
+  Atlanta, GA \;|\;
+  \href{https://linkedin.com/in/vedaang-chopra}{\underline{LinkedIn}} \;|\;
+  \href{https://github.com/Vedaang-Chopra}{\underline{GitHub}} \;|\;
+  \href{https://vedaangchopra.live/}{\underline{Website}}
+  \\ \vspace{3pt}
+  \small
+  MS CS (ML) at Georgia Tech \;|\; Advised by \textbf{Dr.\ Matthew Gombolay}, CORE Robotics Lab \\
+  \textit{Research:} Coding agents with execution-grounded verification -- Tool-use planning \& multi-agent orchestration -- Evaluation harnesses that expose model failures
+\end{center}
+\vspace{-6pt}
+
+%---------- RESEARCH EXPERIENCE ----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology -- CORE Robotics Lab @ Siemens}{Atlanta, GA}
+{Graduate Research Assistant \;|\; Advisor: \textbf{Dr.\ Matthew Gombolay}}{Jan 2026 -- Present}
+\resumeItemListStart
+  \resumeItem{Building a closed-loop coding-agent pipeline for parametric CAD code generation:
+  a frozen LLM writes CadQuery programs, execution feedback (compile validity, geometric
+  correctness via Chamfer/Hausdorff on STL/B-Rep) drives a LangGraph-orchestrated debug-and-repair
+  loop -- framing synthesis as inference-time search with verifiable geometric reward; 16-module
+  system with a 202-test automated evaluation harness.}
+
+  \resumeItem{Designing graders and failure diagnostics for generated code: AST/code-graph structural
+  analysis, failure classification, and repair-trajectory quality scoring -- turning messy qualitative
+  behavior into concrete signals that steer iterative repair; VLM-based visual judgment complements
+  programmatic metrics.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Georgia Institute of Technology -- CS 8903 Special Problems}{Atlanta, GA}
+{Graduate Researcher}{Jan 2025 -- Present}
+\resumeItemListStart
+  \resumeItem{\textbf{SHASTRA} (Jan 2026--Present): Designing a trace-to-graph pipeline converting agent
+  execution traces (GAIA, 94 sessions, 4,037 events, 442 graph nodes) into reusable task-composition
+  graphs with dependency/control/conditional edges -- compositional workflow reuse for new long-horizon
+  tasks under cost/latency constraints.}
+
+  \resumeItem{\textbf{ATHENA} (Jan--May 2025): Built a 5-agent supervisor-worker multi-agent system via
+  LangGraph Command routing with reflection-based critique and dynamic plan modification; structured
+  outputs validated with Pydantic; +0.18 BLEU-4 absolute over single-agent baseline on 100 reference
+  videos; ablation showed removing the critique agent cut fact coverage 27\%.}
+
+  \resumeItem{\textbf{ARTEMIS} (Aug 2025--Present): Cost-aware VLM routing as dynamic tool selection --
+  trained neural router picks the optimal model per request across 6+ backends served via vLLM with
+  accuracy/cost/latency modes and SLA-aware load balancing.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- INDUSTRY EXPERIENCE ----------
+\section{Industry Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fortinet Technologies Inc.\ (AIOps R\&D)}{Bengaluru, India}
+{Software Development Engineer I \& II (ML/AI)}{Feb 2021 -- Jul 2025}
+\resumeItemListStart
+  \resumeItem{Led development of an agentic RAG diagnostics system from hackathon prototype to
+  production deployment: LLM plans multi-step tool use over network telemetry, invokes APIs, and
+  verifies hypotheses via structured function calling before concluding -- autonomous root-cause
+  analysis reducing mean resolution time ~70\%.}
+
+  \resumeItem{Scaled OpenSearch ingestion pipelines 50$\to$2,000 events/sec (40x) with Golang;
+  deployed edge ML inference via ONNX Runtime (~40\% latency reduction); built SLA forecasting
+  for 60+ classifiers across 4 categories.}
+
+  \resumeItem{Patent (Filed): PCT/IN2022/058026 -- Unsupervised distributional thresholding for
+  wireless connectivity anomaly detection; reduced manual troubleshooting ~75\%.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\footnotesize
+\textbf{Agentic AI:} Coding Agents, LangChain, LangGraph,
+  Agentic RAG, Tool/Function Calling, Multi-Agent Collaboration, Long-Horizon Task Decomposition,
+  Structured Generation (Pydantic), Workflow Composition \\[1pt]
+\textbf{Evals \& Verification:} Automated Evaluation Harnesses, Grader Design (Execution-Grounded),
+  LLM-as-a-Judge, Ablation Studies, Model Evaluation \& Benchmarking, Failure Classification,
+  Geometric/Programmatic Verifiers \\[1pt]
+\textbf{AI / ML:} PyTorch, Hugging Face Transformers, Deep Learning, Transformers, NLP, Computer Vision,
+  Scikit-learn, NumPy, Pandas \\[1pt]
+\textbf{LLMs / VLMs / Serving:} vLLM, VLM Routing \& Evaluation, Cross-Modal Retrieval, CLIP, SBERT, Inference Optimization \\[1pt]
+\textbf{Systems:} Python, Go, C/C++, SQL/PostgreSQL, Redis, OpenSearch/Elasticsearch, Docker, Linux, Git,
+  FAISS, ONNX Runtime, FastAPI, Azure, W\&B, TensorBoard \\[1pt]
+\textbf{Reinforcement Learning:} PPO, DQN, Reward Shaping, Curriculum Learning, Self-Play (academic projects)
+
+%---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Georgia Institute of Technology}{Atlanta, GA}
+{\textbf{M.S.\ in Computer Science} (Machine Learning Specialization), \textbf{GPA: 4.0/4.0}}{Aug 2024 -- Dec 2026}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.20in, topsep=2pt, itemsep=0pt]
+  \item\footnotesize{\textbf{Coursework:} Deep Learning, Deep RL, ML Security, Large \& Vision Language Models, Agentic AI, Systems for AI}
+\end{itemize}
+\vspace{-2pt}
+\resumeEducationCompact
+{Maharaja Surajmal Institute of Technology}{New Delhi, India}
+{B.Tech.\ in Information Technology, CGPA: 8.8/10.0}{Aug 2016 -- Aug 2020}
+\resumeSubHeadingListEnd
+
+\end{document}

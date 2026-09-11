@@ -1,0 +1,5191 @@
+{
+ "together_ai_research_engineer_post_training_5179372007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "anthropic_applied_ai_engineer_startups_5387827008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 240000.0
+ },
+ "anthropic_research_engineer_code_rl_reinforcement_learning_5254364008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_frontier_agents_engineer_applied_ai_4720573005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_senior_frontier_agents_engineer_applied_ai_4720478005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_applied_ai_architect_partnerships_5300430008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 275000.0
+ },
+ "together_ai_research_engineer_large_scale_training_5199554007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "scaleai_software_engineer_ai_enablement_4722512005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "databricks_senior_software_engineer_ai_runtime_8582276002": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_infrastructure_engineer_sandbox_4716453005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_senior_software_engineer_identity_4711898005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_software_engineer_identity_4710484005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "databricks_ai_engineer_gtm_analytics_8638847002": {
+  "reasons": [
+   "pay_$146600_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 146600.0
+ },
+ "anthropic_software_engineer_rl_data_5238606008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_ai_infrastructure_engineer_serving_platform_4717977005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_software_engineer_data_infrastructure_4708221005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_domain_scaling_5271380008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_senior_software_engineer_data_platform_4717101005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_computer_use_5285246008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_software_engineer_infrastructure_interpretability_5388612008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_machine_learning_engineer_platform_4711544005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_machine_learning_infrastructure_engineer_safeguards_research_5364804008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_senior_software_engineer_identity_4715352005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "databricks_sr_software_engineer_cxi_8617901002": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_ai_infrastructure_engineer_sandbox_platform_4717105005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_vp_research_4611448005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_red_team_engineer_safeguards_5320469008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_research_scientist_takeoff_intel_5370669008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "youcom_senior_ai_engineer_5282664008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "youcom_senior_ai_engineer_product_engineering_5231873008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_infrastructure_capacity_planner_demand_planning_5382744008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_field_engineer_public_sector_4717648005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_rl_scaling_science_5264619008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "togetherai_software_engineer_customer_insights_5196805007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "scaleai_software_engineer_platform_4703527005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ml_infrastructure_engineer_5193037007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "anthropic_safeguards_enforcement_analyst_user_well_being_5374778008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "togetherai_ai_infrastructure_system_engineer_bangalore_5180155007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_data_engineer_safeguards_5240422008": {
+  "reasons": [
+   "requires_8+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_integrity_authenticity_5311149008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_software_engineer_desktop_5367585008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_product_engineer_applied_ai_5390799008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_violence_extremism_5343907008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "databricks_senior_software_engineer_multi_cloud_efficiency_8602402002": {
+  "reasons": [
+   "borderline_6yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_senior_mission_software_engineer_public_sector_4720422005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "stabilityai_research_scientist_professional_creative_workflows_4924873101": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_human_data_engineer_5204819007": {
+  "reasons": [
+   "pay_$144000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 144000.0
+ },
+ "databricks_senior_software_engineer_ai_native_web_platform_8635216002": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_software_engineer_x_developer_platform_5204788007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "databricks_senior_applied_ml_engineer_ml4sys_8656900002": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_chem_explosives_harms_5319700008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_radiological_nuclear_harms_5319702008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_software_engineer_evals_5188230007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 175000.0
+ },
+ "anthropic_safeguards_enforcement_analyst_account_takeover_credential_abuse_5319624008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_ban_evasion_recidivism_5319592008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_cyber_harm_5311159008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "databricks_rvp_retail_8582310002": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_research_analyst_5208808007": {
+  "reasons": [
+   "pay_$129600_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 129600.0
+ },
+ "anthropic_external_affairs_us_federal_5382274008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_age_appropriate_design_5311234008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_senior_data_engineer_public_sector_4713597005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "anthropic_safeguards_enforcement_analyst_access_controls_identity_5319626008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scaleai_ai_advisory_consultant_4715970005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_azerbaijani_5207592007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_bulgarian_5207579007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_catalan_5207583007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_croatian_5207340007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_czech_5207418007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_farsi_5207484007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_hausa_5207427007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_igbo_5207584007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_kannada_5207529007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_khmer_5207593007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_lithuanian_5207588007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_malay_5207587007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_mongolian_5188307007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_romanian_5207598007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_serbian_5207586007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_sinhala_5188312007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_slovak_5207599007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_slovenian_5207591007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_sorani_kurdish_5207597007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_ukrainian_5207373007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_ai_tutor_yoruba_5207581007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "xai_software_engineer_x_data_engineering_5182183007": {
+  "reasons": [
+   "pay_$125000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 125000.0
+ },
+ "togetherai_it_engineer_5200773007": {
+  "reasons": [
+   "pay_$140000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 140000.0
+ },
+ "xai_software_engineer_network_software_and_services_5187964007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "ai_engineer_wf_4574038": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "ai_engineer_clone_wf_4465432": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "ai_engineer_wf_3890200": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "sr_ai_engineer_wf_4612622": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "senior_ai_engineer_wf_4171955": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 190000.0
+ },
+ "staff_ai_engineer_wf_4135987": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 240000.0
+ },
+ "ai_engineer_wf_3718271": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "senior_ai_engineer_wf_4489206": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 179000.0
+ },
+ "together_ai_infrastructure_design_engineer_5135876007": {
+  "reasons": [
+   "borderline_7yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": 210000.0
+ },
+ "together_ai_senior_backend_engineer_inference_platform_4835763007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "together_ai_senior_product_engineer_fullstack_5192898007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "together_ai_senior_software_engineer_observability_4971774007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "together_ai_staff_engineer_distributed_storage_and_hpc_ai_infrastructure_5155722007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 250000.0
+ },
+ "together_ai_staff_machine_learning_engineer_voice_ai_5140763007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 220000.0
+ },
+ "together_ai_staff_platform_engineer_service_infrastructure_5180690007": {
+  "reasons": [
+   "borderline_7yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": 240000.0
+ },
+ "together_ai_staff_software_engineer_inference_compute_infrastructure_engineering_5186628007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 240000.0
+ },
+ "cohere_forward_deployed_engineer_agentic_platform_b0bcef37": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_security_engineer_cb981ecd": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_forward_deployed_engineer_agentic_platform_west_coast_1fa01a03": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_data_engineer_data_foundations_9baccd88": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_research_engineer_safety_tooling_and_data_2d4d224f": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 270000.0
+ },
+ "li_character_ai_research_engineer_post_training_all_indu_3813454490": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_boson_ai_member_of_technical_staff_agent_platform_4266777241": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_distyl_applied_ai_researcher_post_training_4315267558": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "li_distyl_applied_ai_researcher_system_self_constr_4315273495": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "li_distyl_applied_ai_researcher_benchmarking_4315277457": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "li_distyl_applied_ai_researcher_system_discovery_4315279413": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "li_cartesia_researcher_post_training_4317542784": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_perplexity_member_of_technical_staff_ai_researcher_4322223560": {
+  "reasons": [
+   "borderline_6yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": 220000.0
+ },
+ "li_abaka_ai_machine_learning_engineer_4341002791": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 175000.0
+ },
+ "li_westfield_insurance_ai_engineer_4369653092": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_zoom_research_scientist_ai_incubation_4370864081": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_hockeystack_ai_engineer_4387803752": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "li_rex_zone_ai_research_scientist_united_states_remo_4388395390": {
+  "reasons": [
+   "pay_$30000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 30000.0
+ },
+ "li_hippocratic_ai_agent_deployment_engineer_residency_prog_4389798215": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_nvidia_senior_research_engineer_autonomous_vehi_4395476249": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_biohub_research_engineer_ai_4398462870": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 214000.0
+ },
+ "li_general_motors_ai_agent_engineer_4399791760": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_gamma_ai_engineer_4403252857": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "li_microsoft_senior_researcher_agentic_ai_microsoft_r_4409906845": {
+  "reasons": [
+   "pay_$119800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 119800.0
+ },
+ "li_anduril_industries_machine_learning_research_engineer_4410781418": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 220000.0
+ },
+ "li_bandwidth_inc_ai_engineer_research_development_4416598983": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_hebbia_applied_research_engineer_agents_4416680839": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "li_openai_applied_ai_engineer_codex_core_agent_4416739416": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 230000.0
+ },
+ "li_openai_research_engineer_4417158991": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 250000.0
+ },
+ "li_openai_machine_learning_engineer_integrity_4417159976": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 266000.0
+ },
+ "li_openai_research_engineer_codex_4417166196": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 295000.0
+ },
+ "li_benchling_agentic_ai_engineer_4418470446": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 176000.0
+ },
+ "li_adobe_senior_applied_scientist_4418514625": {
+  "reasons": [
+   "pay_$142700_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 142700.0
+ },
+ "li_drata_applied_ai_engineer_4419447633": {
+  "reasons": [
+   "pay_$145200_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 145200.0
+ },
+ "li_unconventional_ai_ai_systems_language_reasoning_models_4420164179": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_deloitte_research_engineer_post_training_small_la_4427044959": {
+  "reasons": [
+   "pay_$110700_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 110700.0
+ },
+ "li_distyl_ai_engineer_4427879619": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "li_nextgen_federal_systems_application_agentic_ai_engineer_4428886430": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_gap_international_ai_llm_engineer_4434035022": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_amd_forward_deployed_ai_research_scientist_4434583387": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_hasbro_applied_ai_engineer_4436372606": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_vast_ai_ai_agent_researcher_4436475694": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "li_taxbit_agentic_ai_engineer_4436886602": {
+  "reasons": [
+   "pay_$130000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 130000.0
+ },
+ "li_qualcomm_ai_researcher_on_device_llm_efficiency_4437046937": {
+  "reasons": [
+   "pay_$138800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 138800.0
+ },
+ "li_lenovo_advisory_ai_prototyping_engineer_4437084478": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_whatnot_llm_platform_engineer_4437900104": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 245000.0
+ },
+ "li_intuit_ai_scientist_2_4438206154": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_cisco_applied_ai_scientist_4438604729": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 168000.0
+ },
+ "li_lenovo_ai_modeling_specialist_engineer_4440777564": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_arcadia_forward_deployed_engineer_ai_agents_4443795896": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_microsoft_ai_senior_language_engineer_4444173909": {
+  "reasons": [
+   "pay_$119800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 119800.0
+ },
+ "li_perplexity_member_of_technical_staff_ai_software_en_4444619270": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 220000.0
+ },
+ "li_echostar_corporation_agentic_ai_engineer_ii_4444653399": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_lucas_james_talent_partners_ai_research_engineer_nlp_4445178021": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_google_senior_research_engineer_4445192971": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 174000.0
+ },
+ "li_lg_electronics_north_america_ai_researcher_efficient_ai_contractor_4445210572": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_finastra_senior_ai_engineer_4445233762": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_luma_research_scientist_engineer_reinforcemen_4445276729": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_lyft_staff_applied_scientist_4445643997": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 193600.0
+ },
+ "li_abridge_software_engineer_generative_ai_4446557716": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 255000.0
+ },
+ "li_microsoft_senior_language_engineer_4446755595": {
+  "reasons": [
+   "pay_$119800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 119800.0
+ },
+ "li_gradial_applied_ai_engineer_4446828683": {
+  "reasons": [
+   "pay_$130000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 130000.0
+ },
+ "li_sage_care_software_engineer_ai_research_prototypin_4446845111": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_duolingo_senior_ai_research_engineer_4446860126": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 197200.0
+ },
+ "li_perplexity_member_of_technical_staff_model_behavior_4446947567": {
+  "reasons": [
+   "requires_10+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "li_roku_software_engineer_embedded_agentic_ai_4447079400": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 170000.0
+ },
+ "li_oracle_senior_applied_scientist_4447214228": {
+  "reasons": [
+   "pay_$114600_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 114600.0
+ },
+ "li_infosys_agentic_ai_engineer_4451703401": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_amazon_science_applied_scientist_foundation_models_sso_4452841913": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_bosch_usa_ai_research_engineer_agentic_ai_4452862947": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 165000.0
+ },
+ "li_harrison_clarke_ai_engineer_san_francisco_250k_equity_4453127592": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_langchain_research_engineer_langsmith_engine_4453736138": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_clay_machine_learning_engineer_4453784407": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_clay_software_engineer_applied_ai_4453795302": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_scalr_ai_engineer_4454196842": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "li_google_research_scientist_google_research_4454249590": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 174000.0
+ },
+ "li_the_intersect_group_artificial_intelligence_engineer_4454418767": {
+  "reasons": [
+   "requires_9+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_ema_ai_resident_4454664077": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_crowe_machine_learning_engineer_4454809440": {
+  "reasons": [
+   "pay_$62000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 62000.0
+ },
+ "li_cinder_ai_engineer_4454853028": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "li_zep_ai_member_of_technical_staff_research_4454944213": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_hug_machine_learning_researcher_4455299515": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 225000.0
+ },
+ "li_cerebro_ai_research_scientist_evals_4455725651": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 165000.0
+ },
+ "li_amazon_member_of_technical_staff_artificial_gen_4455905140": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_amazon_web_services_aws_applied_scientist_foundation_models_sso_4455906121": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_microsoft_ai_member_of_technical_staff_post_training_4455972884": {
+  "reasons": [
+   "pay_$119800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 119800.0
+ },
+ "li_google_deepmind_research_engineer_agi_safety_and_alignme_4456002537": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 174000.0
+ },
+ "li_genia_generative_ai_engineer_scientist_us_4456166223": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_sanas_member_of_technical_staff_llm_post_train_4456167120": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_google_senior_research_scientist_google_researc_4456212434": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 174000.0
+ },
+ "li_fireworks_ai_mts_research_engineer_4456411142": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_fireworks_ai_member_of_technical_staff_evals_post_tra_4456414109": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_yara_ai_artificial_intelligence_engineer_4456464748": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_microsoft_applied_scientist_4456728259": {
+  "reasons": [
+   "pay_$119800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 119800.0
+ },
+ "li_goliath_partners_ai_engineer_4457340733": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 220000.0
+ },
+ "li_harrison_clarke_ai_agent_builder_4457365575": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "li_seekr_ai_engineer_scientist_staff_4457387062": {
+  "reasons": [
+   "requires_8+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "palo_alto_networks_principal_machine_learning_platform_engineer__4442384138": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": 157200.0
+ },
+ "palo_alto_networks_principal_ai_engineer_enterprise_ai_solutions_4403282708": {
+  "reasons": [
+   "too_senior_title",
+   "requires_12+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": 185200.0
+ },
+ "netskope_principal_distinguished_engineer_machine_lear_4410708971": {
+  "reasons": [
+   "too_senior_title",
+   "requires_15+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": 154000.0
+ },
+ "palo_alto_networks_sr_staff_ai_ml_data_scientist_adem_4411531812": {
+  "reasons": [
+   "pay_$141000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 141000.0
+ },
+ "palo_alto_networks_staff_sr_staff_ai_engineer_enterprise_ai_solu_4403298114": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 157200.0
+ },
+ "palo_alto_networks_senior_principal_ai_software_engineer_it_go_t_4356043671": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": 223000.0
+ },
+ "crowdstrike_engineer_i_data_scientist_new_grad_hybrid_4440194830": {
+  "reasons": [
+   "intern_or_early_career",
+   "pay_$90000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 90000.0
+ },
+ "crowdstrike_sr_data_scientist_hybrid_4424816374": {
+  "reasons": [
+   "requires_8+_yrs",
+   "pay_$140000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 140000.0
+ },
+ "crowdstrike_sr_data_scientist_applied_ai_ml_4451288269": {
+  "reasons": [
+   "pay_$140000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 140000.0
+ },
+ "crowdstrike_data_scientist_applied_ai_ml_4451274373": {
+  "reasons": [
+   "pay_$120000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 120000.0
+ },
+ "crowdstrike_ai_research_scientist_agentic_systems_remote_4425331670": {
+  "reasons": [
+   "pay_$120000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 120000.0
+ },
+ "cisco_ai_research_scientist_ii_full_time_united_sta_4457502830": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 165000.0
+ },
+ "cloudflare_senior_machine_learning_engineer_4433121222": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cloudflare_senior_systems_engineer_ai_gateway_4441506047": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 194000.0
+ },
+ "cloudflare_senior_data_scientist_4429404056": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cloudflare_senior_customer_engineer_ai_start_ups_san_fra_4352666531": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 231000.0
+ },
+ "cloudflare_senior_customer_engineer_ai_start_ups_los_ang_4440499239": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 231000.0
+ },
+ "cloudflare_senior_systems_engineer_workers_ai_4443657083": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cloudflare_principal_engineer_cloudforce_one_4431547719": {
+  "reasons": [
+   "too_senior_title",
+   "requires_10+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "spycloud_senior_data_scientist_applied_ml_4448639725": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 154000.0
+ },
+ "sentinelone_manager_detection_engineering_rapid_response__4449913107": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 164000.0
+ },
+ "tenex_ai_principal_ai_engineer_4396237693": {
+  "reasons": [
+   "too_senior_title",
+   "requires_10+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_sr_manager_ai_software_engineering_4446386044": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "sentinelone_principal_ai_engineering_architect_4440938571": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": 224000.0
+ },
+ "tenex_ai_ai_ml_engineer_ii_4422770409": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_ai_devops_engineer_gh_5208829007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_director_ai_security_specialist_gh_5174757007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_principal_ai_security_specialist_benelux_nord_gh_5174743007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_principal_ai_security_specialist_central_gh_5199936007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_principal_ai_security_specialist_east_gh_5174759007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_principal_ai_security_specialist_federal_gh_5174765007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_principal_ai_security_specialist_south_gh_5174761007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_principal_ai_security_specialist_uk_i_gh_5174747007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_security_architect_agentic_ai_gh_5132492007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_sr_staff_software_development_engineer_ai_sec_gh_5146138007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "zscaler_staff_machine_learning_engineer_data_lake_ano_gh_5114450007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_ai_learning_project_manager_contract_gh_7849862003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_principal_ai_developer_experience_architect_gh_7702484003": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_principal_software_engineer_ai_siem_gh_7814850003": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_senior_ai_platform_engineer_infrastructure_se_gh_7823236003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_senior_staff_ai_platform_engineer_gh_7805759003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_senior_staff_forward_deployed_engineer_ai_gh_7800770003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_staff_ai_platform_engineer_gh_7805775003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_staff_ai_platform_engineer_infrastructure_ser_gh_7823203003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "sentinelone_staff_forward_deployed_engineer_ai_gh_7800768003": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "fortinet_applied_ai_agent_orcl_23077": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "palo_alto_networks_airs_solution_specialist_wd5_AIRS-Solution-Specialist_JR-019388": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "palo_alto_networks_airs_solutions_specialist_wd5_AIRS-Solutions-Specialist_JR-019756": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "crowdstrike_director_ai_engagements_and_operations_remote_wd5_Director--AI-Engagements-and-Operations--Remote-_R29839": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "crowdstrike_ai_security_solutions_consultant_remote_wd5_Platform-Professional-Services-Senior-Consultant--AI--Remote-_R28378": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "senior_software_engineer_model_wf_4522717": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "applied_machine_learning_manag_wf_4617767": {
+  "reasons": [
+   "borderline_6yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "staff_software_engineer_data_a_wf_4263072": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 210000.0
+ },
+ "staff_software_engineer_wf_4263071": {
+  "reasons": [
+   "requires_12+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": 210000.0
+ },
+ "senior_machine_learning_engine_wf_4571302": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 150000.0
+ },
+ "staff_ml_engineer_product_wf_3347544": {
+  "reasons": [
+   "requires_8+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": 210000.0
+ },
+ "senior_team_leader_ai_engineer_wf_4523916": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "senior_software_engineer_ai_da_wf_2871335": {
+  "reasons": [
+   "pay_$135000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 135000.0
+ },
+ "machine_learning_engineer_wf_4450696": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 165000.0
+ },
+ "ai_engineer_wf_3982817": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "mistral_ai_ai_scientist_ash_mistral.ai_9fc579c8-": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_technical_lead_forward_deployed_ai_ash_mistral.ai_43b8b35d-": {
+  "reasons": [
+   "requires_8+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_engineer_machine_learning_ash_mistral.ai_b087ffe4-": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_engineer_data_infrastructure_ash_mistral.ai_4c19b931-": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_forward_deployed_machine_learning__ash_mistral.ai_2ec2dacd-": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_engineer_code_agents_infra_ash_mistral.ai_af7c3cf8-": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_scientist_ash_mistral.ai_5d15e1fe-": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_engineering_manager_inference_ash_mistral.ai_6dfcbf55-": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_lead_data_scientist_ash_cohere_39cab400-c976": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_engineering_manager_gpu_infrastructure_ash_cohere_28239d75-5dd9": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_data_scientist_north_insights_ash_cohere_e4603bb7-5bbe": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_director_data_center_operations_gh_togetherai_5101202007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "ai2_research_engineer_asta_gh_thealleninstitute_789": {
+  "reasons": [
+   "pay_$118800_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 118800.0
+ },
+ "ai2_research_engineer_flexolmo_gh_thealleninstitute_781": {
+  "reasons": [
+   "pay_$128880_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 128880.0
+ },
+ "ai2_research_scientist_asta_gh_thealleninstitute_772": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 167030.0
+ },
+ "ai2_research_scientist_robotics_gh_thealleninstitute_784": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 167030.0
+ },
+ "ai2_senior_research_engineer_gh_thealleninstitute_814": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 174240.0
+ },
+ "ai2_senior_research_engineer_olmo_molmo_gh_thealleninstitute_798": {
+  "reasons": [
+   "pay_$146880_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 146880.0
+ },
+ "ai2_senior_software_engineer_agent_frameworks_gh_thealleninstitute_787": {
+  "reasons": [
+   "pay_$146880_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 146880.0
+ },
+ "ai2_senior_software_engineer_agent_platform_ai_fo_gh_thealleninstitute_811": {
+  "reasons": [
+   "pay_$146880_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 146880.0
+ },
+ "reka_member_of_technical_staff_ml_ash_Reka_731e2ebc-2e66-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "reka_member_of_technical_staff_applied_ai_ash_Reka_e059e019-b7f1-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "reka_member_of_technical_staff_gpu_performance_eng_ash_Reka_6595a48b-8dfc-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "reka_member_of_technical_staff_robotics_ash_Reka_9cdfc4f4-9594-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "reka_member_of_technical_staff_machine_learning_en_ash_Reka_87ec3e1d-3083-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "reka_member_of_technical_staff_data_intelligence_ash_Reka_32f1d782-9a49-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_edge_inference_engi_ash_liquid-ai_1ed0e32c-1": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_ml_research_enginee_ash_liquid-ai_c7251e1b-d": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_gpu_performance_eng_ash_liquid-ai_dfc3bae5-0": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_multi_modal_vision_ash_liquid-ai_424e9e41-2": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_distributed_trainin_ash_liquid-ai_a25b97f4-0": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_liquid_labs_research_engineer_ash_liquid-ai_679d26b2-2": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_multi_modal_audio_ash_liquid-ai_7ce97c55-5": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_post_training_appli_ash_liquid-ai_f898850b-a": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_post_training_appli_ash_liquid-ai_df917175-f": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_applied_ml_recsys_ash_liquid-ai_2bb55437-1": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_post_training_appli_ash_liquid-ai_286613f3-3": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_embedded_ml_enginee_ash_liquid-ai_4ee965fc-9": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_gpu_infrastructure__ash_liquid-ai_ec3912e6-3": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "magic_dev_research_engineer_ash_magic.dev_bcc8d988-4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 225000.0
+ },
+ "magic_dev_member_of_technical_staff_supercomputing_plat_ash_magic.dev_45d25f90-3": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "magic_dev_member_of_technical_staff_kernels_ash_magic.dev_42010571-7": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 225000.0
+ },
+ "magic_dev_member_of_technical_staff_rl_research_environ_ash_magic.dev_b8d6a107-3": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "magic_dev_member_of_technical_staff_product_ash_magic.dev_e6bfccff-a": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "magic_dev_member_of_technical_staff_inference_rl_system_ash_magic.dev_427ffdee-d": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 225000.0
+ },
+ "magic_dev_member_of_technical_staff_pre_training_system_ash_magic.dev_f1d3988f-f": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 225000.0
+ },
+ "magic_dev_member_of_technical_staff_security_engineer_ash_magic.dev_f9b3e872-c": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 225000.0
+ },
+ "scale_ai_ai_applications_ops_manager_gps_4654510005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_ai_product_manager_coding_multimodal_4609736005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_ai_strategy_consultant_frontier_tech_4472223005": {
+  "reasons": [
+   "pay_$60000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 60000.0
+ },
+ "scale_ai_data_acquisition_lead_frontier_environments_4725509005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_deployment_strategist_4713532005": {
+  "reasons": [
+   "requires_10+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_director_forward_deployed_engineering_4690504005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_director_of_product_management_forward_deployed_st_4702890005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_director_of_product_management_forward_deployed_st_4669229005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_engineering_manager_agent_oversight_4625271005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_engineering_manager_global_public_sector_4595555005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_engineering_manager_infrastructure_4719479005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_engineering_manager_saudi_arabia_4709132005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_engineering_manager_uae_4709129005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_forward_deployed_engineer_genai_4593571005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_frontier_agent_engineering_manager_enterprise_4602177005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_frontier_agents_engineer_forward_deployed_engineer_4694861005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_head_of_healthcare_gtm_4708811005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_infrastructure_software_engineer_enterprise_genai_4665557005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_machine_learning_fellow_human_frontier_collective__4661650005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_machine_learning_fellow_human_frontier_collective__4661647005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_machine_learning_fellow_human_frontier_collective__4660340005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_machine_learning_research_engineer_agent_data_foun_4625345005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_machine_learning_research_engineer_agents_enterpri_4625344005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_machine_learning_systems_research_engineer_agent_p_4625341005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_medical_fellow_human_frontier_collective_uk_4612329005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_medical_fellow_human_frontier_collective_us_4591782005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_operations_program_manager_associate_industrial_pa_4723290005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_principal_ai_ops_architect_gps_4671740005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_principal_architect_4599202005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_product_manager_of_ai_applications_global_public_s_4650514005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_product_manager_of_ai_applications_global_public_s_4589749005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_research_scientist_safety_post_training_4696595005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_ai_product_manager_code_4720501005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_ai_product_manager_leaderboard_4720216005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_frontier_agents_engineer_forward_deployed_e_4694863005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_manager_research_scientist_4718431005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_software_engineer_ai_operations_gps_4725133005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_software_engineer_full_stack_scale_gp_4637484005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_staff_frontier_agents_engineer_4694869005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_staff_machine_learning_research_engineer_ge_4658162005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_senior_staff_machine_learning_research_scientist_a_4488520005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_software_engineer_backend_enterprise_4630032005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_software_engineer_enterprise_4536653005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_software_engineer_enterprise_ai_4513943005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_sr_director_forward_deployed_engineering_4722811005": {
+  "reasons": [
+   "too_senior_title",
+   "requires_12+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_sr_staff_ml_forward_deployed_engineer_enterprise_g_4712145005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_applied_ai_engineer_4720050005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_frontier_agents_engineer_applied_ai_4720487005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_frontier_agents_engineer_forward_deployed_en_4694865005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_infrastructure_software_engineer_enterprise__4599700005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_machine_learning_research_engineer_agent_pos_4625337005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_product_manager_agentic_platform_4612403005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_senior_machine_learning_research_engineer_4714527005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_software_engineer_data_platform_4649903005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_software_engineer_enterprise_genai_4569678005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_software_engineer_full_stack_enterprise_gen__4529529005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_software_engineer_full_stack_gen_ai_4713608005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_staff_software_engineer_public_sector_4674913005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_stem_fellow_human_frontier_collective_uk_4620719005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_stem_fellow_human_frontier_collective_us_4574113005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_strategic_projects_lead_public_sector_cyber_4722928005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_strategic_projects_lead_red_team_4702122005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_subject_matter_expert_4704285005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_support_team_lead_4716431005": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_swe_fellow_human_frontier_collective_canada_4689954005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_swe_fellow_human_frontier_collective_uk_4689950005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_swe_fellow_human_frontier_collective_us_4689947005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_tech_lead_manager_mlre_ml_systems_4618046005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_technical_program_manager_enterprise_4711993005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_technical_program_manager_enterprise_4699806005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_technical_program_manager_platform_4711995005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "scale_ai_technical_program_manager_platform_4703275005": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_associate_infrastructure_strategy_operations_5152193007": {
+  "reasons": [
+   "pay_$140000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 140000.0
+ },
+ "together_ai_forward_deployed_engineer_inference_post_training__5199993007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_gtm_engineer_5178712007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "together_ai_head_of_hyperscaler_partnerships_5171124007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_lead_manager_together_cloud_infrastructure_5145183007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_manager_international_cloud_sourcing_5211627007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 190000.0
+ },
+ "together_ai_senior_product_manager_model_apis_developer_experi_5210951007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "together_ai_solutions_architect_4627491007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "together_ai_solutions_architect_inference_4946442007": {
+  "reasons": [
+   "borderline_7yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_staff_software_engineer_inference_compute_infrastr_5213322007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_staff_software_engineer_inference_compute_infrastr_5214645007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_staff_software_engineer_inference_compute_infrastr_5213325007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_technical_compute_qualification_manager_5181912007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 200000.0
+ },
+ "together_ai_technical_support_engineer_gpu_cluster_india_4840844007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_technical_support_engineer_gpu_clusters_us_weekend_5202015007": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "together_ai_technical_support_engineer_inference_india_weekend_5069532007": {
+  "reasons": [
+   "borderline_6yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "together_ai_technical_support_engineer_inference_us_weekends_5202021007": {
+  "reasons": [
+   "borderline_6yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": 160000.0
+ },
+ "ai2_senior_software_engineer_ai_infrastructure_7985437": {
+  "reasons": [
+   "pay_$146880_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 146880.0
+ },
+ "ai2_senior_software_engineer_fullstack_7872642": {
+  "reasons": [
+   "pay_$146880_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 146880.0
+ },
+ "ai2_young_investigator_flexolmo_7417128": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "ai2_young_investigator_open_language_models_for_biolog_8090222": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_member_of_technical_staff_multilingual_ash_a87be947": {
+  "reasons": [
+   "pay_$110000_below_floor"
+  ],
+  "has_jd": true,
+  "pay_min": 110000.0
+ },
+ "cohere_forward_deployed_engineer_infrastructure_specialis_ash_38f75a48": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_forward_deployed_engineer_sovereign_ai_ash_556467eb": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_member_of_technical_staff_web_data_ash_82ec1512": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_engineering_manager_fde_infrastructure_noram_ash_6a6120d5": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_product_manager_integrations_ash_87e9fd4e": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_software_engineer_agents_automations_ash_4a3c3eb2": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_software_engineer_adoption_ash_732c05f5": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_staff_software_engineer_developer_experienc_ash_6d499dbb": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_technical_program_manager_machine_learning__ash_582c4a60": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_head_of_investor_relations_ash_d82b9edf": {
+  "reasons": [
+   "too_senior_title",
+   "requires_10+_yrs"
+  ],
+  "has_jd": true,
+  "pay_min": 330000.0
+ },
+ "cohere_data_annotation_specialist_generalist_ash_a7321948": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_applied_ai_engineer_agents_automations_ash_3fe03041": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "cohere_forward_deployed_engineer_infrastructure_specialis_ash_9c5e1ab3": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_forward_deployed_engineer_infrastructure_specialis_ash_e88931c0": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_full_stack_engineer_north_tools_retrieval_ash_6ebac60b": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 215000.0
+ },
+ "cohere_software_engineer_integrations_ash_96c74af4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 180000.0
+ },
+ "cohere_member_of_technical_staff_rl_environments_ash_dc523c5b": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_member_of_technical_staff_north_modelling_evals_ash_60de50e9": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_forward_deployed_engineer_infrastructure_specialis_ash_24cdb030": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "cohere_senior_full_stack_engineer_north_admin_ash_c12e3636": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_ai_scientist_agentic_engineering_ash_f090ef1d": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_cybersecurity_offensive_security_engineer_ash_dcf889f0": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_engineer_cybersecurity_ash_647be1ec": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_forward_deployed_machine_learning_engin_ash_37108a18": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_software_engineer_ash_e91d8785": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_scientist_domain_expert_ai4engineering_eme_ash_a63045ed": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_infrastructure_solution_architect_ash_ea4ff9e5": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_scientist_research_engineer_ai4engineering_ash_556595b2": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_ai_scientist_ash_865fced4": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_use_case_software_engineer_harness_ash_b19778b5": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_engineer_machine_learning_ash_0e578cff": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_ai_scientist_ash_e663da6d": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_senior_staff_applied_ai_engineer_devops_ash_84e9677d": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_pentester_offensive_forward_deployment_engineer_ash_913aec39": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_deputy_director_safety_security_hq_ash_d5d4567a": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_engineer_ash_771c4006": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_product_manager_vibe_ash_036efa0f": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_forward_deployed_machine_learning_engin_ash_fe76010a": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_software_engineer_backend_ash_80f8c81d": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_engineer_ml_infrastructure_engineer_dev_ash_0b0c3fab": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_scientist_ash_1722cba1": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_engineer_robotics_ash_25944723": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_ai_scientist_robotics_ash_c70522d8": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_ai_scientist_ash_efef411a": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_forward_deployed_machine_learning_engin_ash_8ba58450": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_software_engineer_backend_ash_2a9cce3a": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_forward_deployed_machine_learning_engin_ash_fcdb8407": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_senior_staff_applied_ai_engineer_devops_ash_8085c274": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_lead_applied_scientist_ash_826dd35b": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_ai_engineer_product_ash_50c74749": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_software_engineer_enterprise_agents_ash_09b94877": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_site_reliability_engineer_ash_a9ce2f99": {
+  "reasons": [
+   "borderline_7yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_mistral_cloud_software_engineer_managed_kubernetes_ash_9eba1e5b": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_research_engineer_data_infrastructure_ash_8c71b069": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_forward_deployed_machine_learning_engin_ash_6ca94f06": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_scientist_research_engineer_internship_ash_de46ba8b": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_site_reliability_engineer_ash_eee4adb0": {
+  "reasons": [
+   "borderline_7yrs_check"
+  ],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_ai_engineer_cybersecurity_montreal_ash_fb6dce2f": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_pentester_offensive_forward_deployment_engineer_mo_ash_721c8d8c": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "mistral_ai_applied_scientist_research_engineer_emea_ash_2ed434c7": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_ml_scientist_japanese_mu_ash_24b6d654": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "liquid_ai_member_of_technical_staff_applied_ml_japanese_mult_ash_091f16ad": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "langchain_research_engineer_langsmith_engine_bdc96ffd": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_e9f5fdb6": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_architecture_b3829801": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_c25ca18c": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_agent_experience_designer_voice_multilingual_1a0e307f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_financial_services_2a76bb97": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_healthcare_ebe951fb": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_healthcare_eb3ee157": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_gtm_operations_analyst_agent_development_85e1d0f9": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_people_partner_agent_development_56fe4918": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_data_platform_78c5dce4": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_builder_9b70b937": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_brazilian_portuguese_speaking_d7febb53": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_brazilian_portuguese_speaking_f51d6c09": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_financial_services_ab98160c": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_insurance_000618f7": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_travel_hospitality_e2d3e1f5": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_retail_02382d7f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_spanish_speaking_83a88812": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_retail_93fea91f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_tech_media_telecom_4472e6c2": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cohere_software_engineer_intern_fall_winter_2026_8c035d3d": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cohere_research_internship_fall_winter_2026_73bd3e2b": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "elevenlabs_research_engineer_3d650946": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "elevenlabs_engineering_internal_ai_transformation_a3097257": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "elevenlabs_product_marketing_agents_f2ae7fe0": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "elevenlabs_product_marketing_agents_government_33bb01d0": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vapi_agent_strategist_sf_adbc573f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vapi_agent_strategist_nyc_72ec9643": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "character_ai_research_engineer_post_training_all_industry_levels_449bf7c1": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "fireworks_ai_mts_research_engineer_34147044": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "fireworks_ai_applied_machine_learning_engineer_fc3845e6": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepgram_research_engineer_machine_learning_systems_9a030b32": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepgram_backend_software_engineer_engine_team_voice_agent_7c7064bb": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepgram_backend_engineer_inference_services_2084edc0": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepgram_applied_ml_engineer_94ae2781": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepgram_embedded_ai_engineer_on_device_models_0b7494b3": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepgram_software_engineering_internship_fall_2026_summer_2027_dc8693b5": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "scale_ai_ai_builder_intern_gh_4703343005": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "scale_ai_strategic_projects_lead_generative_ai_gh_4282118005": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "scale_ai_technical_advisor_specialist_part_time_internship_gh_4611533005": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "together_ai_senior_technical_recruiter_ai_ml_research_gh_5135941007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "glean_machine_learning_engineer_assistant_quality_gh_4711484005": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_240d459b": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_retrieval_search_applied_engineering_7322d344": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_frontier_evals_environments_bba18df5": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_scientist_5f0c6579": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_agent_infrastructure_c1316397": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_model_inference_83b6755d": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_post_training_1c516e9f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_machine_learning_engineer_integrity_ecf1abec": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_startups_71e7252f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_inference_engineer_robotics_3c2d1178": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_rl_reasoning_7e198d81": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_inference_multi_modal_4d14449e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_security_engineer_agent_security_e9bea775": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_privacy_cc434f5b": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_codex_793964ae": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_offensive_security_engineer_agent_products_bb97fffc": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_internal_applications_enterprise_db053b0e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_machine_learning_engineer_distributed_data_systems_robotics_4a13c764": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_recruiter_ai_ml_research_ed871ac9": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_scientist_multimodal_agent_consumer_devices_09253a0e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_digital_natives_3254f6a7": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_inference_technical_lead_on_device_transformers_a653b035": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_codex_core_agents_7ade7a12": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_codex_core_agent_577e6673": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_memory_29074a51": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_offensive_security_agent_engineer_dd7443fe": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_machine_learning_engineer_api_multicloud_5acf4854": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_full_stack_software_engineer_agent_enablement_2d7f1028": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_inference_performance_optimization_85fceac9": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_security_preparedness_lead_coding_agents_1bec5fd1": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_productivity_inference_runtime_9d48e2e6": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_ai_systems_engineer_codex_agents_de06790a": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_proactivity_e57d196b": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_security_researcher_agentic_ai_threats_e0eef869": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_api_power_users_bb90d497": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_artifacts_research_6897d024": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_computer_use_research_34c2ed3f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_connectors_research_ab9adae3": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_cloud_agents_f6278b60": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_context_research_df3edefb": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_frontier_evals_and_environments_research_9d72171e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_personalization_1bf678c5": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_research_4acc3515": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agentic_risk_analyst_e4d0e517": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_messenger_integrations_3cb8b1c4": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_agent_post_training_personality_3302ceaf": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_north_stars_171ebca6": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_enterprise_01091aed": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_personality_and_model_behavior_a86d9477": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_internal_communications_enterprise_growth_dcbb011b": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_new_geography_and_international_growth_lead_86c04f38": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_plugins_ca9e0aeb": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_global_affairs_8859d8fa": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_agent_enablement_c1a28411": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_model_experience_872ca3d0": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_agent_productivity_0432731c": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_api_agents_a6ab3111": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_product_engineer_full_stack_agents_5ed99d32": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_international_strategy_operations_lead_e4b92c0d": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_ai_systems_engineer_rsi_7243bdb7": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_machine_learning_engineer_multimodal_perception_and_authentication_1b268692": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_health_719cc0f6": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_accounting_revenue_internal_controls_gh_5205545008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_devops_agentops_engineer_gtm_systems_gh_5392856008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_people_research_scientist_recruiting_gh_5362838008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_chip_design_rl_reinforcement_learning_gh_5231612008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_cybersecurity_rl_reinforcement_learning_gh_5025624008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_economic_research_data_platform_gh_5071132008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_life_sciences_gh_5265365008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_scientist_engineer_biological_safety_gh_5066977008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_scientist_life_sciences_gh_5239733008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_scientist_life_sciences_chemistry_gh_5387564008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_scientist_life_sciences_computational_gh_5357739008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepmind_research_engineer_human_understanding_gh_7669433": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepmind_research_engineer_materials_science_gh_7339890": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepmind_research_engineer_multimodal_reasoning_for_information_literacy_gh_7171371": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepmind_research_scientist_gemini_safety_gh_7421111": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deepmind_research_scientist_multimodal_alignment_safety_and_fairness_gh_7680885": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zscaler_detection_engineer_skillbridge_intern_gh_5114254007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zscaler_federal_security_operations_skillbridge_intern_gh_5069684007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zscaler_insider_risk_analyst_skillbridge_intern_gh_5100618007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zscaler_phishing_analyst_skillbridge_intern_gh_5065302007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zscaler_site_reliability_engineer_federal_skillbridge_intern_gh_5046050007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zscaler_site_reliability_engineer_skillbridge_intern_gh_5045817007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "xai_machine_learning_engineer_ads_gh_4996796007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "xai_machine_learning_engineer_recommendation_systems_gh_4703144007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "xai_software_engineer_training_inference_c_gh_4533894007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_accounting_intern_fall_2026_gh_7902104": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_eiam_business_enablement_operations_intern_fall_2026_gh_8068479": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_network_strategy_intern_fall_2026_gh_8013562": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_research_engineer_intern_fall_2026_gh_8089379": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_senior_machine_learning_engineer_gh_8042034": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_software_engineer_intern_fall_2026_austin_tx_gh_8052785": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_strategic_events_intern_fall_2026_gh_8142802": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cloudflare_systems_engineer_global_resource_management_data_residency_gh_8015230": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anyscale_distributed_llm_inference_engineer_1cf38233": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anyscale_machine_learning_engineer_customer_engineering_1466478e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cognition_research_engineer_post_training_72d3db28": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cognition_applied_ai_engineer_811c3f5a": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cognition_research_engineer_ml_infrastructure_b6f96827": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cognition_research_engineer_mid_training_57e1e2a1": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tenstorrent_machine_learning_research_engineer_llms_ai_systems_gh_5163484007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tenstorrent_risc_v_ai_hpc_agentic_software_engineering_lead_gh_5056085007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "figma_ai_applied_scientist_gh_5707966004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "figma_data_scientist_core_data_phd_2026_gh_5976930004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "figma_software_engineer_intern_winter_2027_gh_6131089004": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "chaos_industries_ai_engineer_physical_systems_and_sensing_gh_5187047007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "chaos_industries_applied_ai_engineer_gh_5213650007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ramp_applied_ai_engineer_d204e136": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ramp_senior_applied_scientist_credit_risk_2888b101": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ramp_applied_ai_engineer_fullstack_6a7e382f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "etched_design_verification_engineer_internal_ip_77f0497f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "plaid_internal_communications_6887f482": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_software_engineer_dedicated_inference_fc6e5f2e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_frontend_engineer_dedicated_inference_3622a1ee": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_software_engineer_billing_internal_tooling_d073254f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_post_training_research_scientist_7c9d2bb0": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_post_training_research_engineer_68328a94": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_software_engineer_voice_ai_inference_runtime_6e396eb7": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_software_engineer_baseten_inference_stack_c8701794": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_ai_inference_engineer_db6477fc": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "baseten_ai_engineer_b13ec426": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cresta_data_science_intern_customer_success_gh_5213417008": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cresta_lead_engineer_ai_agent_voice_experience_gh_5155675008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cresta_senior_forward_deployed_engineer_ai_agent_gh_5205398008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cresta_senior_machine_learning_engineer_gh_4741283008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cresta_senior_software_engineer_backend_ai_agent_gh_5133464008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cresta_solutions_engineer_ai_agent_gh_5397262008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "clay_labs_machine_learning_engineer_d04f47c4": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "apptronik_robotics_software_intern_real_time_controls_gh_5985132004": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "synthesia_research_engineer_in_data_aa69627f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "reflection_ai_forward_deployed_engineer_lead_llm_post_training_1d029ec2": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "reflection_ai_forward_deployed_engineer_ai_engineer_8b97b583": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "reflection_ai_forward_deployed_engineer_llm_post_training_9e0c3947": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "reflection_ai_forward_deployed_engineer_lead_ai_engineer_56fbaa8a": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "exa_ai_research_engineer_generalist_913d2b71": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "exa_ai_software_engineer_intern_a9e01521": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "writer_software_engineer_generative_ai_4d5f11bd": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "writer_ai_engineer_8889d06e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "writer_software_engineer_agents_6ee2fc03": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "writer_ai_research_scientist_100b3aec": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "coderabbit_senior_applied_ai_engineer_8f17b66f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "abridge_software_engineer_generative_ai_897709b2": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "abridge_software_engineer_intern_3f07a457": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "serve_robotics_full_stack_software_engineer_internal_services_d562a0f5": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "serve_robotics_lead_machine_learning_engineer_021eee2a": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "snorkel_ai_applied_ai_engineer_enterprise_solutions_gh_5709067004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "snorkel_ai_applied_ai_engineer_federal_top_secret_clearance_gh_5721276004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "snorkel_ai_research_scientist_gh_5690608004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "snorkel_ai_research_scientist_frontier_benchmarks_gh_6009489004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "snorkel_ai_research_scientist_rl_training_gh_6009496004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_ai_senior_machine_learning_engineer_dcc921b7": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_ai_internal_deployed_engineer_2e3f3930": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_ai_research_scientist_audio_7dbe5404": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_ai_research_scientist_llm_b0d780eb": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_ai_founders_initiatives_ai_agents_21cf0117": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_ai_applied_ai_engineer_customer_facing_1fcd6e82": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "standard_bots_ai_research_engineer_a3cd1d01": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "livekit_software_engineer_agents_1757f49e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "livekit_research_engineer_reinforcement_learning_b0c02c3f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "physical_intelligence_research_scientist_f83ba447": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cartesia_inference_engineer_bd9d6688": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cartesia_research_engineer_audio_understanding_38826565": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cartesia_software_engineer_agents_16cd6cd7": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cartesia_applied_researcher_audio_post_training_eeac6a77": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "goodfire_forward_deployed_research_scientist_biology_gh_4924131008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "goodfire_machine_learning_engineer_gh_5019847008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "goodfire_research_scientist_gh_4746990008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "prime_intellect_research_engineer_distributed_training_8bd52610": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "prime_intellect_research_engineer_reinforcement_learning_ee13090e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "prime_intellect_internship_486b3511": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "prime_intellect_applied_research_rl_agents_46d9d060": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "prime_intellect_research_engineer_rl_infrastructure_05e4b76b": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openrouter_research_scientist_8daf0f29": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openrouter_applied_ai_engineer_407f71b5": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "arize_ai_devsecops_engineer_typescript_agentic_ai_gh_5980312004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "arize_ai_forward_deployed_ai_engineer_east_gh_5993755004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "arize_ai_forward_deployed_ai_engineer_west_gh_6030953004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "arize_ai_open_source_ai_engineer_typescript_gh_6119757004": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vannevar_labs_machine_learning_engineer_gh_5045652007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vannevar_labs_product_engineer_systems_agents_ts_sci_clearance_required_gh_5165235007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vannevar_labs_public_policy_community_affairs_intern_gh_5175741007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vannevar_labs_senior_software_engineer_agents_platform_gh_5100492007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stack_ai_forward_deployed_ai_engineer_d65c8bc9": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ambience_healthcare_senior_machine_learning_engineer_6f44370e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "poolside_member_of_engineering_post_training_7662c253": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "poolside_member_of_engineering_agent_sandboxes_9a4f25e5": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "poolside_member_of_engineering_inference_infrastructure_1f2a733a": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "browserbase_business_development_intern_b81701e4": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "browserbase_software_engineer_agent_platform_7724fbe3": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "labelbox_cyber_security_intern_gh_5177341007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "labelbox_forward_deployed_research_scientist_gh_5101375007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "gumloop_design_engineer_intern_dcdc0658": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nous_research_machine_learning_engineer_evals_1e647dc1": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "greptile_research_engineer_ce47ec13": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "superannotate_research_engineer_26b7799a-b68a-47d2-bde1-891fbd7e2e68": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openhands_enterprise_agent_engineer_57564a95": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_full_stack_software_engineer_reinforcement_learning_5186067008": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": null
+ },
+ "field_ai_robotics_research_internship_humanoid_manipulation_fall_2026_phd_internship_2a2c8f00-3a28-481b-882c-33cb0ec4a3a0": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "field_ai_senior_machine_learning_engineer_470926cb-38a1-4db8-b939-8ae8bde3b139": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "field_ai_senior_research_engineer_humanoid_manipulation_1ae59c17-eabd-4e36-a2c2-e9ac96ba0f85": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "field_ai_senior_software_engineer_multiagent_simulation_3af7c5ef-cc94-4da9-909d-bc23c84523cf": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zoox_senior_ai_inference_engineer_model_optimization_deployment_c88c8b02-71b6-492c-a666-584458ac8c6e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "zoox_senior_machine_learning_engineer_perception_2f65fc0e-16f1-48a9-b34d-5ca5dcf76800": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_applied_scientist_df57aa7f-9ce4-46f7-93a5-f8e06c3ae0f3": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_engineer_b8498714-0bac-43bc-9483-f2e280547ebe": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_engineer_learnable_planner_integration_30f77194-6f1c-4ee2-8bb9-0eb9763250af": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_engineer_neural_rendering_99147e5e-c589-452b-87c1-789cbc4f3de8": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_engineer_world_models_ef8b9a24-a010-4ef6-814c-3503e268e9a3": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_internship_co_op_0fd4e30b-9bd1-4b53-9043-6088457363cb": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_scientist_17dda427-f822-4e89-bff7-2b9541fb3a9d": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_scientist_learnable_planner_a73a62bd-3ae9-417e-84c6-8a4c94846222": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_scientist_neural_reconstruction_bf359782-cfba-4204-86f8-db1921a178f9": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_scientist_simulation_agents_48a13158-5489-4fac-8643-2d4e2fdc410e": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "waabi_research_scientist_world_models_37af7fe8-1d7f-458d-9e8a-942ac0c75a3d": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456298713": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4430192444": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456070344": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4428217904": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455252412": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4457599520": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4453806406": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4454152710": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455773999": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4447415167": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4457346426": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4446284243": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455451925": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4447703289": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455016866": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4454904417": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4448785094": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4453712825": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456289684": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4430130904": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4457517821": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456281702": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4348883636": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4454433359": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4441209409": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4444824739": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4437911916": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4419513504": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4443726589": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4454964256": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4454422688": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4387663037": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456786774": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4457805871": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_iii_amz27579_1_4455798109": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_sr_applied_scientist_special_projects_4455919011": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_web_services_aws_applied_scientist_applied_ai_solutions_4455919192": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_science_applied_scientist_iii_amz10362489_4455090797": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_science_applied_scientist_ii_amz27496_1_4455091789": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "scribd_inc_data_scientist_ii_4438355383": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "fico_ai_innovation_and_development_lead_scientist_4455398188": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "microsoft_ai_senior_applied_scientist_4411274987": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "meta_content_engineer_meta_superintelligence_labs_4436651567": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "harmonic_research_engineer_training_inference_4410871057": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "meta_research_engineer_pre_training_data_msl_fair_4409674119": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_research_engineer_interactive_world_models_new_college_grad_2026_4456278960": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "qualcomm_senior_ai_research_quantization_engineer_4402121726": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "op_recruiting_ai_research_engineer_pre_training_4455540139": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_research_scientist_fauna_4455791685": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "texas_a_m_university_research_scientist_4457053402": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "mckinsey_company_research_science_analyst_social_healthcare_and_public_entities_tech_4409426611": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "crossover_learning_specialist_alpha_120_000_year_usd_4454906693": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_conversational_assistant_modeling_and_learning_4455905006": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_senior_software_engineer_agentic_ai_4448270178": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_web_services_aws_machine_learning_scientist_genai_kit_4455796987": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tiktok_multimodal_generative_ai_research_scientist_intelligent_creation_global_frontier_tech_recruitment_program_2027_start_phd_4448497891": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "roop_trucking_inc_truck_driver_4456057687": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "valclyde_logistics_llc_delivery_driver_4454448834": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "volvo_cars_memphis_car_salesperson_4454126155": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "industrial_technology_research_institute_itri_llm_ai_agent_application_development_engineer_llm_ai_agent_4456076795": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "qualtrics_senior_applied_scientist_4438133977": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_web_services_aws_applied_scientist_amazon_redshift_4455792916": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "pinterest_machine_learning_engineer_core_engineering_4182358258": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "booz_allen_hamilton_agentic_ai_machine_learning_engineer_4420678331": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stott_and_may_forward_deployed_senior_machine_learning_engineer_4447143610": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amd_ml_ai_engineer_4454669834": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deloitte_applied_ai_engineer_ii_4447233543": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "capgemini_gen_ai_engineer_4456246023": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "innodata_inc_applied_research_scientist_llm_evaluation_post_training_4429623070": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "10a_labs_machine_learning_engineer_4452540200": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "truveta_machine_learning_engineer_llms_generative_ai_4341825663": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "elsevier_senior_software_engineer_senior_ai_engineer_4456224722": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4458112360": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "google_deepmind_research_engineer_agi_safety_and_alignment_deepmind_4417168169": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_frontier_evals_environments_4443668490": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amd_ml_systems_research_engineer_rl_inference_agent_systems_4417166196": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_codex_4315969761": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_research_scientist_pre_training_4322400090": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "vast_ai_ai_agent_researcher_4437084478": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "lenovo_advisory_ai_prototyping_engineer_4437046937": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "qualcomm_ai_researcher_on_device_llm_efficiency_4456411142": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "fireworks_ai_mts_research_engineer_4387756113": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "adobe_research_engineer_4399734283": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "retell_research_scientist_llm_4447719279": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "scale_ai_frontier_agents_engineer_applied_ai_4416680839": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "hebbia_applied_research_engineer_agents_4436253202": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "together_ai_research_engineer_post_training_inference_4315269534": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "distyl_applied_ai_researcher_post_training_4438613253": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cisco_applied_ai_scientist_4456418113": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cartesia_researcher_post_training_4325872347": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "liquid_ai_liquid_labs_research_engineer_4410781418": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "lucas_james_talent_partners_ai_research_engineer_nlp_4438603830": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_conversational_assistant_modeling_and_learning_4456022405": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "bytedance_research_scientist_technologies_of_data_management_llm_and_ai_agents_global_frontier_tech_recruitment_program_2027_start_phd_4409916689": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ibm_ai_foundations_research_scientist_4392155207": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "distyl_applied_ai_researcher_system_discovery_4456281702": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "bain_company_lead_ai_engineering_4436879905": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "harmonic_research_engineer_training_inference_3813454490": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "general_motors_ai_agent_engineer_4446947567": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "abridge_software_engineer_generative_ai_4454446350": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "unconventional_ai_ai_systems_language_reasoning_models_4456297705": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_personality_and_model_behavior_4322223560": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "navierre_artificial_intelligence_engineer_4417162348": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "capgemini_gen_ai_engineer_4418852774": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_codex_core_agent_4429937252": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deloitte_integration_engineer_ii_ai_and_python_developer_4441218161": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "hippocratic_ai_agent_deployment_engineer_residency_program_4418470446": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "benchling_agentic_ai_engineer_4428886430": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ntt_data_north_america_ai_experience_engineer_4447079400": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "roku_software_engineer_embedded_agentic_ai_4452862947": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "bosch_usa_ai_research_engineer_agentic_ai_4443795896": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "arcadia_forward_deployed_engineer_ai_agents_4457847455": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "adobe_senior_applied_scientist_4445643997": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "truveta_machine_learning_engineer_llms_generative_ai_4446557716": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "capgemini_gen_ai_ml_engineer_rag_agentic_ai_4437900104": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "whatnot_llm_platform_engineer_4446828683": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "gradial_applied_ai_engineer_4445150639": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "capgemini_genai_agentic_ai_developer_4456298713": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cohere_senior_research_scientist_model_evaluation_4317703639": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "capital_one_applied_researcher_i_ai_foundations_llm_core_and_agentic_ai_4437905316": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_research_engineer_model_evaluations_4455732754": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "distyl_applied_ai_researcher_benchmarking_4420979677": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "microsoft_senior_language_engineer_4452443671": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sable_research_engineer_4454219148": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ema_ai_resident_4454664077": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_research_engineer_research_scientist_personal_agi_post_training_4417169171": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "georgia_institute_of_technology_research_scientist_ii_4446831296": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "jpmorganchase_artificial_intelligence_research_senior_associate_4438871811": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "dolby_laboratories_research_scientist_spatial_audio_ai_4211030862": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "fonzi_ai_ai_engineer_startups_4457377837": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "google_deepmind_research_engineer_gemini_code_post_training_deepmind_4456214401": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "booz_allen_hamilton_agentic_ai_machine_learning_engineer_4420665760": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_software_engineer_enterprise_ai_platform_4417167182": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "impact_com_internal_systems_engineer_applied_ai_4418548391": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "beaconfire_inc_agentic_ai_developer_4453884948": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "yara_ai_artificial_intelligence_engineer_4456464748": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_spx_ai_lab_4455796387": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "microsoft_applied_scientist_4456728259": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "microsoft_applied_scientist_ii_4455735279": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "intuit_ai_scientist_2_4438206154": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "thinktrends_machine_learning_engineer_generative_ai_4456026170": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "handshake_ai_red_teamer_llm_generalist_4419963130": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "toyota_research_institute_ai_research_scientist_adaptive_behavior_systems_4346835542": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "meta_research_engineer_monetization_ai_4355681487": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_senior_research_engineer_ai_coding_tools_4407975272": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "lululemon_applied_ai_ml_scientist_4410301671": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "innodata_inc_ai_ml_research_engineer_llm_post_training_evaluation_4429376527": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "adobe_applied_scientist_4437911859": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tiktok_research_scientist_generative_ai_seattle_4456256807": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_systems_software_engineer_ai_and_cloud_4456292876": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "rtx_agentic_ai_researcher_hybrid_4457525405": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sereact_senior_research_scientist_4456735682": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "signify_technology_ai_engineer_4382417408": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "capital_one_applied_researcher_i_ai_foundations_llm_customization_finetuning_reinforcement_learning_4397326959": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tiktok_research_scientist_world_models_graduate_intelligent_creation_global_frontier_tech_recruitment_program_2027_start_phd_4404711426": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "spotify_senior_machine_learning_engineer_enrichment_content_intelligence_4420984204": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_senior_quantum_applied_research_scientist_calibration_and_decoding_4425538708": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "bytedance_research_scientist_ai_compute_dpu_global_frontier_tech_recruitment_program_2027_start_phd_4435853291": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stott_and_may_ai_ml_engineer_london_yc_backed_start_up_4445745215": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "invitro_cell_research_llc_ai_llm_applications_scientist_4455826017": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stealth_startup_ai_systems_builder_impact_driven_33164_4455846691": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stealth_startup_founding_machine_learning_engineer_33065_4455850521": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stealth_startup_research_scientist_audio_33340_4455851294": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stealth_startup_research_scientist_audio_33363_4455859359": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_genai_llm_sandstone_4455905387": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_ii_gen_ai_llm_pxt_4455940114": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "google_software_engineer_ai_machine_learning_phd_early_career_2027_start_4456874395": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "google_software_engineer_iii_ai_ml_platforms_and_devices_4456880327": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "haystack_ai_engineer_4456882254": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "dataannotation_machine_learning_scientist_ai_trainer_4457008912": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cobalt_llm_post_training_and_evaluation_researcher_contract_4458136070": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cobalt_machine_learning_researcher_frontier_ai_evaluation_contract_4458148057": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stealth_startup_applied_ai_engineer_33307_4455850588": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "lenovo_advisory_ai_engineer_4438337740": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "thomson_reuters_generative_ai_machine_learning_engineer_4349250403": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "growth_engineer_product_growth_wf_4463365": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 190000.0
+ },
+ "search_engineer_wf_4463066": {
+  "reasons": [],
+  "has_jd": true,
+  "pay_min": 190000.0
+ },
+ "tiktok_research_scientist_intelligent_editing_and_ai_agent_multimodality_graduate_intelligent_creation_global_frontier_tech_recruitment_program_2027_start_phd_4406260660": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "bytedance_research_scientist_graduate_seed_large_language_model_llm_2027_start_4439545757": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_alexa_connected_devices_4455782946": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "stealth_startup_ai_engineer_33334_4455860898": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "cubiq_recruitment_research_engineer_4455869850": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "emergence_ai_ai_engineer_4456895168": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tekvalue_it_solutions_agentic_ai_engineer_4457345535": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "goliath_partners_research_engineer_4458207930": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_web_services_aws_applied_scientist_aws_quick_4455982826": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "airwallex_ai_engineer_4380883663": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "carnegie_mellon_university_senior_machine_learning_research_scientist_frontier_lab_4457111010": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "parloa_senior_agent_architect_gh_4871790101": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "polyai_senior_agent_design_engineer_gh_4891112101": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anthropic_applied_ai_engineer_beneficial_deployments_life_sciences_gh_5021015008": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_software_engineer_agent_public_sector_c66b30fc": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "sierra_strategist_agent_development_public_sector_bb9153b1": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_applied_ai_engineer_cyber_b46ffd99": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "openai_people_research_scientist_5a682b9f": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_2027_electrical_engineer_intern_gh_5148101007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_2027_manufacturing_engineer_intern_gh_5153218007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_2027_mechanical_engineer_intern_gh_5153187007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_2027_software_engineer_intern_gh_5148079007": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_applied_llm_systems_engineer_gh_5197253007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_international_legal_counsel_gh_5181971007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_machine_learning_research_engineer_gh_4998882007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_research_scientist_gh_5203023007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_research_scientist_battlespace_awareness_gh_5207729007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_rfml_engineer_gh_5031495007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_advanced_research_scientist_gh_5179750007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_international_trade_compliance_engineer_gh_5217458007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_machine_learning_engineer_sentry_tower_gh_4927589007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_program_chief_engineer_international_programs_gh_5080710007": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_research_scientist_gh_5150296007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_research_scientist_battlespace_awareness_gh_5178340007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_senior_research_scientist_target_tracking_gh_5207730007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_software_engineer_agentic_modeling_simulation_gh_5184726007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "anduril_industries_software_engineer_agent_platform_gh_5174717007": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "synthesia_senior_applied_research_engineer_video_18acb910": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "descript_applied_research_scientist_ai_research_gh_7967440003": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ttn_talent_ai_ml_phd_graduate_4458522588": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "emonics_llc_llm_application_engineer_4457165808": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "beaconfire_inc_generative_ai_engineer_4454627355": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "deloitte_agentic_ai_engineer_senior_anthropic_claude_4458548391": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "citi_agentic_ai_engineer_avp_4456891908": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "tiktok_lead_researcher_large_language_models_llm_tiktok_4457155602": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "qualcomm_machine_learning_researcher_4429652864": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "xpo_applied_ai_scientist_hybrid_4454677239": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "bosch_usa_research_scientist_vision_language_action_vla_models_4453804455": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_web_services_aws_applied_scientist_agentic_ai_aws_agentic_ai_4455911793": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "booz_allen_hamilton_aws_agentic_ai_platform_engineer_4457390974": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "molex_senior_llm_engineer_4453856072": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_machine_learning_engineer_ii_agi_customization_4455796592": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "ring_applied_scientist_ring_ai_4455901482": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "microsoft_senior_applied_scientist_4411609385": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "amazon_applied_scientist_agi_customization_services_4455914308": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "immunitybio_inc_software_engineer_ai_dunkirk_buffalo_ny_4414911374": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "air_ai_engineer_internal_enablement_productivity_4447986743": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_applied_ai_engineer_4445787636": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "nvidia_ai_applied_ai_engineer_4456574544": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "mrbeast_senior_ml_ai_engineer_4421850307": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "predii_artificial_intelligence_engineer_architect_4457162764": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4459045024": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456418296": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4457303128": {
+  "reasons": [
+   "too_senior_title"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4452883453": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4447728793": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4427706138": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4446430808": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4447137497": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4413902666": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4458752486": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4456948341": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4458762251": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455844902": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4458733294": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4457496320": {
+  "reasons": [
+   "intern_or_early_career"
+  ],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4458739275": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4459006711": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4458760426": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4421897730": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455797668": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4398197686": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4455924480": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ },
+ "li_4459033375": {
+  "reasons": [],
+  "has_jd": false,
+  "pay_min": null
+ }
+}

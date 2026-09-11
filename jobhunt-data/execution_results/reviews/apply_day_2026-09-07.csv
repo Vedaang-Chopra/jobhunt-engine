@@ -1,0 +1,29 @@
+section,item,next_command
+① APPLY NOW,"  [ 71.1] Deloitte — Research Engineer — Post-Training & Small Language Models (SLMs), Healthcare AI",python scripts/apply_pipeline.py li_deloitte_research_engineer_post_training_small_la_4427044959 --url https://www.linkedin.com/jobs/view/4427044959/
+① APPLY NOW,  [ 67.9] Cisco — AI Research Scientist II (Full Time)- United States ENG/CPO/AISWP ETR,python scripts/apply_pipeline.py cisco_ai_research_scientist_ii_full_time_united_sta_4457502830 --url https://www.linkedin.com/jobs/view/4457502830/
+① APPLY NOW,"  [ 67.0] OpenAI — Research Engineer, Codex",python scripts/apply_pipeline.py li_openai_research_engineer_codex_4417166196 --url https://www.linkedin.com/jobs/view/4417166196/
+① APPLY NOW,"  [ 64.2] scale_ai — Senior/Staff Machine Learning Research Engineer, General Agents, Enterprise GenAI",python scripts/apply_pipeline.py scale_ai_senior_staff_machine_learning_research_engineer_ge_4658162005 --url https://job-boards.greenhouse.io/scaleai/jobs/4658162005
+① APPLY NOW,  [ 62.1] scale_ai — Frontier Agents Engineer (Applied AI),python scripts/apply_pipeline.py scaleai_frontier_agents_engineer_applied_ai_4720573005 --url https://job-boards.greenhouse.io/scaleai/jobs/4720573005
+① APPLY NOW,  [ 61.5] scale_ai — Senior Frontier Agents Engineer (Applied AI),python scripts/apply_pipeline.py scaleai_senior_frontier_agents_engineer_applied_ai_4720478005 --url https://job-boards.greenhouse.io/scaleai/jobs/4720478005
+① APPLY NOW,"  [ 61.3] LangChain — Research Engineer, LangSmith Engine",python scripts/apply_pipeline.py li_langchain_research_engineer_langsmith_engine_4453736138 --url https://www.linkedin.com/jobs/view/4453736138/
+① APPLY NOW,  [ 61.1] scale_ai — Staff/Senior Machine Learning Research Engineer,python scripts/apply_pipeline.py scale_ai_staff_senior_machine_learning_research_engineer_4714527005 --url https://job-boards.greenhouse.io/scaleai/jobs/4714527005
+① APPLY NOW,"  [ 60.6] anthropic — Research Engineer, Code RL (Reinforcement Learning)",python scripts/apply_pipeline.py anthropic_research_engineer_code_rl_reinforcement_learning_5254364008 --url https://job-boards.greenhouse.io/anthropic/jobs/5254364008
+① APPLY NOW,  [ 59.7] Mistral AI — AI Scientist - Agentic Engineering,python scripts/apply_pipeline.py mistral_ai_ai_scientist_agentic_engineering_ash_f090ef1d --url https://jobs.ashbyhq.com/mistral.ai/f090ef1d-372e-40dc-bf46-ce0bf2850204
+③ OUTREACH DUE,"Alia Insignares @ CrowdStrike [Recruiter] (approved, unsent)",python scripts/connection_queue.py record-sent cr_20260823_e8eec6 --status sent_with_note
+③ OUTREACH DUE,"Lin Lee Cheong @ Scale AI [hiring_manager] (approved, unsent)",python scripts/connection_queue.py record-sent cr_20260823_077e7e --status sent_with_note
+④ APPLICATIONS IN FLIGHT,"Cisco — Cisco — AI Research Scientist II [submitted] (no touch since 2026-08-24, 14d)",python scripts/application_sync.py --mark cisco_cisco_ai_research_scientist_ii_20260824 <acknowledged|interview|rejected> [reason]
+⑤ FRESH JOBS,  [ 43.9] JPMorganChase — Quantitative Trading & Research - Applied Researcher - Agentic AI Systems - Associate,python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4424998520/
+⑤ FRESH JOBS,  [ 42.7] Axon — Senior Agentic AI Research Scientist,python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4427067051/
+⑤ FRESH JOBS,"  [ 42.1] Scale AI — Machine Learning Research Scientist, Agent Data Foundation - Enterprise GenAI",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4331750585/
+⑤ FRESH JOBS,"  [ 41.1] Bitdeer (NASDAQ: BTDR) — Applied Scientist, Agent Evaluation & Adaptive Model Routing",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4458874866/
+⑤ FRESH JOBS,"  [ 41.1] Google DeepMind — Post-training Agentic Research Scientist, DeepMind",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4461984873/
+⑤ FRESH JOBS,  [ 40.2] Sciforium — Research Engineer - Model Evaluation & MLOps,python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4459249918/
+⑤ FRESH JOBS,"  [ 40.2] Distyl — Applied AI Researcher, Multi-Agent Systems",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4412849248/
+⑤ FRESH JOBS,"  [ 39.9] Otter.ai — Software Engineer, AI Agent & LLM",python scripts/apply_pipeline.py otter_ai_software_engineer_ai_agent_llm_4444245364 --url https://www.linkedin.com/jobs/view/4444245364/
+⑤ FRESH JOBS,"  [ 39.7] Plaud — Machine Learning Engineer, Inference & Serving (Speech LLM) - San Francisco",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4452716569/
+⑤ FRESH JOBS,  [ 39.6] techire ai — Senior Research Scientist LLM,python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4464003818/
+⑤ FRESH JOBS,  [ 39.5] UST — Agentic AI / Multi-Agent Systems Engineer,python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4459997562/
+⑤ FRESH JOBS,  [ 39.2] Insight Global — Agentic AI Engineer,python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4460622999/
+⑤ FRESH JOBS,"  [ 38.9] Google — Research Scientist, Cloud AI Research",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4460241193/
+⑤ FRESH JOBS,"  [ 38.7] Mirage — Research Engineer, Agentic Systems",python scripts/apply_pipeline.py  --url https://www.linkedin.com/jobs/view/4461277522/
+⑤ FRESH JOBS,  [ 38.5] Meet Life Sciences — Full Stack Engineer - AI Agents,python scripts/apply_pipeline.py meet_life_sciences_full_stack_engineer_ai_agents_4460752999 --url https://www.linkedin.com/jobs/view/4460752999/

@@ -1,0 +1,46 @@
+{
+ "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/USA---Remote/Data-Scientist--Remote-_R29082-1",
+ "captured_at": "2026-08-23T02:15:05",
+ "ats": "workday",
+ "current_step": 1,
+ "total_steps": 8,
+ "fields": [
+  {
+   "label": "Email Address",
+   "type": "text",
+   "required": true,
+   "data_automation_id": "email"
+  },
+  {
+   "label": "Password",
+   "type": "password",
+   "required": true,
+   "data_automation_id": "password",
+   "gated": "account credential - never auto-fill"
+  },
+  {
+   "label": "Verify Password",
+   "type": "password",
+   "required": true,
+   "data_automation_id": "verifyPassword",
+   "gated": "account credential - never auto-fill"
+  },
+  {
+   "label": "Yes, I understand and acknowledge the terms and conditions.",
+   "type": "checkbox",
+   "required": false,
+   "data_automation_id": "createAccountCheckbox",
+   "gated": "legal attestation"
+  },
+  {
+   "label": "Human verification (beecatcher)",
+   "type": "text",
+   "required": false,
+   "data_automation_id": "beecatcher",
+   "gated": "captcha-class"
+  }
+ ],
+ "field_count": 2,
+ "page_title": "Create Account",
+ "needs_manual": "Workday page 1 requires account creation (password) - blocked by no-credentials rule; user must create account once in the persistent profile, after which pages 2-8 are fillable"
+}

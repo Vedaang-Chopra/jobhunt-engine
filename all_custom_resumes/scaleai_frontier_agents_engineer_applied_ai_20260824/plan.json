@@ -1,0 +1,87 @@
+{
+  "family": "research_engineer_agentic",
+  "seniority": "Senior",
+  "chosen_narrative": "production agentic systems (Fortinet RAG) \u00b7 execution-grounded reasoning/verification (CAD) \u00b7 workflow planning & orchestration (ATHENA/SHASTRA)",
+  "alternative_narratives": [
+    "empirical ML research with rigorous evaluation \u00b7 production translation (4.5 yrs Fortinet) \u00b7 agentic/multimodal research currency"
+  ],
+  "p0": [
+    "CAD Code Generation Pipeline",
+    "Fortinet \u2014 Agentic RAG Diagnostics",
+    "ATHENA"
+  ],
+  "p1": [
+    "SHASTRA",
+    "ARTEMIS"
+  ],
+  "p2": [
+    "Fortinet \u2014 Systems & ML Engineering",
+    "CERBERUS",
+    "Malware Analysis (Memory Forensics + ML)"
+  ],
+  "featured_blocks": [
+    "CAD Code Generation Pipeline",
+    "Fortinet \u2014 Agentic RAG Diagnostics",
+    "ATHENA",
+    "SHASTRA",
+    "ARTEMIS"
+  ],
+  "keyword_dispositions": [
+    {
+      "term": "agentic workflows",
+      "disposition": "integrated"
+    },
+    {
+      "term": "multi-agent systems",
+      "disposition": "integrated"
+    },
+    {
+      "term": "tool use / function calling",
+      "disposition": "integrated"
+    },
+    {
+      "term": "LangGraph/LangChain",
+      "disposition": "integrated"
+    },
+    {
+      "term": "evaluation frameworks",
+      "disposition": "integrated"
+    },
+    {
+      "term": "RAG / retrieval",
+      "disposition": "integrated"
+    },
+    {
+      "term": "production AI systems",
+      "disposition": "integrated"
+    },
+    {
+      "term": "A/B experiments",
+      "disposition": "omitted"
+    },
+    {
+      "term": "enterprise customers",
+      "disposition": "listed"
+    },
+    {
+      "term": "Kubernetes/Docker/CI/CD",
+      "disposition": "omitted"
+    },
+    {
+      "term": "fine-tuning/RL",
+      "disposition": "listed"
+    },
+    {
+      "term": "multimodal AI",
+      "disposition": "integrated"
+    }
+  ],
+  "gaps": [
+    "No external enterprise customer-facing experience (Fortinet was internal R&D)",
+    "No A/B testing / online experimentation experience",
+    "No Kubernetes/Docker/CI/CD production infrastructure experience",
+    "No cloud platform experience (AWS/Azure/GCP)",
+    "No hands-on fine-tuning/distillation/RL (coursework literacy only)",
+    "No knowledge graphs / customer intelligence systems specifically"
+  ]
+}

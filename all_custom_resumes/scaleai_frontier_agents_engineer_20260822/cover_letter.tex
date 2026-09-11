@@ -1,0 +1,37 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+{\Huge \scshape Vedaang Chopra}\\[2pt]
+\small vedaangchopra@gatech.edu \;|\; +1 (404) 740-9905 \;|\; Atlanta, GA \;|\;
+\href{https://linkedin.com/in/vedaang-chopra}{LinkedIn} \;|\;
+\href{https://github.com/Vedaang-Chopra}{GitHub}
+
+\vspace{10pt}
+\hrule
+\vspace{14pt}
+
+Dear Scale AI Hiring Team,
+
+I am applying for the Frontier Agents Engineer (Applied AI) position. My work sits exactly at the intersection this role demands: building agentic AI systems that survive contact with production, and building the evaluation harnesses that prove they work.
+
+\textbf{Production agents, not prototypes.} At Fortinet's AIOps R\&D, I led an agentic RAG diagnostics system from hackathon prototype to production deployment: an LLM that plans multi-step tool calls over live network telemetry, invokes APIs, and verifies hypotheses through structured function calling to produce autonomous root-cause analysis -- cutting mean resolution time by ${\sim}70\%$. I scaled OpenSearch pipelines from 50 to 2,000 events/sec along the way, so I have felt the reliability, latency, and observability constraints your enterprise customers operate under.
+
+\textbf{Multi-agent architecture with real orchestration.} My research spans three systems: ATHENA, a five-agent supervisor-worker system with reflection-based quality critique and dynamic plan modification; SHASTRA (in progress), a framework for retrieving and adapting prior agent workflows for new long-horizon tasks under cost/latency budgets; and a closed-loop CAD code-generation pipeline where an LLM's output is executed, verified geometrically, and repaired iteratively -- agents grounded by verifiable execution feedback, not single-pass generation.
+
+\textbf{Evaluation as a first-class discipline.} I maintain a 202-test evaluation harness with golden datasets, regression suites, and LLM-as-a-Judge visual scoring that gates every change to my current lab's 16-module pipeline. I have run controlled ablations -- removing my ATHENA system's research agent cut fact coverage by 27\% in human-rated evaluation (n=5 raters) -- because ``own the full experimentation lifecycle'' is not a slogan; it is how I already work.
+
+What draws me to Scale is the portfolio breadth -- solving many different AI problems across industries rather than one narrow slice -- and the mandate to pair frontier-model fluency with deterministic engineering. That pairing matches my track record across Python, Go, distributed systems (Azure-deployed), and modern agent tooling.
+
+I would welcome the chance to discuss how my experience building trustworthy agentic systems can contribute to Scale's enterprise deployments.
+
+\vspace{8pt}
+Sincerely,\\
+Vedaang Chopra
+
+\end{document}

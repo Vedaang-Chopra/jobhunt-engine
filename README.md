@@ -11,7 +11,7 @@ This repository is a consolidated, evidence-controlled system for **assisted, hu
 ## Quickstart
 
 ```bash
-git clone <this-repo> && cd application_hunting
+git clone <this-repo> && cd jobhunt-engine
 ./setup/bootstrap.sh                            # venv, deps, data tree, config seed, test verify
 source scripts/env.sh                           # JOBHUNT_HOME / JOBHUNT_REPO / .venv PATH
 python -m setup.wizard --apply                  # interactive seeding (optional)

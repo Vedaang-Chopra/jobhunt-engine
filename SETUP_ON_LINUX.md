@@ -88,8 +88,7 @@ grep -A2 '^identity:' jobhunt-data/config.yaml
 ```bash
 mkdir -p ~/.config/systemd/user
 for u in jobhunt-automation-chrome jobhunt-ui; do
-  sed "s|%h/git/application_hunting|$HOME/git/jobhunt-engine|g" \
-    setup/systemd/$u.service > ~/.config/systemd/user/$u.service
+  cp setup/systemd/$u.service ~/.config/systemd/user/$u.service
 done
 systemctl --user daemon-reload
 systemctl --user enable --now jobhunt-automation-chrome.service jobhunt-ui.service
