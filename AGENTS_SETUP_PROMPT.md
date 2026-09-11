@@ -13,12 +13,16 @@ drift, dual-machine write conflicts).
 
 Context you must know:
 
-1. **Two repos.** `git@github.com:Vedaang-Chopra/jobhunt-engine.git` is the
-   PUBLIC engine (this repo). `git@github.com:Vedaang-Chopra/jobhunt-data-private.git`
-   is my PRIVATE data (job registry, resumes, application answers, API keys
-   in `jobhunt-data/config.yaml`). Never commit personal data to the engine
-   repo; `tests/test_output_hygiene.py` enforces this — if it fails, fix the
-   writer to use `config_lib.path(...)`, never move data back into the repo.
+1. **Two repos in a container.** Clone both side by side:
+   `<container>/jobhunt-engine` (PUBLIC engine — this repo) and
+   `<container>/jobhunt-data` (PRIVATE:
+   `git@github.com:Vedaang-Chopra/jobhunt-data-private.git` — job registry,
+   resumes, application answers, API keys). The engine reads data via
+   `config_lib.data_root()`, which resolves the SIBLING checkout
+   (`$JOBHUNT_HOME` -> config.yaml pointer -> `../jobhunt-data` -> repo-local).
+   Never commit personal data to the engine repo;
+   `tests/test_output_hygiene.py` enforces this — if it fails, fix the writer
+   to use `config_lib.path(...)`, never move data back into the repo.
 
 2. **My identity is config-driven**, not hardcoded: it lives in the
    `identity:` block of `jobhunt-data/config.yaml` and is read via

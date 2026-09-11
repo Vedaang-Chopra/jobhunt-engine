@@ -43,14 +43,18 @@ ssh -T git@github.com       # verify: "Hi <user>!"
 
 ## Phase 2 — Clone + data + venv
 
+Canonical layout — a container dir holding BOTH checkouts side by side:
+
 ```bash
-mkdir -p ~/git && cd ~/git
+mkdir -p ~/git/jobhunt && cd ~/git/jobhunt
 git clone git@github.com:Vedaang-Chopra/jobhunt-engine.git
+git clone git@github.com:Vedaang-Chopra/jobhunt-data-private.git jobhunt-data
 cd jobhunt-engine
 
-# Private data: either clone alongside and rsync, or (simplest) clone into a
-# worktree and copy the personal paths across:
-git clone git@github.com:Vedaang-Chopra/jobhunt-data-private.git ~/git/jobhunt-data-private
+# Pull the engine data subtree out of the private checkout into the shared
+# data root (the private repo keeps jobhunt-data/* plus all_custom_resumes,
+# export_packages, job-hunt-docs at ITS root; the working data root is
+# ~/git/jobhunt/jobhunt-data):
 ./scripts/sync_data.sh pull     # uses ~/.config/jobhunt/data_repo remote;
                                 # or set DATA_REPO_REMOTE env var instead
 
@@ -58,8 +62,11 @@ git clone git@github.com:Vedaang-Chopra/jobhunt-data-private.git ~/git/jobhunt-d
 ./setup/bootstrap.sh
 ```
 
-Expected: pytest ends `passed` (7 skips are personal-data-dependent tests).
-`config_lib.data_root()` resolves to `<repo>/jobhunt-data` by default.
+Expected: pytest ends `passed` (skips are personal-data-dependent tests).
+`config_lib.data_root()` resolves to the SIBLING `../jobhunt-data` checkout
+(config_lib checks $JOBHUNT_HOME -> config.yaml pointer -> sibling ->
+repo-local). Set `JOBHUNT_HOME=$HOME/git/jobhunt/jobhunt-data` explicitly in
+~/.bashrc anyway (Phase 4).
 
 ## Phase 3 — Hermes profile (copy from old machine)
 
@@ -76,8 +83,8 @@ chmod 600 ~/.hermes/profiles/job-hunt/.env
 # Rewrite all cron prompt paths for this machine:
 python3 setup/migrate_cron_paths.py \
   --jobs-file ~/.hermes/profiles/job-hunt/cron/jobs.json \
-  --to-repo "$HOME/git/jobhunt-engine" --apply
-# Expected output: "9 jobs total | rewritten: 8" and zero /Users/ residuals.
+  --to-repo "$HOME/git/jobhunt/jobhunt-engine" --apply
+# (If recreating the fleet from scratch instead, use setup/CRON_JOBS_LINUX.md.)
 
 # Verify identity block exists in the private data config:
 grep -A2 '^identity:' jobhunt-data/config.yaml
@@ -97,7 +104,7 @@ sudo loginctl enable-linger "$USER"    # survive logout — crons keep running
 
 Shell env:
 ```bash
-echo 'export JOBHUNT_HOME="$HOME/git/jobhunt-engine/jobhunt-data"' >> ~/.bashrc
+echo 'export JOBHUNT_HOME="$HOME/git/jobhunt/jobhunt-data"' >> ~/.bashrc
 ```
 
 ## Phase 5 — LinkedIn login (HUMAN STEP, once)
@@ -114,7 +121,7 @@ curl -s http://127.0.0.1:9333/json/version | head -3
 ## Phase 6 — Verification gate (agent runs; all must PASS)
 
 ```bash
-cd ~/git/jobhunt-engine
+cd ~/git/jobhunt/jobhunt-engine
 .venv/bin/python -m pytest tests/ -q                                   # suite green
 .venv/bin/python -c "import sys; sys.path.insert(0,'scripts'); import config_lib; print(config_lib.data_root())"  # <repo>/jobhunt-data
 grep -c '/Users/' ~/.hermes/profiles/job-hunt/cron/jobs.json           # 0
