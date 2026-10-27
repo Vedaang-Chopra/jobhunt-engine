@@ -13,6 +13,8 @@ Given a target role/team at a company, this workflow finds and ranks people who 
 - Target company from `tracking/companies/companies.csv`
 - Target role(s) from `tracking/jobs/jobs.csv` and `job_research/companies/<slug>/jobs.md`
 - Canonical profile (`profile_info/`) for shared context identification
+- A bounded live-job or fresh actionable hiring-post packet from
+  `scripts/people_sweep.py`; a generic company name alone is fallback input
 
 ---
 
@@ -22,6 +24,8 @@ Given a target role/team at a company, this workflow finds and ranks people who 
 2. Note hiring manager if known (from hiring posts or job description)
 3. Note recruiter if known
 4. Define the technical domain (agentic AI, evaluation, VLM routing, etc.)
+5. Inspect the recent hiring-post author first when the packet has one; record
+   whether the post is actionable or only a market signal
 
 ---
 

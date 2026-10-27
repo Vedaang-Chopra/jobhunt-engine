@@ -44,11 +44,20 @@ graph TD
 
 ## Current Public Entry Points
 
-There is no stable package-level public interface. Automation is invoked through
-standalone scripts. Migration 001 must preserve these working entry points and
-behavior, changing code only for moved-path compatibility or verified duplicate
-elimination. Any proposal for a new package-level interface belongs to a
-separate post-consolidation refactor.
+Automation remains script-oriented. LinkedIn Jobs discovery now has a deterministic
+production entry point: `scripts/linkedin_job_sweep.py --plan-only|--live`. It consumes
+the code-owned `setup/linkedin-job-queries.yaml` catalog (optionally overridden under
+`config_lib.data_root()`), performs guest plus authenticated server-rendered retrieval,
+and persists per-query history below the canonical data root. The generic
+`search_strategy.Planner` remains available for non-cron adaptive experiments but does
+not own recurring LinkedIn Jobs query selection.
+
+Recurring LinkedIn people/post research is owned by `scripts/people_sweep.py`.
+It validates the active role-keyword schema, ranks bounded packets from qualified
+jobs and fresh actionable hiring posts, allocates at most eight filter-first
+searches (four post/content plus four relationship paths), scores extracted
+people using live-role, activity, relationship, and technical evidence, and
+stores run/yield metadata below `config_lib.data_root()`.
 
 ## Current Data Sources
 

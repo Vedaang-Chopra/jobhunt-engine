@@ -46,11 +46,14 @@ def fast_script_workflow(manager):
 
 
 # ------------------------------------------------------- shared registry
-def test_registry_defines_linkedin_discovery_as_agent():
+def test_registry_defines_linkedin_discovery_as_deterministic_script():
     wf = get_workflow("linkedin-discovery")
-    assert wf.is_agent
+    assert not wf.is_agent
     assert wf.browser_required
-    assert "discovery_run.py" in (wf.prompt or "")
+    assert callable(wf.cmd_builder)
+    command = wf.cmd_builder()
+    assert command[-1] == "--live"
+    assert Path(command[-2]).name == "linkedin_job_sweep.py"
 
 
 def test_ui_and_cron_resolve_same_workflow():

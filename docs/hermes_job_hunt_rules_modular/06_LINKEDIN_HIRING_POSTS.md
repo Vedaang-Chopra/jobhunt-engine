@@ -31,6 +31,11 @@ or re-apply in the UI if it did not. Record which filters were applied in the ru
 ## For every relevant post capture
 Poster, poster role, company, team/org if identifiable, post URL, recency, roles mentioned, application URL, whether poster is hiring manager/recruiter/founder/team member, connection degree, alumni/mutual/shared context, role fit, recommended next action.
 
+Classify the post as an **actionable lead** only when it is fresh and provides a
+concrete role/team plus an application or credible human path. Old, generic, or
+commentary-only matches are **market signals** and must not be ranked as outreach
+leads.
+
 ## Priority boost
 A recent hiring post from a hiring manager, team lead, relevant engineer/researcher, or team recruiter can be more valuable than a generic job-board listing because it creates a direct human path.
 

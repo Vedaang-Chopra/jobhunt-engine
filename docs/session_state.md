@@ -33,6 +33,37 @@ via parallel subagent waves. All work committed on `main`.
    Fresh-clone integration gate ran; exposed engine-config YAMLs not tracked → fixed;
    personal-data-dependent tests now skip-with-reason on fresh clones; playwright is optional [browser] extra.
 
+## 2026-09-11 — Deterministic LinkedIn Jobs discovery
+
+- Recurring LinkedIn Jobs discovery now uses `scripts/linkedin_job_sweep.py`,
+  driven by the code-owned eight-slot catalog in `setup/linkedin-job-queries.yaml`.
+- Four broad anchors and three recurring technical families run every sweep; one
+  frontier family rotates by oldest coverage with historical yield as a stable
+  secondary signal. No LLM chooses or rewrites cron queries.
+- Per-query funnel history resolves through `config_lib.data_root()` to
+  `job_research/search_memory/linkedin_job_query_runs.csv`.
+- Qualification records structured seniority, experience flexibility, salary,
+  technical-family, eligibility, and stretch-review evidence. Cheap hard gates
+  precede JD retrieval; hard 5+ year requirements are not auto-admitted.
+- Linux cron source-of-truth offsets `discovery-linkedin` to minute 20 to avoid
+  contention with the top-of-hour people/posts browser job.
+
+## 2026-09-12 — Packet-driven LinkedIn people/posts research
+
+- `scripts/people_sweep.py` now validates `primary_keywords` (with explicit
+  legacy compatibility), fails on unrecognized present schemas, and emits
+  machine/human-readable validation reports.
+- The recurring plan starts from qualified jobs and fresh actionable posts,
+  ranks company packets using configured fit tags plus coverage/yield/contact
+  history, and hard-caps allocation at eight filter-first searches: four recent
+  post families and four job-linked relationship paths including Georgia Tech.
+- Structured candidate ranking records live-role/post linkage, named mutuals,
+  GT/Fortinet overlap, technical alignment, hiring influence, recent activity,
+  recommended ask, P0-P3, and why-now. Known identities can re-enter only as
+  research re-evaluations; this never permits duplicate outreach.
+- Live `linkedin-people-posts-2h` moved from minute 0 to minute 40 to avoid the
+  shared Chrome collision with the still-live minute-0 `discovery-linkedin` job.
+
 ## Open items
 - B6/B7 in BACKLOG.md (cron merge, systemd units) — deferred deliberately.
 - Verify next fire (~00:00) of pinned LinkedIn crons succeeded.

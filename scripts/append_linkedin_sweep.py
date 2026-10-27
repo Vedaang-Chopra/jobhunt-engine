@@ -6,7 +6,7 @@ import json
 import re
 import shutil
 import sys
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -23,7 +23,7 @@ except ImportError:
 DATA = config_lib.data_root()
 JOBS_CSV = DATA / "tracking" / "jobs" / "jobs.csv"
 RUNS_CSV = DATA / "tracking" / "search_runs" / "search_runs.csv"
-SWEEP_JSON = config_lib.path("execution_results_dir") / "linkedin_sweep_2026-08-23.json"
+SWEEP_JSON = config_lib.path("execution_results_dir") / f"linkedin_sweep_{date.today().isoformat()}.json"
 
 data = json.loads(SWEEP_JSON.read_text())
 fresh = data["fresh"]

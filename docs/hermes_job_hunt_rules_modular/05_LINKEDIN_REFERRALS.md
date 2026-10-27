@@ -4,18 +4,20 @@
 Given a company or role, find people who provide a credible path to referral, introduction, hiring-team insight, or useful conversation. Do not dump the first LinkedIn employees returned.
 
 ## Search hierarchy
-1. 1st-degree connections.
-2. 2nd-degree connections.
-3. 3rd-degree connections.
-4. Active posters about hiring (see "Active hiring posters" below).
-5. Georgia Tech alumni.
-6. Former coworkers/shared employers.
-7. Mutual connections.
-8. People in the relevant technical domain.
-9. People on the relevant team.
-10. Hiring managers/team leads.
-11. Recruiters tied to the organization.
-12. People with strong shared research/project context.
+Start from a live qualified job or fresh actionable hiring-post packet:
+1. Recent hiring-post authors tied to the role/team.
+2. 1st-degree contacts at the company/team.
+3. 2nd-degree contacts with named mutuals.
+4. Georgia Tech alumni at the company/team.
+5. Former coworkers / Fortinet overlap.
+6. Relevant technical team members.
+7. Hiring managers / technical leads.
+8. Recruiters tied to the role family.
+9. 3rd-degree candidates only for an active matching poster, likely hiring
+   manager/lead/founder, or exceptional shared context.
+
+Skip generic employees with no live-role/post link, activity signal, meaningful
+shared context, or technical overlap.
 
 ## People-search filter rule
 Use LinkedIn's native people-search filters instead of bare keyword queries:

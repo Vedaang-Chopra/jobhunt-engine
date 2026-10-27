@@ -77,13 +77,15 @@ def test_load_seen_posts_reads_all_key_shapes(tmp_path):
 def test_classify_poster_types():
     assert lps.classify_poster("Senior Technical Recruiter at Acme") == "recruiter"
     assert lps.classify_poster("Engineering Manager, AI Platform") == "hiring_manager"
-    assert lps.classify_poster("Founder & CEO") == "hiring_manager"
+    assert lps.classify_poster("Founder & CEO") == "founder"
+    assert lps.classify_poster("Research Lead, Agents") == "team_lead"
     assert lps.classify_poster("Research Scientist at Lab") == "engineer_researcher"
 
 
 def test_classify_priority():
     assert lps.classify_priority("recruiter") == "high"
     assert lps.classify_priority("hiring_manager") == "high"
+    assert lps.classify_priority("founder") == "high"
     assert lps.classify_priority("engineer_researcher") == "normal"
 
 
@@ -92,6 +94,8 @@ def test_classify_priority():
     ("Hiring: distributed training + FSDP training engineer", "ml_training_arch"),
     ("LLM evaluation and benchmarking role open", "eval_inference"),
     ("AI security red team position", "ai_security"),
+    ("Post-training RLHF and DPO role", "post_training"),
+    ("Multimodal vision-language representation learning", "multimodal"),
     ("Applied Scientist, ML platform", "applied_ml"),
     ("Software engineer, generic posting", "other"),
 ])
@@ -117,6 +121,16 @@ def test_to_post_row_shape():
     assert row["status"] == "new"
     assert row["post_id"].startswith("alex_kim_2026-08-24_")
     assert set(row) == set(lps.POSTS_HEADER)
+
+
+def test_old_commentary_post_is_market_signal_not_actionable():
+    row = lps.to_post_row({
+        "poster": "Commentator", "headline": "Research Scientist",
+        "posted_date": "2026-01-01", "roles_mentioned": "AI trends",
+        "body": "Commentary on how the market is hiring more engineers",
+    }, discovered_date="2026-08-24", source_note="test")
+    assert row["status"] == "market_signal"
+    assert "lead_class=market_signal" in row["notes"]
 
 
 # ---------------------------------------------------------------- append
@@ -162,3 +176,48 @@ def test_dry_run_main(capsys):
     out = capsys.readouterr().out
     assert rc == 0
     assert '"mode": "dry-run"' in out
+
+
+def test_main_browser_unavailable_logs_failed_and_returns_one(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(lps, "POSTS_CSV", tmp_path / "posts.csv")
+    monkeypatch.setattr(lps, "RUNS_CSV", tmp_path / "runs.csv")
+    monkeypatch.setattr(lps, "OUT_DIR", tmp_path / "out")
+
+    class BrokenBrowser:
+        def __init__(self):
+            raise RuntimeError("CDP unavailable")
+
+    monkeypatch.setattr(lps, "BrowserSession", BrokenBrowser)
+    rc = lps.main(["feed", "--max-scrolls", "1"])
+    assert rc == 1
+    assert '"stop_reason": "browser_unavailable"' in capsys.readouterr().out
+    with lps.RUNS_CSV.open(newline="", encoding="utf-8") as fh:
+        row = next(csv.DictReader(fh))
+    assert "status=failed" in row["notes"]
+    assert "stop_reason=browser_unavailable" in row["notes"]
+
+
+def test_main_authwall_logs_blocked_and_returns_three(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(lps, "POSTS_CSV", tmp_path / "posts.csv")
+    monkeypatch.setattr(lps, "RUNS_CSV", tmp_path / "runs.csv")
+    monkeypatch.setattr(lps, "OUT_DIR", tmp_path / "out")
+
+    class FakeBrowser:
+        def close(self):
+            pass
+
+    monkeypatch.setattr(lps, "BrowserSession", FakeBrowser)
+
+    def blocked(*_args, **_kwargs):
+        raise lps.SweepBlocked("authwall/captcha detected")
+
+    monkeypatch.setattr(lps, "run_feed", blocked)
+    rc = lps.main(["feed", "--max-scrolls", "1"])
+    assert rc == 3
+    assert "BLOCKED:" in capsys.readouterr().out
+    with lps.RUNS_CSV.open(newline="", encoding="utf-8") as fh:
+        row = next(csv.DictReader(fh))
+    assert "status=blocked" in row["notes"]
+    assert "stop_reason=authwall_or_captcha" in row["notes"]
+    report = next(lps.OUT_DIR.glob("blocked_*.json"))
+    assert '"run_status": "blocked"' in report.read_text(encoding="utf-8")

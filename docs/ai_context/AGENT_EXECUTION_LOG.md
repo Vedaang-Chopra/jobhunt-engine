@@ -186,6 +186,46 @@ the spec, plan, and tasks receive their required separate approvals.
 **Model fallback used:** no
 **DO NOT REPEAT:** Do not count Wellfound result-pool totals as fully inspected listings. Do not infer sponsorship, exact posting dates, or external application URLs when the individual page does not expose them.
 
+## LINKEDIN-PEOPLE-PACKETS-2026-09-12 — Packet-driven recurring research
+
+**Date:** 2026-09-12
+**Agent:** Hermes Agent
+**Model:** GPT-5.6 Sol 900k
+**Status:** ✓ Complete
+
+**Approach taken:** Replaced fixed-order generic company planning with validated
+role-family loading, ranked job/hiring-post packets, an eight-slot post-first
+filter plan, structured person scoring, explicit re-evaluation dedupe, and
+canonical run/yield metrics. Updated active portfolio/role configuration and
+offset only the conflicting people/posts cron.
+**What worked:** Active `primary_keywords` loaded all configured families;
+dry-run produced eight bounded filter-first searches; focused people/posts and
+related referral tests passed without live LinkedIn access.
+**What failed:** No uncontrolled live browser verification was run, by explicit
+task constraint.
+**Root cause:** Not applicable.
+**Resolution:** The next scheduled read-only cron run is the first live layout/
+filter-chip validation; its status taxonomy must report auth/layout failures
+honestly.
+**Files modified:** `scripts/people_sweep.py`, `scripts/linkedin_posts_sweep.py`,
+`scripts/config_lib.py`, focused tests, canonical LinkedIn rules/workflow/context,
+active role/company config, and `setup/CRON_JOBS_LINUX.md`.
+**Verify result:** `.venv/bin/python -m pytest tests/test_people_sweep.py
+tests/test_linkedin_posts_sweep.py tests/test_upsert_lib.py
+tests/test_right_people_ingest.py tests/test_search_plan_lib.py
+tests/test_scoring_lib.py tests/test_referral_lib.py -q` passed 167 tests; compile
+and `git diff --check` passed. Full `tests/` ran 914 tests: 907 passed, 1
+skipped, and 6 pre-existing workspace/data-hygiene failures remained.
+**Model fallback used:** no.
+**DO NOT REPEAT:** Do not restore generic company-only queries or silently
+fallback when a present role-family schema is unrecognized. Do not treat
+market-signal commentary as an actionable lead. Do not log a LinkedIn
+authwall/CAPTCHA stop as `status=ok`; live post sweeps now return exit 3 and log
+`status=blocked`, while browser construction failures return exit 1 and log
+`status=failed`.
+
+---
+
 ## Entry Template
 
 ## [TASK_ID] — [Task name]

@@ -1,0 +1,78 @@
+version: 1
+policy:
+  max_queries: 8
+  coverage_window_days: 14
+  location: United States
+  geo_id: "103644278"
+  recency_seconds: 604800
+  experience_levels: "2,3"
+  slots:
+    broad_anchors: 4
+    recurring_technical: 3
+    rotating_frontier: 1
+
+broad_anchors:
+  - id: anchor_research_engineer_ml
+    query: ML Research Engineer
+    role_family: research-engineer
+  - id: anchor_ai_research_scientist
+    query: AI Research Scientist
+    role_family: research-engineer
+  - id: anchor_applied_scientist_ai
+    query: Applied Scientist AI
+    role_family: applied-ai
+  - id: anchor_mle_llm
+    query: ML Engineer LLM
+    role_family: ml-engineering
+
+recurring_technical:
+  post_training_alignment:
+    role_family: post-training
+    queries:
+      - {id: post_training, query: "LLM post-training"}
+      - {id: alignment_preference, query: "AI alignment"}
+      - {id: reward_modeling_dpo, query: "LLM reward modeling"}
+      - {id: sft_model_behavior, query: "LLM fine-tuning"}
+  llm_evaluation_reliability_safety:
+    role_family: evaluation-inference
+    queries:
+      - {id: llm_evaluation, query: "LLM evaluation research"}
+      - {id: model_evaluation_benchmarks, query: "AI model evaluation"}
+      - {id: evaluation_harness_quality, query: "LLM evaluation harness"}
+      - {id: safety_adversarial_evaluation, query: "Safety red teaming"}
+  agents:
+    role_family: agentic-ai
+    queries:
+      - {id: ai_agents_tool_use, query: "AI agent tools"}
+      - {id: agentic_tool_calling, query: "Agentic tool calling"}
+      - {id: agent_evaluation_multi_agent, query: "Agent evaluation"}
+      - {id: planning_reasoning_orchestration, query: "AI planning"}
+
+frontier:
+  llm_inference_serving:
+    role_family: evaluation-inference
+    queries:
+      - {id: inference_vllm, query: "LLM inference vLLM"}
+      - {id: inference_optimization_kv_cache, query: "Inference optimization"}
+  distributed_training_gpu_systems:
+    role_family: ml-training-arch
+    queries:
+      - {id: distributed_training_fsdp, query: "Distributed training FSDP"}
+      - {id: large_scale_training_gpu, query: "AI training systems"}
+  multimodal_vision_language:
+    role_family: research-engineer
+    queries:
+      - {id: multimodal_vlm, query: "Multimodal VLM"}
+      - {id: image_text_models, query: "Vision-language models"}
+  contrastive_representation_learning:
+    role_family: research-engineer
+    queries:
+      - {id: contrastive_clip, query: "Contrastive learning CLIP"}
+      - {id: representation_learning, query: "Representation learning"}
+    exploration_signals:
+      - CLIP-based loss
+  ai_security_adversarial_ml:
+    role_family: applied-ai
+    queries:
+      - {id: adversarial_ml_security, query: "AI security"}
+      - {id: model_red_teaming, query: "Model red teaming"}

@@ -15,20 +15,21 @@ Do not dump the first employees returned by LinkedIn. Use judgment.
 
 ## 2. Search Hierarchy
 
-Inspect in priority order:
-1. **1st-degree connections** — existing relationships
-2. **2nd-degree connections** — mutual connections available
-3. **3rd-degree connections** — weaker but still reachable
-4. **Active hiring posters** — people at the company who regularly post hiring/referral content ("we're hiring", "ask me for referrals", "connect with me"); LinkedIn activity level is a first-class ranking signal
-5. **Georgia Tech alumni** — shared affiliation is a strong signal
-6. **Former coworkers / former-company overlap** — Fortinet, internship connections
-7. **Mutual connections** — named mutuals are the strongest connection signal
-8. **People in the relevant research/engineering domain** — agentic AI, evaluation, VLM routing
-9. **People on the specific team** — hiring manager, team members
-10. **Hiring managers** — for the specific role
-11. **Recruiters** — responsible for the relevant organization
-12. **People with shared project/research/domain context** — paper co-authors, conference speakers
-13. **Strong cross-country personal/professional connections** — India, Canada networks
+Start from a live qualified job or fresh actionable hiring-post packet and inspect
+in priority order:
+1. **Recent hiring-post author(s)** tied to the target role/team
+2. **1st-degree connections** at that company/team
+3. **2nd-degree connections with named mutuals**
+4. **Georgia Tech alumni** at the company/team
+5. **Former coworkers / Fortinet overlap** at the company
+6. **Relevant team members** in the packet's technical domain
+7. **Likely hiring managers / technical leads**
+8. **Role-specific AI/ML/research recruiters**
+9. **3rd-degree candidates only when exceptional** — active matching poster,
+   likely hiring manager/lead/founder, or unusually strong shared context
+
+Generic employees with no live-role/post linkage, activity signal, shared
+context, or technical overlap are skipped.
 
 ### People-search filter rule (mandatory)
 Execute the hierarchy through LinkedIn's native people-search filters, not bare keyword queries (see `docs/hermes_job_hunt_rules_modular/05_LINKEDIN_REFERRALS.md` § People-search filter rule):
@@ -115,9 +116,9 @@ A canonical connection/contact record in `tracking/contacts/contacts.csv` must i
 | Group | Description | Action |
 |-------|-------------|--------|
 | **P0** | Existing 1st connections | Message directly TODAY |
-| **P1** | 2nd degree with mutual connections | Connect with mutual reference |
-| **P2** | 2nd degree no mutuals | Connect with strong rationale |
-| **P3** | 3rd+ degree | Cold outreach / peer referral path only if exceptional |
+| **P1** | 2nd degree with named mutuals and relevance; GT/Fortinet overlap with strong relevance | Use the relationship path after approval |
+| **P2** | Relevant team member, hiring manager, or role-specific recruiter tied to a live role | Role-specific outreach only after approval |
+| **P3** | 3rd degree active poster/manager/lead/founder or exceptional shared context | Cold path only if exceptional and approved |
 
 ## 8. Browser Discipline
 

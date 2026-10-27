@@ -12,8 +12,9 @@
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 S="$REPO/scripts/env.sh"
 
-# discovery-linkedin: LinkedIn jobs sweep every 2h (gated sweeps l1/l2)
-0 */2 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/discovery_run.py --sources l1,l2 >> "$JOBHUNT_HOME/logs/discovery_linkedin.log" 2>&1
+# discovery-linkedin: deterministic dual-path LinkedIn jobs sweep every 2h,
+# offset from the people/posts browser job to avoid shared-Chrome contention.
+20 */2 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/linkedin_job_sweep.py --live >> "$JOBHUNT_HOME/logs/discovery_linkedin.log" 2>&1
 
 # linkedin-people-posts-2h: people + hiring-posts sweep every 2h
 0 */2 * * * . $S && cd "$JOBHUNT_REPO" && python scripts/cron_lhp_people_driver.py >> "$JOBHUNT_HOME/logs/lhp_people.log" 2>&1

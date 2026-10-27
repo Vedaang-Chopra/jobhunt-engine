@@ -27,25 +27,8 @@ REPO = Path(__file__).resolve().parents[1]
 AGENT = "agent"
 SCRIPT = "script"
 
-#: Prompt for linkedin-discovery — extracted verbatim from the canonical cron
-#: definition (discovery-linkedin, every 2h) so UI-triggered runs execute the
-#: IDENTICAL agent workflow. Do not fork this prompt per trigger.
-LINKEDIN_DISCOVERY_PROMPT = (
-    "LinkedIn discovery sweep (trigger: {trigger}). "
-    f"cd '{REPO}'. First run: "
-    "~/.hermes/hermes-agent/venv/bin/python scripts/discovery_run.py "
-    "--sources l1,l2 — it will report 'needs interactive session' if "
-    "headless. THEN attempt the real sweep yourself using the Playwright MCP "
-    "browser (persistent logged-in Chrome profile is already configured — "
-    "never type passwords; if a login wall appears, stop and report): run "
-    "ONE LinkedIn jobs sweep per the linkedin-job-sweep skill (guest API + "
-    "logged-in fetch methods, scripts/linkedin_guest_sweep.py exists as "
-    "reference), normalize results through scripts/discovery_lib.py, dedupe "
-    "against tracking/jobs/jobs.csv, append new rows, log to "
-    "tracking/search_runs/search_runs.csv. Keep it to ONE tab, ≤8 searches, "
-    "close the tab after. If LinkedIn shows CAPTCHA/warning, stop "
-    "immediately and note it. Report new-jobs count."
-)
+#: LinkedIn Jobs discovery is intentionally a SCRIPT workflow: deterministic
+#: query selection, extraction, and hard filtering must not depend on an LLM.
 
 
 def _py(name: str) -> str:
@@ -78,20 +61,18 @@ class Workflow:
 
 
 WORKFLOWS: Dict[str, Workflow] = {
-    # ---------------------------------------------------- agent workflows
+    # ---------------------------------------------------- script workflows
     "linkedin-discovery": Workflow(
         name="linkedin-discovery",
-        execution_type=AGENT,
-        description="Logged-in LinkedIn jobs sweep via Hermes agent "
-                    "(canonical discovery-linkedin workflow).",
-        prompt=LINKEDIN_DISCOVERY_PROMPT,
+        execution_type=SCRIPT,
+        description="Deterministic dual-path LinkedIn Jobs discovery.",
+        cmd_builder=lambda: [_py("x"), _script("linkedin_job_sweep.py"), "--live"],
         browser_required=True,
         persistent_browser_profile="job-hunt-automation",
     ),
     # Future migrations register here with the same shape:
     #   linkedin-hiring-posts, linkedin-feed-discovery, wellfound-discovery.
 
-    # ---------------------------------------------------- script workflows
     "resume-scorer": Workflow(
         name="resume-scorer",
         execution_type=SCRIPT,

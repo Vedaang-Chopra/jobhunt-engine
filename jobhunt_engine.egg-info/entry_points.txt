@@ -1,0 +1,3 @@
+[console_scripts]
+jobhunt-ui = ui.app:main
+jobhunt-wizard = setup.wizard:main

@@ -32,6 +32,7 @@ import argparse
 import csv
 import json
 import random
+import re
 import sys
 import time
 from datetime import datetime
@@ -61,6 +62,18 @@ POST_SEARCH_URL = ("https://www.linkedin.com/search/results/posts/"
                    "?keywords={kw}&origin=SWITCH_SEARCH_VERTICAL"
                    "&sid=%3BpT")
 PAUSE_S = (2.5, 4.5)
+
+
+class SweepBlocked(RuntimeError):
+    """Safety/auth wall stopped a live sweep; partial observations are attached."""
+
+    def __init__(self, reason: str, new_items=None, dup_items=None,
+                 query_yields=None) -> None:
+        super().__init__(reason)
+        self.reason = reason
+        self.new_items = list(new_items or [])
+        self.dup_items = list(dup_items or [])
+        self.query_yields = dict(query_yields or {})
 
 DEFAULT_KEYWORDS = {
     # phrase -> weight (higher = tried first when no history exists)
@@ -153,17 +166,27 @@ def classify_poster(headline: str) -> str:
     if any(w in h for w in ("recruiter", "talent acquisition", "talent partner",
                             "sourcing", "recruiting")):
         return "recruiter"
-    if any(w in h for w in ("manager", "director", "vp ", "founder", "ceo",
-                            "cto", "head of")):
+    if any(w in h for w in ("founder", "co-founder", "ceo", "cto")):
+        return "founder"
+    if any(w in h for w in ("manager", "director", "vp ", "head of")):
         return "hiring_manager"
+    if any(w in h for w in ("team lead", "technical lead", "research lead")):
+        return "team_lead"
     return "engineer_researcher"
 
 
 def classify_priority(poster_type: str) -> str:
-    return "high" if poster_type in ("recruiter", "hiring_manager") else "normal"
+    return "high" if poster_type in (
+        "recruiter", "hiring_manager", "team_lead", "founder") else "normal"
 
 
 ROLE_FAMILY_HINTS = [
+    ("post-training", "post_training"),
+    ("rlhf", "post_training"),
+    ("reward model", "post_training"),
+    ("preference optimization", "post_training"),
+    ("dpo", "post_training"),
+    ("grpo", "post_training"),
     ("agentic", "agentic_ai"),
     ("agent", "agentic_ai"),
     ("multi-agent", "agentic_ai"),
@@ -182,6 +205,9 @@ ROLE_FAMILY_HINTS = [
     ("inference", "eval_inference"),
     ("red team", "ai_security"),
     ("adversarial", "ai_security"),
+    ("multimodal", "multimodal"),
+    ("vision-language", "multimodal"),
+    ("representation learning", "multimodal"),
     ("applied scientist", "applied_ml"),
     ("machine learning engineer", "applied_ml"),
     ("research engineer", "research_engineer"),
@@ -196,12 +222,36 @@ def classify_role_family(text: str) -> str:
     return "other"
 
 
+def classify_post_lead(post: dict, discovered_date: str) -> str:
+    """Return actionable_lead or market_signal using freshness + concrete path."""
+    try:
+        discovered = datetime.fromisoformat(discovered_date[:10]).date()
+        posted = datetime.fromisoformat(str(post.get("posted_date") or "")[:10]).date()
+        fresh = 0 <= (discovered - posted).days <= 14
+    except (TypeError, ValueError):
+        relative = str(post.get("time") or "").strip().lower()
+        fresh = bool(re.fullmatch(r"\d+\s*[hdw]", relative))
+    text = " ".join(str(post.get(k) or "") for k in (
+        "body", "roles_mentioned", "headline")).lower()
+    hiring_intent = any(token in text for token in (
+        "we're hiring", "we are hiring", "join my team", "looking for",
+        "role is open", "roles are open", "apply", "hiring"))
+    concrete_role = bool((post.get("roles_mentioned") or "").strip())
+    application_path = bool(post.get("link_url") or post.get("application_url"))
+    human_path = classify_poster(post.get("headline") or "") in {
+        "hiring_manager", "team_lead", "founder", "recruiter", "engineer_researcher"
+    }
+    return "actionable_lead" if fresh and hiring_intent and concrete_role and (
+        application_path or human_path) else "market_signal"
+
+
 def to_post_row(post: dict, discovered_date: str, source_note: str) -> dict:
     """Extraction dict -> canonical hiring_posts.csv row."""
     headline = post.get("headline", "")[:300]
     roles = (post.get("roles_mentioned") or "").strip()
     body = (post.get("body") or "")[:400]
     poster_type = classify_poster(headline)
+    lead_class = classify_post_lead(post, discovered_date)
     text_for_family = " ".join((headline, roles, body))
     return {
         "post_id": _post_id(post, discovered_date),
@@ -219,8 +269,8 @@ def to_post_row(post: dict, discovered_date: str, source_note: str) -> dict:
         "shared_context": "",
         "priority": classify_priority(poster_type),
         "role_family": classify_role_family(text_for_family),
-        "status": "new",
-        "notes": f"{source_note}; urn:{post.get('urn', '')}; {body[:160]}".strip("; "),
+        "status": "new" if lead_class == "actionable_lead" else "market_signal",
+        "notes": f"{source_note}; lead_class={lead_class}; urn:{post.get('urn', '')}; {body[:160]}".strip("; "),
     }
 
 
@@ -439,11 +489,7 @@ class BrowserSession:
 
 def run_feed(session: BrowserSession, max_scrolls: int, stop_dupes: int,
              seen: set[str]) -> tuple[list[dict], list[dict]]:
-    """Scroll the feed; extraction happens every few scrolls.
-
-    Stops early once ``stop_dupes`` consecutive already-seen posts appear
-    (the feed has caught up with previously-swept territory).
-    """
+    """Scroll the feed, raising SweepBlocked on any safety/auth wall."""
     session.page.goto(FEED_URL, wait_until="domcontentloaded")
     _pause()
     new_all: list[dict] = []
@@ -456,7 +502,7 @@ def run_feed(session: BrowserSession, max_scrolls: int, stop_dupes: int,
         wall = session.check_wall()
         if wall:
             print(f"  !! {wall}")
-            break
+            raise SweepBlocked(wall, new_all, dup_all)
         extracted = session._extract()
         fresh, dups = split_new_and_dup_posts(extracted, seen)
         new_all.extend(fresh)
@@ -480,8 +526,7 @@ def run_keywords(session: BrowserSession, queries: list[str], seen: set[str],
                  max_scroll_rounds_per_query: int = 6) -> tuple[list[dict],
                                                                dict[str, int],
                                                                list[dict]]:
-    """Run each query through LinkedIn post search; returns (new, per-query
-    new-counts, all dups)."""
+    """Run post searches, raising SweepBlocked immediately on a safety wall."""
     new_all: list[dict] = []
     dup_all: list[dict] = []
     per_query_new: dict[str, int] = {}
@@ -493,7 +538,7 @@ def run_keywords(session: BrowserSession, queries: list[str], seen: set[str],
         wall = session.check_wall()
         if wall:
             print(f"  !! {wall}")
-            break
+            raise SweepBlocked(wall, new_all, dup_all, per_query_new)
         extracted = session._extract()
         fresh, dups = split_new_and_dup_posts(extracted, seen)
         new_all.extend(fresh)
@@ -501,11 +546,11 @@ def run_keywords(session: BrowserSession, queries: list[str], seen: set[str],
         per_query_new[q] = len(fresh)
         print(f"  [{qi}/{len(queries)}] {q!r}: scanned={len(extracted)} "
               f"new={len(fresh)}")
-        for r in range(max_scroll_rounds_per_query - 1):
+        for _ in range(max_scroll_rounds_per_query - 1):
             session.scroll_main(1)
             wall = session.check_wall()
             if wall:
-                break
+                raise SweepBlocked(wall, new_all, dup_all, per_query_new)
             extracted = session._extract()
             f2, d2 = split_new_and_dup_posts(extracted, seen)
             new_all.extend(f2)
@@ -549,8 +594,17 @@ def main(argv=None) -> int:
         }, indent=2))
         return 0
 
-    seen = load_seen_posts()
-    session = BrowserSession()
+    seen = load_seen_posts(POSTS_CSV)
+    try:
+        session = BrowserSession()
+    except Exception as exc:  # session manager provides the detailed cause
+        source = "linkedin_feed_cdp" if args.mode == "feed" else "linkedin_post_search_cdp"
+        log_run(f"lpb_{ts}", source,
+                f"stop_reason=browser_unavailable; error={exc}",
+                0, 0, 0, "failed", runs_csv=RUNS_CSV)
+        print(json.dumps({"run_status": "failed",
+                          "stop_reason": "browser_unavailable", "error": str(exc)}))
+        return 1
     started = datetime.now().strftime("%Y%m%d_%H%M")
     try:
         if args.mode == "feed":
@@ -559,7 +613,8 @@ def main(argv=None) -> int:
                                 source_note=f"feed_sweep_{started}") for p in new]
             append_rows(rows, POSTS_CSV)
             log_run(f"lpf_{ts}", "linkedin_feed_cdp", "feed sweep",
-                    len(new) + len(dups), len(new), len(dups), "ok")
+                    len(new) + len(dups), len(new), len(dups), "ok",
+                    runs_csv=RUNS_CSV)
             out = OUT_DIR / f"feed_{ts}.json"
             out.write_text(json.dumps({"new": new, "dupes": len(dups)},
                                       indent=2, default=str))
@@ -578,11 +633,32 @@ def main(argv=None) -> int:
             log_run(f"lpk_{ts}", "linkedin_post_search_cdp",
                     "; ".join(f"{q}:{n}" for q, n in per_query_new.items()),
                     sum(per_query_new.values()) + len(dups), len(new), len(dups),
-                    "ok")
+                    "ok", runs_csv=RUNS_CSV)
             out = OUT_DIR / f"keywords_{ts}.json"
             out.write_text(json.dumps({"queries": per_query_new, "new": new,
                                        "dupes": len(dups)}, indent=2, default=str))
             print(f"DONE keywords: new={len(new)} -> {out}")
+    except SweepBlocked as exc:
+        rows = [to_post_row(p, discovered_date=datetime.now().strftime("%Y-%m-%d"),
+                            source_note=f"blocked_partial_{started}")
+                for p in exc.new_items]
+        append_rows(rows, POSTS_CSV)
+        if exc.query_yields:
+            record_keyword_yields(exc.query_yields, KEYWORDS_CSV)
+        source = "linkedin_feed_cdp" if args.mode == "feed" else "linkedin_post_search_cdp"
+        log_run(f"lpb_{ts}", source,
+                f"stop_reason=authwall_or_captcha; {exc.reason}",
+                len(exc.new_items) + len(exc.dup_items), len(exc.new_items),
+                len(exc.dup_items), "blocked", runs_csv=RUNS_CSV)
+        out = OUT_DIR / f"blocked_{ts}.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps({
+            "run_status": "blocked", "stop_reason": "authwall_or_captcha",
+            "reason": exc.reason, "partial_new": len(exc.new_items),
+            "partial_duplicates": len(exc.dup_items),
+        }, indent=2), encoding="utf-8")
+        print(f"BLOCKED: {exc.reason}; partial_new={len(exc.new_items)} -> {out}")
+        return 3
     finally:
         session.close()
     return 0

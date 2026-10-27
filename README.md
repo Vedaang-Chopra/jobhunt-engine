@@ -149,6 +149,9 @@ All templates compile with `pdflatex` and reference `resume_style.sty`.
 | Script | Purpose |
 |--------|---------|
 | `scripts/fetch_greenhouse.py` | Discover jobs from Greenhouse boards |
+| `scripts/linkedin_query_planner.py` | Deterministic eight-slot LinkedIn Jobs query plan with canonical yield/coverage history |
+| `scripts/linkedin_job_sweep.py` | Dual-path LinkedIn Jobs retrieval, deduplication, structured qualification, and funnel reporting |
+| `scripts/people_sweep.py` | Validated role-family loader plus eight-slot hiring-post/job packet people-research planner and structured ranking/dedupe metrics |
 | `scripts/score_jobs_v2.py` | Canonical 12-dimension scorer (reads scoring-config.yaml) |
 | `scripts/analyze_market.py` | Analyze job market patterns |
 | `scripts/agent_helpers.py` | Browser automation helpers |

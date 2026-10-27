@@ -75,6 +75,11 @@ The discovery→outreach spine of the target flow is now implemented and
 validated end-to-end:
 
 ```
+scripts/linkedin_query_planner.py (deterministic 4 anchors + 3 recurring technical + 1 frontier)
+  → scripts/linkedin_job_sweep.py (guest API + authenticated server-rendered fetch)
+  → deterministic cheap gates → JD fetch for survivors → structured qualification
+  → canonical jobs.csv + per-query history + score_jobs_v2.py
+
 scripts/discovery_run.py   (L1 saved-search sweep, L2 recommended sweep,
                             career_ops scan, freshness tiers)
   → scripts/today_queue.py (review views: fresh_jobs / top_queue / needing_attention)
@@ -87,6 +92,17 @@ All stages read/write canonical `tracking/` CSVs; the outreach ledger enforces
 approve-before-send, record-sent-before-next-batch, ≤25/day cap, and the
 never-contact-twice interlock with `contacts.csv` (see
 `docs/rules/OUTREACH_RULES.md` §8 and `docs/rules/LINKEDIN_REFERRAL_RULES.md` §11–12).
+
+The recurring people/post path is now packet-driven:
+
+```
+qualified APPLY/APPLY_NOW + strong OPTIMISTIC jobs ─┐
+fresh actionable hiring posts ──────────────────────┤
+company fit tags + contact/yield history ───────────┘
+  → scripts/people_sweep.py (rank packets; 4 post-first + 4 relationship searches)
+  → profile/activity inspection → structured P0-P3 ranking
+  → canonical people_sweep.csv + execution_results/linkedin_people/runs.jsonl
+```
 
 ## Changelog
 
